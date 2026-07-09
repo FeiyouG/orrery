@@ -1,0 +1,2511 @@
+{
+  "runId": "01KX3RC4ER3ZVQQ5XKEQC8A38F",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/twitter/web/fetch_search_timeline",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "keyword": "Fable 5",
+      "search_type": "Top"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "3871179f-2f85-482a-9676-6a201a31b092",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:36:41",
+      "time_stamp": 1783611401,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Twitter-Web-API/fetch_search_timeline_api_v1_twitter_web_fetch_search_timeline_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/3871179f-2f85-482a-9676-6a201a31b092?sign=aae103bebcad5177d1223e360b97ceacd28293e3176f76f949bd262f40f895a6",
+      "router": "/api/v1/twitter/web/fetch_search_timeline",
+      "params": {
+        "keyword": "Fable 5",
+        "search_type": "Top"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:36:36.870Z",
+  "startedAt": "2026-07-09T15:36:37.126Z",
+  "completedAt": "2026-07-09T15:36:41.668Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RC4ER3ZVQQ5XKEQC8A38F -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "status": "ok",
+    "timeline": [
+      {
+        "type": "tweet",
+        "tweet_id": "2074882327344230585",
+        "screen_name": "louiswharmby",
+        "bookmarks": 1,
+        "favorites": 3,
+        "created_at": "Wed Jul 08 15:44:30 +0000 2026",
+        "text": "Fable 5 has been released and added to subs.\n\nFable 5 has been disabled due to a request by the US government.\n\nFable 5 has been enabled again.\n\nFable 5 will be removed from subs on the 7th July.\n\nFable 5 will actually be available until the 12th July. https://t.co/482LFNMob5",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          252
+        ],
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "quotes": 0,
+        "replies": 0,
+        "conversation_id": "2074882327344230585",
+        "retweets": 0,
+        "views": "215",
+        "entities": {
+          "media": [
+            {
+              "display_url": "pic.x.com/482LFNMob5",
+              "expanded_url": "https://x.com/louiswharmby/status/2074882327344230585/photo/1",
+              "ext_media_availability": {
+                "status": "Available"
+              },
+              "id_str": "2074882319307911169",
+              "indices": [
+                253,
+                276
+              ],
+              "media_key": "16_2074882319307911169",
+              "media_results": {
+                "result": {
+                  "media_key": "16_2074882319307911169"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HMt2eekWMAE9wov.jpg",
+              "original_info": {
+                "focus_rects": [],
+                "height": 498,
+                "width": 498
+              },
+              "sizes": {
+                "large": {
+                  "h": 498,
+                  "resize": "fit",
+                  "w": 498
+                },
+                "medium": {
+                  "h": 498,
+                  "resize": "fit",
+                  "w": 498
+                },
+                "small": {
+                  "h": 498,
+                  "resize": "fit",
+                  "w": 498
+                },
+                "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                }
+              },
+              "type": "animated_gif",
+              "url": "https://t.co/482LFNMob5",
+              "video_info": {
+                "aspect_ratio": [
+                  1,
+                  1
+                ],
+                "variants": [
+                  {
+                    "bitrate": 0,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/tweet_video/HMt2eekWMAE9wov.mp4"
+                  }
+                ]
+              }
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "louiswharmby",
+          "name": "Louis Wharmby",
+          "created_at": "Thu Jan 22 13:15:29 +0000 2009",
+          "description": "Quit my Tech Lead job to build my own products in public. £10k MRR loading...\n\n🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜ \n\n🤖 https://t.co/ZeaF77dbcX - agent readiness and analytics $100 MRR",
+          "rest_id": "19337512",
+          "followers_count": 122,
+          "favourites_count": 1509,
+          "avatar": "https://pbs.twimg.com/profile_images/2007765105828651008/FAdDE1Dv_normal.jpg",
+          "url": "http://agentchecker.ai",
+          "cover_image": "https://pbs.twimg.com/profile_banners/19337512/1783249431",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 173,
+          "location": "United Kingdom"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HMt2eekWMAE9wov.jpg",
+              "variants": [
+                {
+                  "bitrate": 0,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/tweet_video/HMt2eekWMAE9wov.mp4"
+                }
+              ],
+              "aspect_ratio": [
+                1,
+                1
+              ],
+              "duration": null,
+              "original_info": {
+                "focus_rects": [],
+                "height": 498,
+                "width": 498
+              },
+              "id": "2074882319307911169"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2075142236501672300",
+        "screen_name": "GaelBreton",
+        "bookmarks": 0,
+        "favorites": 2,
+        "created_at": "Thu Jul 09 08:57:18 +0000 2026",
+        "text": "How I feel working on GPT 5.5 today because Fable resets tomorrow. https://t.co/pHCvr1OkoE",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          66
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 0,
+        "replies": 1,
+        "conversation_id": "2075142236501672300",
+        "retweets": 0,
+        "views": "566",
+        "entities": {
+          "media": [
+            {
+              "display_url": "pic.x.com/pHCvr1OkoE",
+              "expanded_url": "https://x.com/GaelBreton/status/2075142236501672300/photo/1",
+              "ext_alt_text": "snow white dancing GIF",
+              "ext_media_availability": {
+                "status": "Available"
+              },
+              "id_str": "2075142233695600640",
+              "indices": [
+                67,
+                90
+              ],
+              "media_key": "16_2075142233695600640",
+              "media_results": {
+                "result": {
+                  "media_key": "16_2075142233695600640"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HMxi3fHWQAAV0vf.jpg",
+              "original_info": {
+                "focus_rects": [],
+                "height": 274,
+                "width": 488
+              },
+              "sizes": {
+                "large": {
+                  "h": 274,
+                  "resize": "fit",
+                  "w": 488
+                },
+                "medium": {
+                  "h": 274,
+                  "resize": "fit",
+                  "w": 488
+                },
+                "small": {
+                  "h": 274,
+                  "resize": "fit",
+                  "w": 488
+                },
+                "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                }
+              },
+              "type": "animated_gif",
+              "url": "https://t.co/pHCvr1OkoE",
+              "video_info": {
+                "aspect_ratio": [
+                  244,
+                  137
+                ],
+                "variants": [
+                  {
+                    "bitrate": 0,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/tweet_video/HMxi3fHWQAAV0vf.mp4"
+                  }
+                ]
+              }
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "GaelBreton",
+          "name": "Gael Breton",
+          "created_at": "Thu Aug 05 08:21:21 +0000 2010",
+          "description": "Love: AI and automation. Hate: Hype",
+          "rest_id": "174970722",
+          "followers_count": 36235,
+          "favourites_count": 4778,
+          "avatar": "https://pbs.twimg.com/profile_images/1892181506753265664/D3uCNP6K_normal.jpg",
+          "url": "https://www.authorityhacker.com/resources/learn-claude-code/",
+          "cover_image": "https://pbs.twimg.com/profile_banners/174970722/1576059708",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 575,
+          "location": "Claude Code for non Developper"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HMxi3fHWQAAV0vf.jpg",
+              "variants": [
+                {
+                  "bitrate": 0,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/tweet_video/HMxi3fHWQAAV0vf.mp4"
+                }
+              ],
+              "aspect_ratio": [
+                244,
+                137
+              ],
+              "duration": null,
+              "original_info": {
+                "focus_rects": [],
+                "height": 274,
+                "width": 488
+              },
+              "id": "2075142233695600640"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2074438871526379532",
+        "screen_name": "Av1dlive",
+        "bookmarks": 9463,
+        "favorites": 3557,
+        "created_at": "Tue Jul 07 10:22:22 +0000 2026",
+        "text": "this is f**king dangerous\n\nsomeone just figured out how to get fable 5 reasoning in opus 4.8 with one prompt \n\nyou have less than 24 hours to set this up as this takes away 20% of your usage limit \n\nhere is how:\n\n1) Paste the prompt and ask it to \"make an operating manual\"\n2) Create a New Claude Project and \"Add this .md in Project instructions\n3) Use Opus 4.8 High/Max and now you have Fable 5 reasoning at 1/5th the price\n\nsave and bookmark it no matter what",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          276
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 17,
+        "replies": 112,
+        "conversation_id": "2074438871526379532",
+        "retweets": 396,
+        "views": "866460",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "Av1dlive",
+          "name": "Avid",
+          "created_at": "Sat Oct 14 05:23:09 +0000 2023",
+          "description": "I write, read and build | I normie-maxx | building harness-agnostic memory for ai agents",
+          "rest_id": "1713062826175299584",
+          "followers_count": 18543,
+          "favourites_count": 31583,
+          "avatar": "https://pbs.twimg.com/profile_images/2010392290590912512/x7vtAe5W_normal.jpg",
+          "url": "https://github.com/codejunkie99/agentic-stack",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1713062826175299584/1782045055",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 390,
+          "location": "bruh "
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074438748952281088/img/fnsvXo8o9dsqpekL.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074438748952281088/pl/F8HD1-dJoBqQVxKX.m3u8?tag=28&v=cfc"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074438748952281088/vid/avc1/394x270/n8TWZtUdkacwfjQv.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074438748952281088/vid/avc1/524x360/V61J-ZDUnaGfQk-s.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074438748952281088/vid/avc1/1050x720/TmAR1UHFlz6iLpcm.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074438748952281088/vid/avc1/1576x1080/lfWCD3ktXlQy5A-k.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                197,
+                135
+              ],
+              "duration": 41545,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1576
+              },
+              "id": "2074438748952281088"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2074169173178212621",
+          "bookmarks": 4642,
+          "created_at": "Mon Jul 06 16:30:41 +0000 2026",
+          "favorites": 1052,
+          "text": "https://t.co/FxhU42i1xY",
+          "lang": "zxx",
+          "views": "1724182",
+          "quotes": 40,
+          "replies": 59,
+          "retweets": 139,
+          "conversation_id": "2074169173178212621",
+          "author": {
+            "rest_id": "1713062826175299584",
+            "created_at": "Sat Oct 14 05:23:09 +0000 2023",
+            "name": "Avid",
+            "screen_name": "Av1dlive",
+            "avatar": "https://pbs.twimg.com/profile_images/2010392290590912512/x7vtAe5W_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072915082615402842",
+        "screen_name": "kingwilliam_",
+        "bookmarks": 640,
+        "favorites": 322,
+        "created_at": "Fri Jul 03 05:27:23 +0000 2026",
+        "text": "A 17-year-old made $412,000 this year building websites he never actually built.\n\nFour sites a day. $1,200 each.\n\nIn the video he shows the whole setup.\n\nHe just sits in his room and briefs Claude Fable 5. That's the whole job.\n\nFound a roofer in Ohio with 90 five-star reviews and no website in 15 years. Fed the reviews to Fable 5. Told it to design, build, and ship an award-winning site.\n\nWent to bed. Woke up to a finished site and a live control panel. Sent it over. Got paid $1,200.\n\nThe roofer climbs ladders for $300 a job. The kid does it from bed for $1,200.\n\nHe's 17. Says businesses with no website will never run out.\n\nWatch him break it down in the video. The full playbook is in the article below.",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          277
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 3,
+        "replies": 22,
+        "conversation_id": "2072915082615402842",
+        "retweets": 36,
+        "views": "59342",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "kingwilliam_",
+          "name": "KingWilliam",
+          "created_at": "Tue Jun 20 21:54:41 +0000 2023",
+          "description": "i love AI, AI doesn't love me.",
+          "rest_id": "1671275317938274305",
+          "followers_count": 65537,
+          "favourites_count": 36979,
+          "avatar": "https://pbs.twimg.com/profile_images/2063597986030956544/xJtWbaWo_normal.jpg",
+          "url": null,
+          "cover_image": "https://pbs.twimg.com/profile_banners/1671275317938274305/1780835075",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 1520,
+          "location": ""
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072914408334860288/img/4gopaVEjJlXintii.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2072914408334860288/pl/c_MB1oL8cUlWbcRL.m3u8?tag=28&v=cdb"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072914408334860288/vid/avc1/414x270/2UqubgB6CMdhYPFb.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072914408334860288/vid/avc1/554x360/4Gxj-t6wOEBF4qLO.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072914408334860288/vid/avc1/1108x720/29JvJVncUtGdQl18.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072914408334860288/vid/avc1/1662x1080/TBRM8T0qpCWFgIzp.mp4?tag=28"
+                },
+                {
+                  "bitrate": 25128000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072914408334860288/vid/avc1/3324x2160/_IBBxARvVBBT3nYK.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                277,
+                180
+              ],
+              "duration": 1133714,
+              "original_info": {
+                "focus_rects": [],
+                "height": 2160,
+                "width": 3324
+              },
+              "id": "2072914408334860288"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2072735773980250287",
+          "bookmarks": 301,
+          "created_at": "Thu Jul 02 17:34:52 +0000 2026",
+          "favorites": 102,
+          "text": "https://t.co/aGfor9K7UE",
+          "lang": "zxx",
+          "views": "164666",
+          "quotes": 11,
+          "replies": 8,
+          "retweets": 11,
+          "conversation_id": "2072735773980250287",
+          "author": {
+            "rest_id": "1671275317938274305",
+            "created_at": "Tue Jun 20 21:54:41 +0000 2023",
+            "name": "KingWilliam",
+            "screen_name": "kingwilliam_",
+            "avatar": "https://pbs.twimg.com/profile_images/2063597986030956544/xJtWbaWo_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2075156084718014649",
+        "screen_name": "humzaakhalid",
+        "bookmarks": 34,
+        "favorites": 23,
+        "created_at": "Thu Jul 09 09:52:19 +0000 2026",
+        "text": "this is f**king dangerous\n\nsomeone figured out how to make Opus 4.8 run on Fable 5's brain with one prompt\n\naccess to the best model is never guaranteed. It disappeared once already this year.\n\nbut you can use it forever. here's how:\n\n1. ask Fable 5:\n\"write the operating manual your replacement will run on\" (procedures, failure modes, a 5-question self-test)\n\n2. save the output as one .md file and drop it into a new Claude Project as the project instructions\n\n3. switch to Opus 4.8 and now your everyday model runs off the smart one's method, no top-tier price\n\nsave and bookmark this no matter what\n\nfull extraction prompt is in the article below: ↓",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          278
+        ],
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "quotes": 0,
+        "replies": 5,
+        "conversation_id": "2075156084718014649",
+        "retweets": 4,
+        "views": "4153",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "humzaakhalid",
+          "name": "Hamza Khalid",
+          "created_at": "Wed Apr 05 10:00:49 +0000 2023",
+          "description": "I create easy-to-read content on (AI in Public)\n\n📨 Collab@aiinpublic.com",
+          "rest_id": "1643554227615064065",
+          "followers_count": 59305,
+          "favourites_count": 78242,
+          "avatar": "https://pbs.twimg.com/profile_images/2062191018670501888/M7jUEryG_normal.jpg",
+          "url": "http://substack.com/@humzakhalid",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1643554227615064065/1780499629",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 570,
+          "location": "Become Irreplaceable with AI "
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2075156030766632960/img/bhh0sAyUBElJNL29.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2075156030766632960/pl/8tkwUKomErReojQz.m3u8?tag=14&v=cfc"
+                },
+                {
+                  "bitrate": 632000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075156030766632960/vid/avc1/320x400/4wLRRDsCIHGzQyjH.mp4?tag=14"
+                },
+                {
+                  "bitrate": 950000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075156030766632960/vid/avc1/480x600/F19pJxqG5VrMLa3O.mp4?tag=14"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075156030766632960/vid/avc1/720x900/xRCZInjoqFLE3Rrn.mp4?tag=14"
+                }
+              ],
+              "aspect_ratio": [
+                4,
+                5
+              ],
+              "duration": 18048,
+              "original_info": {
+                "focus_rects": [],
+                "height": 3600,
+                "width": 2880
+              },
+              "id": "2075156030766632960"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2075154136321167548",
+          "bookmarks": 21,
+          "created_at": "Thu Jul 09 09:44:35 +0000 2026",
+          "favorites": 18,
+          "text": "https://t.co/SKZ5JXy2Z2",
+          "lang": "zxx",
+          "views": "6114",
+          "quotes": 2,
+          "replies": 7,
+          "retweets": 5,
+          "conversation_id": "2075154136321167548",
+          "author": {
+            "rest_id": "1643554227615064065",
+            "created_at": "Wed Apr 05 10:00:49 +0000 2023",
+            "name": "Hamza Khalid",
+            "screen_name": "humzaakhalid",
+            "avatar": "https://pbs.twimg.com/profile_images/2062191018670501888/M7jUEryG_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2073601034195513830",
+        "screen_name": "thebuggeddev",
+        "bookmarks": 870,
+        "favorites": 949,
+        "created_at": "Sun Jul 05 02:53:06 +0000 2026",
+        "text": "Everyone is using Fable 5 to build funny little demos so I decided to build something better. \n\nVibe coded a 3D keyboard ecom platform in @threejs and @greensock. Every key. Every switch. Every color. Customizable in real time in 3D. \n\nIt's really amusing that whole keyboard is built at runtime using Procedural geometry. \n\nTo achieve that kind of realistic lighting on keyboard, it used a studio environment (gradient sky + softbox panels) rendered into a PMREM cubemap for realistic reflections. Opus helped a bit more here (as Fable was failing in loop in Claude chat)\n\nThere is also custom GLSL shaders for RGB underflow/skirt and as well sRGB output encoding + explicit convertSRGBToLinear() on every material color so caps render at their exact swatch value.\n\nI don't know any of these techniques and concepts but I have had been reading how both Fable and Opus were trying to approach this by digging into their \"thinking\" phase. \n\nGo try it, there is a cool Claude theme keyboard you would want to purchase too :D\n\nLive: https://t.co/YaenuyXvaV\nCode: https://t.co/alYsHFguYt",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          278
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 12,
+        "replies": 42,
+        "conversation_id": "2073601034195513830",
+        "retweets": 66,
+        "views": "88998",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [
+            {
+              "display_url": "modkeys.vercel.app",
+              "expanded_url": "https://modkeys.vercel.app/",
+              "indices": [
+                1030,
+                1053
+              ],
+              "url": "https://t.co/YaenuyXvaV"
+            },
+            {
+              "display_url": "github.com/thebuggeddev/m…",
+              "expanded_url": "https://github.com/thebuggeddev/modkeys",
+              "indices": [
+                1060,
+                1083
+              ],
+              "url": "https://t.co/alYsHFguYt"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id_str": "1155898067339501569",
+              "indices": [
+                138,
+                146
+              ],
+              "name": "Three.js",
+              "screen_name": "threejs"
+            },
+            {
+              "id_str": "24910558",
+              "indices": [
+                151,
+                161
+              ],
+              "name": "GSAP",
+              "screen_name": "greensock"
+            }
+          ]
+        },
+        "user_info": {
+          "screen_name": "thebuggeddev",
+          "name": "The Bugged Dev",
+          "created_at": "Tue Jan 21 08:56:42 +0000 2025",
+          "description": "A Human Bugged by Bugs | Software Developer | Design Engineer | Building with AI | Learning Three.js 🥳",
+          "rest_id": "1881626824188612608",
+          "followers_count": 4939,
+          "favourites_count": 1017,
+          "avatar": "https://pbs.twimg.com/profile_images/1956770434260910080/xVO3sbPP_normal.jpg",
+          "url": "https://github.com/thebuggeddev",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1881626824188612608/1755364045",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 13,
+          "location": ""
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2073600742062215168/img/x9wk4YsctegS_bPZ.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2073600742062215168/pl/lr0EXaGnlkBCSX_E.m3u8?tag=28"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073600742062215168/vid/avc1/428x270/dLWCJStaQxwAdpu4.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073600742062215168/vid/avc1/572x360/VmSWNxcM3MvS-cyn.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073600742062215168/vid/avc1/1144x720/xNrFy2nJjHFehjIB.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073600742062215168/vid/avc1/1716x1080/ncFDPzfsRX60HWRm.mp4?tag=28"
+                },
+                {
+                  "bitrate": 25128000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073600742062215168/vid/avc1/2938x1848/LrbmqR2BweqVBW43.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                1469,
+                924
+              ],
+              "duration": 100695,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1848,
+                "width": 2938
+              },
+              "id": "2073600742062215168"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072947324012355759",
+        "screen_name": "FinanceYF5",
+        "bookmarks": 147,
+        "favorites": 165,
+        "created_at": "Fri Jul 03 07:35:30 +0000 2026",
+        "text": "同一个prompt，同一份真实航班数据，分别丢给Sonnet 5和Fable 5，写单文件HTML做3D地球可视化。\n\n结果：Sonnet 5花0.1美元，画出来的地球基本是悬浮连线；Fable 5花0.77美元，海洋、冰盖、光晕全在，是个真地球。\n\n贵七倍，换来的是\"看得下去\"。这价差你买单吗？ https://t.co/49JrLfFeiS",
+        "lang": "zh",
+        "display_text_range": [
+          0,
+          149
+        ],
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "quotes": 1,
+        "replies": 18,
+        "conversation_id": "2072947324012355759",
+        "retweets": 10,
+        "views": "87735",
+        "entities": {
+          "media": [
+            {
+              "additional_media_info": {
+                "monetizable": false
+              },
+              "display_url": "pic.x.com/49JrLfFeiS",
+              "expanded_url": "https://x.com/FinanceYF5/status/2072947324012355759/video/1",
+              "ext_media_availability": {
+                "status": "Available"
+              },
+              "id_str": "2072947294593581056",
+              "indices": [
+                150,
+                173
+              ],
+              "media_key": "13_2072947294593581056",
+              "media_results": {
+                "result": {
+                  "media_key": "13_2072947294593581056"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072947294593581056/img/CBh1KpGFQEjXfxT-.jpg",
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1994
+              },
+              "sizes": {
+                "large": {
+                  "h": 1080,
+                  "resize": "fit",
+                  "w": 1994
+                },
+                "medium": {
+                  "h": 650,
+                  "resize": "fit",
+                  "w": 1200
+                },
+                "small": {
+                  "h": 368,
+                  "resize": "fit",
+                  "w": 680
+                },
+                "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                }
+              },
+              "type": "video",
+              "url": "https://t.co/49JrLfFeiS",
+              "video_info": {
+                "aspect_ratio": [
+                  997,
+                  540
+                ],
+                "duration_millis": 37848,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/amplify_video/2072947294593581056/pl/KLMclq8P4ciFk2JJ.m3u8?tag=14&v=cfc"
+                  },
+                  {
+                    "bitrate": 288000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072947294593581056/vid/avc1/498x270/F-cuWs4bb8gfeKZl.mp4?tag=14"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072947294593581056/vid/avc1/664x360/XBOg13FaSi1JJ-yB.mp4?tag=14"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072947294593581056/vid/avc1/1328x720/y4lgRuejGyBXGlfi.mp4?tag=14"
+                  }
+                ]
+              }
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "FinanceYF5",
+          "name": "AI Will",
+          "created_at": "Sun Jul 24 17:30:38 +0000 2022",
+          "description": "增长顾问 | AI行业分析师，Learn in Public",
+          "rest_id": "1551258526584115204",
+          "followers_count": 188966,
+          "favourites_count": 5615,
+          "avatar": "https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg",
+          "url": "https://linktr.ee/hanweilang",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1551258526584115204/1760393812",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 2530,
+          "location": "San Francisco Bay area"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072947294593581056/img/CBh1KpGFQEjXfxT-.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2072947294593581056/pl/KLMclq8P4ciFk2JJ.m3u8?tag=14&v=cfc"
+                },
+                {
+                  "bitrate": 288000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072947294593581056/vid/avc1/498x270/F-cuWs4bb8gfeKZl.mp4?tag=14"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072947294593581056/vid/avc1/664x360/XBOg13FaSi1JJ-yB.mp4?tag=14"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072947294593581056/vid/avc1/1328x720/y4lgRuejGyBXGlfi.mp4?tag=14"
+                }
+              ],
+              "aspect_ratio": [
+                997,
+                540
+              ],
+              "duration": 37848,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1994
+              },
+              "id": "2072947294593581056"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2073866139923370272",
+        "screen_name": "bored2boar",
+        "bookmarks": 981,
+        "favorites": 450,
+        "created_at": "Sun Jul 05 20:26:32 +0000 2026",
+        "text": "I asked Claude Fable 5 (Extra High) to build an arb bot for Polymarket.\n\nOne rule: trade only when YES + NO < $1\n\nDeposited $100 to test it.\n\n> in 2 hours it almost doubled it (+$96.31)\n> in 5 hours it showed +$579 PnL\n> current balance: +$3,799.73\n\nCost: 10M tokens.\n\nHere's how it works and why:\n\nEvery BTC Up/Down market on Polymarket has exactly two outcomes.\n\nYES and NO.\n\nWhen the market resolves, one pays $1.\nThe other pays $0.\n\nThat means owning BOTH sides should always cost exactly $1.\n\nBut markets aren't perfect.\n\nSometimes YES trades at $0.48 while NO trades at $0.49.\n\nTogether that's only $0.97 so the bot instantly buys both.\n\nA position worth $1... for just $0.97.\n\nAnd Claude knows it, this is the simplest arb that exists.\n\nYou can paste this to it and use this logic in your prompt.\n\nThis $0.03 difference is locked in regardless of whether Bitcoin pumps, dumps, or goes sideways.\n\nNo prediction required.\n\nAnd difficult part isn't finding the opportunity, it's execution.\n\nThese pricing gaps usually disappear in seconds.\n\nIf one order fills but the other doesn't, the trade can become a loss.\n\nSo my bot constantly scans every BTC market, checks fees, validates liquidity, places both orders almost simultaneously and skips what isn't worth the risk.\n\nIt's less like trading and more like catching tiny accounting mistakes before everyone else notices them.\n\nFunny enoughh, the hardest part was not writing arb logic.\n\nIt was making the execution reliable enough that free money actually stayed free.\n\nThis completely changed how I think about trading.\n\nWhat's the point of it if you can just fill mispriced BTC markets??\n\nAutomatically.\n\nThe biggest edge is getting AI to execute simple ideas faster and more consistently than any human ever could.\n\nShared the exact build in my last article, leaving it below.\n\nGood luck!",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          291
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 4,
+        "replies": 48,
+        "conversation_id": "2073866139923370272",
+        "retweets": 95,
+        "views": "141284",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "bored2boar",
+          "name": "Oracle Boar",
+          "created_at": "Sun Apr 21 17:58:37 +0000 2024",
+          "description": "𝗢𝗻-𝗖𝗵𝗮𝗶𝗻 𝗜𝗻𝘃𝗲𝘀𝘁𝗶𝗴𝗮𝘁𝗶𝗼𝗻𝘀 / 𝗣𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻 𝗺𝗮𝗿𝗸𝗲𝘁𝘀 / 𝗗𝗲𝗙𝗶 𝗺𝗼𝘃𝗲𝘀",
+          "rest_id": "1782106553291591680",
+          "followers_count": 25513,
+          "favourites_count": 14235,
+          "avatar": "https://pbs.twimg.com/profile_images/1846496344120180736/ChaiJ1TD_normal.jpg",
+          "url": "https://t.me/+gGA6iFNsC3E1YzI8",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1782106553291591680/1729077737",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 574,
+          "location": "More alpha →"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2073865916966653952/img/sj3wwT5hST0lSkhu.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2073865916966653952/pl/PDucS9nXMSZsb705.m3u8?tag=28"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073865916966653952/vid/avc1/400x270/cam21_URxJBRaX1g.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073865916966653952/vid/avc1/534x360/hy4Zx2PcbVH60Ea3.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073865916966653952/vid/avc1/1070x720/no_AJgDTGrJ33EK8.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073865916966653952/vid/avc1/1824x1226/BWMcBDLVigztFCTn.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                912,
+                613
+              ],
+              "duration": 41191,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1226,
+                "width": 1824
+              },
+              "id": "2073865916966653952"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2073742498434842692",
+          "bookmarks": 215,
+          "created_at": "Sun Jul 05 12:15:14 +0000 2026",
+          "favorites": 70,
+          "text": "https://t.co/zoKYjJrH4q",
+          "lang": "zxx",
+          "views": "250392",
+          "quotes": 4,
+          "replies": 7,
+          "retweets": 11,
+          "conversation_id": "2073742498434842692",
+          "author": {
+            "rest_id": "1782106553291591680",
+            "created_at": "Sun Apr 21 17:58:37 +0000 2024",
+            "name": "Oracle Boar",
+            "screen_name": "bored2boar",
+            "avatar": "https://pbs.twimg.com/profile_images/1846496344120180736/ChaiJ1TD_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072845156630360248",
+        "screen_name": "markgadala",
+        "bookmarks": 4429,
+        "favorites": 4018,
+        "created_at": "Fri Jul 03 00:49:31 +0000 2026",
+        "text": "Fable 5 is so good at web design that I genuinely don't see how web design careers make it past the end of this year.\n\nAn AI that can one shot designs this good means that the web design industry as a whole is in serious trouble.\n\nIf you're in web design, it's time to pivot. https://t.co/v8eOIsWj25",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          275
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 60,
+        "replies": 216,
+        "conversation_id": "2072845156630360248",
+        "retweets": 262,
+        "views": "531676",
+        "entities": {
+          "media": [
+            {
+              "additional_media_info": {
+                "monetizable": false
+              },
+              "allow_download_status": {
+                "allow_download": true
+              },
+              "display_url": "pic.x.com/v8eOIsWj25",
+              "expanded_url": "https://x.com/markgadala/status/2072845156630360248/video/1",
+              "ext_media_availability": {
+                "status": "Available"
+              },
+              "id_str": "2072844843387117568",
+              "indices": [
+                276,
+                299
+              ],
+              "media_key": "13_2072844843387117568",
+              "media_results": {
+                "result": {
+                  "media_key": "13_2072844843387117568"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072844843387117568/img/0Q1HLsp-hXGpRsKH.jpg",
+              "original_info": {
+                "focus_rects": [],
+                "height": 478,
+                "width": 854
+              },
+              "sizes": {
+                "large": {
+                  "h": 478,
+                  "resize": "fit",
+                  "w": 854
+                },
+                "medium": {
+                  "h": 478,
+                  "resize": "fit",
+                  "w": 854
+                },
+                "small": {
+                  "h": 381,
+                  "resize": "fit",
+                  "w": 680
+                },
+                "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                }
+              },
+              "type": "video",
+              "url": "https://t.co/v8eOIsWj25",
+              "video_info": {
+                "aspect_ratio": [
+                  427,
+                  239
+                ],
+                "duration_millis": 24833,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/amplify_video/2072844843387117568/pl/Wr2l3ORZUHV_tsPC.m3u8?tag=28&v=cfc"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072844843387117568/vid/avc1/482x270/Mpz24uMZ-pPY0I3P.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072844843387117568/vid/avc1/854x478/qC4UIESCAfcsH2SL.mp4?tag=28"
+                  }
+                ]
+              }
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "markgadala",
+          "name": "Mark Gadala-Maria",
+          "created_at": "Tue Apr 23 21:39:44 +0000 2013",
+          "description": "Helping Businesses Implement AI. AI Driven SEO Software: @postcheetah YouTube: https://t.co/fmpsf4kInv",
+          "rest_id": "1375529736",
+          "followers_count": 75827,
+          "favourites_count": 3856,
+          "avatar": "https://pbs.twimg.com/profile_images/1904279027013001216/STf4Q5To_normal.jpg",
+          "url": "http://lucidaistrategies.com",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1375529736/1746049197",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 521,
+          "location": "Hire Me →"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072844843387117568/img/0Q1HLsp-hXGpRsKH.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2072844843387117568/pl/Wr2l3ORZUHV_tsPC.m3u8?tag=28&v=cfc"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072844843387117568/vid/avc1/482x270/Mpz24uMZ-pPY0I3P.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072844843387117568/vid/avc1/854x478/qC4UIESCAfcsH2SL.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                427,
+                239
+              ],
+              "duration": 24833,
+              "original_info": {
+                "focus_rects": [],
+                "height": 478,
+                "width": 854
+              },
+              "id": "2072844843387117568"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2074877988139897338",
+        "screen_name": "EXM7777",
+        "bookmarks": 449,
+        "favorites": 827,
+        "created_at": "Wed Jul 08 15:27:16 +0000 2026",
+        "text": "cancel all your plans for tomorrow\n\nfor the first time in history we'll have absolute supernovas sitting inside the best harnesses that exist\n\nyou could use GPT-5.6 Sol and Fable 5 to plan, orchestrate and execute any project you could ever think of\n\nbasically bring to life any idea that crosses your mind\n\nthis isn't the time to build in public, grind weekend projects or watch the world cup\n\nget as many Claude and ChatGPT subs as you can, go in debt if you have to\n\nit's time to leverage this next generation of models and get f*cking rich",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          278
+        ],
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "quotes": 7,
+        "replies": 49,
+        "conversation_id": "2074877988139897338",
+        "retweets": 28,
+        "views": "86869",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "EXM7777",
+          "name": "Machina",
+          "created_at": "Fri Feb 13 01:29:11 +0000 2015",
+          "description": "running ai-powered agencies | https://t.co/fMOmHWBgHG",
+          "rest_id": "3033730635",
+          "followers_count": 124022,
+          "favourites_count": 4122,
+          "avatar": "https://pbs.twimg.com/profile_images/1922574051580563456/-OFXIxnm_normal.jpg",
+          "url": "http://machina.fyi",
+          "cover_image": "https://pbs.twimg.com/profile_banners/3033730635/1747212367",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 582,
+          "location": ""
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074877922821959680/img/RiFxfnJNRu9G-Pti.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074877922821959680/pl/m0k5jzb0QRufmsYo.m3u8?tag=14&v=5f4"
+                },
+                {
+                  "bitrate": 288000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074877922821959680/vid/avc1/506x270/zvYO6i1T4aJ6oStw.mp4?tag=14"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074877922821959680/vid/avc1/720x384/sAS9XCt9AibHJLeJ.mp4?tag=14"
+                }
+              ],
+              "aspect_ratio": [
+                15,
+                8
+              ],
+              "duration": 37533,
+              "original_info": {
+                "focus_rects": [],
+                "height": 384,
+                "width": 720
+              },
+              "id": "2074877922821959680"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2074833180864237630",
+        "screen_name": "PrajwalTomar_",
+        "bookmarks": 846,
+        "favorites": 228,
+        "created_at": "Wed Jul 08 12:29:13 +0000 2026",
+        "text": "this is f*cking gold.\n\nI told Fable 5 it's a retiring engineer on its last week, and its final task is to leave everything behind for the team replacing it.\n\nIt read my entire git history. Every mistake, every dead end, every fix that finally worked. Then it started writing them into skill files so the cheaper models replacing it never repeat what I got wrong.\n\nFable leaves July 12. What it leaves behind is up to you.\n\n(full breakdown in the article below)",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          279
+        ],
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "quotes": 0,
+        "replies": 12,
+        "conversation_id": "2074833180864237630",
+        "retweets": 18,
+        "views": "120435",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "PrajwalTomar_",
+          "name": "Prajwal Tomar",
+          "created_at": "Thu Jul 06 10:50:06 +0000 2023",
+          "description": "I build MVPs for founders in 21 days at @ignytlabs and teach others how to do the same inside @aimvpbuilders.",
+          "rest_id": "1676906284715503617",
+          "followers_count": 56267,
+          "favourites_count": 16051,
+          "avatar": "https://pbs.twimg.com/profile_images/1994957908099125248/9AaluzL-_normal.jpg",
+          "url": "https://www.skool.com/ai-mvp-builders/about",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1676906284715503617/1764425899",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 242,
+          "location": ""
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074833129689554946/img/dLXl_OGvIMbovqkh.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074833129689554946/pl/jKKDlFtUH5xeXNwA.m3u8?tag=14&v=cfc"
+                },
+                {
+                  "bitrate": 288000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074833129689554946/vid/avc1/480x270/6NQbGrsJGEU3TvSV.mp4?tag=14"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074833129689554946/vid/avc1/640x360/12Nc1f86pX2BGtBK.mp4?tag=14"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074833129689554946/vid/avc1/1280x720/rF_ugAJIR_cEgEJ3.mp4?tag=14"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 11139,
+              "original_info": {
+                "focus_rects": [],
+                "height": 720,
+                "width": 1280
+              },
+              "id": "2074833129689554946"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2074810260271800596",
+          "bookmarks": 278,
+          "created_at": "Wed Jul 08 10:58:08 +0000 2026",
+          "favorites": 57,
+          "text": "https://t.co/4EgB4eOzF6",
+          "lang": "zxx",
+          "views": "131344",
+          "quotes": 1,
+          "replies": 1,
+          "retweets": 5,
+          "conversation_id": "2074810260271800596",
+          "author": {
+            "rest_id": "1676906284715503617",
+            "created_at": "Thu Jul 06 10:50:06 +0000 2023",
+            "name": "Prajwal Tomar",
+            "screen_name": "PrajwalTomar_",
+            "avatar": "https://pbs.twimg.com/profile_images/1994957908099125248/9AaluzL-_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2075165634162286627",
+        "screen_name": "undefinedKi",
+        "bookmarks": 51,
+        "favorites": 37,
+        "created_at": "Thu Jul 09 10:30:16 +0000 2026",
+        "text": "Do these 5 things in Fable 5 before July 12, while the smartest model on earth is still free\n\nAnthropic extended free Fable 5 access on paid plans to July 12. So don't waste the smartest model on throwaway tasks. Point it at meta-work, the stuff that upgrades everything else you do. Daniel Miessler's framing, and it's the right one.\n\n1. Fix your harness. Audit your whole setup and find what's working against your actual goal.\n\n2. Audit your security. Stress-test your prompt-injection defense and map the attack surface of everything you've deployed.\n\n3. Run a self-model audit. Feed it your projects, writing, history, and ask what you should actually focus on.\n\n4. Ask what's about to break. What goes obsolete and what 10x's as frontier AI moves.\n\n5. Ask your one hardest question. If you had a super-intelligence for a few days, what would it be?\n\nThe point isn't bigger tasks. It's deeper work that pays off after the window closes.\n\nBookmark this.",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          279
+        ],
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "quotes": 0,
+        "replies": 15,
+        "conversation_id": "2075165634162286627",
+        "retweets": 5,
+        "views": "5093",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "undefinedKi",
+          "name": "Yarchi",
+          "created_at": "Fri Mar 06 17:02:33 +0000 2015",
+          "description": "AI & tech researcher | Building cool stuff | Sharing everything I learn",
+          "rest_id": "3075199947",
+          "followers_count": 10378,
+          "favourites_count": 11527,
+          "avatar": "https://pbs.twimg.com/profile_images/2054664188417413120/DZKz0Tqn_normal.jpg",
+          "url": "https://polymarket.com/?r=yarosslav",
+          "cover_image": "https://pbs.twimg.com/profile_banners/3075199947/1778704231",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 372,
+          "location": ""
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074998091116167168/img/RL3wphaM5ysNkTR8.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074998091116167168/pl/3Qzf3X0WBqK1KvBV.m3u8?tag=28&v=d06"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074998091116167168/vid/avc1/480x270/v-ujj-coofXjiEte.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074998091116167168/vid/avc1/640x360/WSjpTNA_8qDpvupb.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074998091116167168/vid/avc1/1280x720/u7hmjGkan9mRSuF4.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074998091116167168/vid/avc1/1920x1080/WZkgfLi84Ug1Bowr.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 476567,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2074998091116167168"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2073422824299978929",
+          "bookmarks": 521,
+          "created_at": "Sat Jul 04 15:04:58 +0000 2026",
+          "favorites": 185,
+          "text": "https://t.co/Vxo2pYgEQ9",
+          "lang": "zxx",
+          "views": "421256",
+          "quotes": 25,
+          "replies": 30,
+          "retweets": 21,
+          "conversation_id": "2073422824299978929",
+          "author": {
+            "rest_id": "3075199947",
+            "created_at": "Fri Mar 06 17:02:33 +0000 2015",
+            "name": "Yarchi",
+            "screen_name": "undefinedKi",
+            "avatar": "https://pbs.twimg.com/profile_images/2054664188417413120/DZKz0Tqn_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2074796427595874636",
+        "screen_name": "Av1dlive",
+        "bookmarks": 3458,
+        "favorites": 1651,
+        "created_at": "Wed Jul 08 10:03:10 +0000 2026",
+        "text": "Fable 5 is here to stay in Claude Code till July 12th\n\nso this guy just mapped the entire fable 5 agentic workflows into 9 diagrams\n\n> the daily loop, trust ledger, standing goals + the 4 optional loops\n> every one flow-mapped, numbered, editable in excalidraw\n> each paired with the exact script that runs it and the check that proves it worked\n\nplus it's free... all you do is send these screenshots to Claude:\n\nsave and bookmark this no matter what",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          288
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 10,
+        "replies": 76,
+        "conversation_id": "2074796427595874636",
+        "retweets": 168,
+        "views": "357236",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "Av1dlive",
+          "name": "Avid",
+          "created_at": "Sat Oct 14 05:23:09 +0000 2023",
+          "description": "I write, read and build | I normie-maxx | building harness-agnostic memory for ai agents",
+          "rest_id": "1713062826175299584",
+          "followers_count": 18543,
+          "favourites_count": 31583,
+          "avatar": "https://pbs.twimg.com/profile_images/2010392290590912512/x7vtAe5W_normal.jpg",
+          "url": "https://github.com/codejunkie99/agentic-stack",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1713062826175299584/1782045055",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 390,
+          "location": "bruh "
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074796089740574720/img/5IgI7WU2CetQ5Ep4.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074796089740574720/pl/2UoCJCj9qsgf4frg.m3u8?tag=28&v=cfc"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074796089740574720/vid/avc1/446x270/OOSZGI8XBiBt_6LO.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074796089740574720/vid/avc1/594x360/WjZx-87Jabt24V4r.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074796089740574720/vid/avc1/1188x720/Nlz5Pl9z9Vu13SSx.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074796089740574720/vid/avc1/1784x1080/QKNsvibiCSFPKgll.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                223,
+                135
+              ],
+              "duration": 29083,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1784
+              },
+              "id": "2074796089740574720"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2074169173178212621",
+          "bookmarks": 4642,
+          "created_at": "Mon Jul 06 16:30:41 +0000 2026",
+          "favorites": 1052,
+          "text": "https://t.co/FxhU42i1xY",
+          "lang": "zxx",
+          "views": "1724182",
+          "quotes": 40,
+          "replies": 59,
+          "retweets": 139,
+          "conversation_id": "2074169173178212621",
+          "author": {
+            "rest_id": "1713062826175299584",
+            "created_at": "Sat Oct 14 05:23:09 +0000 2023",
+            "name": "Avid",
+            "screen_name": "Av1dlive",
+            "avatar": "https://pbs.twimg.com/profile_images/2010392290590912512/x7vtAe5W_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2075215989835464964",
+        "screen_name": "humzaakhalid",
+        "bookmarks": 15,
+        "favorites": 14,
+        "created_at": "Thu Jul 09 13:50:22 +0000 2026",
+        "text": "An asian guy just found a way to use Fable 5 forever, even though Anthropic is going to make it access-limited after 12th July.\n\nHe used Opus 4.8 to host the operating manual of fable 5 with just one single prompt.\n\nAccess to the best model is never guaranteed. It disappeared once already this year.\n\nBut you can use it forever. Here's how:\n\n1.  Extract the operating manual of Fable 5\n2. Create an .md file and save it on your device\n3. Create a new project \"Fable 5 Brain\" in Claude\n4. Paste the instructions/ .md file straight into it\n5. Run a pressure test to verify\n\nSave and bookmark this no matter what\n\nFull extraction prompt and practical guide are in the article below: ↓",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          276
+        ],
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "quotes": 0,
+        "replies": 4,
+        "conversation_id": "2075215989835464964",
+        "retweets": 1,
+        "views": "1522",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "humzaakhalid",
+          "name": "Hamza Khalid",
+          "created_at": "Wed Apr 05 10:00:49 +0000 2023",
+          "description": "I create easy-to-read content on (AI in Public)\n\n📨 Collab@aiinpublic.com",
+          "rest_id": "1643554227615064065",
+          "followers_count": 59305,
+          "favourites_count": 78242,
+          "avatar": "https://pbs.twimg.com/profile_images/2062191018670501888/M7jUEryG_normal.jpg",
+          "url": "http://substack.com/@humzakhalid",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1643554227615064065/1780499629",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 570,
+          "location": "Become Irreplaceable with AI "
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2075215908218470400/img/Mimh_bf0aDxTwGh-.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2075215908218470400/pl/tLDH8Z3DuFOD8sqD.m3u8?tag=14"
+                },
+                {
+                  "bitrate": 288000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075215908218470400/vid/avc1/400x270/mHhHDjTY6XCOC2rc.mp4?tag=14"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075215908218470400/vid/avc1/534x360/TWTCT1yaY_RTZZN6.mp4?tag=14"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075215908218470400/vid/avc1/1070x720/XvEBPnINJFJSySTk.mp4?tag=14"
+                }
+              ],
+              "aspect_ratio": [
+                803,
+                540
+              ],
+              "duration": 30516,
+              "original_info": {
+                "focus_rects": [],
+                "height": 2160,
+                "width": 3212
+              },
+              "id": "2075215908218470400"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2075154136321167548",
+          "bookmarks": 21,
+          "created_at": "Thu Jul 09 09:44:35 +0000 2026",
+          "favorites": 18,
+          "text": "https://t.co/SKZ5JXy2Z2",
+          "lang": "zxx",
+          "views": "6114",
+          "quotes": 2,
+          "replies": 7,
+          "retweets": 5,
+          "conversation_id": "2075154136321167548",
+          "author": {
+            "rest_id": "1643554227615064065",
+            "created_at": "Wed Apr 05 10:00:49 +0000 2023",
+            "name": "Hamza Khalid",
+            "screen_name": "humzaakhalid",
+            "avatar": "https://pbs.twimg.com/profile_images/2062191018670501888/M7jUEryG_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072690092385411366",
+        "screen_name": "NBhargava18",
+        "bookmarks": 43,
+        "favorites": 83,
+        "created_at": "Thu Jul 02 14:33:21 +0000 2026",
+        "text": "Fable 5 is delivering in Blender! \n\nWe benchmarked Fable, GLM, Sonnet 5, and GPT 5.5 side-by-side (raw outputs only).\n\nWhile GPT 5.5 went wild with overexposed lighting, Fable 5 dropped a remarkably clean final render. https://t.co/aqyXDu6OPf",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          218
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 6,
+        "replies": 9,
+        "conversation_id": "2072690092385411366",
+        "retweets": 8,
+        "views": "15579",
+        "entities": {
+          "media": [
+            {
+              "additional_media_info": {
+                "monetizable": false
+              },
+              "allow_download_status": {
+                "allow_download": true
+              },
+              "display_url": "pic.x.com/aqyXDu6OPf",
+              "expanded_url": "https://x.com/NBhargava18/status/2072690092385411366/video/1",
+              "ext_media_availability": {
+                "status": "Available"
+              },
+              "id_str": "2072683542270881792",
+              "indices": [
+                219,
+                242
+              ],
+              "media_key": "13_2072683542270881792",
+              "media_results": {
+                "result": {
+                  "media_key": "13_2072683542270881792"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072683542270881792/img/t5TLoIoJqvy5PBZt.jpg",
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1080
+              },
+              "sizes": {
+                "large": {
+                  "h": 1080,
+                  "resize": "fit",
+                  "w": 1080
+                },
+                "medium": {
+                  "h": 1080,
+                  "resize": "fit",
+                  "w": 1080
+                },
+                "small": {
+                  "h": 680,
+                  "resize": "fit",
+                  "w": 680
+                },
+                "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                }
+              },
+              "type": "video",
+              "url": "https://t.co/aqyXDu6OPf",
+              "video_info": {
+                "aspect_ratio": [
+                  1,
+                  1
+                ],
+                "duration_millis": 8333,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/amplify_video/2072683542270881792/pl/v8xbHb974NzWUHP5.m3u8?tag=28"
+                  },
+                  {
+                    "bitrate": 432000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/320x320/6Q-o-sSnrQczegzq.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/540x540/v484o_e_U79caEEp.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 1280000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/720x720/YrP_mileISL9Naf2.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 8768000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/1080x1080/p_tcAjFDXRSkMSUh.mp4?tag=28"
+                  }
+                ]
+              }
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "NBhargava18",
+          "name": "Naman bhargava",
+          "created_at": "Sun Sep 11 06:16:30 +0000 2016",
+          "description": "Founder @Mixie3D | Building AI for the next generation of 3D artists.",
+          "rest_id": "774854107030925312",
+          "followers_count": 84,
+          "favourites_count": 80,
+          "avatar": "https://pbs.twimg.com/profile_images/1884539707608154112/9NQyd_lq_normal.jpg",
+          "url": null,
+          "cover_image": "https://pbs.twimg.com/profile_banners/774854107030925312/1766498113",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 180,
+          "location": "San Fransisco"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072683542270881792/img/t5TLoIoJqvy5PBZt.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2072683542270881792/pl/v8xbHb974NzWUHP5.m3u8?tag=28"
+                },
+                {
+                  "bitrate": 432000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/320x320/6Q-o-sSnrQczegzq.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/540x540/v484o_e_U79caEEp.mp4?tag=28"
+                },
+                {
+                  "bitrate": 1280000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/720x720/YrP_mileISL9Naf2.mp4?tag=28"
+                },
+                {
+                  "bitrate": 8768000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072683542270881792/vid/avc1/1080x1080/p_tcAjFDXRSkMSUh.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                1,
+                1
+              ],
+              "duration": 8333,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1080
+              },
+              "id": "2072683542270881792"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072896462154084558",
+        "screen_name": "adamlyttleapps",
+        "bookmarks": 316,
+        "favorites": 674,
+        "created_at": "Fri Jul 03 04:13:23 +0000 2026",
+        "text": "\"Hey Fable 5, turn my kids toy into a mobile game. Make no mistakes…\" https://t.co/uEJjpcP3DV",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          69
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 15,
+        "replies": 49,
+        "conversation_id": "2072896462154084558",
+        "retweets": 13,
+        "views": "592974",
+        "entities": {
+          "media": [
+            {
+              "additional_media_info": {
+                "monetizable": false
+              },
+              "allow_download_status": {
+                "allow_download": true
+              },
+              "display_url": "pic.x.com/uEJjpcP3DV",
+              "expanded_url": "https://x.com/adamlyttleapps/status/2072896462154084558/video/1",
+              "ext_media_availability": {
+                "status": "Available"
+              },
+              "id_str": "2072896224974528512",
+              "indices": [
+                70,
+                93
+              ],
+              "media_key": "13_2072896224974528512",
+              "media_results": {
+                "result": {
+                  "media_key": "13_2072896224974528512"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072896224974528512/img/SKJMSgFBXRkrrgne.jpg",
+              "original_info": {
+                "focus_rects": [],
+                "height": 3840,
+                "width": 2160
+              },
+              "sizes": {
+                "large": {
+                  "h": 2048,
+                  "resize": "fit",
+                  "w": 1152
+                },
+                "medium": {
+                  "h": 1200,
+                  "resize": "fit",
+                  "w": 675
+                },
+                "small": {
+                  "h": 680,
+                  "resize": "fit",
+                  "w": 383
+                },
+                "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                }
+              },
+              "type": "video",
+              "url": "https://t.co/uEJjpcP3DV",
+              "video_info": {
+                "aspect_ratio": [
+                  9,
+                  16
+                ],
+                "duration_millis": 45945,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/amplify_video/2072896224974528512/pl/X0jZKoHHweZOYCxR.m3u8?tag=28&v=cfc"
+                  },
+                  {
+                    "bitrate": 632000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/320x568/dEfwshyzCOY7tDvz.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 950000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/480x852/OUNsCRyi7WcYoSKz.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/720x1280/Mww7mSvlSjlZNhHj.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 10368000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/1080x1920/6Szx_6xUPlMLJ3lF.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 25128000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/2160x3840/VGnQ8-bNpdFvXrKP.mp4?tag=28"
+                  }
+                ]
+              }
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "adamlyttleapps",
+          "name": "Adam Lyttle",
+          "created_at": "Sun Jul 15 01:54:20 +0000 2007",
+          "description": "indie app dev is my special interest\n📱 https://t.co/Cr5HgmUwqi\n↗️ https://t.co/fIvl9YVKOS\n💎 https://t.co/0YZGoIZPuf",
+          "rest_id": "7479922",
+          "followers_count": 56066,
+          "favourites_count": 56556,
+          "avatar": "https://pbs.twimg.com/profile_images/1607976871068848131/AR8nW07q_normal.jpg",
+          "url": "https://youtube.com/@adamlyttleapps",
+          "cover_image": "https://pbs.twimg.com/profile_banners/7479922/1781611778",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 1125,
+          "location": "Melbourne, Australia"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2072896224974528512/img/SKJMSgFBXRkrrgne.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2072896224974528512/pl/X0jZKoHHweZOYCxR.m3u8?tag=28&v=cfc"
+                },
+                {
+                  "bitrate": 632000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/320x568/dEfwshyzCOY7tDvz.mp4?tag=28"
+                },
+                {
+                  "bitrate": 950000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/480x852/OUNsCRyi7WcYoSKz.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/720x1280/Mww7mSvlSjlZNhHj.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/1080x1920/6Szx_6xUPlMLJ3lF.mp4?tag=28"
+                },
+                {
+                  "bitrate": 25128000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2072896224974528512/vid/avc1/2160x3840/VGnQ8-bNpdFvXrKP.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                9,
+                16
+              ],
+              "duration": 45945,
+              "original_info": {
+                "focus_rects": [],
+                "height": 3840,
+                "width": 2160
+              },
+              "id": "2072896224974528512"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2073480119985856925",
+        "screen_name": "doublenickk",
+        "bookmarks": 460,
+        "favorites": 293,
+        "created_at": "Sat Jul 04 18:52:38 +0000 2026",
+        "text": "Fable 5 and Karpathy's knowledge base trick are basically a cheat code. Someone just dropped a full walkthrough on building the most powerful second brain ever\n\nAndrej Karpathy shared a simple idea: use an LLM to build personal knowledge bases. Index your sources, let the model organize them, and use Obsidian as the front end.\n\nSomeone just built the full thing with Claude Code and Fable 5, and walked through every step\n\nYou drop your sources into a folder (YouTube transcripts, PDFs, articles, meeting notes) and Claude Code reads them, splits them into linked wiki pages, and builds a living second brain that connects everything. It grows on its own as you add more.\n\nWhere Fable 5 pulls ahead: it found a connection buried across two sources you'd miss reading them separately. And asked to turn the messy web of links into something a beginner could understand, it produced clean, simple HTML in one shot. The same task took a full day on Opus 4.8 and came out worse.\n\nThe best part: it's all just markdown files with routing. So it's not locked to Claude Code. Plug it into Codex or any agent you want.\n\nGive your AI a real knowledge base, and it stops guessing and starts knowing.\n\nBookmark this.",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          278
+        ],
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "quotes": 1,
+        "replies": 34,
+        "conversation_id": "2073480119985856925",
+        "retweets": 37,
+        "views": "45928",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "doublenickk",
+          "name": "Shadow Nick",
+          "created_at": "Sat Jul 08 23:22:12 +0000 2023",
+          "description": "Co-founder @CloseAI_hq | AI has already taken over the world | Team: @WowmaxExchange",
+          "rest_id": "1677820368751403008",
+          "followers_count": 12626,
+          "favourites_count": 60377,
+          "avatar": "https://pbs.twimg.com/profile_images/1842562391172644864/mpz7b-q8_normal.jpg",
+          "url": "https://t.me/nickgalaxyalpha",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1677820368751403008/1763222921",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 1232,
+          "location": "More Alpha →"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2073479953333571584/img/319xFsDD0VWRgvlZ.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2073479953333571584/pl/ltxeqHPYLGBmVyYq.m3u8?tag=28&v=924"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073479953333571584/vid/avc1/480x270/LKJ0YrccJ_SkMmSC.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073479953333571584/vid/avc1/640x360/rQebbv1gBElStFZA.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073479953333571584/vid/avc1/1280x720/yXyYdXvvWZNQ6XPE.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2073479953333571584/vid/avc1/1920x1080/0HVl8RGilLCDe2d9.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 874533,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2073479953333571584"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2073422824299978929",
+          "bookmarks": 521,
+          "created_at": "Sat Jul 04 15:04:58 +0000 2026",
+          "favorites": 185,
+          "text": "https://t.co/Vxo2pYgEQ9",
+          "lang": "zxx",
+          "views": "421256",
+          "quotes": 25,
+          "replies": 30,
+          "retweets": 21,
+          "conversation_id": "2073422824299978929",
+          "author": {
+            "rest_id": "3075199947",
+            "created_at": "Fri Mar 06 17:02:33 +0000 2015",
+            "name": "Yarchi",
+            "screen_name": "undefinedKi",
+            "avatar": "https://pbs.twimg.com/profile_images/2054664188417413120/DZKz0Tqn_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2069086695153160287",
+        "screen_name": "0xCodez",
+        "bookmarks": 1742,
+        "favorites": 914,
+        "created_at": "Mon Jun 22 15:54:44 +0000 2026",
+        "text": "Creator of Claude Code:  \n\n“Fable 5 is writing 100% of my code now. It’s at least 3x more powerful than Opus.”\n\nEvery problem I gave to Fable, it one-shotted. I’m running out of coding problems for it.\n\nin 40-minute talk Boris explain how to unlock 100% potential of Claude new models\n\nFable 5 + loops + dynamic workflows + routines- that’s the secret \n\nWorth more then 500$ vibe-coding course",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          277
+        ],
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "quotes": 10,
+        "replies": 104,
+        "conversation_id": "2069086695153160287",
+        "retweets": 80,
+        "views": "274275",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "0xCodez",
+          "name": "Codez",
+          "created_at": "Tue May 12 13:23:44 +0000 2026",
+          "description": "Content creator | AI researcher & builder | AI insights from 2030 | @zscdao",
+          "rest_id": "2054190711243710464",
+          "followers_count": 19999,
+          "favourites_count": 1302,
+          "avatar": "https://pbs.twimg.com/profile_images/2054197823738871808/3M0Lf362_normal.jpg",
+          "url": "https://substack.com/@0xmovez",
+          "cover_image": "https://pbs.twimg.com/profile_banners/2054190711243710464/1778599195",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 98,
+          "location": "San Francisco"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2069085429119246336/img/OJYAnSqRlwZTFTVo.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2069085429119246336/pl/fePJ2fSgPYiXLQpm.m3u8?tag=28&v=683"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2069085429119246336/vid/avc1/480x270/ZGw0Swrpy4KOEEKw.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2069085429119246336/vid/avc1/640x360/Bn7z6OteaZupDIg0.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2069085429119246336/vid/avc1/1280x720/pzfkTzXZFGAYHCdq.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2069085429119246336/vid/avc1/1920x1080/a3_JDTGi2JvZXSt-.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 2426720,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2069085429119246336"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2065089060104720776",
+          "bookmarks": 6999,
+          "created_at": "Thu Jun 11 15:09:34 +0000 2026",
+          "favorites": 2196,
+          "text": "https://t.co/hmpJtXuXCq",
+          "lang": "zxx",
+          "views": "4814082",
+          "quotes": 76,
+          "replies": 56,
+          "retweets": 345,
+          "conversation_id": "2065089060104720776",
+          "author": {
+            "rest_id": "2054190711243710464",
+            "created_at": "Tue May 12 13:23:44 +0000 2026",
+            "name": "Codez",
+            "screen_name": "0xCodez",
+            "avatar": "https://pbs.twimg.com/profile_images/2054197823738871808/3M0Lf362_normal.jpg",
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2075021933801013352",
+        "screen_name": "codewithimanshu",
+        "bookmarks": 215,
+        "favorites": 252,
+        "created_at": "Thu Jul 09 00:59:15 +0000 2026",
+        "text": "I made $32,400 in 14 days copy-trading a Chinese student who turned $0.90 into $408,292 on Polymarket in 48 hours.\n\nOne Claude FABLE 5 prompt. 20 minutes.\nA bot that prints money in the 100ms gap between Binance spot and Polymarket CLOB.\n\nI've made the exact build guide. Giving It Free for 24 hours.\n\nTo get it:\n1. Comment \"FABLE\"\n2. Like and Retweet\n3. Follow me @codewithimanshu (Only then, i can DM you)\n\nYou only need Claude + a device + 1 hour/day.\nThe wallet that started this.\n\nHis handle: Gravia on Polymarket.\nOnly 2 days old. Almost zero viewers.\n$0.90 to $408K in 48 hours.\n\nI reverse-engineered his terminal.\nHad Claude build the same bot from one prompt.\n\n20 minutes. Done.\n\nWhat the bot actually does:\n\n→ Pulls real-time BTC data from Binance WebSocket + 5M K-lines\n→ Cross-references TradingView signals + CryptoQuant exchange flows\n→ Uses MiroFish force-graph engine to map 100 nodes / 180 edges\n→ Detects convergence in BEAR / BULL clusters\n→ Catches moments when Polymarket CLOB lags spot price by >0.3%\n→ Executes in <100ms before contract reprices\n→ 1,000+ orders per second on UP/DOWN 5MIN markets\n→ Grabs 0.3-0.8% per trade\n→ Skips if no edge, thin liquidity, signal conflicts, or daily cap hits\n\nRisk controls baked in:\n→ Per-trade risk: 0.5%\n→ Daily cap: 2%\n→ Hard stop: -0.4%\n→ Runs on local terminal\n→ No cloud. No GPU.\n\nThe edge:\n→ Not predicting BTC\n→ Exploiting Polymarket's 100ms CLOB lag\n→ Profit captured in milliseconds, not days\n\nThe expiry date:\n→ Polymarket patches the lag\n→ Quant funds enter\n→ Edges compress. Window closes.\n\nA student with Claude is pulling HFT returns right now.\nIn 12 months this opportunity is gone.\n\nThe 2 questions everyone's asking:\n\n→ How big can this 5MIN scalper scale before it breaks?\n→ Will Polymarket ban it?\n\nYou only need Claude + a device + 1 hour/day.\n\nSave this post. Build the scalper this weekend. Start with $100. Scale on evidence.\n\nYou Must Follow me @codewithimanshu, so i can send you DM.",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          278
+        ],
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "quotes": 3,
+        "replies": 236,
+        "conversation_id": "2075021933801013352",
+        "retweets": 131,
+        "views": "48836",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "1062034323249881088",
+              "indices": [
+                365,
+                381
+              ],
+              "name": "Himanshu Kumar",
+              "screen_name": "codewithimanshu"
+            },
+            {
+              "id_str": "1062034323249881088",
+              "indices": [
+                1931,
+                1947
+              ],
+              "name": "Himanshu Kumar",
+              "screen_name": "codewithimanshu"
+            }
+          ]
+        },
+        "user_info": {
+          "screen_name": "codewithimanshu",
+          "name": "Himanshu Kumar",
+          "created_at": "Mon Nov 12 17:28:09 +0000 2018",
+          "description": "Ai Builder | I help you make Money with AI, OpenClaw, Claude, No Code, Tech, web3 | Collabs :- abrojackhimanshu@gmail.com | 500k+ Followers (Li, X, Tg, Ig)",
+          "rest_id": "1062034323249881088",
+          "followers_count": 62338,
+          "favourites_count": 219287,
+          "avatar": "https://pbs.twimg.com/profile_images/2025653770273849344/Hu4W4WjX_normal.jpg",
+          "url": "https://linktr.ee/codewithimanshu.in",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1062034323249881088/1771944975",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 358,
+          "location": "Free products & Sponsorships👉"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2075021879702896640/img/bDonMlAOZyMdak-l.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2075021879702896640/pl/lqgOxRjU5AzwPW0t.m3u8?tag=14&v=cfc"
+                },
+                {
+                  "bitrate": 632000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075021879702896640/vid/avc1/320x330/NhfXXv9dmaGp-BvR.mp4?tag=14"
+                },
+                {
+                  "bitrate": 950000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075021879702896640/vid/avc1/480x496/-I2m4q6ZV4b1g4qb.mp4?tag=14"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2075021879702896640/vid/avc1/720x744/H-Pcb2Ie12cbzt2b.mp4?tag=14"
+                }
+              ],
+              "aspect_ratio": [
+                30,
+                31
+              ],
+              "duration": 57957,
+              "original_info": {
+                "focus_rects": [],
+                "height": 744,
+                "width": 720
+              },
+              "id": "2075021879702896640"
+            }
+          ]
+        }
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2074314433191616892",
+        "screen_name": "MaaSonder",
+        "bookmarks": 127,
+        "favorites": 447,
+        "created_at": "Tue Jul 07 02:07:54 +0000 2026",
+        "text": "Fable 5 access could be apart of the Claude pro 20x subscription\n\nAccording to some reports, Fable 5 will be available in the Claude app for the Max 20x users ($200/month)\n\nEveryone else will be API access only\n\nThis has not yet been confirmed but if so will nullify the Pro 5x subscription ($20)\n\nIs this the right move from Anthropic to keep users?",
+        "lang": "en",
+        "display_text_range": [
+          0,
+          277
+        ],
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "quotes": 21,
+        "replies": 64,
+        "conversation_id": "2074314433191616892",
+        "retweets": 11,
+        "views": "218366",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "MaaSonder",
+          "name": "Qwinah",
+          "created_at": "Sun Jun 15 12:56:20 +0000 2025",
+          "description": "AI Researcher & Creator \n\nI did a thing @KleosIndex",
+          "rest_id": "1934233343198973952",
+          "followers_count": 161,
+          "favourites_count": 1434,
+          "avatar": "https://pbs.twimg.com/profile_images/2065750218231205888/b3Ts3jkx_normal.jpg",
+          "url": null,
+          "cover_image": "https://pbs.twimg.com/profile_banners/1934233343198973952/1781396000",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 63,
+          "location": "AI Headquarters"
+        },
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074314374668513280/img/2h-hqep0VZmoRCFH.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074314374668513280/pl/NqVW0QUdt2nU9wgs.m3u8?tag=28"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074314374668513280/vid/avc1/278x270/eXzT3_u-7_Dod80r.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074314374668513280/vid/avc1/370x360/TVbY8hDD2alNsmQk.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074314374668513280/vid/avc1/742x720/Hwt7bn7bJpG9DDOc.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074314374668513280/vid/avc1/1206x1168/xFaS8xTeAbqsnK_e.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                603,
+                584
+              ],
+              "duration": 5344,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1168,
+                "width": 1206
+              },
+              "id": "2074314374668513280"
+            }
+          ]
+        },
+        "quoted": {
+          "tweet_id": "2074078414705955006",
+          "bookmarks": 850,
+          "created_at": "Mon Jul 06 10:30:03 +0000 2026",
+          "favorites": 2873,
+          "text": "Fable 5 probably running locally in about two years.\n\nThat is the projection in this r/LocalLLaMA chart. It tracks how long it takes for cloud-frontier capability to become broadly comparable in laptop-runnable open-weight models. The observed average lag: ~24.8 months. https://t.co/JFdWB4Xna3",
+          "lang": "en",
+          "views": "454761",
+          "quotes": 69,
+          "replies": 195,
+          "retweets": 210,
+          "conversation_id": "2074078414705955006",
+          "author": {
+            "rest_id": "1573399256836309009",
+            "created_at": "Fri Sep 23 19:50:04 +0000 2022",
+            "name": "Chubby♨️",
+            "screen_name": "kimmonismus",
+            "avatar": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg",
+            "blue_verified": true
+          },
+          "media": {
+            "photo": [
+              {
+                "media_url_https": "https://pbs.twimg.com/media/HMibU5wa0AAWnwh.jpg",
+                "id": "2074078411807707136",
+                "sizes": {
+                  "h": 1194,
+                  "w": 1448
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "next_cursor": "DAACCgACHMy-RxCAJxAKAAMczL5HEH_Y8AgABAAAAAILAAUAAADwRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJRY3c2eW9UaHFoSmh5MjMyTUNGMUJmSE1aN0x2Q1hZWjBjeEdoWmd0dXd6aHpNWXQ2WkY0RnNITXNvVzdBYUFVd2N6RzkyNHh1UXVSeko0eW10bDVBTUhNU1dtN1hhWUs4Y3kvVjBjVnFBYUJ6TXBmS2lXb0VFSE14NEprcFhZQ01jeDlwRU5kZlJJQnpMZG52SUZyQzVITVE1c0FOWGNMZ2N5MG5JK1p0UVBoekpjZnllMmlGOEhNdHlpWHRiRWZvY3h1a25lUnN4NWh6RWVVanMxekZhCAAGAAAAAAgABwAAAAAMAAgKAAEctt9jAhdQXwAAAA",
+    "prev_cursor": "DAACCgACHMy-RxCAJxAKAAMczL5HEH_Y8AgABAAAAAELAAUAAADwRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJRY3c2eW9UaHFoSmh5MjMyTUNGMUJmSE1aN0x2Q1hZWjBjeEdoWmd0dXd6aHpNWXQ2WkY0RnNITXNvVzdBYUFVd2N6RzkyNHh1UXVSeko0eW10bDVBTUhNU1dtN1hhWUs4Y3kvVjBjVnFBYUJ6TXBmS2lXb0VFSE14NEprcFhZQ01jeDlwRU5kZlJJQnpMZG52SUZyQzVITVE1c0FOWGNMZ2N5MG5JK1p0UVBoekpjZnllMmlGOEhNdHlpWHRiRWZvY3h1a25lUnN4NWh6RWVVanMxekZhCAAGAAAAAAgABwAAAAAMAAgKAAEctt9jAhdQXwAAAA"
+  }
+}

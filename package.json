@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.mjs",
-    "fetch": "node scripts/fetch-data.mjs"
+    "fetch": "node scripts/fetch-data.mjs",
+    "fetch:fresh": "node scripts/fetch-data.mjs --fresh"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,255 @@
+{
+  "runId": "01KX3QQSQH9JET9FHK82G3CT0J",
+  "provider": "blockrun.ai",
+  "endpoint": "/api/v1/surf/search/news",
+  "status": "COMPLETED",
+  "output": {
+    "$schema": "https://api.asksurf.ai/schemas/DataResponseNewsArticleItem.json",
+    "data": [
+      {
+        "id": "e4ab354a-ecd5-4590-b751-ca94b473ee4e",
+        "title": "OpenAI sparks crypto frenzy with GPT-5.6 Sol, Terra and Luna names",
+        "summary": "OpenAI launches limited preview of GPT-5.6 models Sol, Terra, and Luna; names resemble Solana and Terra crypto projects but are unrelated per company.",
+        "source": "CRYPTODOTNEWS",
+        "url": "https://crypto.news/openai-sparks-crypto-frenzy-with-gpt-5-6-sol-terra-and-luna-names/",
+        "published_at": 1782510134,
+        "project_name": "Solana",
+        "project_id": "dd954981-fafe-46ca-95c9-793e88138c90",
+        "highlights": {
+          "content": [
+            "Instead, the company said the names represent different capability levels within the <em>GPT</em>-<em>5.6</em> series.",
+            "The preview follows reports that the White House had asked OpenAI to limit the initial rollout of <em>GPT</em>-<em>5.6</em>."
+          ],
+          "summary": [
+            "OpenAI launches limited preview of <em>GPT</em>-<em>5.6</em> models Sol, Terra, and Luna; names resemble Solana and Terra crypto projects but are unrelated per company."
+          ],
+          "title": [
+            "OpenAI sparks crypto frenzy with <em>GPT</em>-<em>5.6</em> Sol, Terra and Luna names"
+          ]
+        }
+      },
+      {
+        "id": "d8a49c30-e8e7-4177-ade4-fdcd59efc55f",
+        "title": "OpenAI Releases GPT-5.6 Series Models; Names “Sol,” “Terra,” and “Lun…",
+        "summary": "OpenAI releases GPT-5.6 series Sol (flagship), Terra (work balance), Luna (efficient) in limited preview; names overlap crypto projects.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/newsletter/detail_126584.html",
+        "published_at": 1782521065,
+        "project_name": "Terra",
+        "project_id": "0be24b80-f553-4f67-a758-712fd2101f87",
+        "highlights": {
+          "content": [
+            "TechFlow News, on June 27, OpenAI released its next-generation <em>GPT</em>-<em>5.6</em> series models, comprising three products: Sol, Terra, and Luna.",
+            "Currently, the <em>GPT</em>-<em>5.6</em> series is available only to select partners through a limited preview; OpenAI plans to gradually expand access over the coming weeks"
+          ],
+          "summary": [
+            "OpenAI releases <em>GPT</em>-<em>5.6</em> series Sol (flagship), Terra (work balance), Luna (efficient) in limited preview; names overlap crypto projects."
+          ],
+          "title": [
+            "OpenAI Releases <em>GPT</em>-<em>5.6</em> Series Models; Names “Sol,” “Terra,” and “Lun…"
+          ]
+        }
+      },
+      {
+        "id": "d2b2e48d-a838-451f-ac2c-9208ea49a172",
+        "title": "OpenAI’s Luna name turned Terra’s dead token into a YOLO leverage trade",
+        "summary": "OpenAI's GPT-5.6 \"Luna\" tier triggered LUNA2 futures surge on Binance from $0.0486 to $0.0513, OI up 43%.",
+        "source": "CRYPTOSLATE",
+        "url": "https://cryptoslate.com/openais-luna-name-turned-terras-dead-token-into-a-yolo-leverage-trade/",
+        "published_at": 1782681358,
+        "project_name": "LUNA",
+        "project_id": "2d22ba32-39ed-4a43-b791-7a9c368fe95d",
+        "highlights": {
+          "content": [
+            "OpenAI introduced <em>GPT</em>-<em>5.6</em> on June 26 as a limited-preview family of frontier models with three tiers: Sol as the flagship, Terra as the balanced mid-range",
+            "LUNA2 futures open interest surged 43% and price climbed from $0.0486 to $0.0513 in the hour after OpenAI announced its <em>GPT</em>-<em>5.6</em> tiers Sol, Terra, and Luna"
+          ],
+          "summary": [
+            "OpenAI's <em>GPT</em>-<em>5.6</em> \"Luna\" tier triggered LUNA2 futures surge on Binance from $0.0486 to $0.0513, OI up 43%."
+          ]
+        }
+      },
+      {
+        "id": "f73620a3-ba0b-4826-afea-0cd9a1a26559",
+        "title": "OpenAI named the model \"Luna\", crypto immediately leveraged up Terra'…",
+        "summary": "OpenAI GPT-5.6 tiers named Sol/Terra/Luna triggered 43% LUNA2 perpetuals OI surge on Binance via name collision.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/article/detail_32252.html",
+        "published_at": 1782705791,
+        "project_name": "LUNA",
+        "project_id": "2d22ba32-39ed-4a43-b791-7a9c368fe95d",
+        "highlights": {
+          "content": [
+            "Author: Gino Matos\n\nTranslation: TechFlow\n\n**TechFlow Editor's Note:** OpenAI releases <em>GPT</em>-<em>5.6</em>, with three tiers named Sol, Terra, and Luna respectively",
+            "-<em>5.6</em>, positioned as a limited preview cutting-edge model series, with three tiers: Sol is the flagship version, Terra is the balanced mid-tier option,"
+          ],
+          "summary": [
+            "OpenAI <em>GPT</em>-<em>5.6</em> tiers named Sol/Terra/Luna triggered 43% LUNA2 perpetuals OI surge on Binance via name collision."
+          ]
+        }
+      },
+      {
+        "id": "8eb313c4-beb7-44ae-89ae-4d5d33b04bd3",
+        "title": "OpenAI releases three GPT-5.6 series models, its Sol, Terra, Luna share names with crypto projects",
+        "summary": "OpenAI releases GPT-5.6 series models Sol (flagship), Terra (balanced), Luna (fast) in limited preview; names overlap Solana and Terra crypto projects.",
+        "source": "PANEWS",
+        "url": "https://www.panewslab.com/en/articles/019f0681-eeae-70e5-a86f-4587efd555be",
+        "published_at": 1782520560,
+        "project_name": "Solana",
+        "project_id": "dd954981-fafe-46ca-95c9-793e88138c90",
+        "highlights": {
+          "content": [
+            "PANews, June 27 – OpenAI has released the next-generation <em>GPT</em>-<em>5.6</em> model series, comprising three variants: Sol (flagship model), Terra (a balanced model"
+          ],
+          "summary": [
+            "OpenAI releases <em>GPT</em>-<em>5.6</em> series models Sol (flagship), Terra (balanced), Luna (fast) in limited preview; names overlap Solana and Terra crypto projects."
+          ],
+          "title": [
+            "OpenAI releases three <em>GPT</em>-<em>5.6</em> series models, its Sol, Terra, Luna share names with crypto projects"
+          ]
+        }
+      },
+      {
+        "id": "cb16bc7e-b311-442c-b455-d069f03cbe0c",
+        "title": "TechFlow Intel: GLM 5.2 Beats Claude in Cybersecurity Test, US Tighte…",
+        "summary": "GLM 5.2 beats Claude in cyber benchmarks; US delays GPT-5.6 release; Bitcoin falls below $60k; Korea unveils 2000T KRW chip investment plan.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/article/detail_32263.html",
+        "published_at": 1782729626,
+        "project_name": "Ansem's minutes",
+        "project_id": "6a33832f-7463-4643-848e-664233776464",
+        "highlights": {
+          "content": [
+            "应美国政府审查要求延迟 <em>GPT</em>-<em>5.6</em> 发布，AI 监管正式从\"指南\"变为\"前置审批\"。",
+            "[知乎](https://www.zhihu.com/pin/2054709585479460092)\n\n## **今天的暗线**\n\n美国同时对两条战线施压:地缘上升级美伊军事对峙推高油价,技术上收紧 AI 出口管制延迟 <em>GPT</em>-<em>5.6</em> 发布。"
+          ],
+          "summary": [
+            "GLM 5.2 beats Claude in cyber benchmarks; US delays <em>GPT</em>-<em>5.6</em> release; Bitcoin falls below $60k; Korea unveils 2000T KRW chip investment plan."
+          ]
+        }
+      },
+      {
+        "id": "8ca0079c-e9cc-498a-881a-dd55a2ea9ad5",
+        "title": "Over 3,000 Mexicans Fall for Suspected Crypto Trading Bot Scam",
+        "summary": "Mexican media: 3,000+ in Tehuacán and Puebla allegedly scammed by AMG GPT crypto bots; withdrawals blocked, offices closed; 100 complaints, probe ongoing",
+        "source": "PANEWS",
+        "url": "https://www.panewslab.com/en/articles/4e0id294",
+        "published_at": 1731899072,
+        "project_name": "AMG GPT",
+        "highlights": {
+          "content": [
+            "that more than 3,000 residents in Tehuacán and Puebla were suspected of being scammed by cryptocurrency trading robots, and the company involved was AMG <em>GPT</em>",
+            "AMG <em>GPT</em> finally stated that the delayed withdrawal was related to the \"shopping festival event\", but this explanation raised more questions."
+          ],
+          "summary": [
+            "Mexican media: 3,000+ in Tehuacán and Puebla allegedly scammed by AMG <em>GPT</em> crypto bots; withdrawals blocked, offices closed; 100 complaints, probe ongoing"
+          ]
+        }
+      },
+      {
+        "id": "e291db00-ce41-4e2b-9915-324fa85880f1",
+        "title": "Microsoft is boosting capacity to support OpenAI’s GPT-4-5, GPT-5 models",
+        "summary": "Microsoft is boosting Azure capacity to host OpenAI’s GPT-4.5 as early as next week and expects GPT-5 in late May amid an expanded partnership",
+        "source": "COINTELEGRAPH",
+        "url": "https://cointelegraph.com/news/microsoft-readying-capacity-openai-gpt-4-5-gpt-5-models",
+        "published_at": 1740087599,
+        "project_name": "Bitcoin",
+        "project_id": "25c6612a-395c-4974-94eb-3b5f9f4b2ed7",
+        "highlights": {
+          "content": [
+            "[Microsoft is boosting capacity to support OpenAI’s <em>GPT</em>-4-5, <em>GPT</em>-5 models](https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,",
+            "In addition to expecting <em>GPT</em>-4.5 any day now, The Verge’s source said Microsoft expects to receive the [more powerful <em>GPT</em>-5](https://cointelegraph.com/"
+          ],
+          "summary": [
+            "Microsoft is boosting Azure capacity to host OpenAI’s <em>GPT</em>-4.5 as early as next week and expects <em>GPT</em>-5 in late May amid an expanded partnership"
+          ],
+          "title": [
+            "Microsoft is boosting capacity to support OpenAI’s <em>GPT</em>-4-5, <em>GPT</em>-5 models"
+          ]
+        }
+      },
+      {
+        "id": "0147be6d-1f3d-40d5-98df-fd190984a065",
+        "title": "Sam Altman Shares OpenAI Plans for GPT-4.5 and GPT-5, WLD Token Jumps 5%",
+        "summary": "Sam Altman unveils GPT-4.5 (Orion) and GPT-5; GPT-5 across ChatGPT tiers. WLD rose ~5%. Reports cite Musk’s $97B OpenAI bid; Altman rejects.",
+        "source": "BEINCRYPTO",
+        "url": "https://beincrypto.com/altman-shares-openai-plans-wld-reacts/",
+        "published_at": 1739436537,
+        "project_name": "Worldcoin",
+        "project_id": "a84c9550-9993-4e21-9ca4-7afb7b180040",
+        "highlights": {
+          "content": [
+            "Free-tier users will get unlimited access to <em>GPT</em>-5 at a standard intelligence level.",
+            "OpenAI’s next steps with <em>GPT</em>-4.5 and <em>GPT</em>-5 will be crucial as the [artificial intelligence arms race](https://beincrypto.com/learn/ai-crypto) intensifies"
+          ],
+          "summary": [
+            "Sam Altman unveils <em>GPT</em>-4.5 (Orion) and <em>GPT</em>-5; <em>GPT</em>-5 across ChatGPT tiers. WLD rose ~5%. Reports cite Musk’s $97B OpenAI bid; Altman rejects."
+          ],
+          "title": [
+            "Sam Altman Shares OpenAI Plans for <em>GPT</em>-4.5 and <em>GPT</em>-5, WLD Token Jumps 5%"
+          ]
+        }
+      },
+      {
+        "id": "b54aeea4-9bae-4c88-9a5f-ee6794d72111",
+        "title": "OpenAI's GPT-5.5 Launch Spurs Market Surge",
+        "summary": "OpenAI launches GPT-5.5, surging GPT-5.5 sub-market 25 points to 86%; all sub-markets settle at 100% Yes. USDC volume: $342K; open interest: $373K.",
+        "source": "PHEMEX",
+        "url": "https://phemex.com/news/article/openais-gpt55-launch-spurs-market-surge-75498",
+        "published_at": 1777003264,
+        "project_name": "Manta Network",
+        "project_id": "f50d177d-5a66-4add-8134-3f571623f7e9",
+        "highlights": {
+          "content": [
+            "OpenAI has officially launched <em>GPT</em>-5.5, leading to a significant market reaction.",
+            "On April 23, the sub-market for <em>GPT</em>-5.5 surged by 25 points, climbing from 61% to 86% in anticipation of the release."
+          ],
+          "summary": [
+            "OpenAI launches <em>GPT</em>-5.5, surging <em>GPT</em>-5.5 sub-market 25 points to 86%; all sub-markets settle at 100% Yes. USDC volume: $342K; open interest: $373K."
+          ],
+          "title": [
+            "OpenAI's <em>GPT</em>-5.5 Launch Spurs Market Surge"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "total": 2151,
+      "limit": 10,
+      "offset": 0,
+      "credits_used": 1,
+      "cached": false
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.00825,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 7500
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:25:31.485Z",
+  "completedAt": "2026-07-09T15:25:34.062Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3QQSQH9JET9FHK82G3CT0J -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

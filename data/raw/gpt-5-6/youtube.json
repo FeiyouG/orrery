@@ -1,0 +1,581 @@
+{
+  "runId": "01KX3QQSV34NJMWWC3EFHR2EGR",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/youtube/web/search_video",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "search_query": "GPT-5.6"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "cfd8672b-5bde-458b-81a5-95bfd1238d7d",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:25:33",
+      "time_stamp": 1783610733,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/YouTube-Web-API/search_video_api_v1_youtube_web_search_video_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/cfd8672b-5bde-458b-81a5-95bfd1238d7d?sign=d8fb471526ef6c12b38bbde9f6a42bd56ae1149521787b59657414ed02b9e532",
+      "router": "/api/v1/youtube/web/search_video",
+      "params": {
+        "search_query": "GPT-5.6"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:25:31.656Z",
+  "startedAt": "2026-07-09T15:25:32.091Z",
+  "completedAt": "2026-07-09T15:25:34.001Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3QQSV34NJMWWC3EFHR2EGR -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "number_of_videos": 20,
+    "estimated_results": 84508,
+    "query": "GPT-5.6",
+    "country": "US",
+    "lang": "en",
+    "timezone": "America/New_York",
+    "continuation_token": "EpcFEgdHUFQtNS42GowDRWdRSUJCQUJTQlNDQVF0NFJGaFlNazAxUkhKUE1JSUJDM0pPY1hGS1puWk1iMkpSZ2dFTFRISkpRamxPYTJSM056U0NBUXRGUVU0MVEyb3pORGRRV1lJQkMwUmlZMmxQVXpGVlNrNU5nZ0VMV0dsRGQybHBVRkZTWW1lQ0FRdDZYMW95Y1ZCSFJqaDJkNElCQzFwck9XODVRMUY1T0U1QmdnRUxkQzFmTlVkaVlXMVJjVENDQVF0VFEyZ3hjRmh1UTI1UE1JSUJDM2hxZERkMWJIQkhWRm8wZ2dFTFozTjJXbTQwYm1KR2RYT0NBUXQ1ZWxKS1JHdzFSMUZXWjRJQkMwSlNWR2h5V1VWcFkyTkJnZ0VMV2xKZlgweDNOMlJNZVVHQ0FRczJSRXRFWjFFeU4zTnRUWUlCQzBwRk4xUnhlRFZCTFRCM2dnRUxYMEZ2ZVZGalNXOXhkVUdDQVF0NU1qUnNSakZ4TkZOR1dZSUJDeTE2TWxGcFIycDBUM3Byc2dFR0NnUUlGQkFDkgL7AS9zZWFyY2g_b3E9R1BULTUuNiZnc19sPXlvdXR1YmUuMy4uMGk0MzNpMTMxazFqMGk1MTJpNDMzaTEzMWsxbDJqMGk0MzNpMTMxazFqMGk1MTJpNDMzaTEzMWsxajBpNDMzaTEzMWsxbDJqMGk1MTJpNDMzazFsNGowaTUxMmsxajBpNTEyaTQzM2kxMzFrMWwyLjE1MDY4LjE1NTk4LjAuMTY0MjkuNy43LjAuMC4wLjAuNjI4Ljg0NS4yLTFqNS0xLjUuMC4uLi4wLi4uMWFjLjEuNjQueW91dHViZS4uMi4yLjg0NS4wLi4uNzY1LlNiR1RsaVI2Rk5jGIHg6BgiC3NlYXJjaC1mZWVk",
+    "videos": [
+      {
+        "video_id": "xDXX2M5DrO0",
+        "title": "GPT-5.6 SOL,TERRA,LUNA (Fully Tested): I GOT EARLY ACCESS & Here's my thoughts.",
+        "author": "AICodeKing",
+        "number_of_views": 4633,
+        "video_length": "5:48",
+        "description": "In this video, I'll be telling you about OpenAI's new GPT-5.6 series, including Sol, Terra, and Luna. I'll go over what these models ...",
+        "is_live_content": null,
+        "published_time": "6 hours ago",
+        "channel_id": "UC0m81bQuthaQZmFbXEY9QSw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/xDXX2M5DrO0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVjkW68ss81bq4gI8lq4_72ngekg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/xDXX2M5DrO0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCzXen24LoB6kcmTMy8gosnemC5Wg",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "rNqqJfvLobQ",
+        "title": "GPT-5.6 vs Claude Fable 5: Which Is Actually Worth Using",
+        "author": "Corey McClain",
+        "number_of_views": 667,
+        "video_length": "7:13",
+        "description": "Build your client-attracting content strategy in 1 hour: https://www.incomecreator.pro/ltao1 Book a private AI strategy session: ...",
+        "is_live_content": null,
+        "published_time": "5 hours ago",
+        "channel_id": "UC2gtQOm5jFEASO6mg_ibT_Q",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/rNqqJfvLobQ/hq720_custom_3.jpg?sqp=CMz6vtIG-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCvJenIJOsC14xRVCCR7D_504v3tA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/rNqqJfvLobQ/hq720_custom_3.jpg?sqp=CMz6vtIG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLASL_likU67hVEXH3m2IUB4fRI28A",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "LrIB9Nkdw74",
+        "title": "OpenAI Is Rushing GPT-6 Because of Fable 5.1!",
+        "author": "Universe of AI",
+        "number_of_views": 20376,
+        "video_length": "9:54",
+        "description": "GPT-6 has reportedly finished training and OpenAI looks worried about Fable 5.1, which is in its final stages at Anthropic and ...",
+        "is_live_content": null,
+        "published_time": "18 hours ago",
+        "channel_id": "UCYwLV1gDwzGbg7jXQ52bVnQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/LrIB9Nkdw74/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD65X7-MzZPwGTX-ao0knH9y-OQkg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/LrIB9Nkdw74/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkH1wvhABXYKTxpOtf7XIfQldjPA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "EAN5Cj347PY",
+        "title": "This is the new ChatGPT Voice, powered by GPT-Live",
+        "author": "OpenAI",
+        "number_of_views": 75436,
+        "video_length": "3:35",
+        "description": "You'll want to turn the sound on for this one. Read more here: https://openai.com/index/introducing-gpt-live/",
+        "is_live_content": null,
+        "published_time": "22 hours ago",
+        "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/EAN5Cj347PY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEBCd_DrVj6BoAhGTcmafIftlqjg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/EAN5Cj347PY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCRswb-SrQUVZI-fg69ZbQ67G-Ww",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "DbciOS1UJNM",
+        "title": "OpenAI Expands Release of Top AI Model GPT-5.6",
+        "author": "Bloomberg Tech",
+        "number_of_views": 5096,
+        "video_length": "2:33",
+        "description": "OpenAI is expanding the release of its most advanced model after getting the green light from the Trump administration. GPT-5.6 ...",
+        "is_live_content": null,
+        "published_time": "19 hours ago",
+        "channel_id": "UCrM7B7SL_g1edFOnmj-SDKg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/DbciOS1UJNM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQlp7ITcbZgLSK0zcCYszbtdJRwA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/DbciOS1UJNM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAlPYj8Q1079_GvzfabFwsXTsrpqA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "XiCwiiPQRbg",
+        "title": "GPT-5.6 Sol vs Terra vs Luna: Which AI Model Is Best in 2026? #GPT56 #GPT5",
+        "author": "Anton Voroniuk | GenAI Revolution Podcast",
+        "number_of_views": 253,
+        "video_length": "2:10",
+        "description": "Anton Voroniuk - Google Academy Trainer, Udemy Instructor Partner, 1000K+ students worldwide LinkedIn: ...",
+        "is_live_content": null,
+        "published_time": "6 hours ago",
+        "channel_id": "UC1kdhXKdtkrL5uNDRtUt9Uw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/XiCwiiPQRbg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDc_ZiEa6UK5s5Xh6l3twYgA0eurg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/XiCwiiPQRbg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkftzNcQqiispRtNOk5zsdFlZ1hQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "z_Z2qPGF8vw",
+        "title": "Is GPT-5.6 Better Than Claude Fable 5? (The Honest Answer)",
+        "author": "Ash Automates",
+        "number_of_views": 1478,
+        "video_length": "9:28",
+        "description": "Watch My Best AI Coding Tools Comparison: https://www.youtube.com/watch?v=CfIj9sgxDkw ▷ Watch My Best Self-Hosted AI ...",
+        "is_live_content": null,
+        "published_time": "18 hours ago",
+        "channel_id": "UCFUkvvfYsBIR6fEfDYZh_wg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/z_Z2qPGF8vw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwAcRVX52gKNEMQQNeeyzuxdMugQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/z_Z2qPGF8vw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7qGh1UubgTJXH60yFj5hncVzW-g",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "Zk9o9CQy8NA",
+        "title": "Claude Fable 5 vs GPT-5.6: Who Actually Wins?",
+        "author": "Pursuing AI",
+        "number_of_views": 7311,
+        "video_length": "4:12",
+        "description": "Claude Fable 5 is back, and GPT-5.6 has officially arrived. Thanks to our sponsor U7BUY 5% OFF Link: ...",
+        "is_live_content": null,
+        "published_time": "1 day ago",
+        "channel_id": "UC3P0rlhvB3IFda41lb77EHg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/Zk9o9CQy8NA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0pIwX6A7UPkIfaDVtwFCV4cn5Qw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/Zk9o9CQy8NA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgMaRpgsRxhI1vjT_gNT20FfsT-A",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "t-_5GbamQq0",
+        "title": "Before Using ChatGPT 5.6 Watch This First (The Benchmarks Don't Tell You the Real Story)",
+        "author": "Johnny Nel | AI for Founders",
+        "number_of_views": 304,
+        "video_length": "17:27",
+        "description": "GPT-5.6 Sol, Terra and Luna are here — but the real story is why the U.S. government made OpenAI hold this model back before ...",
+        "is_live_content": null,
+        "published_time": "3 hours ago",
+        "channel_id": "UCLajqQlKVsV7aqZ4I-BjdaQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/t-_5GbamQq0/hq720_custom_2.jpg?sqp=CMz6vtIG-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBr5eHDBvQplTHCqNNb3P3Un00akA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/t-_5GbamQq0/hq720_custom_2.jpg?sqp=CMz6vtIG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC59O_btbtEOvpnwe2V1a0ilhnt8w",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "SCh1pXnCnO0",
+        "title": "GPT 5.6 Drops Tomorrow: Everything We Know",
+        "author": "Miguel Torrez",
+        "number_of_views": 4433,
+        "video_length": "6:00",
+        "description": "OpenAI's GPT 5.6 lands tomorrow, and for the first time we are getting three variants of the same model: Sol (the flagship), Terra ...",
+        "is_live_content": null,
+        "published_time": "19 hours ago",
+        "channel_id": "UCN58eo3m9zbkXQrMPgrIpDw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/SCh1pXnCnO0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBFKO1-N37_RegiyRITP1XkeghZLw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/SCh1pXnCnO0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD08VB2TRBn7jkIACcuGTqab6IkKg",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "xjt7ulpGTZ4",
+        "title": "China's AI BAN?!, Qwen 4, GPT-5.6 Thursday, Grok 4.5 Today, Deepseek AI Chip, & Claude AGI! AI NEWS",
+        "author": "WorldofAI",
+        "number_of_views": 47015,
+        "video_length": "18:50",
+        "description": "Try for FREE the Docker Sandboxes: https://utm.io/uqEOl This week has been absolutely INSANE for AI. China is reportedly ...",
+        "is_live_content": null,
+        "published_time": "1 day ago",
+        "channel_id": "UC2WmuBuFq6gL08QYG-JjXKw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/xjt7ulpGTZ4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADBaa6p5DhEfrC-n_iNn5iLx6wFA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/xjt7ulpGTZ4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJ1LSktUR5iFP7i3D22rBnK42T_A",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "gsvZn4nbFus",
+        "title": "Combine Fable 5 & Sol 5.6 With This One Skill (Or Fall Behind)",
+        "author": "Chase AI",
+        "number_of_views": 14059,
+        "video_length": "9:39",
+        "description": "Master Claude Code, Build Your Agency, Land Your First Client⚡ https://www.skool.com/chase-ai FREE community   ...",
+        "is_live_content": null,
+        "published_time": "16 hours ago",
+        "channel_id": "UCoy6cTJ7Tg0dqS-DI-_REsA",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/gsvZn4nbFus/hq720_custom_2.jpg?sqp=CMz6vtIG-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBaVyEiPukX4xAFGCVjyAxTJZQXTg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/gsvZn4nbFus/hq720_custom_2.jpg?sqp=CMz6vtIG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAOP3vgRJqSTI8YppeZ55FCmzMeSg",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "yzRJDl5GQVg",
+        "title": "GPT-5.6 is here, and we can’t use it",
+        "author": "Theo - t3․gg",
+        "number_of_views": 124587,
+        "video_length": "30:08",
+        "description": "This has been an…interesting release. GPT-5.6 is here, but also not really. Thank you Browserbase for sponsoring! Check them ...",
+        "is_live_content": null,
+        "published_time": "12 days ago",
+        "channel_id": "UCbRP3c757lWg9M-U7TyEkXA",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/yzRJDl5GQVg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqQuPpfOcuaZIazM7ginNBVrzVWw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/yzRJDl5GQVg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7FhY2egiVCQbuoUbhYwsg267-DA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "BRThrYEiccA",
+        "title": "GPT 5.6 Launching SOON! (What to Expect)",
+        "author": "Superbash (BoxminingAI)",
+        "number_of_views": 7846,
+        "video_length": "11:39",
+        "description": "OpenAI's GPT 5.6 is launching with a new three-model family: Sol, Terra, and Luna. In this video, we break down what GPT 5.6 ...",
+        "is_live_content": null,
+        "published_time": "1 day ago",
+        "channel_id": "UCRAgKoVQfGQqIQOEYQh9K8w",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/BRThrYEiccA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA0pOT4uLtH7hgoHWen9yaW-kW9WA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/BRThrYEiccA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCujGkyZwmfEes0IFQLpxNiV39-Yw",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "ZR__Lw7dLyA",
+        "title": "BREAKING: GPT 5.6 Sol Was Too Dangerous and the US Govt Had to Step In",
+        "author": "AIM Network",
+        "number_of_views": 564,
+        "video_length": "5:25",
+        "description": "GPT-5.6 Sol is finally public after government delays. Get the full breakdown on the political fight behind this OpenAI launch.",
+        "is_live_content": null,
+        "published_time": "2 hours ago",
+        "channel_id": "UCAlwrsgeJavG1vw9qSFOUmA",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/ZR__Lw7dLyA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAlBpObuJQXJROOWxDNX-mDylg4sw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/ZR__Lw7dLyA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAvUMaRt7t6zsRSDwzr8J-aQnmxYA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "6DKDgQ27smM",
+        "title": "GPT 5.6 explained in 8min..",
+        "author": "Caleb Writes Code",
+        "number_of_views": 74711,
+        "video_length": "8:04",
+        "description": "Emergent AI: https://app.emergent.sh/?via=calebwritescode OpenAI announces GPT 5.6 and it's regulated by the government as ...",
+        "is_live_content": null,
+        "published_time": "11 days ago",
+        "channel_id": "UCuU9jE4MHHEIyYMbDfUPSew",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/6DKDgQ27smM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZfoTAsy8GCCgETmNMkAhYsmV7HA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/6DKDgQ27smM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByjTHS5t0a6lf5fiBdtWmT-BPgIQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "JE7Tqx5A-0w",
+        "title": "OpenAI to unveil GPT-5.6 after delaying launch",
+        "author": "Reuters",
+        "number_of_views": 4217,
+        "video_length": "1:18",
+        "description": "OpenAI will launch its most capable model, GPT-5.6, on July 9 after a US government-requested delay over national security ...",
+        "is_live_content": null,
+        "published_time": "1 day ago",
+        "channel_id": "UChqUTb7kYRX8-EiaN3XFrSQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/JE7Tqx5A-0w/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTIBMofzAP&rs=AOn4CLCSBEHa0n6brjR2vgSASI35ViyXlg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/JE7Tqx5A-0w/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTIBMofzAP&rs=AOn4CLAo0pacfaE7rVy53DjJMqVvqJVAhQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "_AoyQcIoquA",
+        "title": "GPT 5.6 Sol Just Blew Up The AI World",
+        "author": "AI Revolution",
+        "number_of_views": 50935,
+        "video_length": "15:44",
+        "description": "OpenAI just launched GPT 5.6, but this is not a normal release. Access is limited to trusted partners after U.S. government ...",
+        "is_live_content": null,
+        "published_time": "11 days ago",
+        "channel_id": "UC5l7RouTQ60oUjLjt1Nh-UQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/_AoyQcIoquA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLqVDh_saOqGzIt4yGdc1zT294ww",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/_AoyQcIoquA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcHk7wQEVq0mLGyivIhBErbx8P2g",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "y24lF1q4SFY",
+        "title": "Fable 5 vs GPT 5.6 Sol: The Early Results",
+        "author": "AI Explained",
+        "number_of_views": 113654,
+        "video_length": "18:03",
+        "description": "Fable 5 (newly re-released) vs GPT 5.6 Sol, what comparisons can we unearth? Plus, Sonnet 5, a 5% equity seizure by US Govt, ...",
+        "is_live_content": null,
+        "published_time": "6 days ago",
+        "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/y24lF1q4SFY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3DL8EOH-LiykJiZ6Vc2_z4xssGA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/y24lF1q4SFY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCZiAkEOcAEs-hJ7yvJE7JWw70vw",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "-z2QiGjtOzk",
+        "title": "NEW Gemini 3.5 Pro LEAKS! Google Is Back and Will Rival Fable 5 & GPT-5.6!",
+        "author": "WorldofAI",
+        "number_of_views": 38996,
+        "video_length": "11:11",
+        "description": "NEW Gemini 3.5 Pro LEAKS are here, and Google DeepMind might finally be back in the AI race! In this video, we take a deep ...",
+        "is_live_content": null,
+        "published_time": "4 days ago",
+        "channel_id": "UC2WmuBuFq6gL08QYG-JjXKw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/-z2QiGjtOzk/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDg4_wrPP-VjMaGyjDujmT5Hthj2g",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/-z2QiGjtOzk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCDn4qf1QbqMcMpzHQVA6HkMZhC_A",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      }
+    ]
+  }
+}

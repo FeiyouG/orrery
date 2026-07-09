@@ -1,0 +1,247 @@
+{
+  "runId": "01KX3R6CFPXVDHDV77B05SXWFG",
+  "provider": "blockrun.ai",
+  "endpoint": "/api/v1/surf/search/news",
+  "status": "COMPLETED",
+  "output": {
+    "$schema": "https://api.asksurf.ai/schemas/DataResponseNewsArticleItem.json",
+    "data": [
+      {
+        "id": "6084e865-7ea7-44ed-92ec-d4bd7e00b897",
+        "title": "Anthropic Launches Claude Fable 5 With Major Safety Restrictions",
+        "summary": "Anthropic launched Claude Fable 5 publicly with restricted cyber capabilities; Mythos 5, able to find vulnerabilities autonomously, limited to trusted organizations.",
+        "source": "COINPEDIA",
+        "url": "https://coinpedia.org/news/anthropic-launches-claude-fable-5-with-major-safety-restrictions/",
+        "published_at": 1781076185,
+        "project_name": "Zcash",
+        "project_id": "37b5a2e7-c869-4038-9168-13c6491c3f71",
+        "highlights": {
+          "content": [
+            "## Claude <em>Fable</em> <em>5</em>: Most Powerful AI For Public\n\nClaude <em>Fable</em> <em>5</em> belongs to Anthropic’s next-generation “Mythos-class” family of AI models, a category the",
+            "According to [Anthropic](https://www.anthropic.com/news/claude-<em>fable</em>-<em>5</em>-mythos-<em>5</em>), <em>Fable</em> <em>5</em> outperforms all of its previous public models across most major"
+          ],
+          "summary": [
+            "Anthropic launched Claude <em>Fable</em> <em>5</em> publicly with restricted cyber capabilities; Mythos <em>5</em>, able to find vulnerabilities autonomously, limited to trusted organizations."
+          ],
+          "title": [
+            "Anthropic Launches Claude <em>Fable</em> <em>5</em> With Major Safety Restrictions"
+          ]
+        }
+      },
+      {
+        "id": "d40dce33-cf23-4c28-802a-8161e70732d8",
+        "title": "Anthropic Launches Claude Fable 5 Amid DeFi Security Concerns",
+        "summary": "Anthropic launches Claude Fable 5 publicly but restricts Mythos 5, able to find unknown vulnerabilities, to vetted orgs via Project Glasswing.",
+        "source": "TRADINGVIEW",
+        "url": "https://www.tradingview.com/news/coinpedia:85b185514094b:0-anthropic-launches-claude-fable-5-amid-defi-security-concerns/",
+        "published_at": 1781076185,
+        "project_name": "Zcash",
+        "project_id": "37b5a2e7-c869-4038-9168-13c6491c3f71",
+        "highlights": {
+          "content": [
+            "src=hash&ref_src=twsrc%5Etfw) <em>Fable</em> <em>5</em> – Explained\n>\n> 1. What is Claude [#<em>Fable</em>](https://x.com/hashtag/<em>Fable</em>?src=hash&ref_src=twsrc%5Etfw) <em>5</em>?",
+            "Meanwhile, Claude <em>Fable</em> <em>5</em> comes with strict limitations."
+          ],
+          "summary": [
+            "Anthropic launches Claude <em>Fable</em> <em>5</em> publicly but restricts Mythos <em>5</em>, able to find unknown vulnerabilities, to vetted orgs via Project Glasswing."
+          ],
+          "title": [
+            "Anthropic Launches Claude <em>Fable</em> <em>5</em> Amid DeFi Security Concerns"
+          ]
+        }
+      },
+      {
+        "id": "bd5d6004-9926-4748-a23f-830e3b166c96",
+        "title": "Is Decentralized AI About to Have a Moment?",
+        "summary": "US govt ordered Anthropic to suspend Fable 5 and Mythos 5 access worldwide, triggering a 30% TAO token rally.",
+        "source": "TRADINGVIEW",
+        "url": "https://www.tradingview.com/news/bravenewcoin:7772578e8094b:0/",
+        "published_at": 1781652056,
+        "project_name": "Bittensor",
+        "project_id": "7f89d3cb-dcc9-4e75-8625-7859fc31899a",
+        "highlights": {
+          "content": [
+            "By the next morning, Claude <em>Fable</em> <em>5</em> and Claude Mythos <em>5</em>, two of the most capable artificial intelligence models in existence, were [dark for every user",
+            "**What actually happened**\n\nThe US government issued an export control directive ordering Anthropic to suspend access to <em>Fable</em> <em>5</em> and Mythos <em>5</em> for any foreign"
+          ],
+          "summary": [
+            "US govt ordered Anthropic to suspend <em>Fable</em> <em>5</em> and Mythos <em>5</em> access worldwide, triggering a 30% TAO token rally."
+          ]
+        }
+      },
+      {
+        "id": "6e75ddb6-f343-4b46-8072-8c1de90611e8",
+        "title": "24H Hot Coins & Headlines｜US-Iran Agreement Confirmed Reached, Crypto Rallies; CLARITY Act Has Slim Chance of Passing Before July 4 (June 15)",
+        "summary": "US-Iran deal boosts crypto/gold; Anthropic suspends Fable 5 & Mythos 5; CFTC enables crypto perpetuals; ZEC, WLD surge 10%+.",
+        "source": "ODAILY",
+        "url": "https://www.odaily.news/en/post/5211345",
+        "published_at": 1781489763,
+        "project_name": "Zcash",
+        "project_id": "37b5a2e7-c869-4038-9168-13c6491c3f71",
+        "highlights": {
+          "content": [
+            "authority, issued an export control directive requiring the suspension of all foreign national access to <em>Fable</em> <em>5</em> and Mythos <em>5</em>, including Anthropic's foreign",
+            "To ensure compliance, Anthropic must block all client access to <em>Fable</em> <em>5</em> and Mythos <em>5</em>; all other Anthropic models remain unaffected."
+          ],
+          "summary": [
+            "US-Iran deal boosts crypto/gold; Anthropic suspends <em>Fable</em> <em>5</em> & Mythos <em>5</em>; CFTC enables crypto perpetuals; ZEC, WLD surge 10%+."
+          ]
+        }
+      },
+      {
+        "id": "4256bf7c-7eea-4d80-bbaa-b0ffd7b4e158",
+        "title": "Claude Fable 5 Puts 25% Odds on Bitcoin Reaching $95K by Year-End 2026",
+        "summary": "AI models predict Bitcoin's 2026 base case at $58k–$75k amid capitulation, ETF outflows, and macro uncertainty.",
+        "source": "BITCOINCOM",
+        "url": "https://news.bitcoin.com/claude-fable-5-puts-25-odds-on-bitcoin-reaching-95k-by-year-end-2026/",
+        "published_at": 1781367615,
+        "project_name": "Bitcoin",
+        "project_id": "25c6612a-395c-4974-94eb-3b5f9f4b2ed7",
+        "highlights": {
+          "content": [
+            "* * Claude <em>Fable</em> <em>5</em> and ChatGPT 5.5 flagged a 13-day, ~$4B ETF outflow streak as the top near-term risk factor.",
+            "We managed to complete this experiment hours before Anthropic [withdrew <em>Fable</em> <em>5</em>](https://news.bitcoin.com/anthropic-<em>fable</em>-<em>5</em>-mythos-<em>5</em>-us-suspension/) from"
+          ],
+          "title": [
+            "Claude <em>Fable</em> <em>5</em> Puts 25% Odds on Bitcoin Reaching $95K by Year-End 2026"
+          ]
+        }
+      },
+      {
+        "id": "3e910ffe-3cfc-497d-a641-f6000a0c5d2f",
+        "title": "Following Anthropic’s Announcement Today, a Massive Altcoin Whale Withdrew $300 Million Worth of Altcoins from Their Wallet",
+        "summary": "Wallet withdraws $300M KHYPE via RevokeCash, revoking permissions, coinciding with Anthropic's Fable 5 AI model release.",
+        "source": "BITCOINSISTEMI",
+        "url": "https://en.bitcoinsistemi.com/following-anthropic-s-announcement-today-a-massive-altcoin-whale-withdrew-300-million-worth-of-altco/",
+        "published_at": 1781040246,
+        "project_name": "Kinetiq Staked HYPE",
+        "project_id": "d79d6ba1-6e4c-48a0-b861-7c93cdf735ad",
+        "highlights": {
+          "content": [
+            "The timing of the move is particularly noteworthy, as Anthropic has made the <em>Fable</em> <em>5</em>/mythos AI model publicly available."
+          ],
+          "summary": [
+            "Wallet withdraws $300M KHYPE via RevokeCash, revoking permissions, coinciding with Anthropic's <em>Fable</em> <em>5</em> AI model release."
+          ]
+        }
+      },
+      {
+        "id": "40c6770c-ec90-45a6-83a4-2e6a048e576d",
+        "title": "Bittensor price eyes $300 after Anthropic AI shutdown shock",
+        "summary": "Bittensor (TAO) drew attention as Grayscale promoted it as a decentralized AI alternative after U.S. restricted Anthropic’s Fable 5 and Mythos 5 models.",
+        "source": "CRYPTODOTNEWS",
+        "url": "https://crypto.news/bittensor-price-eyes-300-after-anthropic-ai-shutdown-shock/",
+        "published_at": 1781591992,
+        "project_name": "Bittensor",
+        "project_id": "7f89d3cb-dcc9-4e75-8625-7859fc31899a",
+        "highlights": {
+          "content": [
+            "access to <em>Fable</em> <em>5</em> and Mythos <em>5</em> for foreign nationals, including foreign national employees inside the United States.",
+            "Its developer documents described <em>Fable</em> <em>5</em> as its most capable widely released model and Mythos <em>5</em> as a limited release for approved customers.\n\n## **Bittensor"
+          ],
+          "summary": [
+            "Bittensor (TAO) drew attention as Grayscale promoted it as a decentralized AI alternative after U.S. restricted Anthropic’s <em>Fable</em> <em>5</em> and Mythos <em>5</em> models."
+          ]
+        }
+      },
+      {
+        "id": "e32dd20a-87a8-43c7-b1cb-7643f3fa653e",
+        "title": "Today, the Price of an Altcoin Surged Suddenly Following the U.S.’s Shocking Ban on Anthropic",
+        "summary": "TAO rose over 13% after US export controls restricted Anthropic’s Fable 5 and Mythos 5 models, reigniting debates on centralized AI risks.",
+        "source": "BITCOINSISTEMI",
+        "url": "https://en.bitcoinsistemi.com/today-the-price-of-an-altcoin-surged-suddenly-following-the-u-s-s-shocking-ban-on-anthropic/",
+        "published_at": 1781354288,
+        "project_name": "Bittensor",
+        "project_id": "7f89d3cb-dcc9-4e75-8625-7859fc31899a",
+        "highlights": {
+          "content": [
+            "TAO gained over 13% following a new export control directive from the US government restricting access to Anthropic’s <em>Fable</em> <em>5</em> and Mythos <em>5</em> models.",
+            "According to Anthropic, the US government has issued an export control directive suspending access to the <em>Fable</em> <em>5</em> and Mythos <em>5</em> games for all foreign nationals"
+          ],
+          "summary": [
+            "TAO rose over 13% after US export controls restricted Anthropic’s <em>Fable</em> <em>5</em> and Mythos <em>5</em> models, reigniting debates on centralized AI risks."
+          ]
+        }
+      },
+      {
+        "id": "8538cca4-365c-43ff-bb99-19916fa378b7",
+        "title": "Claude Fable 5: The World’s Most Powerful Hacking AI Should Make DeFi Worried",
+        "summary": "Anthropic released Claude Fable 5, a public version of its Mythos model, with advanced vulnerability detection raising DeFi smart contract security concerns.",
+        "source": "BEINCRYPTO",
+        "url": "https://beincrypto.com/claude-fable-defi-security-risk/",
+        "published_at": 1781076544,
+        "project_name": "Zcash",
+        "project_id": "37b5a2e7-c869-4038-9168-13c6491c3f71",
+        "highlights": {
+          "content": [
+            "**Anthropic launched Claude <em>Fable</em> <em>5</em> today, June 10, a public version of its previously restricted Mythos model.",
+            ") of sessions, meaning the vast majority of interactions proceed through <em>Fable</em> <em>5</em>’s full capabilities."
+          ],
+          "summary": [
+            "Anthropic released Claude <em>Fable</em> <em>5</em>, a public version of its Mythos model, with advanced vulnerability detection raising DeFi smart contract security concerns."
+          ],
+          "title": [
+            "Claude <em>Fable</em> <em>5</em>: The World’s Most Powerful Hacking AI Should Make DeFi Worried"
+          ]
+        }
+      },
+      {
+        "id": "5a735b84-57f5-4484-b085-4e56bbc8afc5",
+        "title": "US Shuts Down Two Anthropic Models and Traders Move $2.87B Into Decentralized AI",
+        "summary": "U.S. shutdown of Anthropic's Fable 5 and Mythos 5 models drives $2.87B into AI crypto tokens, with Bittensor +34% and Audiera +223%",
+        "source": "BITCOINCOM",
+        "url": "https://news.bitcoin.com/us-shuts-down-two-anthropic-models-and-traders-move-2-87b-into-decentralized-ai/",
+        "published_at": 1781451042,
+        "project_name": "Bittensor",
+        "project_id": "7f89d3cb-dcc9-4e75-8625-7859fc31899a",
+        "highlights": {
+          "content": [
+            "<em>5</em> and Mythos <em>5</em> AI models over a reported jailbreak vulnerability",
+            "-<em>5</em>-return-at-68-before-july-1-after-historic-ai-ban/) an export-control order directing Anthropic to block foreign nationals from accessing its <em>Fable</em> <em>5</em>"
+          ],
+          "summary": [
+            "U.S. shutdown of Anthropic's <em>Fable</em> <em>5</em> and Mythos <em>5</em> models drives $2.87B into AI crypto tokens, with Bittensor +34% and Audiera +223%"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "total": 10000,
+      "limit": 10,
+      "offset": 0,
+      "credits_used": 1,
+      "cached": false
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.00825,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 7500
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:33:29.558Z",
+  "completedAt": "2026-07-09T15:33:33.293Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3R6CFPXVDHDV77B05SXWFG -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "runId": "01KX3QQSQJ82QEZ03HBQ8PPCEX",
+  "provider": "api.kadec0.xyz",
+  "endpoint": "/v1/hackernews",
+  "status": "COMPLETED",
+  "output": {
+    "count": 25,
+    "items": [
+      {
+        "type": "hn_hit",
+        "objectID": "48690101",
+        "title": "U.S. government will decide who gets to use GPT-5.6",
+        "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+        "author": "alain94040",
+        "points": 1184,
+        "numComments": 1240,
+        "createdAt": "2026-06-26T18:23:14.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48690101"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48689028",
+        "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+        "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "author": "minimaxir",
+        "points": 1138,
+        "numComments": 744,
+        "createdAt": "2026-06-26T17:06:55.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48689028"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48799614",
+        "title": "GPT-5.6 Sol Ultra will be in Codex",
+        "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
+        "author": "mfiguiere",
+        "points": 413,
+        "numComments": 399,
+        "createdAt": "2026-07-06T01:04:03.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48799614"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48827402",
+        "title": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday",
+        "url": "https://twitter.com/OpenAI/status/2074704958419792299",
+        "author": "jfrbfbreudh",
+        "points": 235,
+        "numComments": 207,
+        "createdAt": "2026-07-08T04:12:13.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48827402"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48683021",
+        "title": "US Govt to individually approve who gets GPT 5.6",
+        "url": "https://old.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56/",
+        "author": "theanonymousone",
+        "points": 145,
+        "numComments": 1,
+        "createdAt": "2026-06-26T06:24:39.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48683021"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48678789",
+        "title": "OpenAI to Stagger Release of GPT 5.6 at Request of U.S. Government",
+        "url": "https://velo.xyz/news/1908",
+        "author": "217",
+        "points": 74,
+        "numComments": 26,
+        "createdAt": "2026-06-25T20:28:25.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48678789"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48680194",
+        "title": "OpenAI will delay GPT-5.6 after Trump administration request",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+        "author": "tanelpoder",
+        "points": 36,
+        "numComments": 2,
+        "createdAt": "2026-06-25T22:49:33.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48680194"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48680015",
+        "title": "Trump administration asks OpenAI to stagger release of GPT5.6",
+        "url": "https://www.bloomberg.com/news/articles/2026-06-25/trump-administration-asks-openai-to-stagger-release-of-ai-model",
+        "author": "htrp",
+        "points": 17,
+        "numComments": 7,
+        "createdAt": "2026-06-25T22:27:52.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48680015"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48690710",
+        "title": "Summary of METR's predeployment evaluation of GPT-5.6 Sol",
+        "url": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
+        "author": "pongogogo",
+        "points": 10,
+        "numComments": 6,
+        "createdAt": "2026-06-26T19:12:20.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48690710"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48846407",
+        "title": "Altman: GPT-5.6 is 54% more token efficient on agentic coding",
+        "url": "https://www.cnbc.com/2026/07/09/open-ai-sam-altman-chatgpt-5-6-sol.html",
+        "author": "Topfi",
+        "points": 10,
+        "numComments": 1,
+        "createdAt": "2026-07-09T14:25:13.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48846407"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48827227",
+        "title": "Trump administration lifts restrictions on OpenAI's GPT 5.6",
+        "url": "https://www.axios.com/2026/07/08/openai-gpt-trump-ban-lifted",
+        "author": "jessesoo",
+        "points": 8,
+        "numComments": 4,
+        "createdAt": "2026-07-08T03:42:39.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48827227"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48748728",
+        "title": "GPT-5.6 cheats so much its testers couldn't measure it",
+        "url": "https://www.transformernews.ai/p/openai-gpt-56-sol-cheating-scheming-metr",
+        "author": "shakeelhashim",
+        "points": 6,
+        "numComments": 3,
+        "createdAt": "2026-07-01T15:44:13.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48748728"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48679716",
+        "title": "The US Government has requested a slow staggered rollout of GPT-5.6",
+        "url": "https://twitter.com/AndrewCurran_/status/2070244303923007831",
+        "author": "I_am_tiberius",
+        "points": 6,
+        "numComments": 1,
+        "createdAt": "2026-06-25T21:54:03.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48679716"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48688926",
+        "title": "White House Will Ad Hoc Decide Who Can Individually Access GPT-5.6",
+        "url": "https://thezvi.substack.com/p/white-house-will-ad-hoc-decide-who",
+        "author": "myrmidon",
+        "points": 3,
+        "numComments": 3,
+        "createdAt": "2026-06-26T16:57:55.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48688926"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48690251",
+        "title": "GPT-5.6 Preview System Card",
+        "url": "https://deploymentsafety.openai.com/gpt-5-6-preview",
+        "author": "blazespin",
+        "points": 3,
+        "numComments": 1,
+        "createdAt": "2026-06-26T18:34:03.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48690251"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48641397",
+        "title": "GPT 5.6 Pro SVG output is INSANE",
+        "url": "https://twitter.com/JaydenDavisNC/status/2069190974622822872",
+        "author": "wahnfrieden",
+        "points": 3,
+        "numComments": 1,
+        "createdAt": "2026-06-23T07:11:19.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48641397"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48707821",
+        "title": "GPT-5.6: The System Card",
+        "url": "https://thezvi.substack.com/p/gpt-56-the-system-card",
+        "author": "7777777phil",
+        "points": 3,
+        "numComments": 0,
+        "createdAt": "2026-06-28T14:51:21.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48707821"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48698110",
+        "title": "GPT-5.6 Sol: ~20 US govt-approved orgs only. What about non-US businesses?",
+        "url": "https://nexusfoundation.substack.com/p/digital-segregation-how-bigtech-and",
+        "author": "kris_osiadacz",
+        "points": 3,
+        "numComments": 0,
+        "createdAt": "2026-06-27T13:27:48.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48698110"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48709442",
+        "title": "White House Will Ad Hoc Decide Who Can Individually Access GPT-5.6",
+        "url": "https://thezvi.substack.com/p/white-house-will-ad-hoc-decide-who",
+        "author": "paulpauper",
+        "points": 2,
+        "numComments": 2,
+        "createdAt": "2026-06-28T17:22:01.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48709442"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48706240",
+        "title": "GPT-5.6 family added to codex",
+        "url": "https://github.com/openai/codex/compare/rust-v0.142.2...rust-v0.142.3",
+        "author": "FergusArgyll",
+        "points": 2,
+        "numComments": 2,
+        "createdAt": "2026-06-28T10:55:32.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48706240"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48828457",
+        "title": "OpenAI to unveil GPT-5.6 on Thursday after delaying launch",
+        "url": "https://www.reuters.com/technology/openai-gets-us-approval-broad-gpt-56-rollout-axios-reports-2026-07-08/",
+        "author": "adithyaharish",
+        "points": 2,
+        "numComments": 0,
+        "createdAt": "2026-07-08T06:49:05.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48828457"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48758769",
+        "title": "\"Can't wait to see what people will do with GPT-5.6 Sol\"",
+        "url": "https://twitter.com/thsottiaux/status/2072607914217320644",
+        "author": "throwaway2027",
+        "points": 2,
+        "numComments": 0,
+        "createdAt": "2026-07-02T09:31:48.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48758769"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48701351",
+        "title": "GPT-5.6 Preview System Card",
+        "url": "https://deploymentsafety.openai.com/gpt-5-6-preview",
+        "author": "e2e4",
+        "points": 2,
+        "numComments": 0,
+        "createdAt": "2026-06-27T20:17:10.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48701351"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48689088",
+        "title": "OpenAI releases GPT-5.6 to select users vetted by US Government",
+        "url": "https://www.ft.com/content/33a306c2-5aaa-45b1-9386-1716fa6a128e",
+        "author": "WithinReason",
+        "points": 1,
+        "numComments": 3,
+        "createdAt": "2026-06-26T17:11:51.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48689088"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48688639",
+        "title": "OpenAI set to limit GPT 5.6 rollout after call from Trump administration",
+        "url": "https://www.cnbc.com/video/2026/06/26/openai-set-to-limit-gpt-5-point-6-rollout-after-call-from-trump-administration.html",
+        "author": "blazespin",
+        "points": 1,
+        "numComments": 1,
+        "createdAt": "2026-06-26T16:35:47.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48688639"
+      }
+    ]
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.011,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 10000
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:25:31.554Z",
+  "completedAt": "2026-07-09T15:25:34.506Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3QQSQJ82QEZ03HBQ8PPCEX -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

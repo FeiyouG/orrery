@@ -1,0 +1,283 @@
+{
+  "runId": "01KX3RDT2QXA7NN4YA17Y38PVS",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/twitter/web/fetch_search_timeline",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "keyword": "monid.ai",
+      "search_type": "Top"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "0907945b-bcca-4c22-ab88-cd1ed4c4b060",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:37:36",
+      "time_stamp": 1783611456,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Twitter-Web-API/fetch_search_timeline_api_v1_twitter_web_fetch_search_timeline_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/0907945b-bcca-4c22-ab88-cd1ed4c4b060?sign=11027854525623280c900f5d63b9d4206cbe43acd583d66ddc28218eaf6f3f85",
+      "router": "/api/v1/twitter/web/fetch_search_timeline",
+      "params": {
+        "keyword": "monid.ai",
+        "search_type": "Top"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:37:32.558Z",
+  "startedAt": "2026-07-09T15:37:32.987Z",
+  "completedAt": "2026-07-09T15:37:36.426Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RDT2QXA7NN4YA17Y38PVS -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "status": "ok",
+    "timeline": [
+      {
+        "type": "tweet",
+        "tweet_id": "2052914249320858002",
+        "screen_name": "yachty66",
+        "bookmarks": 31,
+        "favorites": 50,
+        "created_at": "Sat May 09 00:51:12 +0000 2026",
+        "text": "https://t.co/2kA3fEzkc6",
+        "lang": "zxx",
+        "display_text_range": [
+          0,
+          23
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 2,
+        "replies": 8,
+        "conversation_id": "2052914249320858002",
+        "retweets": 2,
+        "views": "6090",
+        "entities": {
+          "urls": [
+            {
+              "display_url": "x.com/i/article/2052…",
+              "expanded_url": "http://x.com/i/article/2052910989100961792",
+              "indices": [
+                0,
+                23
+              ],
+              "url": "https://t.co/2kA3fEzkc6"
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": [],
+          "user_mentions": []
+        },
+        "user_info": {
+          "screen_name": "yachty66",
+          "name": "Max Hager",
+          "created_at": "Thu Dec 02 16:07:55 +0000 2021",
+          "description": "Building cool technology",
+          "rest_id": "1466438873823723528",
+          "followers_count": 1929,
+          "favourites_count": 20579,
+          "avatar": "https://pbs.twimg.com/profile_images/2061552122399739904/HO6eoY2E_normal.jpg",
+          "url": "https://getjacob.app/",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1466438873823723528/1777468523",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 1982,
+          "location": ""
+        },
+        "media": []
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072779609306026463",
+        "screen_name": "Jasperli0122",
+        "bookmarks": 0,
+        "favorites": 0,
+        "created_at": "Thu Jul 02 20:29:03 +0000 2026",
+        "text": "@theBuabeeYereba @X @fdotinc thx man. we r building https://t.co/JV5BXjBG13 , a tool can intergate 1000 apis into one for ur agents. what  r u building.",
+        "lang": "en",
+        "display_text_range": [
+          29,
+          152
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 0,
+        "replies": 1,
+        "conversation_id": "2072472554888175948",
+        "retweets": 0,
+        "views": "17",
+        "entities": {
+          "urls": [
+            {
+              "display_url": "monid.ai",
+              "expanded_url": "http://monid.ai",
+              "indices": [
+                52,
+                75
+              ],
+              "url": "https://t.co/JV5BXjBG13"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id_str": "1602066214364258308",
+              "indices": [
+                0,
+                16
+              ],
+              "name": "ʙᴜᴀʙᴇᴇ ʏᴇʀᴇʙᴀ",
+              "screen_name": "theBuabeeYereba"
+            },
+            {
+              "id_str": "783214",
+              "indices": [
+                17,
+                19
+              ],
+              "name": "X",
+              "screen_name": "X"
+            },
+            {
+              "id_str": "1230404765827256320",
+              "indices": [
+                20,
+                28
+              ],
+              "name": "Founders Inc",
+              "screen_name": "fdotinc"
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": []
+        },
+        "user_info": {
+          "screen_name": "Jasperli0122",
+          "name": "Jasper Li",
+          "created_at": "Mon Sep 18 11:33:11 +0000 2023",
+          "description": "Building @monid_ai One integration for every API your agent needs | @fdotinc | PhD @TAMU | 37K @xiaohongshu",
+          "rest_id": "1703733780962553856",
+          "followers_count": 335,
+          "favourites_count": 147,
+          "avatar": "https://pbs.twimg.com/profile_images/1775100573668478976/M3GaKIfI_normal.jpg",
+          "url": "https://monid.ai/",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1703733780962553856/1782508424",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 367,
+          "location": ""
+        },
+        "media": [],
+        "in_reply_to_screen_name": "theBuabeeYereba",
+        "in_reply_to_status_id_str": "2072554099132846492",
+        "in_reply_to_user_id_str": "1602066214364258308"
+      },
+      {
+        "type": "tweet",
+        "tweet_id": "2072795598395469956",
+        "screen_name": "Jasperli0122",
+        "bookmarks": 0,
+        "favorites": 0,
+        "created_at": "Thu Jul 02 21:32:35 +0000 2026",
+        "text": "@AivedamLlc @X @fdotinc Can u drop ur url here. I wanna try it. Btw, we r building https://t.co/JV5BXjBG13, a tool can intergate 1000 apis to one for ur agents need",
+        "lang": "en",
+        "display_text_range": [
+          24,
+          164
+        ],
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "quotes": 0,
+        "replies": 1,
+        "conversation_id": "2072472554888175948",
+        "retweets": 0,
+        "views": "19",
+        "entities": {
+          "urls": [
+            {
+              "display_url": "monid.ai",
+              "expanded_url": "http://monid.ai",
+              "indices": [
+                83,
+                106
+              ],
+              "url": "https://t.co/JV5BXjBG13"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id_str": "1997110744274665472",
+              "indices": [
+                0,
+                11
+              ],
+              "name": "アダム｜AiveDam",
+              "screen_name": "AivedamLlc"
+            },
+            {
+              "id_str": "783214",
+              "indices": [
+                12,
+                14
+              ],
+              "name": "X",
+              "screen_name": "X"
+            },
+            {
+              "id_str": "1230404765827256320",
+              "indices": [
+                15,
+                23
+              ],
+              "name": "Founders Inc",
+              "screen_name": "fdotinc"
+            }
+          ],
+          "hashtags": [],
+          "symbols": [],
+          "timestamps": []
+        },
+        "user_info": {
+          "screen_name": "Jasperli0122",
+          "name": "Jasper Li",
+          "created_at": "Mon Sep 18 11:33:11 +0000 2023",
+          "description": "Building @monid_ai One integration for every API your agent needs | @fdotinc | PhD @TAMU | 37K @xiaohongshu",
+          "rest_id": "1703733780962553856",
+          "followers_count": 335,
+          "favourites_count": 147,
+          "avatar": "https://pbs.twimg.com/profile_images/1775100573668478976/M3GaKIfI_normal.jpg",
+          "url": "https://monid.ai/",
+          "cover_image": "https://pbs.twimg.com/profile_banners/1703733780962553856/1782508424",
+          "verified_type": null,
+          "verified": true,
+          "friends_count": 367,
+          "location": ""
+        },
+        "media": [],
+        "in_reply_to_screen_name": "AivedamLlc",
+        "in_reply_to_status_id_str": "2072584322868183199",
+        "in_reply_to_user_id_str": "1997110744274665472"
+      }
+    ],
+    "next_cursor": "DAACCgACHMy-fV8AJxAKAAMczL59Xv_Y8AgABAAAAAILAAUAAADwRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJRY3cvM2hscHBSblJ6REVYK04yMUd0SE1RTW5WWmE4SVFjeWIrVGoxdFE5Ung5YXFJSkc0R1NITU56ZXNYYm9jSWN3LzRTbGx2UjN4ekRqVC8wRjRGYkhNcHoyWU9hMENBY3d4LytSRnN4Umh6RC9ocFJtN0dJSE1sNUhKK2FBWDRjeW5NVGl4cmdhaHpEL1ppYjJvRjdITVA5L1crYmNXc2N3OEdNcTVzeDloektja1VmVzdFWUhNTTNkeWFYMGJZY3lqVGhZcHJ3TFJ6S0NRRzhtMEdjCAAGAAAAAAgABwAAAAAMAAgKAAEcfWqiCRuBkgAAAA",
+    "prev_cursor": "DAACCgACHMy-fV8AJxAKAAMczL59Xv_Y8AgABAAAAAELAAUAAADwRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJRY3cvM2hscHBSblJ6REVYK04yMUd0SE1RTW5WWmE4SVFjeWIrVGoxdFE5Ung5YXFJSkc0R1NITU56ZXNYYm9jSWN3LzRTbGx2UjN4ekRqVC8wRjRGYkhNcHoyWU9hMENBY3d4LytSRnN4Umh6RC9ocFJtN0dJSE1sNUhKK2FBWDRjeW5NVGl4cmdhaHpEL1ppYjJvRjdITVA5L1crYmNXc2N3OEdNcTVzeDloektja1VmVzdFWUhNTTNkeWFYMGJZY3lqVGhZcHJ3TFJ6S0NRRzhtMEdjCAAGAAAAAAgABwAAAAAMAAgKAAEcfWqiCRuBkgAAAA"
+  }
+}

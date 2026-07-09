@@ -93,6 +93,18 @@ const glowTex = canvasTexture(256, 256, (ctx, s) => {
   ctx.fillRect(0, 0, s, s);
 });
 
+// sun corona: exponential falloff — no visible banding, fades out fast
+const coronaTex = canvasTexture(512, 512, (ctx, s) => {
+  const g = ctx.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+  for (let i = 0; i <= 24; i++) {
+    const t = i / 24;
+    const a = Math.exp(-t * 6.5) * (1 - t); // bright core, quick smooth tail
+    g.addColorStop(t, `rgba(255,255,255,${a.toFixed(4)})`);
+  }
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, s, s);
+});
+
 // -------------------------------------------------- procedural planet skins
 const P = {
   lava:   { deep: [26, 16, 18],  low: [58, 38, 34],   high: [96, 70, 58],  accent: [255, 96, 20] },
@@ -479,13 +491,12 @@ function buildSun(company) {
   scene.add(sun);
 
   const coronaSpecs = [
-    [r * 4.6, 0.5 + pop * 0.3],
-    [r * 8.4, 0.2 + pop * 0.16],
-    [r * 14.5, 0.08 + pop * 0.1],
+    [r * 5.2, 0.5 + pop * 0.25],   // tight glow hugging the limb
+    [r * 13, 0.3 + pop * 0.16],    // broad smooth falloff
   ];
   for (const [size, op] of coronaSpecs) {
     const sp = new THREE.Sprite(new THREE.SpriteMaterial({
-      map: glowTex, color: col, transparent: true, opacity: op, depthWrite: false, blending: THREE.AdditiveBlending,
+      map: coronaTex, color: col, transparent: true, opacity: op, depthWrite: false, blending: THREE.AdditiveBlending,
     }));
     sp.scale.setScalar(size);
     scene.add(sp);
@@ -847,6 +858,9 @@ const TYPE_LABEL = {
 
 function buildHud(data) {
   const c = data.company;
+  const isTopic = c.subjectType === "topic";
+  document.querySelector(".hud-eyebrow").textContent =
+    `${isTopic ? "TOPIC" : "BRAND"} UNIVERSE // LIVE TELEMETRY`;
   document.getElementById("company-name").textContent = c.name;
   document.getElementById("company-desc").textContent = c.description || "";
   document.getElementById("gauge-pop").style.width = `${Math.round((c.popularity ?? 0) * 100)}%`;
@@ -854,8 +868,9 @@ function buildHud(data) {
   const trendTxt = c.trend
     ? ` · SEARCH INTEREST <b>${c.trend.interest}</b>/100 ${c.trend.delta > 0.05 ? "▲" : c.trend.delta < -0.05 ? "▼" : "◆"}`
     : "";
+  const reachTxt = c.totalFollowers > 0 ? `REACH <b>${fmt(c.totalFollowers)}</b> followers · ` : "";
   document.getElementById("hud-stats").innerHTML =
-    `REACH <b>${fmt(c.totalFollowers)}</b> followers · <b>${data.sources.length}</b> worlds${trendTxt}<br>` +
+    `${reachTxt}<b>${data.sources.length}</b> worlds${trendTxt}<br>` +
     `${c.industry ? `SECTOR <b>${String(c.industry).toUpperCase()}</b> · ` : ""}` +
     `${c.employees ? `CREW <b>${fmt(c.employees)}</b>` : ""}`;
 
@@ -946,7 +961,9 @@ function openCompanyPanel() {
   const c = DATA.company;
   const intel = c.intel || {};
   document.getElementById("panel-title").textContent = c.name;
-  document.getElementById("panel-class").textContent = "STELLAR CORE · PDL + AKTA INTEL";
+  document.getElementById("panel-class").textContent = c.subjectType === "topic"
+    ? "TOPIC CORE · LIVE DISCOURSE"
+    : "STELLAR CORE · PDL + AKTA INTEL";
   const sent = c.sentiment ?? 0;
   const mood = sent > 0.15 ? ["RADIANT STAR", "#6effa0"] : sent < -0.15 ? ["UNSTABLE STAR", "#ff6a6a"] : ["STABLE STAR", "#7ff7ff"];
   document.getElementById("panel-sent").innerHTML =
@@ -967,7 +984,7 @@ function openCompanyPanel() {
     employees: c.employees && fmt(c.employees),
     founded: c.founded && String(c.founded),
     "search interest": c.trend ? `${c.trend.interest}/100` : null,
-    reach: fmt(c.totalFollowers),
+    reach: c.totalFollowers > 0 ? fmt(c.totalFollowers) : null,
   };
   Object.entries(rows).forEach(([k, v]) => {
     if (v == null) return;

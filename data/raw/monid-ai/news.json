@@ -1,0 +1,48 @@
+{
+  "runId": "01KX3RDSZV49TAF21263ZDEWTR",
+  "provider": "blockrun.ai",
+  "endpoint": "/api/v1/surf/search/news",
+  "status": "COMPLETED",
+  "output": {
+    "$schema": "https://api.asksurf.ai/schemas/DataResponseNewsArticleItem.json",
+    "data": [],
+    "meta": {
+      "total": 0,
+      "limit": 10,
+      "offset": 0,
+      "credits_used": 1,
+      "cached": false
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.00825,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 7500
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:37:32.485Z",
+  "completedAt": "2026-07-09T15:37:35.575Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RDSZV49TAF21263ZDEWTR -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

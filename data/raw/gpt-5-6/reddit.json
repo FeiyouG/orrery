@@ -1,0 +1,3434 @@
+{
+  "runId": "01KX3QQSKEYR98Y2VND2NTX9NN",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/reddit/app/fetch_dynamic_search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "query": "GPT-5.6",
+      "need_format": true,
+      "sort": "HOT",
+      "time_range": "month"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "b610a1bd-b957-47a7-9220-dc85fa951c64",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:25:32",
+      "time_stamp": 1783610732,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Reddit-APP-API/fetch_dynamic_search_api_v1_reddit_app_fetch_dynamic_search_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/b610a1bd-b957-47a7-9220-dc85fa951c64?sign=0ef722557c5b9a4a3a9def3dfd873eed84cd498414f9781427fb899d44cd32f8",
+      "router": "/api/v1/reddit/app/fetch_dynamic_search",
+      "params": {
+        "query": "GPT-5.6",
+        "need_format": "true",
+        "sort": "HOT",
+        "time_range": "month"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:25:31.082Z",
+  "startedAt": "2026-07-09T15:25:31.874Z",
+  "completedAt": "2026-07-09T15:25:33.362Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3QQSKEYR98Y2VND2NTX9NN -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "search": {
+      "dynamic": {
+        "components": {
+          "appliedState": {
+            "pane": "posts",
+            "filters": [
+              {
+                "key": "component",
+                "value": "SearchAppliedState"
+              },
+              {
+                "key": "experience_selection",
+                "value": "post"
+              },
+              {
+                "key": "safe_search",
+                "value": "unset"
+              },
+              {
+                "key": "sort",
+                "value": "HOT"
+              },
+              {
+                "key": "structure_type",
+                "value": "search"
+              },
+              {
+                "key": "time_range",
+                "value": "month"
+              }
+            ]
+          },
+          "main": {
+            "edges": [
+              {
+                "node": {
+                  "presentation": {
+                    "isDefaultPresentation": false
+                  },
+                  "children": [
+                    {
+                      "post": {
+                        "id": "t3_1urkhir",
+                        "createdAt": "2026-07-09T08:44:59.937000+0000",
+                        "postTitle": "OpenAI to Launch GPT-5.6 After US Approval",
+                        "url": "https://www.verity.news/story/2026/openai-to-launch-gpt-after-us-approval?p=re4712",
+                        "content": {
+                          "markdown": "The U.S. has approved a broad public launch of OpenAI's GPT-5.6 model for Thursday, following additional testing by the Center for AI Standards and Innovation, and meetings between OpenAI technical experts and government officials.",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"The U.S. has approved a broad public launch of OpenAI's GPT-5.6 model for Thursday, following additional testing by the Center for AI Standards and Innovation, and meetings between OpenAI technical experts and government officials.\"}],\"e\":\"par\"}]}",
+                          "html": "The U.S. has approved a broad public launch of OpenAI's GPT-5.6 model for Thursday, following additional testing by the Center for AI Standards and Innovation, and meetings between OpenAI technical experts and government officials.",
+                          "preview": "The U.S. has approved a broad public launch of OpenAI's GPT-5.6 model for Thursday, following additional testing by the Center for AI Standards and Innovation, and meetings between OpenAI technical experts and government officials."
+                        },
+                        "domain": "verity.news",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 2,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "News 📰",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"News 📰\"}]",
+                          "textColor": "LIGHT",
+                          "template": {
+                            "id": "1c39d510-f1ac-11ed-8167-5e7479c0f87c",
+                            "isEditable": false,
+                            "backgroundColor": "#DDBD37"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_rb83h70o1",
+                          "name": "DeepDreamerX",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://preview.redd.it/snoovatar/avatars/a1cfd803-4c11-4ffb-9dbe-f00b14a42dc3-headshot.png?auto=webp&s=da94cce58bb74af94f60c0dd8aa87fbe63673900",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://preview.redd.it/snoovatar/avatars/a1cfd803-4c11-4ffb-9dbe-f00b14a42dc3-headshot.png?width=50&height=50&auto=webp&s=12b624e5356ab60d433601be2a055a5889b2b79a",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/a1cfd803-4c11-4ffb-9dbe-f00b14a42dc3.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=140&height=78&auto=webp&s=8b1782ab6c5ff913fa483f35e5c38cd0e868a00e",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 78
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk",
+                          "still": {
+                            "source": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?auto=webp&s=6f756aaced6ce86c07ff5e1b98cb0702d29528e9",
+                              "dimensions": {
+                                "width": 1280,
+                                "height": 720
+                              }
+                            },
+                            "small": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=108&auto=webp&s=a108c5d7247db4a90e5b1c163dfbb8d1dc10dc3a",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 60
+                              }
+                            },
+                            "medium": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=216&auto=webp&s=6852eda1040050bb095a419284094c327c9852a2",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 121
+                              }
+                            },
+                            "large": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=320&auto=webp&s=296ae95c3f55f8a34fb74d95fff848e78c1bb87c",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 180
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=640&auto=webp&s=eb20f43d1fdfc51ee52218a1f460e2e279bff102",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 360
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=960&auto=webp&s=966c06c534316c80fd132bd08d656f401e117de9",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 540
+                              }
+                            },
+                            "xxxlarge": {
+                              "url": "https://external-preview.redd.it/T2h1GokcDd1f3hJFGJhWqJUjbJu-Zwm15D9hatyrMzk.jpeg?width=1080&auto=webp&s=da90e052c8c8e815fbe3715c9ccf1231edb04fd3",
+                              "dimensions": {
+                                "width": 1080,
+                                "height": 607
+                              }
+                            }
+                          }
+                        },
+                        "permalink": "/r/ChatGPT/comments/1urkhir/openai_to_launch_gpt56_after_us_approval/",
+                        "isSelfPost": false,
+                        "postHint": "LINK",
+                        "subreddit": {
+                          "id": "t5_7hqomg",
+                          "name": "ChatGPT",
+                          "prefixedName": "r/ChatGPT",
+                          "isQuarantined": false,
+                          "title": "ChatGPT",
+                          "type": "PUBLIC",
+                          "subscribersCount": 11556480,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_7hqomg/styles/communityIcon_bzj6d1z1oizc1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=ac31a0dc043676c9bff62b107e466a7610d70a34",
+                            "primaryColor": "#0DD3BB",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_7hqomg/styles/bannerBackgroundImage_9ujha2cxxgzc1.jpg?frame=1&auto=webp&format=pjpg&s=a5b9dafe45484318a8958afec7e3ecc904ceed37",
+                            "legacyPrimaryColor": "#25B79F"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "[https://discord.gg/r-chatgpt-1050422060352024636](https://discord.gg/r-chatgpt-1050422060352024636)",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"https://discord.gg/r-chatgpt-1050422060352024636\",\"u\":\"https://discord.gg/r-chatgpt-1050422060352024636\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "SpinAI",
+                              "url": "https://emoji.redditmedia.com/k6oywioqmizc1_t5_7hqomg/SpinAI"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1urkhir?app_name=android&token=AQAAvANQat5lD2TpDe7KDdiPvnvbzMvcsf7yHQMhUN8PjyANL5a1&url=https%3A%2F%2Fwww.verity.news%2Fstory%2F2026%2Fopenai-to-launch-gpt-after-us-approval%3Fp%3Dre4712",
+                          "expiresAt": "2026-07-09T20:25:32.645760+0000"
+                        },
+                        "upvoteRatio": 0.6666666666666666,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_7hqomg",
+                          "name": "ChatGPT",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "community",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urkhir",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI to Launch GPT-5.6 After US Approval",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_rb83h70o1",
+                                "name": "DeepDreamerX"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1urkhir",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "post",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urkhir",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI to Launch GPT-5.6 After US Approval",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_rb83h70o1",
+                                "name": "DeepDreamerX"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_ahn5rm",
+                          "name": "u_DeepDreamerX",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "profile",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urkhir",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI to Launch GPT-5.6 After US Approval",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_rb83h70o1",
+                                "name": "DeepDreamerX"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1urkhir",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "thumbnail",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urkhir",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI to Launch GPT-5.6 After US Approval",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_rb83h70o1",
+                                "name": "DeepDreamerX"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 0,
+                            "relativePosition": 0
+                          },
+                          "post": {
+                            "id": "t3_1urkhir",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI to Launch GPT-5.6 After US Approval",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_7hqomg",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ChatGPT"
+                          },
+                          "profile": {
+                            "id": "t2_rb83h70o1",
+                            "name": "DeepDreamerX"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqp76t",
+                        "createdAt": "2026-07-08T10:52:25.404000+0000",
+                        "postTitle": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                        "url": "https://i.redd.it/mdgoiqhskzbh1.png",
+                        "content": {
+                          "markdown": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"OpenAI, GPT-5.6 model ailesini kullan\\u0131ma a\\u00e7maya haz\\u0131rlan\\u0131yor.\"}],\"e\":\"par\"}]}",
+                          "html": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                          "preview": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor."
+                        },
+                        "domain": "i.redd.it",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 4,
+                        "authorFlair": {
+                          "text": "🍀r/borsavefon bağımlısı",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"🍀r/borsavefon bağımlısı\"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "39f9092a-a778-11f0-bdaf-0e1cae48ebe8",
+                            "backgroundColor": "#1619E9"
+                          }
+                        },
+                        "flair": {
+                          "type": "richtext",
+                          "text": "📟Teknoloji ve Yapay Zeka",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"📟Teknoloji ve Yapay Zeka\"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "5cffb764-3ccc-11f0-ad1d-9affe483bdce",
+                            "isEditable": false,
+                            "backgroundColor": "#878A8C"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_22d8fwqb6f",
+                          "name": "borsavefon",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_fxxmmh/styles/profileIcon_8f5g7bzzf5og1.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=e7cb8ce68e08e55909c833f25c49abf911fc7406",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_fxxmmh/styles/profileIcon_8f5g7bzzf5og1.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=7e21eb71b0a9afc2835abe181f3fc9714c135249",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://preview.redd.it/mdgoiqhskzbh1.png?width=140&height=140&auto=webp&s=679c5852348cd8cdaadec7f046c31117046c5f06",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 140
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "mdgoiqhskzbh1",
+                          "still": {
+                            "source": {
+                              "url": "https://preview.redd.it/mdgoiqhskzbh1.png?auto=webp&s=0b14ce97cab9a8b508f32db98f3ead0ff01bff2d",
+                              "dimensions": {
+                                "width": 447,
+                                "height": 447
+                              }
+                            },
+                            "small": {
+                              "url": "https://preview.redd.it/mdgoiqhskzbh1.png?width=108&auto=webp&s=32b296443c666e3bdddfdcaf615a675d3da16bbb",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 108
+                              }
+                            },
+                            "medium": {
+                              "url": "https://preview.redd.it/mdgoiqhskzbh1.png?width=216&auto=webp&s=f7331d17c4a3bc6cb6e675b5fbd049f2bec52f4c",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 216
+                              }
+                            },
+                            "large": {
+                              "url": "https://preview.redd.it/mdgoiqhskzbh1.png?width=320&auto=webp&s=95aa280a5bad16c7bb662c4619eb422379c1fead",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 320
+                              }
+                            }
+                          },
+                          "typeHint": "IMAGE"
+                        },
+                        "suggestedCommentSort": "CONFIDENCE",
+                        "permalink": "/r/borsavefon/comments/1uqp76t/openai_gpt56_model_ailesini_kullanıma_açmaya/",
+                        "isSelfPost": false,
+                        "postHint": "IMAGE",
+                        "subreddit": {
+                          "id": "t5_dsn6xy",
+                          "name": "borsavefon",
+                          "prefixedName": "r/borsavefon",
+                          "isQuarantined": false,
+                          "title": "YATIRIMCININ ANA SAYFASI",
+                          "type": "PUBLIC",
+                          "subscribersCount": 24093,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_dsn6xy/styles/communityIcon_bq569wuixrwg1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=d9f4e968f1f08589ba221a6ab3fc6f68496b9e23",
+                            "primaryColor": "#20DF40",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_dsn6xy/styles/mobileBannerImage_o7onoaorgvme1.png?frame=1&auto=webp&s=e8f8cbab99f3fd971b9d5891c31b776fe1869fd3"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "Borsa & Fon",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"Borsa \\u0026 Fon\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "SebatiGozufar",
+                              "url": "https://emoji.redditmedia.com/wdsyg0xzdh0f1_t5_dsn6xy/SebatiGozufar"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://i.redd.it/mdgoiqhskzbh1.png",
+                          "expiresAt": "2026-07-09T20:25:32.645748+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "tr",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_dsn6xy",
+                          "name": "borsavefon",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "community",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp76t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_dsn6xy",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "borsavefon"
+                              },
+                              "profile": {
+                                "id": "t2_22d8fwqb6f",
+                                "name": "borsavefon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqp76t",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "post",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp76t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_dsn6xy",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "borsavefon"
+                              },
+                              "profile": {
+                                "id": "t2_22d8fwqb6f",
+                                "name": "borsavefon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_fxxmmh",
+                          "name": "u_borsavefon",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "profile",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp76t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_dsn6xy",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "borsavefon"
+                              },
+                              "profile": {
+                                "id": "t2_22d8fwqb6f",
+                                "name": "borsavefon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqp76t",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "thumbnail",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp76t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_dsn6xy",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "borsavefon"
+                              },
+                              "profile": {
+                                "id": "t2_22d8fwqb6f",
+                                "name": "borsavefon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 1,
+                            "relativePosition": 1
+                          },
+                          "post": {
+                            "id": "t3_1uqp76t",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI, GPT-5.6 model ailesini kullanıma açmaya hazırlanıyor.",
+                            "type": "IMAGE"
+                          },
+                          "subreddit": {
+                            "id": "t5_dsn6xy",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "borsavefon"
+                          },
+                          "profile": {
+                            "id": "t2_22d8fwqb6f",
+                            "name": "borsavefon"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uovy2t",
+                        "createdAt": "2026-07-06T12:29:06.068000+0000",
+                        "postTitle": "From the GPT-5.6 Sol Preview",
+                        "url": "https://www.reddit.com/r/ChatGPTcomplaints/comments/1uovy2t/from_the_gpt56_sol_preview/",
+                        "content": {
+                          "markdown": "\"Together, these layers make the overall approach more robust than any one safeguard on its own. *Model behavior reduces the likelihood of harmful responses*, real-time systems can intervene during generation, account-level review can identify broader patterns, and differentiated access preserves important defensive work without making the most sensitive capabilities broadly available by default.\"\n\nI hate to break it to them, but the way it's been functioning since 5.1 is increasing harmful responses from users. The more sterile, the more harm for some users. By harm, I mean frustration, longing for older models, and abrupt, assumptive responses that reduces users to a problem to solve.\n\nI'd argue ChatGPT is already harmful. How much worse are they going to make it? \n\n[https://openai.com/index/previewing-gpt-5-6-sol/](https://openai.com/index/previewing-gpt-5-6-sol/)",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"f\":[[2,97,58]],\"t\":\"\\\"Together, these layers make the overall approach more robust than any one safeguard on its own. Model behavior reduces the likelihood of harmful responses, real-time systems can intervene during generation, account-level review can identify broader patterns, and differentiated access preserves important defensive work without making the most sensitive capabilities broadly available by default.\\\"\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"I hate to break it to them, but the way it's been functioning since 5.1 is increasing harmful responses from users. The more sterile, the more harm for some users. By harm, I mean frustration, longing for older models, and abrupt, assumptive responses that reduces users to a problem to solve.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"I'd argue ChatGPT is already harmful. How much worse are they going to make it?\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"link\",\"t\":\"https://openai.com/index/previewing-gpt-5-6-sol/\",\"u\":\"https://openai.com/index/previewing-gpt-5-6-sol/\"}],\"e\":\"par\"}]}",
+                          "html": "\"Together, these layers make the overall approach more robust than any one safeguard on its own. Model behavior reduces the likelihood of harmful responses, real-time systems can intervene during generation, account-level review can identify broader patterns, and differentiated access preserves important defensive work without making the most sensitive capabilities broadly available by default.\"\nI hate to break it to them, but the way it's been functioning since 5.1 is increasing harmful responses from users. The more sterile, the more harm for some users. By harm, I mean frustration, longing for older models, and abrupt, assumptive responses that reduces users to a problem to solve.\nI'd argue ChatGPT is already harmful. How much worse are they going to make it? \nhttps://openai.com/index/previewing-gpt-5-6-sol/",
+                          "preview": "\"Together, these layers make the overall approach more robust than any one safeguard on its own. Model behavior reduces the likelihood of harmful responses, real-time systems can intervene during generation, account-level review can identify broader patterns, and differentiated access preserves impo"
+                        },
+                        "domain": "self.ChatGPTcomplaints",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "awardings": [
+                          {
+                            "award": {
+                              "id": "award_free_bravo",
+                              "name": "精彩",
+                              "tags": [
+                                "award:quick_give",
+                                "award:unlimited_free",
+                                "award:legacy",
+                                "award:sort:10"
+                              ],
+                              "static_icon_16": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/bravo_16.png",
+                                "dimensions": {
+                                  "width": 16,
+                                  "height": 16
+                                }
+                              },
+                              "static_icon_24": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/bravo_24.png",
+                                "dimensions": {
+                                  "width": 24,
+                                  "height": 24
+                                }
+                              },
+                              "static_icon_32": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/bravo_32.png",
+                                "dimensions": {
+                                  "width": 32,
+                                  "height": 32
+                                }
+                              },
+                              "static_icon_48": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/bravo_48.png",
+                                "dimensions": {
+                                  "width": 48,
+                                  "height": 48
+                                }
+                              },
+                              "static_icon_64": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/bravo_64.png",
+                                "dimensions": {
+                                  "width": 64,
+                                  "height": 64
+                                }
+                              }
+                            },
+                            "total": 1
+                          }
+                        ],
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 112,
+                        "commentCount": 35,
+                        "flair": {
+                          "type": "text",
+                          "text": "[Opinion]",
+                          "textColor": "LIGHT",
+                          "template": {
+                            "id": "12c4d0c2-a4f9-11f0-a5b1-ce71c85d4d51",
+                            "isEditable": false,
+                            "backgroundColor": "#D728A0"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_2hntl0ppw6",
+                          "name": "GnawedLip12",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://preview.redd.it/snoovatar/avatars/1e655e43-0fe9-4bd2-8657-652971e186a7-headshot.png?auto=webp&s=c37d8fba0e2562991a6052d3ddb51ad67ceabe4b",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://preview.redd.it/snoovatar/avatars/1e655e43-0fe9-4bd2-8657-652971e186a7-headshot.png?width=50&height=50&auto=webp&s=5ac872b887a4f6bc9edb5294c0dcce2a66801474",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/1e655e43-0fe9-4bd2-8657-652971e186a7.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/ChatGPTcomplaints/comments/1uovy2t/from_the_gpt56_sol_preview/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_fk9n3r",
+                          "name": "ChatGPTcomplaints",
+                          "prefixedName": "r/ChatGPTcomplaints",
+                          "isQuarantined": false,
+                          "title": "ChatGPTcomplaints",
+                          "type": "PUBLIC",
+                          "subscribersCount": 33155,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_fk9n3r/styles/communityIcon_9lzt1gsgnisf1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=8c1ed1cc83f1f39c2d27f770e961fcf2a8f11fe6",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_fk9n3r/styles/mobileBannerImage_c3a5l3uuqisf1.png?frame=1&auto=webp&s=dedf94f351879286faff2b6955a9d693095bdf92"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/ChatGPTcomplaints/comments/1uovy2t/from_the_gpt56_sol_preview/",
+                          "expiresAt": "2026-07-09T20:25:32.645781+0000"
+                        },
+                        "upvoteRatio": 0.944,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_fk9n3r",
+                          "name": "ChatGPTcomplaints",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "community",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uovy2t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "From the GPT-5.6 Sol Preview",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_fk9n3r",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPTcomplaints"
+                              },
+                              "profile": {
+                                "id": "t2_2hntl0ppw6",
+                                "name": "GnawedLip12"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uovy2t",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "post",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uovy2t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "From the GPT-5.6 Sol Preview",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_fk9n3r",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPTcomplaints"
+                              },
+                              "profile": {
+                                "id": "t2_2hntl0ppw6",
+                                "name": "GnawedLip12"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_irbemz",
+                          "name": "u_GnawedLip12",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "profile",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uovy2t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "From the GPT-5.6 Sol Preview",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_fk9n3r",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPTcomplaints"
+                              },
+                              "profile": {
+                                "id": "t2_2hntl0ppw6",
+                                "name": "GnawedLip12"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uovy2t",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "thumbnail",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uovy2t",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "From the GPT-5.6 Sol Preview",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_fk9n3r",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPTcomplaints"
+                              },
+                              "profile": {
+                                "id": "t2_2hntl0ppw6",
+                                "name": "GnawedLip12"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 2,
+                            "relativePosition": 2
+                          },
+                          "post": {
+                            "id": "t3_1uovy2t",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "From the GPT-5.6 Sol Preview",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_fk9n3r",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ChatGPTcomplaints"
+                          },
+                          "profile": {
+                            "id": "t2_2hntl0ppw6",
+                            "name": "GnawedLip12"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqlwhi",
+                        "createdAt": "2026-07-08T07:44:30.989000+0000",
+                        "postTitle": "Sam said GPT-5.6 sol launches Thursday!",
+                        "url": "https://www.reddit.com/r/ChatGPT/comments/1uqlwhi/sam_said_gpt56_sol_launches_thursday/",
+                        "content": {
+                          "markdown": "![img](uljopz5nmybh1)\n\nThat’s exactly when Claude limit resets. Coincidence? I think NOT. Let the AI wars begin! 🔥",
+                          "richtext": "{\"document\":[{\"e\":\"img\",\"id\":\"uljopz5nmybh1\"},{\"c\":[{\"e\":\"text\",\"t\":\"That\\u2019s exactly when Claude limit resets. Coincidence? I think NOT. Let the AI wars begin! \\ud83d\\udd25\"}],\"e\":\"par\"}]}",
+                          "html": "That’s exactly when Claude limit resets. Coincidence? I think NOT. Let the AI wars begin! 🔥",
+                          "richtextMedia": [
+                            {
+                              "id": "uljopz5nmybh1",
+                              "mimetype": "image/png",
+                              "width": 1615,
+                              "height": 974,
+                              "status": "VALID",
+                              "url": "https://i.redd.it/uljopz5nmybh1.png"
+                            }
+                          ],
+                          "preview": "That’s exactly when Claude limit resets. Coincidence? I think NOT. Let the AI wars begin! 🔥"
+                        },
+                        "domain": "self.ChatGPT",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 4,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Gone Wild ",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Gone Wild \"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "bd4e6832-7bbc-11ed-97cb-0e48625ac41d",
+                            "isEditable": false,
+                            "backgroundColor": "#FFB000"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_2276jny3vw",
+                          "name": "echonight2025",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_fx8f3i/styles/profileIcon_ggqtnwwvxntg1.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=6e9aa6d9d02fb72e7fea0380b21efcb8ddd77b52",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_fx8f3i/styles/profileIcon_ggqtnwwvxntg1.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=6dc9f78d44fe42a5bfd0bf1ba77fcc6126a3855a",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://preview.redd.it/uljopz5nmybh1.png?width=140&height=84&auto=webp&s=fab2b2bd19d6ed3a93fc86bddafa63185ba76c99",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 84
+                          }
+                        },
+                        "permalink": "/r/ChatGPT/comments/1uqlwhi/sam_said_gpt56_sol_launches_thursday/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_7hqomg",
+                          "name": "ChatGPT",
+                          "prefixedName": "r/ChatGPT",
+                          "isQuarantined": false,
+                          "title": "ChatGPT",
+                          "type": "PUBLIC",
+                          "subscribersCount": 11556480,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_7hqomg/styles/communityIcon_bzj6d1z1oizc1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=ac31a0dc043676c9bff62b107e466a7610d70a34",
+                            "primaryColor": "#0DD3BB",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_7hqomg/styles/bannerBackgroundImage_9ujha2cxxgzc1.jpg?frame=1&auto=webp&format=pjpg&s=a5b9dafe45484318a8958afec7e3ecc904ceed37",
+                            "legacyPrimaryColor": "#25B79F"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "[https://discord.gg/r-chatgpt-1050422060352024636](https://discord.gg/r-chatgpt-1050422060352024636)",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"https://discord.gg/r-chatgpt-1050422060352024636\",\"u\":\"https://discord.gg/r-chatgpt-1050422060352024636\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "SpinAI",
+                              "url": "https://emoji.redditmedia.com/k6oywioqmizc1_t5_7hqomg/SpinAI"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/ChatGPT/comments/1uqlwhi/sam_said_gpt56_sol_launches_thursday/",
+                          "expiresAt": "2026-07-09T20:25:32.645757+0000"
+                        },
+                        "upvoteRatio": 0.6666666666666666,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_7hqomg",
+                          "name": "ChatGPT",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "community",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqlwhi",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Sam said GPT-5.6 sol launches Thursday!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_2276jny3vw",
+                                "name": "echonight2025"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqlwhi",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "post",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqlwhi",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Sam said GPT-5.6 sol launches Thursday!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_2276jny3vw",
+                                "name": "echonight2025"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_fx8f3i",
+                          "name": "u_echonight2025",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "profile",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqlwhi",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Sam said GPT-5.6 sol launches Thursday!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_2276jny3vw",
+                                "name": "echonight2025"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqlwhi",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "thumbnail",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqlwhi",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Sam said GPT-5.6 sol launches Thursday!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_2276jny3vw",
+                                "name": "echonight2025"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 3,
+                            "relativePosition": 3
+                          },
+                          "post": {
+                            "id": "t3_1uqlwhi",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Sam said GPT-5.6 sol launches Thursday!",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_7hqomg",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ChatGPT"
+                          },
+                          "profile": {
+                            "id": "t2_2276jny3vw",
+                            "name": "echonight2025"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uomr84",
+                        "createdAt": "2026-07-06T04:08:12.842000+0000",
+                        "postTitle": "GPT-5.6 Sol Ultra will be in Codex",
+                        "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
+                        "domain": "twitter.com",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 3,
+                        "commentCount": 1,
+                        "authorFlair": {
+                          "text": "bot",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "e1dfea98-187e-11f0-8dcb-ca6e714d05f5",
+                            "backgroundColor": "#FF4500"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_bzan9",
+                          "name": "HNMod",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_1ul8cr/styles/profileIcon_w0gd0bvo2lue1.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=b70b053f4da489300b7eba3a209c1753ab96d54a",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_1ul8cr/styles/profileIcon_w0gd0bvo2lue1.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=8b80a2528af29269f3227b6db35248f3c450b5a4",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/hackernews/comments/1uomr84/gpt56_sol_ultra_will_be_in_codex/",
+                        "isSelfPost": false,
+                        "subreddit": {
+                          "id": "t5_2qhij",
+                          "name": "hackernews",
+                          "prefixedName": "r/hackernews",
+                          "isQuarantined": false,
+                          "title": "Hacker News",
+                          "type": "RESTRICTED",
+                          "subscribersCount": 99982,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_2qhij/styles/communityIcon_ny0jrqif3lue1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=45a3cdff945a7aa114ce9b2ee735cd83d3e30c71",
+                            "primaryColor": "#FF4500",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_2qhij/styles/mobileBannerImage_9at0vbwi3lue1.png?frame=1&auto=webp&s=3b08cc0bd6f2c792c3742255d43f5457cbc87cdb"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1uomr84?app_name=android&token=AQAAvANQautr0cL0jBANo-v6aNw1eXURg3GBd87alqovzQGFUD5o&url=https%3A%2F%2Ftwitter.com%2Fthsottiaux%2Fstatus%2F2073933490513752151",
+                          "expiresAt": "2026-07-09T20:25:32.645764+0000"
+                        },
+                        "upvoteRatio": 0.8,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2qhij",
+                          "name": "hackernews",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "community",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uomr84",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 Sol Ultra will be in Codex",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qhij",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "hackernews"
+                              },
+                              "profile": {
+                                "id": "t2_bzan9",
+                                "name": "HNMod"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uomr84",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "post",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uomr84",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 Sol Ultra will be in Codex",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qhij",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "hackernews"
+                              },
+                              "profile": {
+                                "id": "t2_bzan9",
+                                "name": "HNMod"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_1ul8cr",
+                          "name": "u_HNMod",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "profile",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uomr84",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 Sol Ultra will be in Codex",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qhij",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "hackernews"
+                              },
+                              "profile": {
+                                "id": "t2_bzan9",
+                                "name": "HNMod"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uomr84",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "thumbnail",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uomr84",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 Sol Ultra will be in Codex",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qhij",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "hackernews"
+                              },
+                              "profile": {
+                                "id": "t2_bzan9",
+                                "name": "HNMod"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 4,
+                            "relativePosition": 4
+                          },
+                          "post": {
+                            "id": "t3_1uomr84",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "GPT-5.6 Sol Ultra will be in Codex",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_2qhij",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "hackernews"
+                          },
+                          "profile": {
+                            "id": "t2_bzan9",
+                            "name": "HNMod"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqxy0p",
+                        "createdAt": "2026-07-08T16:36:37.304000+0000",
+                        "postTitle": "GPT-5.6 kommt am Donnerstag: Sol, Terra und Luna starten öffentlich",
+                        "url": "https://x.com/OpenAI/status/2074704958419792299?utm_source=tldrai",
+                        "content": {
+                          "markdown": "Die GPT-5.6-Familie geht diesen Donnerstag öffentlich live. Der Preview-Zugang wird ab sofort weltweit ausgeweitet.\n\nDie drei Modelle:\n\nSol: das neue Frontier-Modell, laut OpenAI das bisher stärkste für Cybersecurity\n\nTerra: ausbalanciertes Modell für den Arbeitsalltag\n\nLuna: schnell und günstig für High-Volume-Anwendungen",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"Die GPT-5.6-Familie geht diesen Donnerstag \\u00f6ffentlich live. Der Preview-Zugang wird ab sofort weltweit ausgeweitet.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Die drei Modelle:\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Sol: das neue Frontier-Modell, laut OpenAI das bisher st\\u00e4rkste f\\u00fcr Cybersecurity\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Terra: ausbalanciertes Modell f\\u00fcr den Arbeitsalltag\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Luna: schnell und g\\u00fcnstig f\\u00fcr High-Volume-Anwendungen\"}],\"e\":\"par\"}]}",
+                          "html": "Die GPT-5.6-Familie geht diesen Donnerstag öffentlich live. Der Preview-Zugang wird ab sofort weltweit ausgeweitet.\nDie drei Modelle:\nSol: das neue Frontier-Modell, laut OpenAI das bisher stärkste für Cybersecurity\nTerra: ausbalanciertes Modell für den Arbeitsalltag\nLuna: schnell und günstig für High-Volume-Anwendungen",
+                          "preview": "Die GPT-5.6-Familie geht diesen Donnerstag öffentlich live. Der Preview-Zugang wird ab sofort weltweit ausgeweitet. Die drei Modelle: Sol: das neue Frontier-Modell, laut OpenAI das bisher stärkste für Cybersecurity Terra: ausbalanciertes Modell für den Arbeitsalltag Luna: schnell und günstig für Hig"
+                        },
+                        "domain": "x.com",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 5,
+                        "commentCount": 6,
+                        "authorInfo": {
+                          "id": "t2_bqb4xfu3",
+                          "name": "LobsterWeary2675",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_4endd9/styles/profileIcon_snoocbb63606-61cf-4cb7-b7dc-0abf303ac77a-headshot.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=d45d831bba7b507b6b210b5e4ad19263f633177f",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_4endd9/styles/profileIcon_snoocbb63606-61cf-4cb7-b7dc-0abf303ac77a-headshot.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=11e8ab4ae910c1288877cde3d3692aebd5e1e2b0",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/cbb63606-61cf-4cb7-b7dc-0abf303ac77a.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/KI_Welt/comments/1uqxy0p/gpt56_kommt_am_donnerstag_sol_terra_und_luna/",
+                        "isSelfPost": false,
+                        "subreddit": {
+                          "id": "t5_88xnnv",
+                          "name": "KI_Welt",
+                          "prefixedName": "r/KI_Welt",
+                          "isQuarantined": false,
+                          "title": "KI_Welt",
+                          "type": "PUBLIC",
+                          "subscribersCount": 61292,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_88xnnv/styles/communityIcon_dj4a5lhrzlua1.jpg?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=9b99165c0039e4dda8d886b30fe18d97e0cd0d2d",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_88xnnv/styles/bannerBackgroundImage_i5my4y7h3mua1.jpg?frame=1&auto=webp&format=pjpg&s=879191cf285fec8400caee57367483a1924466ba"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1uqxy0p?app_name=android&token=AQAAvANQava54I4NKhqA8cIUA9iE959On53mG7VMzJkRz8TVXluf&url=https%3A%2F%2Fx.com%2FOpenAI%2Fstatus%2F2074704958419792299%3Futm_source%3Dtldrai",
+                          "expiresAt": "2026-07-09T20:25:32.645758+0000"
+                        },
+                        "upvoteRatio": 0.8571428571428571,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "de",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_88xnnv",
+                          "name": "KI_Welt",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "community",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqxy0p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 kommt am Donnerstag: Sol, Terra und Luna starten öffentlich",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_88xnnv",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "KI_Welt"
+                              },
+                              "profile": {
+                                "id": "t2_bqb4xfu3",
+                                "name": "LobsterWeary2675"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqxy0p",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "post",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqxy0p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 kommt am Donnerstag: Sol, Terra und Luna starten öffentlich",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_88xnnv",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "KI_Welt"
+                              },
+                              "profile": {
+                                "id": "t2_bqb4xfu3",
+                                "name": "LobsterWeary2675"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_4endd9",
+                          "name": "u_LobsterWeary2675",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "profile",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqxy0p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 kommt am Donnerstag: Sol, Terra und Luna starten öffentlich",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_88xnnv",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "KI_Welt"
+                              },
+                              "profile": {
+                                "id": "t2_bqb4xfu3",
+                                "name": "LobsterWeary2675"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqxy0p",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "thumbnail",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqxy0p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "GPT-5.6 kommt am Donnerstag: Sol, Terra und Luna starten öffentlich",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_88xnnv",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "KI_Welt"
+                              },
+                              "profile": {
+                                "id": "t2_bqb4xfu3",
+                                "name": "LobsterWeary2675"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 5,
+                            "relativePosition": 5
+                          },
+                          "post": {
+                            "id": "t3_1uqxy0p",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "GPT-5.6 kommt am Donnerstag: Sol, Terra und Luna starten öffentlich",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_88xnnv",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "KI_Welt"
+                          },
+                          "profile": {
+                            "id": "t2_bqb4xfu3",
+                            "name": "LobsterWeary2675"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1ur0i24",
+                        "createdAt": "2026-07-08T18:04:10.733000+0000",
+                        "postTitle": "OpenAI avança com lançamento do GPT-5.6 após validação do governo",
+                        "url": "https://tugatech.com.pt/t87024-openai-avanca-com-lancamento-do-gpt-5-6-apos-validacao-do-governo",
+                        "content": {
+                          "markdown": "📰 OpenAI prepara-se para lançar o GPT-5.6 na próxima quinta-feira, dia 9 de julho, após uma rigorosa avaliação das autoridades norte-americanas.",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"\\ud83d\\udcf0\\u00a0OpenAI prepara-se para lan\\u00e7ar o GPT-5.6 na pr\\u00f3xima quinta-feira, dia 9 de julho, ap\\u00f3s uma rigorosa avalia\\u00e7\\u00e3o das autoridades norte-americanas.\"}],\"e\":\"par\"}]}",
+                          "html": "📰 OpenAI prepara-se para lançar o GPT-5.6 na próxima quinta-feira, dia 9 de julho, após uma rigorosa avaliação das autoridades norte-americanas.",
+                          "preview": "📰 OpenAI prepara-se para lançar o GPT-5.6 na próxima quinta-feira, dia 9 de julho, após uma rigorosa avaliação das autoridades norte-americanas."
+                        },
+                        "domain": "tugatech.com.pt",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 0,
+                        "authorFlair": {
+                          "text": "Admin :redditgold:",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Admin \"},{\"a\":\":redditgold:\",\"e\":\"emoji\",\"u\":\"https://emoji.redditmedia.com/5knu5pox1guz_t5_3nqvj/redditgold\"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "163fe0d0-fbdf-11ee-a7af-36d2bddc2152",
+                            "backgroundColor": "#FF4500"
+                          }
+                        },
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Notícia",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Notícia\"}]",
+                          "textColor": "LIGHT",
+                          "template": {
+                            "id": "76e13048-fbde-11ee-a7a6-fee36fdc9c93",
+                            "isEditable": false,
+                            "backgroundColor": "#0079D3"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_4yj9b",
+                          "name": "tugatech",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_4uq727/styles/profileIcon_3of1x9y33f7h1.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=f0d5aae6309915bad13a9bf732ce2e522d44a0fe",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_4uq727/styles/profileIcon_3of1x9y33f7h1.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=af56b20f4520240dc5f9e7b7adc346f5c769a3ae",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=140&height=78&auto=webp&s=493a3543ce841504eb41dee4ed0dbc2604d1071b",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 78
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk",
+                          "still": {
+                            "source": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?auto=webp&s=a9fc634e8e8ac514445c14890272a233b2f8bcb3",
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 1080
+                              }
+                            },
+                            "small": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=108&auto=webp&s=077e4d36dee61f2ee72c7270fbeae25f725c02a1",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 60
+                              }
+                            },
+                            "medium": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=216&auto=webp&s=f7ad944e5c1c49cc4e68f003e812669911ef4bfc",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 121
+                              }
+                            },
+                            "large": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=320&auto=webp&s=98bce5b95802ae114872ca9a8a77c756ea440d66",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 180
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=640&auto=webp&s=e391a0b6a7b963c50d7fcb9cadbcd031f43e086f",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 360
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=960&auto=webp&s=dd829b9dc1324e13bfa4b7869026a4f043b19fd6",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 540
+                              }
+                            },
+                            "xxxlarge": {
+                              "url": "https://external-preview.redd.it/Rudr7NEleDkSbfhfxGTa7URRO_MQ2ahbtLLLGlrcsbk.jpeg?width=1080&auto=webp&s=7da879baef8cc4660185f3a71a6e1200357b413f",
+                              "dimensions": {
+                                "width": 1080,
+                                "height": 607
+                              }
+                            }
+                          }
+                        },
+                        "permalink": "/r/TugaTech/comments/1ur0i24/openai_avança_com_lançamento_do_gpt56_após/",
+                        "isSelfPost": false,
+                        "postHint": "LINK",
+                        "subreddit": {
+                          "id": "t5_2sm7x",
+                          "name": "TugaTech",
+                          "prefixedName": "r/TugaTech",
+                          "isQuarantined": false,
+                          "title": "TugaTech",
+                          "type": "PUBLIC",
+                          "subscribersCount": 4280,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_2sm7x/styles/communityIcon_ykinulbn1f7h1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=a6de52041a1b55f2b62aa4c7cdaf3f2e5c6b3620",
+                            "primaryColor": "#2994D6",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_2sm7x/styles/bannerBackgroundImage_cmjbpawhyruc1.png?frame=1&auto=webp&s=45196abd65a80a014e7b49e7f5355956c2e07428"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "# tech",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"raw\",\"t\":\"tech\"}],\"e\":\"h\",\"l\":1}]}"
+                            },
+                            "emoji": {
+                              "name": "redditgold",
+                              "url": "https://emoji.redditmedia.com/5knu5pox1guz_t5_3nqvj/redditgold"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1ur0i24?app_name=android&token=AQAAvANQato0Zkg56QuaAy9Ioe2T2TUIuOXtwlV5-JeRHhz5r_dq&url=https%3A%2F%2Ftugatech.com.pt%2Ft87024-openai-avanca-com-lancamento-do-gpt-5-6-apos-validacao-do-governo",
+                          "expiresAt": "2026-07-09T20:25:32.645743+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "pt",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2sm7x",
+                          "name": "TugaTech",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "community",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0i24",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI avança com lançamento do GPT-5.6 após validação do governo",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2sm7x",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "TugaTech"
+                              },
+                              "profile": {
+                                "id": "t2_4yj9b",
+                                "name": "tugatech"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1ur0i24",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "post",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0i24",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI avança com lançamento do GPT-5.6 após validação do governo",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2sm7x",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "TugaTech"
+                              },
+                              "profile": {
+                                "id": "t2_4yj9b",
+                                "name": "tugatech"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_4uq727",
+                          "name": "u_tugatech",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "profile",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0i24",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI avança com lançamento do GPT-5.6 após validação do governo",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2sm7x",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "TugaTech"
+                              },
+                              "profile": {
+                                "id": "t2_4yj9b",
+                                "name": "tugatech"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1ur0i24",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "GPT-5.6",
+                                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "thumbnail",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0i24",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI avança com lançamento do GPT-5.6 após validação do governo",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2sm7x",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "TugaTech"
+                              },
+                              "profile": {
+                                "id": "t2_4yj9b",
+                                "name": "tugatech"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "GPT-5.6",
+                            "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 6,
+                            "relativePosition": 6
+                          },
+                          "post": {
+                            "id": "t3_1ur0i24",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI avança com lançamento do GPT-5.6 após validação do governo",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_2sm7x",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "TugaTech"
+                          },
+                          "profile": {
+                            "id": "t2_4yj9b",
+                            "name": "tugatech"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "hasPreviousPage": false,
+              "endCursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiMlwiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIyXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaFwiOlwiN1wifSIsImV4cGVyaWVuY2Vfc2VsZWN0aW9uIjoicG9zdCIsImV4cGVyaWVuY2VfdmVyc2lvbiI6ImRlZmF1bHQiLCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaCI6IjcifQ=="
+            }
+          },
+          "top": {
+            "filterBar": [
+              {
+                "presentation": {
+                  "id": "post_sort",
+                  "title": "排序方式",
+                  "buttonText": "热门",
+                  "options": [
+                    {
+                      "text": "相关性",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "热门",
+                      "isSelected": true
+                    },
+                    {
+                      "text": "最受欢迎",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "新",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "评论计数",
+                      "isSelected": false
+                    }
+                  ]
+                },
+                "behaviors": [
+                  {
+                    "id": "relevance",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "RELEVANCE"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "GPT-5.6",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "relevance",
+                          "query": "GPT-5.6",
+                          "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "hot",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "HOT"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "GPT-5.6",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "hot",
+                          "query": "GPT-5.6",
+                          "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "top",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "TOP"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "GPT-5.6",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "top",
+                          "query": "GPT-5.6",
+                          "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "new",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "NEW"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "GPT-5.6",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "new",
+                          "query": "GPT-5.6",
+                          "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "comments",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "COMMENTS"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "GPT-5.6",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "comments",
+                          "query": "GPT-5.6",
+                          "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "navigation": {
+              "listPresentation": {
+                "items": [
+                  {
+                    "id": "posts",
+                    "text": "帖子",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "communities",
+                    "text": "社区",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "comments",
+                    "text": "评论",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "media",
+                    "text": "媒体",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "people",
+                    "text": "个人资料",
+                    "isSelected": false
+                  }
+                ]
+              },
+              "behaviors": [
+                {
+                  "isNoOpBehavior": true
+                },
+                {
+                  "id": "communities",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "communities",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "GPT-5.6",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "GPT-5.6",
+                        "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "communities"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "comments",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "comments",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "GPT-5.6",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "GPT-5.6",
+                        "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "comments"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "media",
+                  "filters": [
+                    {
+                      "key": "post_types",
+                      "value": "image,gif,video,gallery"
+                    },
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "media",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "GPT-5.6",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "GPT-5.6",
+                        "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "media"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "people",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "people",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "GPT-5.6",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "GPT-5.6",
+                        "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "people"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "telemetry": {
+            "trackingContext": {
+              "search": {
+                "isNsfw": false,
+                "range": "month",
+                "safeSearch": "UNAVAILABLE",
+                "scope": {
+                  "path": "/",
+                  "type": "GLOBAL"
+                },
+                "sort": "HOT",
+                "query": "GPT-5.6",
+                "queryID": "dde7e1dc-3d97-4000-9287-ef32c110054f"
+              },
+              "actionInfo": {
+                "paneName": "posts"
+              }
+            },
+            "events": [
+              {
+                "source": "search",
+                "action": "load",
+                "noun": "feed",
+                "trigger": "LOAD"
+              },
+              {
+                "source": "search",
+                "action": "view",
+                "noun": "dwell",
+                "trigger": "DWELL",
+                "triggerConfiguration": {
+                  "timerDurations": [
+                    3000,
+                    5000,
+                    10000,
+                    15000,
+                    30000
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

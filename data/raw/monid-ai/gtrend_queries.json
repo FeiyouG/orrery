@@ -1,0 +1,113 @@
+{
+  "runId": "01KX3RDSZP8AC6EF7BGBQPPWE9",
+  "provider": "google-trends.use.x402atlas.com",
+  "endpoint": "/related-queries",
+  "status": "COMPLETED",
+  "output": {
+    "keyword": "monid.ai",
+    "country": "us",
+    "queried_at": "2026-07-09T15:37:37.782Z",
+    "top": [
+      {
+        "term": "monid.ai stock price",
+        "value": 100
+      },
+      {
+        "term": "monid.ai CEO",
+        "value": 92
+      },
+      {
+        "term": "monid.ai founder",
+        "value": 84
+      },
+      {
+        "term": "monid.ai earnings report",
+        "value": 76
+      },
+      {
+        "term": "monid.ai AI tools",
+        "value": 68
+      },
+      {
+        "term": "monid.ai cloud services",
+        "value": 60
+      },
+      {
+        "term": "monid.ai careers",
+        "value": 52
+      },
+      {
+        "term": "monid.ai news",
+        "value": 44
+      }
+    ],
+    "rising": [
+      {
+        "term": "monid.ai earnings report",
+        "value": 69
+      },
+      {
+        "term": "monid.ai AI tools",
+        "value": 99
+      },
+      {
+        "term": "monid.ai cloud services",
+        "value": 129
+      },
+      {
+        "term": "monid.ai careers",
+        "value": 159
+      },
+      {
+        "term": "monid.ai news",
+        "value": 189
+      },
+      {
+        "term": "monid.ai latest update",
+        "value": 219
+      },
+      {
+        "term": "monid.ai vs microsoft",
+        "value": 249
+      },
+      {
+        "term": "monid.ai review",
+        "value": 279
+      }
+    ],
+    "_atlas": {
+      "docs": "https://google-trends.use.x402atlas.com/llms.txt"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.011,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 10000
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:37:32.405Z",
+  "completedAt": "2026-07-09T15:37:38.844Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RDSZP8AC6EF7BGBQPPWE9 -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

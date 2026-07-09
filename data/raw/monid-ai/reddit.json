@@ -1,0 +1,980 @@
+{
+  "runId": "01KX3RDSXAEFWRMM9WJX5HQC79",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/reddit/app/fetch_dynamic_search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "query": "monid.ai",
+      "need_format": true,
+      "sort": "HOT",
+      "time_range": "month"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "69fd5ca4-f9c3-4373-8e20-062f947d751e",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:37:35",
+      "time_stamp": 1783611455,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Reddit-APP-API/fetch_dynamic_search_api_v1_reddit_app_fetch_dynamic_search_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/69fd5ca4-f9c3-4373-8e20-062f947d751e?sign=329cf07c5e3afb4f42ba96d503b90755f04f1c1c489b76ffcfdb6bf461bb8264",
+      "router": "/api/v1/reddit/app/fetch_dynamic_search",
+      "params": {
+        "query": "monid.ai",
+        "need_format": "true",
+        "sort": "HOT",
+        "time_range": "month"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:37:32.380Z",
+  "startedAt": "2026-07-09T15:37:32.779Z",
+  "completedAt": "2026-07-09T15:37:36.102Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RDSXAEFWRMM9WJX5HQC79 -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "search": {
+      "dynamic": {
+        "components": {
+          "appliedState": {
+            "pane": "posts",
+            "filters": [
+              {
+                "key": "component",
+                "value": "SearchAppliedState"
+              },
+              {
+                "key": "experience_selection",
+                "value": "post"
+              },
+              {
+                "key": "safe_search",
+                "value": "unset"
+              },
+              {
+                "key": "sort",
+                "value": "HOT"
+              },
+              {
+                "key": "structure_type",
+                "value": "search"
+              },
+              {
+                "key": "time_range",
+                "value": "month"
+              }
+            ]
+          },
+          "main": {
+            "edges": [
+              {
+                "node": {
+                  "presentation": {
+                    "isDefaultPresentation": false
+                  },
+                  "children": [
+                    {
+                      "post": {
+                        "id": "t3_1u19jm1",
+                        "createdAt": "2026-06-09T16:11:34.217000+0000",
+                        "postTitle": "Another Landing page, but it missed something that many founders forget to talk about",
+                        "url": "https://www.reddit.com/r/SaaS/comments/1u19jm1/another_landing_page_but_it_missed_something_that/",
+                        "content": {
+                          "markdown": "I did a landing page audit. It misses what makes people care: the emotional problem. Monid explains what it does, but not how agent builders feel without it.  \n  \nWhat's the frustration, anxiety, risk, or uncertainty they face? Fix that, then improve the CTA and consequences.\n\n![img](h4fk7yb57a6h1)\n\n",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"I did a landing page audit. It misses what makes people care: the emotional problem. Monid explains what it does, but not how agent builders feel without it.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"What's the frustration, anxiety, risk, or uncertainty they face? Fix that, then improve the CTA and consequences.\"}],\"e\":\"par\"},{\"e\":\"img\",\"id\":\"h4fk7yb57a6h1\"}]}",
+                          "html": "I did a landing page audit. It misses what makes people care: the emotional problem. Monid explains what it does, but not how agent builders feel without it.  \nWhat's the frustration, anxiety, risk, or uncertainty they face? Fix that, then improve the CTA and consequences.",
+                          "richtextMedia": [
+                            {
+                              "id": "h4fk7yb57a6h1",
+                              "mimetype": "image/png",
+                              "width": 1787,
+                              "height": 883,
+                              "status": "VALID",
+                              "url": "https://i.redd.it/h4fk7yb57a6h1.png"
+                            }
+                          ],
+                          "preview": "I did a landing page audit. It misses what makes people care: the emotional problem. Monid explains what it does, but not how agent builders feel without it. What's the frustration, anxiety, risk, or uncertainty they face? Fix that, then improve the CTA and consequences."
+                        },
+                        "domain": "self.SaaS",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 2,
+                        "authorInfo": {
+                          "id": "t2_1wdrp4dynu",
+                          "name": "augustman0809",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://preview.redd.it/h4fk7yb57a6h1.png?width=140&height=69&auto=webp&s=7b62151dd739838af9ac125e9ebfa11d3b076932",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 69
+                          }
+                        },
+                        "permalink": "/r/SaaS/comments/1u19jm1/another_landing_page_but_it_missed_something_that/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_2qkq6",
+                          "name": "SaaS",
+                          "prefixedName": "r/SaaS",
+                          "isQuarantined": false,
+                          "title": "Software as a Service",
+                          "type": "PUBLIC",
+                          "subscribersCount": 747602,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_2qkq6/styles/communityIcon_u7ddkuay2xn21.jpg?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=7e3bc53328273d2705ce8e625fd4237b0da4519a",
+                            "primaryColor": "#7193FF",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_2qkq6/styles/bannerBackgroundImage_14vtchci2xn21.jpg?frame=1&auto=webp&format=pjpg&s=4e566a8c8e1bda1de2b6b5341257a8348b9e6e40"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "Cleanup",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"Cleanup\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "table_flip",
+                              "url": "https://emoji.redditmedia.com/l7sfl3z0aezz_t5_3nqvj/table_flip"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/SaaS/comments/1u19jm1/another_landing_page_but_it_missed_something_that/",
+                          "expiresAt": "2026-07-09T20:37:35.633069+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2qkq6",
+                          "name": "SaaS",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "monid.ai",
+                                "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "community",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1u19jm1",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Another Landing page, but it missed something that many founders forget to talk about",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_1wdrp4dynu",
+                                "name": "augustman0809"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1u19jm1",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "monid.ai",
+                                "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "post",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1u19jm1",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Another Landing page, but it missed something that many founders forget to talk about",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_1wdrp4dynu",
+                                "name": "augustman0809"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_f9eo3j",
+                          "name": "u_augustman0809",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "monid.ai",
+                                "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "profile",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1u19jm1",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Another Landing page, but it missed something that many founders forget to talk about",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_1wdrp4dynu",
+                                "name": "augustman0809"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1u19jm1",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "monid.ai",
+                                "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "thumbnail",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1u19jm1",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Another Landing page, but it missed something that many founders forget to talk about",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_1wdrp4dynu",
+                                "name": "augustman0809"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "monid.ai",
+                            "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 0,
+                            "relativePosition": 0
+                          },
+                          "post": {
+                            "id": "t3_1u19jm1",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Another Landing page, but it missed something that many founders forget to talk about",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_2qkq6",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "SaaS"
+                          },
+                          "profile": {
+                            "id": "t2_1wdrp4dynu",
+                            "name": "augustman0809"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "hasPreviousPage": false,
+              "endCursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiMlwiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIyXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaFwiOlwiMVwifSJ9"
+            }
+          },
+          "top": {
+            "filterBar": [
+              {
+                "presentation": {
+                  "id": "post_sort",
+                  "title": "排序方式",
+                  "buttonText": "热门",
+                  "options": [
+                    {
+                      "text": "相关性",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "热门",
+                      "isSelected": true
+                    },
+                    {
+                      "text": "最受欢迎",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "新",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "评论计数",
+                      "isSelected": false
+                    }
+                  ]
+                },
+                "behaviors": [
+                  {
+                    "id": "relevance",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "RELEVANCE"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "monid.ai",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "relevance",
+                          "query": "monid.ai",
+                          "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "hot",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "HOT"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "monid.ai",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "hot",
+                          "query": "monid.ai",
+                          "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "top",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "TOP"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "monid.ai",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "top",
+                          "query": "monid.ai",
+                          "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "new",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "NEW"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "monid.ai",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "new",
+                          "query": "monid.ai",
+                          "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "comments",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "COMMENTS"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "monid.ai",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "comments",
+                          "query": "monid.ai",
+                          "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "navigation": {
+              "listPresentation": {
+                "items": [
+                  {
+                    "id": "posts",
+                    "text": "帖子",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "communities",
+                    "text": "社区",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "comments",
+                    "text": "评论",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "media",
+                    "text": "媒体",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "people",
+                    "text": "个人资料",
+                    "isSelected": false
+                  }
+                ]
+              },
+              "behaviors": [
+                {
+                  "isNoOpBehavior": true
+                },
+                {
+                  "id": "communities",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "communities",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "monid.ai",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "monid.ai",
+                        "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "communities"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "comments",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "comments",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "monid.ai",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "monid.ai",
+                        "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "comments"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "media",
+                  "filters": [
+                    {
+                      "key": "post_types",
+                      "value": "image,gif,video,gallery"
+                    },
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "media",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "monid.ai",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "monid.ai",
+                        "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "media"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "people",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "people",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "monid.ai",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "monid.ai",
+                        "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "people"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "telemetry": {
+            "trackingContext": {
+              "search": {
+                "isNsfw": false,
+                "range": "month",
+                "safeSearch": "UNAVAILABLE",
+                "scope": {
+                  "path": "/",
+                  "type": "GLOBAL"
+                },
+                "sort": "HOT",
+                "query": "monid.ai",
+                "queryID": "c5f16b3e-a885-496c-a21a-76950f1517fd"
+              },
+              "actionInfo": {
+                "paneName": "posts"
+              }
+            },
+            "events": [
+              {
+                "source": "search",
+                "action": "load",
+                "noun": "feed",
+                "trigger": "LOAD"
+              },
+              {
+                "source": "search",
+                "action": "view",
+                "noun": "dwell",
+                "trigger": "DWELL",
+                "triggerConfiguration": {
+                  "timerDurations": [
+                    3000,
+                    5000,
+                    10000,
+                    15000,
+                    30000
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

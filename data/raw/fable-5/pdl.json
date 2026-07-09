@@ -1,0 +1,78 @@
+{
+  "runId": "01KX3R6A429S03ZGBHKXVBX8ZV",
+  "provider": "pdl",
+  "endpoint": "/v5/company/enrich",
+  "status": "COMPLETED",
+  "output": {
+    "status": 200,
+    "id": "982sUiUSBdyKIFW1bURk2wqyRzcJ",
+    "name": "Fable 5",
+    "display_name": "Fable 5",
+    "size": "1-10",
+    "employee_count": null,
+    "founded": null,
+    "industry": "Computer Games",
+    "industry_v2": "Computer Games",
+    "naics": null,
+    "sic": null,
+    "location": null,
+    "linkedin_id": "101069843",
+    "linkedin_url": "linkedin.com/company/fable-5",
+    "linkedin_slug": "fable-5",
+    "facebook_url": null,
+    "twitter_url": null,
+    "profiles": [
+      "linkedin.com/company/fable-5",
+      "linkedin.com/company/101069843"
+    ],
+    "website": null,
+    "ticker": null,
+    "mic_exchange": null,
+    "type": "private",
+    "summary": null,
+    "tags": null,
+    "headline": null,
+    "alternative_names": [],
+    "alternative_domains": [],
+    "affiliated_profiles": [],
+    "total_funding_raised": null,
+    "latest_funding_stage": null,
+    "last_funding_date": null,
+    "number_funding_rounds": null,
+    "funding_stages": [],
+    "employee_count_by_country": null,
+    "dataset_version": "34.2",
+    "likelihood": 3
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.1,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 100000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "currency": "USD",
+      "value": 100000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 100000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:33:26.022Z",
+  "completedAt": "2026-07-09T15:33:26.760Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3R6A429S03ZGBHKXVBX8ZV -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

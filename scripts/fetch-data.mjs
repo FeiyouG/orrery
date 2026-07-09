@@ -1,12 +1,17 @@
 /**
- * Brand Solar System — data pipeline
+ * Signal Solar System — data pipeline
  *
- * Reads COMPANY_NAME + MONID_API_KEY from .env, pulls rich brand data from
- * monid.ai across many sources (PDL, Akta, Twitter/X, LinkedIn, Instagram,
- * TikTok, Reddit, Hacker News, Xiaohongshu, News, GitHub), then normalizes
- * everything into data/company.json for the 3D frontend.
+ * Reads SUBJECT (a company OR a topic, e.g. "OpenAI" or "GPT-5.6") plus
+ * MONID_API_KEY from .env, pulls discourse data from monid.ai across many
+ * sources (Twitter/X, LinkedIn, Instagram, TikTok, Reddit, Hacker News,
+ * Xiaohongshu, News, GitHub, YouTube, Google Trends — plus PDL/Akta company
+ * intel when the subject is a company), then normalizes everything into
+ * data/company.json for the 3D frontend.
  *
- * Usage: npm run fetch
+ * Usage: npm run fetch                     (SUBJECT from .env; cache-first —
+ *                                           only uncached endpoints are paid)
+ *        SUBJECT="GPT-5.6" npm run fetch
+ *        npm run fetch:fresh               (ignore cache, refetch everything)
  */
 import "dotenv/config";
 import fs from "node:fs";
@@ -16,16 +21,22 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
-const RAW_DIR = path.join(DATA_DIR, "raw");
 
-const COMPANY = process.env.COMPANY_NAME;
+const SUBJECT = process.env.SUBJECT || process.env.COMPANY_NAME;
+// "company" | "topic" | "auto" (auto: company if PDL recognizes it)
+const SUBJECT_TYPE = (process.env.SUBJECT_TYPE || "auto").toLowerCase();
 const KEY = process.env.MONID_API_KEY;
 const BASE = process.env.MONID_API_BASE_URL || "https://api.monid.ai";
 
-if (!COMPANY || !KEY) {
-  console.error("Missing COMPANY_NAME or MONID_API_KEY in .env");
+if (!SUBJECT || !KEY) {
+  console.error("Missing SUBJECT (or COMPANY_NAME) or MONID_API_KEY in .env");
   process.exit(1);
 }
+
+// raw cache is namespaced per subject so switching subjects never clobbers
+// previously paid-for data (each subject can be rebuilt with --cached)
+const SLUG = SUBJECT.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const RAW_DIR = path.join(DATA_DIR, "raw", SLUG);
 
 fs.mkdirSync(RAW_DIR, { recursive: true });
 
@@ -56,7 +67,10 @@ async function ensureWorkspace() {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const CACHED = process.argv.includes("--cached");
+// cache-first by default: cached endpoints are free, misses fetch live.
+// --fresh ignores the cache and re-pays for everything. (--cached is a
+// legacy no-op alias for the default behavior.)
+const CACHED = !process.argv.includes("--fresh");
 
 /** Execute a monid endpoint; handles sync 200 and async 202 + polling. */
 async function runEndpoint(label, provider, endpoint, input, { timeoutMs = 150_000 } = {}) {
@@ -67,6 +81,7 @@ async function runEndpoint(label, provider, endpoint, input, { timeoutMs = 150_0
     console.log(`${ok ? "ok " : "ERR"} ${label.padEnd(14)} (cached)`);
     return ok ? run.output : null;
   }
+  if (CACHED) console.log(`    ${label.padEnd(14)} cache miss (${path.relative(ROOT, rawFile)}) — fetching live, this will be charged`);
   const t0 = Date.now();
   try {
     const { status, body } = await api("/v1/run", {
@@ -147,46 +162,64 @@ const log10 = (x) => Math.log10(Math.max(1, Number(x) || 0));
 
 // ----------------------------------------------------------------- pipeline
 async function main() {
-  console.log(`\nFetching brand universe for "${COMPANY}" via ${BASE}\n`);
+  console.log(`\nFetching signal universe for "${SUBJECT}" via ${BASE}\n`);
   await ensureWorkspace();
 
-  // ---- Step 1: PDL company enrichment (gives us website + social urls)
-  const pdl = await runEndpoint("pdl", "pdl", "/v5/company/enrich", {
-    name: COMPANY,
-    titlecase: true,
-  });
+  // ---- Step 1: PDL company enrichment (gives us website + social urls).
+  // Skipped for topics; in auto mode the subject counts as a company only
+  // when PDL actually recognizes it (a topic like "GPT-5.6" won't match).
+  const pdl = SUBJECT_TYPE === "topic"
+    ? null
+    : await runEndpoint("pdl", "pdl", "/v5/company/enrich", {
+        name: SUBJECT,
+        titlecase: true,
+      });
+
+  // PDL fuzzy-matches loosely (it echoes back invented records for topics
+  // like "Fable 5"), so require real substance: a website plus at least one
+  // corporate fact before treating the subject as a company.
+  const looksLikeCompany = !!(pdl?.website && (pdl?.employee_count || pdl?.founded || pdl?.linkedin_url));
+  const isCompany = SUBJECT_TYPE === "company" || (SUBJECT_TYPE !== "topic" && looksLikeCompany);
+  const subjectType = isCompany ? "company" : "topic";
+  console.log(`subject type: ${subjectType}\n`);
 
   const website = pdl?.website ? `https://${String(pdl.website).replace(/^https?:\/\//, "")}` : null;
   const handleFromUrl = (u) => (u ? String(u).replace(/\/$/, "").split("/").pop() : null);
-  const twitterHandle = handleFromUrl(pdl?.twitter_url) || COMPANY.replace(/\s+/g, "");
-  const linkedinSlug = handleFromUrl(pdl?.linkedin_url) || COMPANY.toLowerCase().replace(/\s+/g, "-");
-  const guessHandle = COMPANY.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const twitterHandle = handleFromUrl(pdl?.twitter_url) || SUBJECT.replace(/\s+/g, "");
+  const linkedinSlug = handleFromUrl(pdl?.linkedin_url) || SUBJECT.toLowerCase().replace(/\s+/g, "-");
+  const guessHandle = SUBJECT.toLowerCase().replace(/[^a-z0-9]/g, "");
 
-  // ---- Step 2: all sources in parallel
+  // ---- Step 2: all sources in parallel.
+  // Keyword-driven sources work for any subject; account/company-based
+  // sources (profiles, timelines, enrichment) only run in company mode.
   const q = (queryParams) => ({ queryParams });
   const [akta, twProfile, twPosts, li, ig, tk, rd, hn, xhs, news, gh,
-         yt, gt, gtq, aktaRev] = await Promise.all([
-    website
+         yt, gt, gtq, aktaRev, twSearch] = await Promise.all([
+    isCompany && website
       ? runEndpoint("akta", "akta", "/v1/company/enrichment", q({
           company: website,
           sections: ["digital_presence", "company_assessment", "strategic_signal"],
         }))
       : null,
-    runEndpoint("twitter_profile", "tikhub", "/api/v1/twitter/web/fetch_user_profile", q({ screen_name: twitterHandle })),
-    runEndpoint("twitter_posts", "tikhub", "/api/v1/twitter/web/fetch_user_post_tweet", q({ screen_name: twitterHandle })),
-    runEndpoint("linkedin", "tikhub", "/api/v1/linkedin/web_v2/get_company_profile", q({ url: linkedinSlug })),
-    runEndpoint("instagram", "tikhub", "/api/v1/instagram/v2/fetch_user_posts", q({ username: guessHandle })),
-    runEndpoint("tiktok", "tikhub", "/api/v1/tiktok/app/v3/fetch_user_post_videos", q({ unique_id: guessHandle, count: 20 })),
-    runEndpoint("reddit", "tikhub", "/api/v1/reddit/app/fetch_dynamic_search", q({ query: COMPANY, need_format: true, sort: "HOT", time_range: "month" })),
-    runEndpoint("hackernews", "api.kadec0.xyz", "/v1/hackernews", q({ mode: "search", q: COMPANY, maxItems: 25 })),
-    runEndpoint("xiaohongshu", "tikhub", "/api/v1/xiaohongshu/app_v2/search_notes", q({ keyword: COMPANY })),
-    runEndpoint("news", "blockrun.ai", "/api/v1/surf/search/news", q({ q: COMPANY })),
-    runEndpoint("github", "api.kadec0.xyz", "/v1/github", q({ mode: "search", q: COMPANY, maxItems: 15 })),
-    runEndpoint("youtube", "tikhub", "/api/v1/youtube/web/search_video", q({ search_query: COMPANY })),
-    runEndpoint("gtrend", "google-trends.use.x402atlas.com", "/trend", q({ keyword: COMPANY })),
-    runEndpoint("gtrend_queries", "google-trends.use.x402atlas.com", "/related-queries", q({ keyword: COMPANY, country: "us" })),
-    website
+    isCompany ? runEndpoint("twitter_profile", "tikhub", "/api/v1/twitter/web/fetch_user_profile", q({ screen_name: twitterHandle })) : null,
+    isCompany ? runEndpoint("twitter_posts", "tikhub", "/api/v1/twitter/web/fetch_user_post_tweet", q({ screen_name: twitterHandle })) : null,
+    isCompany ? runEndpoint("linkedin", "tikhub", "/api/v1/linkedin/web_v2/get_company_profile", q({ url: linkedinSlug })) : null,
+    isCompany ? runEndpoint("instagram", "tikhub", "/api/v1/instagram/v2/fetch_user_posts", q({ username: guessHandle })) : null,
+    isCompany ? runEndpoint("tiktok", "tikhub", "/api/v1/tiktok/app/v3/fetch_user_post_videos", q({ unique_id: guessHandle, count: 20 })) : null,
+    runEndpoint("reddit", "tikhub", "/api/v1/reddit/app/fetch_dynamic_search", q({ query: SUBJECT, need_format: true, sort: "HOT", time_range: "month" })),
+    runEndpoint("hackernews", "api.kadec0.xyz", "/v1/hackernews", q({ mode: "search", q: SUBJECT, maxItems: 25 })),
+    runEndpoint("xiaohongshu", "tikhub", "/api/v1/xiaohongshu/app_v2/search_notes", q({ keyword: SUBJECT })),
+    runEndpoint("news", "blockrun.ai", "/api/v1/surf/search/news", q({ q: SUBJECT })),
+    runEndpoint("github", "api.kadec0.xyz", "/v1/github", q({ mode: "search", q: SUBJECT, maxItems: 15 })),
+    runEndpoint("youtube", "tikhub", "/api/v1/youtube/web/search_video", q({ search_query: SUBJECT })),
+    runEndpoint("gtrend", "google-trends.use.x402atlas.com", "/trend", q({ keyword: SUBJECT })),
+    runEndpoint("gtrend_queries", "google-trends.use.x402atlas.com", "/related-queries", q({ keyword: SUBJECT, country: "us" })),
+    isCompany && website
       ? runEndpoint("akta_reviews", "akta", "/v1/company/employee-reviews", q({ company: website, limit: 10 }))
+      : null,
+    // topics have no account timeline — search X by keyword instead
+    !isCompany
+      ? runEndpoint("twitter_search", "tikhub", "/api/v1/twitter/web/fetch_search_timeline", q({ keyword: SUBJECT, search_type: "Top" }))
       : null,
   ]);
 
@@ -205,9 +238,10 @@ async function main() {
     sources.push({ ...s, keywords: [...keywords], kwDiversity, sentiment, engagementRate });
   };
 
-  // Twitter / X
-  if (twProfile || twPosts) {
-    const tweets = (twPosts?.data?.timeline ?? twPosts?.timeline ?? []).filter(Boolean);
+  // Twitter / X — company: own timeline + profile; topic: keyword search
+  const twFeed = twPosts ?? twSearch;
+  if (twProfile || twFeed) {
+    const tweets = (twFeed?.data?.timeline ?? twFeed?.timeline ?? []).filter(Boolean);
     const texts = tweets.map((t) => t.text || t.full_text || "");
     const eng = tweets.reduce((a, t) => a + (t.favorites || t.favorite_count || 0) + (t.retweets || t.retweet_count || 0) + (t.replies || 0), 0);
     addSource(
@@ -217,17 +251,19 @@ async function main() {
         color: "#7dd3fc",
         metrics: {
           followers: twProfile?.sub_count ?? null,
-          posts: twProfile?.statuses_count ?? null,
+          posts: twProfile?.statuses_count ?? tweets.length ?? null,
           engagement: eng || null,
           verified: twProfile?.blue_verified ?? null,
         },
-        magnitude: log10(twProfile?.sub_count),
+        magnitude: twProfile ? log10(twProfile.sub_count) : log10(eng * 30),
         activity: Math.min(1, tweets.length / 20),
         items: tweets.slice(0, 6).map((t) => ({
           title: (t.text || t.full_text || "").slice(0, 120),
           engagement: (t.favorites || 0) + (t.retweets || 0),
         })),
-        url: `https://x.com/${twitterHandle}`,
+        url: isCompany
+          ? `https://x.com/${twitterHandle}`
+          : `https://x.com/search?q=${encodeURIComponent(SUBJECT)}`,
       },
       texts
     );
@@ -320,7 +356,7 @@ async function main() {
         magnitude: log10(eng),
         activity: Math.min(1, arr.length / 20),
         items: arr.slice(0, 6).map((p) => ({ title: (p.title || "").slice(0, 120), engagement: p.score || 0 })),
-        url: `https://reddit.com/search/?q=${encodeURIComponent(COMPANY)}`,
+        url: `https://reddit.com/search/?q=${encodeURIComponent(SUBJECT)}`,
       },
       texts
     );
@@ -340,7 +376,7 @@ async function main() {
         magnitude: log10(eng),
         activity: Math.min(1, items.length / 25),
         items: items.slice(0, 6).map((s) => ({ title: (s.title || "").slice(0, 120), engagement: s.points || s.score || 0 })),
-        url: `https://hn.algolia.com/?q=${encodeURIComponent(COMPANY)}`,
+        url: `https://hn.algolia.com/?q=${encodeURIComponent(SUBJECT)}`,
       },
       texts
     );
@@ -362,7 +398,7 @@ async function main() {
         magnitude: log10(eng),
         activity: Math.min(1, notes.length / 15),
         items: notes.slice(0, 6).map((n) => ({ title: (n.title || n.display_title || "note").slice(0, 120), engagement: Number(n.likes || n.liked_count || 0) })),
-        url: `https://www.xiaohongshu.com/search_result?keyword=${encodeURIComponent(COMPANY)}`,
+        url: `https://www.xiaohongshu.com/search_result?keyword=${encodeURIComponent(SUBJECT)}`,
       },
       texts
     );
@@ -400,7 +436,7 @@ async function main() {
         magnitude: log10(stars),
         activity: Math.min(1, repos.length / 15),
         items: repos.slice(0, 6).map((r) => ({ title: (r.full_name || r.name || "").slice(0, 120), engagement: r.stars || r.stargazers_count || 0 })),
-        url: `https://github.com/search?q=${encodeURIComponent(COMPANY)}`,
+        url: `https://github.com/search?q=${encodeURIComponent(SUBJECT)}`,
       },
       repos.map((r) => r.description || "")
     );
@@ -419,7 +455,7 @@ async function main() {
         magnitude: log10(views),
         activity: Math.min(1, vids.length / 20),
         items: vids.slice(0, 6).map((v) => ({ title: (v.title || "").slice(0, 120), engagement: Number(v.number_of_views) || 0 })),
-        url: `https://www.youtube.com/results?search_query=${encodeURIComponent(COMPANY)}`,
+        url: `https://www.youtube.com/results?search_query=${encodeURIComponent(SUBJECT)}`,
       },
       vids.map((v) => `${v.title || ""} ${v.description || ""}`)
     );
@@ -427,12 +463,14 @@ async function main() {
 
   // Google Search interest (trends)
   let trendInfo = null;
+  let relatedTerms = [];
   if (gt?.series?.length) {
     const vals = gt.series.map((s) => Number(s.value) || 0);
     const last = vals[vals.length - 1];
     const prevAvg = vals.slice(0, -1).reduce((a, b) => a + b, 0) / Math.max(1, vals.length - 1);
     trendInfo = { interest: last, delta: prevAvg ? (last - prevAvg) / prevAvg : 0, series: gt.series.slice(-12) };
     const related = (gtq?.top ?? []).slice(0, 14).map((t) => ({ text: t.term, count: Math.max(1, Math.round(t.value / 8)) }));
+    relatedTerms = related.map((r) => r.text);
     const rising = (gtq?.rising ?? []).slice(0, 4).map((t) => t.term);
     addSource({
       id: "gsearch",
@@ -444,7 +482,7 @@ async function main() {
       keywords: related,
       sentiment: 0,
       items: rising.map((t) => ({ title: `rising: ${t}`, engagement: 0 })),
-      url: `https://trends.google.com/trends/explore?q=${encodeURIComponent(COMPANY)}`,
+      url: `https://trends.google.com/trends/explore?q=${encodeURIComponent(SUBJECT)}`,
     }, []);
   }
 
@@ -483,14 +521,15 @@ async function main() {
   const out = {
     generatedAt: new Date().toISOString(),
     company: {
-      name: pdl?.display_name || pdl?.name || COMPANY,
+      name: pdl?.display_name || pdl?.name || SUBJECT,
+      subjectType,
       website,
       description: pdl?.summary || twProfile?.desc || "",
       industry: pdl?.industry || null,
       founded: pdl?.founded || null,
       employees: pdl?.employee_count || null,
       headquarters: pdl?.location?.name || null,
-      tags: (pdl?.tags || []).slice(0, 10),
+      tags: (isCompany ? pdl?.tags || [] : relatedTerms).slice(0, 10),
       totalFollowers,
       popularity,
       sentiment: overallSentiment,

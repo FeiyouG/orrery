@@ -16,9 +16,9 @@ data from Monid and writes a normalized snapshot the frontend renders.
 │   ├── main.js             # THE 3D engine (one file, ~1400 lines) — see map below
 │   └── style.css           # all HUD styling
 ├── data/
-│   ├── company.json        # normalized snapshot (gitignored — regenerable)
-│   └── raw/*.json          # cached raw API responses (committed — paid data)
-├── .env                    # COMPANY_NAME, MONID_API_KEY, MONID_API_BASE_URL (never commit)
+│   ├── company.json        # normalized snapshot of the CURRENT subject (gitignored — regenerable)
+│   └── raw/<subject>/*.json # cached raw API responses per subject (committed — paid data)
+├── .env                    # SUBJECT, SUBJECT_TYPE, MONID_API_KEY, MONID_API_BASE_URL (never commit)
 └── .env.example            # documented template
 ```
 
@@ -30,18 +30,28 @@ scripts/fetch-data.mjs ──> data/company.json ──> server.mjs /api/data �
 ```
 
 - The frontend NEVER calls Monid. It renders whatever `/api/data` returns.
-- `company.json` is gitignored but fully regenerable:
-  `node scripts/fetch-data.mjs --cached` rebuilds it from `data/raw/` for free.
-- A live fetch (`npm run fetch`) COSTS REAL MONEY (a few dollars). Always
-  prefer `--cached` unless the user wants fresh data; confirm before live runs
-  and report cost after (printed as wallet balance).
+- The subject can be a **company** ("OpenAI") or a **topic** ("GPT-5.6").
+  Auto-detected via PDL lookup (override with `SUBJECT_TYPE`). Company mode
+  adds account-based sources (own X timeline, LinkedIn/Instagram/TikTok
+  accounts, Akta intel, workplace reviews); topic mode is keyword-search only
+  (X search, Reddit, HN, YouTube, news, GitHub, XHS, Google Trends) and the
+  output carries `company.subjectType` so the frontend adapts labels.
+- `company.json` is gitignored but fully regenerable per subject:
+  `SUBJECT="X" npm run fetch` rebuilds it from `data/raw/<subject-slug>/`.
+- `npm run fetch` is CACHE-FIRST: cached endpoints are free; misses fetch
+  live and COST REAL MONEY (announced per endpoint: "cache miss ... will be
+  charged"). `npm run fetch:fresh` ignores the cache and re-pays for
+  everything — confirm with the user before fresh runs on new subjects, and
+  report cost after (wallet balance is printed).
 
 ## scripts/fetch-data.mjs
 
 - `runEndpoint(label, provider, endpoint, input)` — POST `/v1/run` with
   `{ input: { queryParams } }`, polls `/v1/runs/:id`, caches raw output to
-  `data/raw/<label>.json`. With `--cached`, reads the cache instead of paying;
-  labels without a cache file still fetch live.
+  `data/raw/<subject-slug>/<label>.json`. Cache-first by default; `--fresh`
+  bypasses the cache. Subject-type detection requires PDL to return a website
+  plus a corporate fact (employee_count/founded/linkedin_url) — PDL happily
+  echoes invented records for topics, so don't loosen this.
 - Per-source parser blocks call `addSource({id, name, color, metrics,
   magnitude, activity, items, url}, texts)` — keyword + sentiment extraction
   happens inside `addSource`.
@@ -56,7 +66,7 @@ scripts/fetch-data.mjs ──> data/company.json ──> server.mjs /api/data �
 1. Add a `runEndpoint(...)` call to the `Promise.all` (inspect the schema
    first: `monid inspect -p <provider> -e <endpoint>`).
 2. Add a parser block mapping the raw shape to `addSource(...)`.
-3. `node scripts/fetch-data.mjs --cached` (new label fetches live once).
+3. `npm run fetch` (cache-first: only the new label fetches live).
 4. Reload — the planet appears automatically; no frontend changes needed.
 
 ## public/main.js map (search for these)

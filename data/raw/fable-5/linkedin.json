@@ -1,0 +1,68 @@
+{
+  "runId": "01KX3R6CFTQ42XR9X63KAJ41TX",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/linkedin/web_v2/get_company_profile",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "url": "fable-5"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "e2b77f49-a5c5-497e-adfe-f87f64416964",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:33:32",
+      "time_stamp": 1783611212,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/LinkedIn-Web-V2-API/get_company_profile_api_v1_linkedin_web_v2_get_company_profile_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/e2b77f49-a5c5-497e-adfe-f87f64416964?sign=c3e9b687ae03b544f4929a0312e88891405df9002f1d22550097f6fa07b72fe3",
+      "router": "/api/v1/linkedin/web_v2/get_company_profile",
+      "params": {
+        "url": "fable-5"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:33:29.782Z",
+  "startedAt": "2026-07-09T15:33:30.905Z",
+  "completedAt": "2026-07-09T15:33:32.612Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3R6CFTQ42XR9X63KAJ41TX -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "input_url": "fable-5",
+    "universal_name": "fable-5",
+    "url": "https://www.linkedin.com/company/fable-5",
+    "name": "Fable 5",
+    "description": null,
+    "employee_count": null,
+    "website": null,
+    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQEQC9vUr7ZuqQ/company-logo_200_200/company-logo_200_200/0/1699084161580?e=2147483647&v=beta&t=KKnKIaq4Bs0bVOn-kZYtEtJv_u08oAB2kdT0FsK3aP4",
+    "address": {
+      "street": null,
+      "locality": null,
+      "region": null,
+      "postal_code": null,
+      "country": null
+    },
+    "recent_posts": []
+  }
+}

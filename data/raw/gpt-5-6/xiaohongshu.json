@@ -1,0 +1,4412 @@
+{
+  "runId": "01KX3QQSS4R0P1SSSQ4FX77VTN",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/xiaohongshu/app_v2/search_notes",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "keyword": "GPT-5.6"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "c3896610-21db-4f7b-900d-e93473b8b1ce",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:25:34",
+      "time_stamp": 1783610734,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/search_notes_api_v1_xiaohongshu_app_v2_search_notes_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/c3896610-21db-4f7b-900d-e93473b8b1ce?sign=fac2f738733f615abda4995749995803eff3dffaed8c2872c86cc3f3873af4d3",
+      "router": "/api/v1/xiaohongshu/app_v2/search_notes",
+      "params": {
+        "keyword": "GPT-5.6"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:25:31.659Z",
+  "startedAt": "2026-07-09T15:25:32.091Z",
+  "completedAt": "2026-07-09T15:25:34.608Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3QQSS4R0P1SSSQ4FX77VTN -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "code": 0,
+    "data": {
+      "ai_mode_enable": false,
+      "cur_cut_number": 0,
+      "query_type": 0,
+      "can_cut": false,
+      "is_broad_query": true,
+      "show_single_col": false,
+      "request_dqa_instant": false,
+      "query_intent": {
+        "search_ask_intent": true,
+        "goodsIntent": 0,
+        "low_supply_intent": false
+      },
+      "search_dqa_new_page_exp": 1,
+      "dqa_authorized_user_by_shared": false,
+      "service_status": "{\"filter\":\"not_required\",\"note\":\"success\",\"onebox\":\"not_required\",\"cost\":{\"all\":594,\"zone\":\"rcsh1\"}}",
+      "search_pull_down_opt_exp": 1,
+      "strategy_info": {
+        "query_average_impression_count": 19,
+        "query_can_guide_to_feed": true
+      },
+      "request_dqa": 0,
+      "items": [
+        {
+          "mix_track_id": "NOTE__6a4cdbec0000000006023006__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 1783486696,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "震惊！GPT5.6即将发布！",
+            "click_score": 0.15338359773159027,
+            "result_from": "",
+            "collected_count": 10,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 43,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "tag_info": {
+              "title": "|#*@6a4cdbec0000000006023006",
+              "type": ""
+            },
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "1040g008322bka0s07a1g5ou2937p8sf2gaaqki0",
+                "height": 1829,
+                "trace_id": "1040g008322bka0s07a1g5ou2937p8sf2gaaqki0",
+                "width": 1185,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g008322bka0s07a1g5ou2937p8sf2gaaqki0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=0c56a484fefbff43d58b4fbb2d5998f0&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "url": "https://sns-na-i11.xhscdn.com/1040g008322bka0s07a1g5ou2937p8sf2gaaqki0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=0c56a484fefbff43d58b4fbb2d5998f0&t=6a4fbd6d&origin=0"
+              },
+              {
+                "fileid": "1040g2sg322ao2q3anekg5ou2937p8sf2dasbbvo",
+                "height": 821,
+                "need_load_original_image": false,
+                "width": 1200,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g2sg322ao2q3anekg5ou2937p8sf2dasbbvo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=44c31c4da85b10179e4bc817649be2ad&t=6a4fbd6d&origin=0",
+                "trace_id": "1040g2sg322ao2q3anekg5ou2937p8sf2dasbbvo",
+                "url": ""
+              }
+            ],
+            "user": {
+              "red_id": "1574891843Y",
+              "red_official_verified": false,
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo32081lof1lm605ou2937p8sf2ole21to?imageView2/2/w/80/format/jpg",
+              "nickname": "JohnSite",
+              "userid": "63c248cf00000000250071e2"
+            },
+            "id": "6a4cdbec000000020602b53c",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAnEZwzz6yACTiM5GkFO3F9+UbgRoRQjNZ1HKpPnYnO1wRYA275Kdj9sqfEOhqyy2bKlBQD/JvebF4Zj3Rcz/R/MDsN7SgUzU6"
+              },
+              {
+                "text_en": "1 day ago",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783421932,
+            "extract_text_enabled": 0,
+            "debug_info_str": "?c=vp3",
+            "interaction_area": {
+              "status": false,
+              "text": "40",
+              "type": 1
+            },
+            "update_time": 1783486734000,
+            "liked_count": 40,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"63c248cf00000000250071e2\",\"author_name\":\"JohnSite\"}",
+            "desc": "官方刚发文",
+            "xsec_token": "YBXWqrSIZSRe5TX2Atxv-Rzebd40uNbZM26q_5AkAlQt4=",
+            "shared_count": 53,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4dd1ca000000001100668d__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "note": {
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.0943320021033287,
+            "title": "刚刚，OpenAI官宣GPT-5.6周四上线！！！",
+            "result_from": "",
+            "collected_count": 32,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 71,
+            "niced": false,
+            "cover_image_index": 0,
+            "at_user_list": [
+              {
+                "user_id": "622f299f00000000100098c8",
+                "nickname": "热点薯",
+                "user_oid": "622f299f00000000100098c8"
+              },
+              {
+                "user_id": "69c4b13c0000000033014ae7",
+                "nickname": "HOWTO薯",
+                "user_oid": "69c4b13c0000000033014ae7"
+              }
+            ],
+            "note_attributes": [],
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k0322blugqd6s605om9gsr5bo3lqavhlto",
+                "height": 1036,
+                "trace_id": "notes_pre_post/1040g3k0322blugqd6s605om9gsr5bo3lqavhlto",
+                "width": 1196,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322blugqd6s605om9gsr5bo3lqavhlto?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=0aa01d0d894ea164251bc25a81eb12f0&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322blugqd6s605om9gsr5bo3lqavhlto?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=0aa01d0d894ea164251bc25a81eb12f0&t=6a4fbd6d&origin=0"
+              }
+            ],
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RA4q/ASBTgloRTrxxieIOhGNTCJQLB+nbTjUl7T5EwqNC3iQxFB7XfiG4z7//hy+bwTv9y6VE1amT6d82/XhpmctDU5lwTA01v"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "id": "6a4dd1ca000000001100668d",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/63fa31de24b3a2242c5fef99.jpg?imageView2/2/w/80/format/jpg",
+              "userid": "62c98736000000001501e075",
+              "track_duration": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "nickname": "数字生命卡兹克",
+              "red_id": "wzglyay2023",
+              "red_official_verified": false,
+              "red_official_verify_type": 0
+            },
+            "timestamp": 1783484874,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "text": "260",
+              "status": false
+            },
+            "xsec_token": "YB1TBtczoDvLH6XxRbVBGwDa9GwBDNf-rMy5kVkyTttRI=",
+            "update_time": 1783485479000,
+            "liked_count": 260,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"62c98736000000001501e075\",\"author_name\":\"数字生命卡兹克\"}",
+            "desc": "刚刚，OpenAI官宣，GPT-5.6 Sol，以及 Terra 和 Luna，将在这周四上线。 Claude Fabl",
+            "debug_info_str": "",
+            "last_update_time": 0,
+            "shared_count": 332,
+            "has_music": false
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__6a36aa720000000017008f71__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 241,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.06873449683189392,
+            "title": "GPT-5.6 预计将于下周上线❗️",
+            "result_from": "",
+            "collected_count": 62,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 170,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "|#*@6a36aa720000000017008f71",
+              "type": ""
+            },
+            "type": "normal",
+            "images_list": [
+              {
+                "height": 1448,
+                "url": "https://sns-na-i11.xhscdn.com/1040g2sg321l2hkl77el05o82kplg91rjiclf1v0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=8ff20e7a334c9a67638ace2f82c2dd3d&t=6a4fbd6d&origin=0",
+                "fileid": "1040g2sg321l2hkl77el05o82kplg91rjiclf1v0",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g2sg321l2hkl77el05o82kplg91rjiclf1v0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=8ff20e7a334c9a67638ace2f82c2dd3d&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g2sg321l2hkl77el05o82kplg91rjiclf1v0"
+              },
+              {
+                "fileid": "1040g2sg321l2hkl77elg5o82kplg91rjd49mhp8",
+                "height": 1608,
+                "need_load_original_image": false,
+                "width": 1206,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g2sg321l2hkl77elg5o82kplg91rjd49mhp8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=6897b943e9902e5624b4375bd4d6f291&t=6a4fbd6d&origin=0",
+                "trace_id": "1040g2sg321l2hkl77elg5o82kplg91rjd49mhp8",
+                "url": ""
+              }
+            ],
+            "note_attributes": [],
+            "user": {
+              "userid": "6102a66b0000000001008773",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31meiqjuelm7g5o82kplg91rj1kn4j2g?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_official_verify_type": 0,
+              "nickname": "DOPETECH.",
+              "red_id": "9552842258",
+              "red_official_verified": false
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RA6n/CDXVkSVKTr1G+e1pa3iF+86xATgbduMQd1ntWt9gn4eeJrfGNpg2x4l+9cUMSjOlcKe29CSKRwWE0IdKa12Trd/9z294M"
+              },
+              {
+                "text_en": "06-20",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-20"
+              }
+            ],
+            "id": "6a36aa720000000217000a4b",
+            "timestamp": 1781967474,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "387",
+              "type": 1
+            },
+            "debug_info_str": "?c=vp3",
+            "update_time": 1781967515000,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6102a66b0000000001008773\",\"author_name\":\"DOPETECH.\"}",
+            "liked_count": 387,
+            "desc": "GPT-5.6 的发布时间正在逐渐清晰。 根据近期社区讨论和用户反馈，GPT-5.6 有望在 6 月底前上线，其中",
+            "xsec_token": "YBsz1wrRMgBngp7mXDicmMCvqIGWIOjpnzzQ1mtkNWZms=",
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e6e7b0000000017028c28__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 1,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI官宣：GPT-5.6即将发布",
+            "click_score": 0.056478533893823624,
+            "result_from": "",
+            "collected_count": 1,
+            "comments_count": 0,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k0322c967vk6s005oe7tamk16ksakrpvng",
+                "height": 2400,
+                "url": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c967vk6s005oe7tamk16ksakrpvng?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=ad9a82a763d2da67a44afe6c946ed413&t=6a4fbd6d&origin=0",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c967vk6s005oe7tamk16ksakrpvng?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=ad9a82a763d2da67a44afe6c946ed413&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c967vk6s005oe7tamk16ksakrpvng"
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c967vk6s0g5oe7tamk16kssnh27u0",
+                "height": 2400,
+                "trace_id": "spectrum/1040g0k0322c967vk6s0g5oe7tamk16kssnh27u0",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c967vk6s0g5oe7tamk16kssnh27u0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=3cd538ffe5f08cab3bc54b2ce4cb1f4c&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c967vk6s105oe7tamk16ksf83nbbo",
+                "height": 2400,
+                "need_load_original_image": false,
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c967vk6s105oe7tamk16ksf83nbbo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f97487df85024f1fc104dbaead25681a&t=6a4fbd6d&origin=0",
+                "trace_id": "spectrum/1040g0k0322c967vk6s105oe7tamk16ksf83nbbo",
+                "url": ""
+              }
+            ],
+            "note_attributes": [],
+            "user": {
+              "red_id": "2801976041",
+              "userid": "61c7eaad0000000010009a9c",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31th2h31glskg5oe7tamk16ks6ggmns8?imageView2/2/w/80/format/jpg",
+              "nickname": "$$-$$",
+              "followed": false,
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "track_duration": 0
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAq26noLDDPLPFA2bieB34XfCEQkms9zydRMpBj4ZsTqgus6KCpos8QIbHy6ekGHMiZ8lfNQaoIJnEHHfcMcX5Z4ls1b+c7Gk5"
+              },
+              {
+                "text_en": "Yesterday 23:36",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "Yesterday 23:36"
+              }
+            ],
+            "id": "6a4e6e7b0000000017028c28",
+            "timestamp": 1783524987,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "text": "3",
+              "status": false
+            },
+            "debug_info_str": "",
+            "update_time": 1783556440000,
+            "liked_count": 3,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"61c7eaad0000000010009a9c\",\"author_name\":\"$$-$$\"}",
+            "desc": "OpenAI已正式确认，GPT-5.6系列将于7月9日面向公众发布。 本次发布并非单一模型升级，而是推出三个不同定位的版",
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmA5nZDmgotlbf1buhtVgiKQ=",
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4bab60000000000e021801__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 63,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.043598927557468414,
+            "title": "在速度上，GPT5.6将实现10倍速提升",
+            "result_from": "",
+            "collected_count": 24,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 82,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "oss-sg/notes_pre_post/1040g3mo3228ukihv7e505o0rkv9g89lm79jtpv0",
+                "height": 2214,
+                "url": "https://sns-na-i11.xhscdn.com/oss-sg/notes_pre_post/1040g3mo3228ukihv7e505o0rkv9g89lm79jtpv0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=1548248934cee7288b2f96ff5ba60634&t=6a4fbd6d&origin=0",
+                "width": 1290,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/oss-sg/notes_pre_post/1040g3mo3228ukihv7e505o0rkv9g89lm79jtpv0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=1548248934cee7288b2f96ff5ba60634&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "oss-sg/notes_pre_post/1040g3mo3228ukihv7e505o0rkv9g89lm79jtpv0"
+              }
+            ],
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "id": "6a4bab60000000000e021801",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3205puke0i8005o0rkv9g89lm06vija0?imageView2/2/w/80/format/jpg",
+              "red_id": "2636807001",
+              "red_official_verified": false,
+              "nickname": "大力馬",
+              "followed": false,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "track_duration": 0,
+              "userid": "601ba7d300000000010026b6"
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAIvD7L0n/7v0jdrVTzXlpyfJKqi19JIL58Mz3/8efgwWolR2chEfy1Rv9qVTh8dfYgGt0pIxvhcwtUI4r/I42/G3h2BaOmhLJ"
+              },
+              {
+                "text_en": "3 days ago",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "3 day(s) ago"
+              }
+            ],
+            "timestamp": 1783343969,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBlKRyrl1Bja8VDx0tuFo31vQHgIRreZlwLezv2xRzi34=",
+            "update_time": 1783344012000,
+            "liked_count": 186,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"601ba7d300000000010026b6\",\"author_name\":\"大力馬\"}",
+            "desc": "#howto用好AI  #howto用AI抢救一切  #大模型  #GPT",
+            "interaction_area": {
+              "type": 1,
+              "text": "186",
+              "status": false
+            },
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a38e147000000001503f862__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "update_time": 1783391763000,
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAxBR5M2pr57uP0ZuXJD3RHj9xL16iUJIl9hkSxO1jaUH8s7cKhvJWBd4oeOidcK/L0W94v/2IYF8Cpxb5GWVWO4NkTeLsxg0C"
+              },
+              {
+                "text_en": "06-23",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-23"
+              }
+            ],
+            "id": "6a38e1470000000215037d58",
+            "extract_text_enabled": 0,
+            "last_update_time": 1782183002,
+            "cover_image_index": 0,
+            "has_music": false,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "note_collection",
+                    "cooperate_binds",
+                    "rec_next_infos",
+                    "video_marks",
+                    "product_review",
+                    "related_search",
+                    "video_goods_cards",
+                    "cooperate_comment_component",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "video_recommend_tag",
+                    "buyable_goods_card_v2",
+                    "cooperate_search_component",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "related_recommend",
+                    "next_note_guide",
+                    "widgets_ndb",
+                    "pgy_bbc_exp",
+                    "brand_max_trailer",
+                    "super_activity",
+                    "note_nice_guide",
+                    "pin_search_highlights",
+                    "widgets_enhance",
+                    "packed_goods",
+                    "packed_buyable_goods",
+                    "widgets_ncb",
+                    "note_nice_compound",
+                    "live_shooting_flag",
+                    "widgets_nbb",
+                    "poi_declare",
+                    "async_group"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "guide_post",
+                    "video_foot_bar",
+                    "follow_guide",
+                    "share_to_msg",
+                    "note_share_prompt_v1",
+                    "note_share_prompt_v2",
+                    "group_share",
+                    "share_guide_bubble",
+                    "goods_enhance_component",
+                    "guide_navigator",
+                    "sync_group"
+                  ]
+                }
+              ]
+            },
+            "type": "video",
+            "tag_info": {
+              "title": "|#*@6a38e147000000001503f862",
+              "type": ""
+            },
+            "collected_count": 253,
+            "niced": false,
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/622887c64f1c23567e524733.jpg?imageView2/2/w/80/format/jpg",
+              "red_id": "QbitAI",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "red_official_verified": false,
+              "userid": "6228870a0000000010008e88",
+              "followed": false,
+              "nickname": "量子位"
+            },
+            "shared_count": 368,
+            "comments_count": 63,
+            "video_duration": "0:32",
+            "liked": false,
+            "widgets_context": "{\"video\":true,\"origin_video_key\":\"spectrum/1040g358321n6vlch72105oh8gs5413k84o501g0\",\"flags\":{\"sound_track\":true},\"author_id\":\"6228870a0000000010008e88\",\"author_name\":\"量子位\",\"video_duration\":32}",
+            "debug_info_str": "?c=vp3",
+            "nice_count": 0,
+            "note_attributes": [],
+            "video_info_v2": {
+              "capa": {
+                "is_user_select": false,
+                "is_upload": false,
+                "frame_ts": 0,
+                "duration": 32
+              },
+              "consumer": {
+                "can_super_resolution": false
+              },
+              "image": {
+                "thumbnail_dim": "https://sns-na-i11.xhscdn.com/frame/110/0/01ea38e1134298ff0010000000019eee3016aa_0.webp?imageView2/2/w/720/h/720/format/webp&ap=5&sc=SRH_SPRT&sign=7d2d53e1d83baa9b0c8fd88be7ae5fd6&t=6a4fbd6d&origin=0",
+                "thumbnail": "https://sns-na-i11.xhscdn.com/frame/110/0/01ea38e1134298ff0010000000019eee3016aa_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=5&sc=SRH_ORG&sign=7d2d53e1d83baa9b0c8fd88be7ae5fd6&t=6a4fbd6d&origin=0"
+              },
+              "media": {
+                "user_level": 0,
+                "video": {
+                  "height": 1310,
+                  "md5": "7814ac69d34b5aa012a89fb0db315611",
+                  "bound": [
+                    {
+                      "y": 0,
+                      "w": 0,
+                      "x": 0,
+                      "h": 0
+                    }
+                  ],
+                  "biz_id": "282100466879821922",
+                  "stream_types": [
+                    258,
+                    293,
+                    294,
+                    295
+                  ],
+                  "width": 1080,
+                  "duration": 33,
+                  "opaque1": {
+                    "loudnorm": "{\"lra\":2.5,\"htp\":-1.46,\"hldn\":-15.85,\"ldn\":-14.84,\"thr\":-25.02}",
+                    "hasHumanVoice": "false",
+                    "hd_screencast_stream_basic": "http://sns-video-v28.xhscdn.com/stream/79/110/261/01ea38e1134298ff4f0370019eee302c19_261.mp4?sign=3dfb590960fae2023e6403a2932125fa&t=6a545aad",
+                    "amend_mobile": "40",
+                    "audioClsInfo": "{\"music_ratio\":0.9999999694935945,\"freesound_ratio\":0.0,\"speech_ratio\":0.0}",
+                    "amend_4k": "1",
+                    "rightAvgLuma": "128",
+                    "weakNetUserFlag": "1",
+                    "audioLevInfo": "{\"audio_quality_level\":\"E\",\"mos_overall\":3.8878,\"version\":\"3.0\"}",
+                    "domestic": "0",
+                    "bottomAvgLuma": "102",
+                    "amend": "18",
+                    "default_screencast_stream": "http://sns-video-v28.xhscdn.com/stream/79/110/258/01ea38e1134298ff4f0370019eee302146_258.mp4?sign=5b021863db71fa3058945c52d2f54b2c&t=6a545aad",
+                    "amend_2k": "26",
+                    "isSupportSubtitle": "false",
+                    "hd_screencast_stream": "http://sns-video-v28.xhscdn.com/stream/1/110/301/01ea38e1134298ff010370019eee30caab_301.mp4?sign=8274da84c5a6bba708a9ca131def9431&t=6a545aad",
+                    "topAvgLuma": "201"
+                  },
+                  "biz_name": 110,
+                  "drm_type": 0,
+                  "hdr_type": 0
+                },
+                "stream": {
+                  "h265": [
+                    {
+                      "audio_bitrate": 64115,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/293/01ea38e1134298ff010370019eee38f5f0_293.mp4?sign=f979809e43badb2bb2d8b0f6001ccaf4&t=6a545aad",
+                      "stream_type": 293,
+                      "weight": 48,
+                      "volume": 0,
+                      "video_duration": 32866,
+                      "duration": 32879,
+                      "vmaf": -1,
+                      "psnr": 41.96500015258789,
+                      "audio_channels": 2,
+                      "video_codec": "hevc",
+                      "default_stream": 1,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/293/01ea38e1134298ff010370019eee38f5f0_293.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/293/01ea38e1134298ff010370019eee38f5f0_293.mp4"
+                      ],
+                      "video_bitrate": 179307,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "720P",
+                        "roiWeight": "86.909589",
+                        "pcdn_supplier": "",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"89.599194\"}",
+                        "quality_grade_fallback_with_desc": "720p HD"
+                      },
+                      "fps": 30,
+                      "size": 1028748,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "stream_desc": "R265_MP4_720P_293_IOS",
+                      "audio_duration": 32878,
+                      "width": 720,
+                      "quality_type": "HD",
+                      "height": 874,
+                      "avg_bitrate": 250311,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 64115,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/294/01ea38e1134298ff010370019eee38f6e0_294.mp4?sign=b12f1231ac039f72b36e4a82bbedb870&t=6a545aad",
+                      "stream_type": 294,
+                      "weight": 49,
+                      "volume": 0,
+                      "video_duration": 32866,
+                      "duration": 32879,
+                      "vmaf": -1,
+                      "psnr": 42.5099983215332,
+                      "audio_channels": 2,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/294/01ea38e1134298ff010370019eee38f6e0_294.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/294/01ea38e1134298ff010370019eee38f6e0_294.mp4"
+                      ],
+                      "default_stream": 0,
+                      "video_codec": "hevc",
+                      "video_bitrate": 305052,
+                      "fps": 30,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "1080P",
+                        "roiWeight": "89.85170708109376",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"94.42748708109376\"}",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "1080p HD"
+                      },
+                      "size": 1545352,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "height": 1310,
+                      "stream_desc": "R265_MP4_1080P_294_IOS_low",
+                      "width": 1080,
+                      "quality_type": "FHD",
+                      "audio_duration": 32878,
+                      "avg_bitrate": 376009,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 64115,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/295/01ea38e1134298ff010370019eee39ce98_295.mp4?sign=0593eb4fb0ace145f7b96cfa2cc3e8e0&t=6a545aad",
+                      "stream_type": 295,
+                      "weight": 50,
+                      "volume": 0,
+                      "video_duration": 32866,
+                      "duration": 32879,
+                      "vmaf": -1,
+                      "psnr": 42.52199935913086,
+                      "audio_channels": 2,
+                      "video_codec": "hevc",
+                      "default_stream": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/295/01ea38e1134298ff010370019eee39ce98_295.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/295/01ea38e1134298ff010370019eee39ce98_295.mp4"
+                      ],
+                      "video_bitrate": 306142,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "1080P",
+                        "roiWeight": "89.84357686937498",
+                        "pcdn_supplier": "",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"94.43570686937498\"}",
+                        "quality_grade_fallback_with_desc": "1080p HD"
+                      },
+                      "fps": 30,
+                      "size": 1549830,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "audio_duration": 32878,
+                      "height": 1310,
+                      "stream_desc": "R265_MP4_1080P_295_IOS_high_control_v1_fix",
+                      "quality_type": "FHD",
+                      "width": 1080,
+                      "avg_bitrate": 377099,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "av1": [],
+                  "h264": [
+                    {
+                      "audio_bitrate": 56293,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/79/110/258/01ea38e1134298ff4f0370019eee302146_258.mp4?sign=5b021863db71fa3058945c52d2f54b2c&t=6a545aad",
+                      "stream_type": 258,
+                      "weight": 47,
+                      "video_duration": 32866,
+                      "volume": 0,
+                      "duration": 32879,
+                      "vmaf": -1,
+                      "psnr": 0,
+                      "video_codec": "h264",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/79/110/258/01ea38e1134298ff4f0370019eee302146_258.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/79/110/258/01ea38e1134298ff4f0370019eee302146_258.mp4"
+                      ],
+                      "default_stream": 0,
+                      "audio_channels": 2,
+                      "video_bitrate": 516957,
+                      "fps": 30,
+                      "opaque1": {
+                        "quality_grade_fallback_with_desc": "720p HD",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "720P",
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "0",
+                        "pcdn_supplier": ""
+                      },
+                      "size": 2383810,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "height": 874,
+                      "audio_duration": 32878,
+                      "width": 720,
+                      "quality_type": "HD",
+                      "stream_desc": "X264_MP4",
+                      "avg_bitrate": 580020,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "h266": []
+                },
+                "video_id": 137985277930150140
+              }
+            },
+            "result_from": "",
+            "collected": false,
+            "click_score": 0.05042869597673416,
+            "desc": "GPT 5.6 Pro效果如何？早期泄漏版有人把所有的代码和3D效果都打包在了一个HTML文件里。你用键盘和鼠标就能控制",
+            "xsec_token": "YBtiRzs5f4H7v7aSzEvK0VsH1-3aKK4-CculI1KUuqA2E=",
+            "liked_count": 696,
+            "interaction_area": {
+              "type": 1,
+              "text": "696",
+              "status": false
+            },
+            "title": "GPT-5.6要来了，提前看一波效果",
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k0321n7mvk3ms005oh8gs5413k8aculajo",
+                "height": 1310,
+                "need_load_original_image": false,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0321n7mvk3ms005oh8gs5413k8aculajo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=1d9d250b8eab92d42dbf82e93f9dc26b&t=6a4fbd6d&origin=0",
+                "trace_id": "spectrum/1040g0k0321n7mvk3ms005oh8gs5413k8aculajo",
+                "url": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0321n7mvk3ms005oh8gs5413k8aculajo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=1d9d250b8eab92d42dbf82e93f9dc26b&t=6a4fbd6d&origin=0"
+              }
+            ],
+            "geo_info": {
+              "distance": ""
+            },
+            "timestamp": 1782112583
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a412588000000001700a7d3__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "update_time": 1782692720000,
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAgvvsYiEWnDfjB/hdHUcwRtbACf5O3mO7PYfBbG4Y2uxsJ4MIwWsshDBc9uF7CoFkXjyvj27WzlG7JZkf+lg6LGj2uxnab8FO"
+              },
+              {
+                "text_en": "06-28",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-28"
+              }
+            ],
+            "extract_text_enabled": 0,
+            "id": "6a412588000000001700a7d3",
+            "last_update_time": 0,
+            "cover_image_index": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "note_collection",
+                    "cooperate_binds",
+                    "rec_next_infos",
+                    "video_marks",
+                    "product_review",
+                    "related_search",
+                    "video_goods_cards",
+                    "cooperate_comment_component",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "video_recommend_tag",
+                    "buyable_goods_card_v2",
+                    "cooperate_search_component",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "related_recommend",
+                    "next_note_guide",
+                    "widgets_ndb",
+                    "pgy_bbc_exp",
+                    "brand_max_trailer",
+                    "super_activity",
+                    "note_nice_guide",
+                    "pin_search_highlights",
+                    "widgets_enhance",
+                    "packed_goods",
+                    "packed_buyable_goods",
+                    "widgets_ncb",
+                    "note_nice_compound",
+                    "live_shooting_flag",
+                    "widgets_nbb",
+                    "poi_declare",
+                    "async_group"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "guide_post",
+                    "video_foot_bar",
+                    "follow_guide",
+                    "share_to_msg",
+                    "note_share_prompt_v1",
+                    "note_share_prompt_v2",
+                    "group_share",
+                    "share_guide_bubble",
+                    "goods_enhance_component",
+                    "guide_navigator",
+                    "sync_group"
+                  ]
+                }
+              ]
+            },
+            "has_music": false,
+            "type": "video",
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "collected_count": 72,
+            "niced": false,
+            "user": {
+              "userid": "6a11eeb20000000001007c00",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo321c08ikjnk5g5qghtqp08v00kv4dh6o?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "nickname": "神龟数字前沿",
+              "red_id": "26407702102",
+              "red_official_verified": false,
+              "red_official_verify_type": 0
+            },
+            "shared_count": 84,
+            "comments_count": 49,
+            "video_duration": "0:35",
+            "liked": false,
+            "widgets_context": "{\"video\":true,\"origin_video_key\":\"spectrum/1040g0jg321v9gi9ln2005qghtqp08v00ni647fo\",\"flags\":{\"sound_track\":true},\"author_id\":\"6a11eeb20000000001007c00\",\"author_name\":\"神龟数字前沿\",\"video_duration\":35}",
+            "nice_count": 0,
+            "debug_info_str": "",
+            "note_attributes": [],
+            "video_info_v2": {
+              "capa": {
+                "is_user_select": false,
+                "is_upload": false,
+                "frame_ts": 0,
+                "duration": 35
+              },
+              "consumer": {
+                "can_super_resolution": false
+              },
+              "image": {
+                "thumbnail_dim": "https://sns-na-i11.xhscdn.com/frame/110/0/01ea4123d508b9bd0010000000019f0e7cf71d_0.webp?imageView2/2/w/720/h/720/format/webp&ap=5&sc=SRH_SPRT&sign=20ad4ae362055bb5b39657092554a033&t=6a4fbd6d&origin=0",
+                "thumbnail": "https://sns-na-i11.xhscdn.com/frame/110/0/01ea4123d508b9bd0010000000019f0e7cf71d_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=5&sc=SRH_ORG&sign=20ad4ae362055bb5b39657092554a033&t=6a4fbd6d&origin=0"
+              },
+              "media": {
+                "user_level": 0,
+                "video": {
+                  "biz_id": "282109556121446355",
+                  "md5": "23b45e03c739eb1f6bc8943bf45dff69",
+                  "stream_types": [
+                    258,
+                    293,
+                    294,
+                    295,
+                    240,
+                    77
+                  ],
+                  "bound": [
+                    {
+                      "y": 0,
+                      "w": 0,
+                      "x": 0,
+                      "h": 0
+                    }
+                  ],
+                  "height": 3840,
+                  "width": 2160,
+                  "duration": 36,
+                  "opaque1": {
+                    "loudnorm": "{\"lra\":17.7,\"htp\":-1.29,\"hldn\":-11.84,\"ldn\":-14.64,\"thr\":-26.19}",
+                    "hasHumanVoice": "false",
+                    "amend_mobile": "40",
+                    "audioClsInfo": "{\"music_ratio\":0.0,\"freesound_ratio\":0.9886628546627924,\"speech_ratio\":0.0}",
+                    "amend_4k": "1",
+                    "rightAvgLuma": "38",
+                    "weakNetUserFlag": "1",
+                    "domestic": "0",
+                    "audioLevInfo": "{\"version\":\"3.0\"}",
+                    "bottomAvgLuma": "41",
+                    "amend": "18",
+                    "default_screencast_stream": "http://sns-video-v28.xhscdn.com/stream/1/110/258/01ea4123d508b9bd010370019f0e7b0513_258.mp4?sign=1ef9e1d2ff295b6a429cf31885a5534f&t=6a545aad",
+                    "amend_2k": "26",
+                    "isSupportSubtitle": "false",
+                    "hd_screencast_stream": "http://sns-video-v28.xhscdn.com/stream/1/110/301/01ea4123d508b9bd010370019f0e7bc9ac_301.mp4?sign=fdc71a172e6a5b243f1bb1497b1aa577&t=6a545aad",
+                    "topAvgLuma": "49"
+                  },
+                  "drm_type": 0,
+                  "biz_name": 110,
+                  "hdr_type": 0
+                },
+                "stream": {
+                  "h265": [
+                    {
+                      "audio_bitrate": 64042,
+                      "stream_type": 293,
+                      "weight": 46,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/293/01ea4123d508b9bd010370019f0f7a22b5_293.mp4?sign=37e59a19e50a3ec7ed8fbcbecd23c2d2&t=6a545aad",
+                      "video_duration": 35100,
+                      "volume": 0,
+                      "duration": 35100,
+                      "vmaf": -1,
+                      "psnr": 42.18299865722656,
+                      "video_codec": "hevc",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/293/01ea4123d508b9bd010370019f0f7a22b5_293.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/293/01ea4123d508b9bd010370019f0f7a22b5_293.mp4"
+                      ],
+                      "default_stream": 1,
+                      "audio_channels": 2,
+                      "video_bitrate": 587851,
+                      "fps": 30,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "720P",
+                        "roiWeight": "74.85936093734375",
+                        "pcdn_supplier": "",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"80.73787093734376\"}",
+                        "quality_grade_fallback_with_desc": "720p HD"
+                      },
+                      "size": 2890501,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "height": 1280,
+                      "stream_desc": "R265_MP4_720P_293_IOS",
+                      "width": 720,
+                      "quality_type": "HD",
+                      "audio_duration": 35085,
+                      "avg_bitrate": 658803,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 64042,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/294/01ea4123d508b9bd010370019f0fc24586_294.mp4?sign=f5bfedf1d24de30daf31abe2f6943ebb&t=6a545aad",
+                      "stream_type": 294,
+                      "weight": 47,
+                      "video_duration": 35100,
+                      "volume": 0,
+                      "duration": 35100,
+                      "vmaf": -1,
+                      "psnr": 41.93000030517578,
+                      "audio_channels": 2,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/294/01ea4123d508b9bd010370019f0fc24586_294.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/294/01ea4123d508b9bd010370019f0fc24586_294.mp4"
+                      ],
+                      "default_stream": 0,
+                      "video_codec": "hevc",
+                      "video_bitrate": 803810,
+                      "fps": 30,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "roiWeight": "78.780700574375",
+                        "quality_grade_fallback": "1080P",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"86.818800574375\"}",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "1080p HD"
+                      },
+                      "size": 3838022,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "audio_duration": 35085,
+                      "height": 1920,
+                      "stream_desc": "R265_MP4_1080P_294_IOS_low",
+                      "quality_type": "FHD",
+                      "width": 1080,
+                      "avg_bitrate": 874762,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 64042,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/295/01ea4123d508b9bd010370019f0fc34217_295.mp4?sign=1789b60e0531f5c124a0527418e8c915&t=6a545aad",
+                      "weight": 48,
+                      "stream_type": 295,
+                      "video_duration": 35100,
+                      "volume": 0,
+                      "duration": 35100,
+                      "vmaf": -1,
+                      "psnr": 43.650001525878906,
+                      "audio_channels": 2,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/295/01ea4123d508b9bd010370019f0fc34217_295.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/295/01ea4123d508b9bd010370019f0fc34217_295.mp4"
+                      ],
+                      "video_codec": "hevc",
+                      "default_stream": 0,
+                      "video_bitrate": 1248357,
+                      "fps": 30,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "1080P",
+                        "roiWeight": "78.48325855609376",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"90.96682855609376\"}",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "1080p HD"
+                      },
+                      "size": 5788472,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "audio_duration": 35085,
+                      "height": 1920,
+                      "stream_desc": "R265_MP4_1080P_295_IOS_high_control_v1_fix",
+                      "quality_type": "FHD",
+                      "width": 1080,
+                      "avg_bitrate": 1319309,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 128000,
+                      "stream_type": 240,
+                      "weight": 49,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/240/01ea4123d508b9bd010370019f0f12bf00_240.mp4?sign=0be55e2e8c99eec31db8040b42fcc22d&t=6a545aad",
+                      "volume": 0,
+                      "video_duration": 35100,
+                      "duration": 35109,
+                      "vmaf": -1,
+                      "psnr": 46.02799987792969,
+                      "audio_channels": 2,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/240/01ea4123d508b9bd010370019f0f12bf00_240.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/240/01ea4123d508b9bd010370019f0f12bf00_240.mp4"
+                      ],
+                      "video_codec": "hevc",
+                      "default_stream": 0,
+                      "video_bitrate": 2006812,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "2K",
+                        "roiWeight": "74.43888099",
+                        "pcdn_supplier": "",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"94.50700099000001\"}",
+                        "quality_grade_fallback_with_desc": "2K Ultra HD"
+                      },
+                      "fps": 30,
+                      "size": 9397048,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "stream_desc": "R265_MP4_2K4K_240_IOS",
+                      "height": 2560,
+                      "audio_duration": 35108,
+                      "quality_type": "2K",
+                      "width": 1440,
+                      "avg_bitrate": 2141228,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 128084,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/77/01ea4123d508b9bd010370019f0e980aca_77.mp4?sign=9b31a5f6251efa1d1ea557dcdd20efa2&t=6a545aad",
+                      "weight": 50,
+                      "stream_type": 77,
+                      "video_duration": 35100,
+                      "volume": 0,
+                      "duration": 35100,
+                      "vmaf": -1,
+                      "psnr": 47.86000061035156,
+                      "audio_channels": 2,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/77/01ea4123d508b9bd010370019f0e980aca_77.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/77/01ea4123d508b9bd010370019f0e980aca_77.mp4"
+                      ],
+                      "default_stream": 0,
+                      "video_codec": "hevc",
+                      "video_bitrate": 3440867,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "0",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "4K",
+                        "roiWeight": "62.614792943593756",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"97.02346294359376\"}",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "4K Ultra HD"
+                      },
+                      "fps": 30,
+                      "size": 15688969,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "height": 3840,
+                      "audio_duration": 35085,
+                      "width": 2160,
+                      "stream_desc": "R265_MP4_2K4K_77_IOS_2tab",
+                      "quality_type": "4K",
+                      "avg_bitrate": 3575833,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "h266": [],
+                  "av1": [],
+                  "h264": [
+                    {
+                      "audio_bitrate": 56185,
+                      "stream_type": 258,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/258/01ea4123d508b9bd010370019f0e7b0513_258.mp4?sign=1ef9e1d2ff295b6a429cf31885a5534f&t=6a545aad",
+                      "weight": 45,
+                      "volume": 0,
+                      "video_duration": 35100,
+                      "duration": 35100,
+                      "vmaf": -1,
+                      "psnr": 0,
+                      "video_codec": "h264",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/258/01ea4123d508b9bd010370019f0e7b0513_258.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/258/01ea4123d508b9bd010370019f0e7b0513_258.mp4"
+                      ],
+                      "default_stream": 0,
+                      "audio_channels": 2,
+                      "video_bitrate": 1993631,
+                      "opaque1": {
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "720p HD",
+                        "quality_grade_fallback": "720P",
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "0",
+                        "pcdn_supplier": ""
+                      },
+                      "fps": 30,
+                      "size": 9023961,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "audio_duration": 35085,
+                      "stream_desc": "X264_MP4",
+                      "width": 720,
+                      "quality_type": "HD",
+                      "height": 1280,
+                      "avg_bitrate": 2056743,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ]
+                },
+                "video_id": 137994360742001090
+              }
+            },
+            "result_from": "",
+            "collected": false,
+            "click_score": 0.04178353026509285,
+            "video_preview_type": "full_vertical_screen",
+            "desc": "刚看到一个很猛的案例：有人用 GPT-5.6 Sol，在一天内“氛围编程”做出了一个可玩的 FPS 游戏。 从画面、枪械",
+            "liked_count": 228,
+            "interaction_area": {
+              "status": false,
+              "text": "228",
+              "type": 1
+            },
+            "xsec_token": "YBrTXH6VRy2NUfOIyDzgruppW7h6VWj-UOLdNc8StnksQ=",
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k0321v9rlg374005qghtqp08v00s64urs8",
+                "height": 3840,
+                "url": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0321v9rlg374005qghtqp08v00s64urs8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=97be99e578a1aa47a747f2927327d8ac&t=6a4fbd6d&origin=0",
+                "width": 2160,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0321v9rlg374005qghtqp08v00s64urs8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=97be99e578a1aa47a747f2927327d8ac&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0321v9rlg374005qghtqp08v00s64urs8"
+              }
+            ],
+            "title": "GPT-5.6做出FPS了",
+            "geo_info": {
+              "distance": ""
+            },
+            "timestamp": 1782654344
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e2bc00000000006034fed__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 4,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.05168383941054344,
+            "result_from": "",
+            "collected_count": 0,
+            "collected": false,
+            "comments_count": 10,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k0322c124l9no705q3bg233fscu3ncqf80",
+                "height": 627,
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c124l9no705q3bg233fscu3ncqf80?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=42f9f4a6ee670a7881313c36d09c7a05&t=6a4fbd6d&origin=0",
+                "width": 627,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c124l9no705q3bg233fscu3ncqf80?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=42f9f4a6ee670a7881313c36d09c7a05&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0322c124l9no705q3bg233fscu3ncqf80"
+              },
+              {
+                "url": "",
+                "fileid": "notes_pre_post/1040g3k0322c124l9no7g5q3bg233fscu8jg2c70",
+                "height": 627,
+                "width": 627,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c124l9no7g5q3bg233fscu8jg2c70?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=3bece2588c7ee57e880123c06eba4348&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0322c124l9no7g5q3bg233fscu8jg2c70"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0322c124l9no805q3bg233fscukalh0ao",
+                "height": 627,
+                "url": "",
+                "width": 627,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c124l9no805q3bg233fscukalh0ao?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=bf2737bfeedb53eeb2008a6185047b9c&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0322c124l9no805q3bg233fscukalh0ao"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0322c124l9no8g5q3bg233fscutev2kto",
+                "height": 627,
+                "need_load_original_image": false,
+                "width": 627,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c124l9no8g5q3bg233fscutev2kto?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f9d2fdc5810bffdd9449d2725acdddc4&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0322c124l9no8g5q3bg233fscutev2kto",
+                "url": ""
+              }
+            ],
+            "note_attributes": [],
+            "type": "normal",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31nifqlkb6m005q3bg233fscug3393f0?imageView2/2/w/80/format/jpg",
+              "red_id": "95564703658",
+              "track_duration": 0,
+              "userid": "686b8086000000000d03f19e",
+              "followed": false,
+              "nickname": "奇迹AI",
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAsg2CksPYv75ss+tmpXadE6PvhFtBrKi2TKeBLGSFxMMyGc+ob/alcW9IDRbDk9f7ikdR3DtMa+x72vMWXFobrnBFabux/X14"
+              },
+              {
+                "text_en": "1 day ago",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "id": "6a4e2bc00000000006034fed",
+            "timestamp": 1783507904,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmD57om-OblHl5E2lfQMMIgE=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"686b8086000000000d03f19e\",\"author_name\":\"奇迹AI\"}",
+            "update_time": 1783517823000,
+            "liked_count": 16,
+            "desc": "GPT-5.6 来了！OpenAI 开始把 AI 从「聊天」升级成「干活」了。 这次 GPT-5.6 给我的最大感受，不",
+            "interaction_area": {
+              "status": false,
+              "text": "16",
+              "type": 1
+            },
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a244bed0000000008026b1c__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "xsec_token": "YBeRIVGt4d4FnGZRuPUy9ge2w_0iZDKZrnjOA7s-AZxUo=",
+            "title": "每日提示词分享56 GPT-image",
+            "click_score": 0.039550065994262695,
+            "result_from": "",
+            "collected_count": 5,
+            "comments_count": 0,
+            "collected": false,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k032134c9kvms205p2m3sbkmlgsu33hrco",
+                "height": 1672,
+                "url": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k032134c9kvms205p2m3sbkmlgsu33hrco?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=0f290bb1cf03c4966f2e3b8124a3bdd4&t=6a4fbd6d&origin=0",
+                "width": 941,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k032134c9kvms205p2m3sbkmlgsu33hrco?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=0f290bb1cf03c4966f2e3b8124a3bdd4&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k032134c9kvms205p2m3sbkmlgsu33hrco"
+              },
+              {
+                "fileid": "spectrum/1040g0k032134c9kvms005p2m3sbkmlgstvk2aoo",
+                "height": 1672,
+                "url": "",
+                "width": 941,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k032134c9kvms005p2m3sbkmlgstvk2aoo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=7296814155bdb0d0d66fd1b6fe1550cd&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k032134c9kvms005p2m3sbkmlgstvk2aoo"
+              },
+              {
+                "url": "",
+                "fileid": "spectrum/1040g0k032134c9kvms0g5p2m3sbkmlgs37bqs10",
+                "height": 1672,
+                "width": 941,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k032134c9kvms0g5p2m3sbkmlgs37bqs10?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=e9974b8cd8741489688efd5f9e1bfc04&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k032134c9kvms0g5p2m3sbkmlgs37bqs10"
+              },
+              {
+                "fileid": "spectrum/1040g0k032134c9kvms105p2m3sbkmlgsgmcsfa8",
+                "height": 1672,
+                "need_load_original_image": false,
+                "width": 941,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k032134c9kvms105p2m3sbkmlgsgmcsfa8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=9ae636192afe3a8b50598cb73c126820&t=6a4fbd6d&origin=0",
+                "trace_id": "spectrum/1040g0k032134c9kvms105p2m3sbkmlgsgmcsfa8",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k032134c9kvms1g5p2m3sbkmlgsv2bccoo",
+                "height": 426,
+                "url": "",
+                "width": 1058,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k032134c9kvms1g5p2m3sbkmlgsv2bccoo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=5eb91d85a97a7530b06a5968b7f4146f&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k032134c9kvms1g5p2m3sbkmlgsv2bccoo"
+              }
+            ],
+            "type": "normal",
+            "tag_info": {
+              "title": "|#*@6a244bed0000000008026b1c",
+              "type": ""
+            },
+            "id": "6a244bed000000020802ee26",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ibb159mg85g5p2m3sbkmlgs73ioa18?imageView2/2/w/80/format/jpg",
+              "red_id": "X_AiSu",
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "userid": "64561f17000000001203561c",
+              "followed": false,
+              "nickname": "SPT_XASu",
+              "show_red_official_verify_icon": false
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAd3S54rVNq3FBHMxwA8c+BJ3WnUx0kHHtefOcwlqZoXmPY4BMtEbySXDyXZwWEHPOr3iNJ/Ls1bDym/gIxLQ0yN40fLe7OlU5"
+              },
+              {
+                "text_en": "06-07",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-07"
+              }
+            ],
+            "timestamp": 1780818240,
+            "extract_text_enabled": 0,
+            "debug_info_str": "?c=vp3",
+            "interaction_area": {
+              "status": false,
+              "text": "14",
+              "type": 1
+            },
+            "update_time": 1780818240000,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"64561f17000000001203561c\",\"author_name\":\"SPT_XASu\"}",
+            "liked_count": 14,
+            "desc": "来一张自己的杂志插画 提示词贴在末尾页~ #AIGC  #ai关键词  #AI画图  #ai  #AI生成  #AI工具",
+            "recommend": {
+              "doc_id": "7648320621466605000",
+              "icon": "https://fe-platform.xhscdn.com/platform/104101l031lv2ouvmlm06fmhbrg276000000000cgm2mg0",
+              "type": "doc",
+              "chapter_time": 0,
+              "desc": "文件"
+            },
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "shared_count": 0
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e26a8000000001700907f__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "🚨 重磅！审查终于过了，OpenAI的GPT-5.6",
+            "click_score": 0.037281885743141174,
+            "result_from": "",
+            "collected_count": 1,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 2,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "images_list": [
+              {
+                "height": 2400,
+                "url": "https://sns-na-i11.xhscdn.com/1040g008322c0e9mp7k605o3992v086fn33s5c30?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=b78fe00e4b5a8369adfb5104c629d627&t=6a4fbd6d&origin=0",
+                "fileid": "1040g008322c0e9mp7k605o3992v086fn33s5c30",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g008322c0e9mp7k605o3992v086fn33s5c30?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=b78fe00e4b5a8369adfb5104c629d627&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g008322c0e9mp7k605o3992v086fn33s5c30"
+              },
+              {
+                "fileid": "1040g008322c0e9mp7k405o3992v086fnvbj5k20",
+                "height": 2400,
+                "url": "",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g008322c0e9mp7k405o3992v086fnvbj5k20?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=2d30b6fa722f48145f9b87f915c752a4&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g008322c0e9mp7k405o3992v086fnvbj5k20"
+              },
+              {
+                "url": "",
+                "fileid": "1040g008322c0e9mp7k205o3992v086fnegokibg",
+                "height": 2400,
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g008322c0e9mp7k205o3992v086fnegokibg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=e26c6359aceaabaf14a7d885da217b98&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g008322c0e9mp7k205o3992v086fnegokibg"
+              },
+              {
+                "fileid": "1040g008322c0e9mp7k1g5o3992v086fng7o9tto",
+                "height": 2400,
+                "url": "",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g008322c0e9mp7k1g5o3992v086fng7o9tto?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=894c4a934f2621a11ca6c16ae5cecb07&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g008322c0e9mp7k1g5o3992v086fng7o9tto"
+              },
+              {
+                "height": 2400,
+                "url": "",
+                "fileid": "1040g008322c0e9mp7k505o3992v086fn289tm98",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g008322c0e9mp7k505o3992v086fn289tm98?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=152b64323fbf68e8d5b534eef2a2ff80&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g008322c0e9mp7k505o3992v086fn289tm98"
+              }
+            ],
+            "note_attributes": [],
+            "type": "normal",
+            "user": {
+              "red_id": "4289290642",
+              "userid": "606948be00000000010019f7",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3228701qf7o6g5o3992v086fnslgu3rg?imageView2/2/w/80/format/jpg",
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "nickname": "半理半文",
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0
+            },
+            "id": "6a4e26a8000000001700907f",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RANtet4Z6ciDbkRi0vWomVjWMDqlsqAr3ebORKoV/C0nK1pS9IXq+7LzUf+DupmyYkW2310e6uplDdS5pOuJD8bCGLNbOpO6qu"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783506600,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "1",
+              "type": 1
+            },
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmAkxT6y5jwO1x9-U1LP2TjQ=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"606948be00000000010019f7\",\"author_name\":\"半理半文\"}",
+            "update_time": 1783506644000,
+            "debug_info_str": "",
+            "liked_count": 1,
+            "desc": "OpenAI本周四发布GPT-5.6，旗舰版Sol能力大幅提升，涵盖代码、科学推理等，价格为每百万Token输入5美元",
+            "shared_count": 0,
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a42272f000000000f0069be__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "update_time": 1782720909000,
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAulUCiOiy7+wr03Ms1qYwJBdTGRAFOoEo4C+uk2jDejF49RG43w87G19TwHbYVqG8OkFrtXJ/PkPRwI/9d8AZudD/NEAt0aU5"
+              },
+              {
+                "text_en": "06-29",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-29"
+              }
+            ],
+            "extract_text_enabled": 0,
+            "id": "6a42272f000000020f00ec84",
+            "last_update_time": 0,
+            "cover_image_index": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "note_collection",
+                    "cooperate_binds",
+                    "rec_next_infos",
+                    "video_marks",
+                    "product_review",
+                    "related_search",
+                    "video_goods_cards",
+                    "cooperate_comment_component",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "video_recommend_tag",
+                    "buyable_goods_card_v2",
+                    "cooperate_search_component",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "related_recommend",
+                    "next_note_guide",
+                    "widgets_ndb",
+                    "pgy_bbc_exp",
+                    "brand_max_trailer",
+                    "super_activity",
+                    "note_nice_guide",
+                    "pin_search_highlights",
+                    "widgets_enhance",
+                    "packed_goods",
+                    "packed_buyable_goods",
+                    "widgets_ncb",
+                    "note_nice_compound",
+                    "live_shooting_flag",
+                    "widgets_nbb",
+                    "poi_declare",
+                    "async_group"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "guide_post",
+                    "video_foot_bar",
+                    "follow_guide",
+                    "share_to_msg",
+                    "note_share_prompt_v1",
+                    "note_share_prompt_v2",
+                    "group_share",
+                    "share_guide_bubble",
+                    "goods_enhance_component",
+                    "guide_navigator",
+                    "sync_group"
+                  ]
+                }
+              ]
+            },
+            "has_music": false,
+            "type": "video",
+            "tag_info": {
+              "title": "|#*@6a42272f000000000f0069be",
+              "type": ""
+            },
+            "collected_count": 71,
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3165e4fdfgq3047ide3cc12paa5l0h6g?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "red_id": "VIONWILLIAMS",
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "track_duration": 0,
+              "userid": "56fcd8c04775a71ded728b2a",
+              "followed": false,
+              "nickname": "VION WILLIAMS"
+            },
+            "niced": false,
+            "shared_count": 57,
+            "comments_count": 20,
+            "video_duration": "0:22",
+            "liked": false,
+            "widgets_context": "{\"video\":true,\"origin_video_key\":\"1040g00g32209atdv6s6g47ide3cc12pa0geqnn8\",\"flags\":{\"sound_track\":true},\"author_id\":\"56fcd8c04775a71ded728b2a\",\"author_name\":\"VION WILLIAMS\",\"video_duration\":22}",
+            "debug_info_str": "?c=vp3",
+            "nice_count": 0,
+            "note_attributes": [],
+            "video_info_v2": {
+              "capa": {
+                "is_user_select": false,
+                "is_upload": false,
+                "frame_ts": 0,
+                "duration": 22
+              },
+              "consumer": {
+                "can_super_resolution": false
+              },
+              "image": {
+                "thumbnail": "https://sns-na-i11.xhscdn.com/frame/110/0/01ea42272d08b60a0010000000019f12693753_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=5&sc=SRH_ORG&sign=7adf7f010a0fa7097be29c2b4c2807c4&t=6a4fbd6d&origin=0",
+                "thumbnail_dim": "https://sns-na-i11.xhscdn.com/frame/110/0/01ea42272d08b60a0010000000019f12693753_0.webp?imageView2/2/w/720/h/720/format/webp&ap=5&sc=SRH_SPRT&sign=7adf7f010a0fa7097be29c2b4c2807c4&t=6a4fbd6d&origin=0",
+                "first_frame": "https://sns-na-i11.xhscdn.com/110/0/01ea42272d08b60a0010000000019f126918ad_0.jpg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=b3348a91b8b10cb5094474a6df8c1582&t=6a4fbd6d&origin=0"
+              },
+              "media": {
+                "user_level": 0,
+                "audio_info": {
+                  "stream_types": [
+                    103,
+                    102,
+                    101
+                  ]
+                },
+                "stream": {
+                  "h265": [
+                    {
+                      "audio_bitrate": 0,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/3021/01ea42272d08b60a010370019f1439f27a_3021.m4s?sign=95db51adfaa0e5de95adb384a2517538&t=6a545aad",
+                      "weight": 47,
+                      "stream_type": 3021,
+                      "volume": 0,
+                      "video_duration": 22616,
+                      "duration": 22616,
+                      "vmaf": -1,
+                      "psnr": 40.119998931884766,
+                      "audio_channels": 0,
+                      "video_codec": "hevc",
+                      "default_stream": 1,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3021/01ea42272d08b60a010370019f1439f27a_3021.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3021/01ea42272d08b60a010370019f1439f27a_3021.m4s"
+                      ],
+                      "video_bitrate": 258581,
+                      "opaque1": {
+                        "roiWeight": "84.03419000000001",
+                        "quality_grade_fallback": "720P",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "720p HD",
+                        "pcdn_302_flag": "false",
+                        "quality_grade_name_v2": "720P",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"86.62\"}",
+                        "use_pcdn": "1",
+                        "stream_index": "9999",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_720P",
+                        "quality_index": "130",
+                        "quality_grade_name": "720p HD"
+                      },
+                      "fps": 57,
+                      "size": 731031,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "stream_desc": "R265_FMP4_720P_3021_IOS",
+                      "height": 720,
+                      "width": 1114,
+                      "quality_type": "HD",
+                      "audio_duration": 0,
+                      "avg_bitrate": 258581,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 0,
+                      "stream_type": 3022,
+                      "weight": 48,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/3022/01ea42272d08b60a010370019f1459f38a_3022.m4s?sign=0f4c77ce9a1db428a5c377051403c3d8&t=6a545aad",
+                      "volume": 0,
+                      "video_duration": 22616,
+                      "duration": 22616,
+                      "vmaf": -1,
+                      "psnr": 39.80099868774414,
+                      "video_codec": "hevc",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3022/01ea42272d08b60a010370019f1459f38a_3022.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3022/01ea42272d08b60a010370019f1459f38a_3022.m4s"
+                      ],
+                      "default_stream": 0,
+                      "audio_channels": 0,
+                      "video_bitrate": 464124,
+                      "fps": 57,
+                      "opaque1": {
+                        "roiWeight": "85.68876",
+                        "quality_grade_fallback": "1080P",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "1080p HD",
+                        "pcdn_302_flag": "false",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"90.33\"}",
+                        "quality_grade_name_v2": "1080P",
+                        "use_pcdn": "1",
+                        "stream_index": "9998",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_1080P",
+                        "quality_index": "99",
+                        "quality_grade_name": "1080p HFR"
+                      },
+                      "size": 1312118,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "height": 1080,
+                      "stream_desc": "R265_FMP4_1080P_3022_ios",
+                      "width": 1672,
+                      "quality_type": "FHD",
+                      "audio_duration": 0,
+                      "avg_bitrate": 464124,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 0,
+                      "stream_type": 3023,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/3023/01ea42272d08b60a010370019f1457d13a_3023.m4s?sign=f7a8e077e273af26e6f8dbad5626b34f&t=6a545aad",
+                      "weight": 49,
+                      "video_duration": 22616,
+                      "volume": 0,
+                      "duration": 22616,
+                      "vmaf": -1,
+                      "psnr": 39.80099868774414,
+                      "audio_channels": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3023/01ea42272d08b60a010370019f1457d13a_3023.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3023/01ea42272d08b60a010370019f1457d13a_3023.m4s"
+                      ],
+                      "default_stream": 0,
+                      "video_codec": "hevc",
+                      "video_bitrate": 464124,
+                      "fps": 57,
+                      "opaque1": {
+                        "quality_grade_fallback": "1080P",
+                        "roiWeight": "87.07876",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "1080p HD",
+                        "pcdn_302_flag": "false",
+                        "quality_grade_name_v2": "1080P",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"91.72\"}",
+                        "use_pcdn": "1",
+                        "stream_index": "9997",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_1080P",
+                        "quality_index": "99",
+                        "quality_grade_name": "1080p HFR"
+                      },
+                      "size": 1312118,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "audio_duration": 0,
+                      "height": 1080,
+                      "width": 1672,
+                      "quality_type": "FHD",
+                      "stream_desc": "R265_FMP4_1080P_3023_ios",
+                      "avg_bitrate": 464124,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 0,
+                      "stream_type": 3038,
+                      "weight": 50,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/3038/01ea42272d08b60a010370019f14b14c3e_3038.m4s?sign=6fff15b7fe14ec290fb5551374f94025&t=6a545aad",
+                      "video_duration": 22616,
+                      "volume": 0,
+                      "duration": 22616,
+                      "vmaf": -1,
+                      "psnr": 43.4379997253418,
+                      "audio_channels": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3038/01ea42272d08b60a010370019f14b14c3e_3038.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3038/01ea42272d08b60a010370019f14b14c3e_3038.m4s"
+                      ],
+                      "video_codec": "hevc",
+                      "default_stream": 0,
+                      "video_bitrate": 1568689,
+                      "opaque1": {
+                        "quality_grade_fallback": "2K",
+                        "roiWeight": "76.22310999999999",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "2K Ultra HD",
+                        "pcdn_302_flag": "false",
+                        "quality_grade_name_v2": "2K",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.0E-5\",\"mvmaf\":\"91.91\"}",
+                        "use_pcdn": "1",
+                        "stream_index": "9996",
+                        "pcdn_supplier": "",
+                        "quality_grade": "FHD_2K",
+                        "quality_index": "79",
+                        "quality_grade_name": "2K HFR"
+                      },
+                      "fps": 57,
+                      "size": 4434815,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "stream_desc": "R265_FMP4_2K4K_3038_IOS",
+                      "height": 1440,
+                      "width": 2230,
+                      "audio_duration": 0,
+                      "quality_type": "2K",
+                      "avg_bitrate": 1568689,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "h266": [],
+                  "h264": [
+                    {
+                      "audio_bitrate": 56447,
+                      "stream_type": 258,
+                      "weight": 46,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/258/01ea42272d08b60a010370019f126946d7_258.mp4?sign=c58e954be352dc0f1a48ec973f11952b&t=6a545aad",
+                      "volume": 0,
+                      "video_duration": 22666,
+                      "duration": 22667,
+                      "vmaf": -1,
+                      "psnr": 0,
+                      "video_codec": "h264",
+                      "audio_channels": 2,
+                      "default_stream": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/258/01ea42272d08b60a010370019f126946d7_258.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/258/01ea42272d08b60a010370019f126946d7_258.mp4"
+                      ],
+                      "video_bitrate": 919213,
+                      "fps": 30,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "stream_index": "10000",
+                        "use_pcdn": "0",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "720P",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "720p HD"
+                      },
+                      "size": 2784696,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "stream_desc": "X264_MP4",
+                      "height": 720,
+                      "width": 1114,
+                      "quality_type": "HD",
+                      "audio_duration": 22616,
+                      "avg_bitrate": 982819,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "av1": []
+                },
+                "video": {
+                  "biz_id": "282110662727723454",
+                  "height": 1964,
+                  "stream_types": [
+                    258,
+                    3021,
+                    3022,
+                    3023,
+                    3038
+                  ],
+                  "bound": [
+                    {
+                      "y": 0,
+                      "w": 0,
+                      "x": 0,
+                      "h": 0
+                    }
+                  ],
+                  "md5": "466043ef86c8f08bf53732769ca22f6c",
+                  "width": 3040,
+                  "duration": 23,
+                  "opaque1": {
+                    "amend_mobile": "40",
+                    "hasHumanVoice": "false",
+                    "supportAbr": "1",
+                    "loudnorm": "{\"lra\":2.8,\"htp\":-0.68,\"hldn\":-12.41,\"ldn\":-11.71,\"thr\":-21.76}",
+                    "audioClsInfo": "{\"music_ratio\":0.9840777981389739,\"freesound_ratio\":0.0,\"speech_ratio\":0.0}",
+                    "amend_4k": "1",
+                    "rightAvgLuma": "191",
+                    "weakNetUserFlag": "1",
+                    "domestic": "0",
+                    "audioLevInfo": "{\"audio_quality_level\":\"E\",\"mos_overall\":4.2446,\"version\":\"3.0\"}",
+                    "bottomAvgLuma": "169",
+                    "amend": "18",
+                    "default_screencast_stream": "http://sns-video-v28.xhscdn.com/stream/1/110/258/01ea42272d08b60a010370019f126946d7_258.mp4?sign=c58e954be352dc0f1a48ec973f11952b&t=6a545aad",
+                    "amend_2k": "26",
+                    "isSupportSubtitle": "false",
+                    "hd_screencast_stream": "http://sns-video-v28.xhscdn.com/stream/1/110/301/01ea42272d08b60a010370019f126adf37_301.mp4?sign=462b70cb944a38cf2a7aa43092b1b5f8&t=6a545aad",
+                    "topAvgLuma": "122"
+                  },
+                  "drm_type": 0,
+                  "biz_name": 110,
+                  "hdr_type": 0
+                },
+                "audio_stream": {
+                  "AAC": [
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/103/01ea42272d08b60a010370019f126930db_103.m4a?sign=fefd54d3403b1a4dc691987741f83c2e&t=6a545aad",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/103/01ea42272d08b60a010370019f126930db_103.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/103/01ea42272d08b60a010370019f126930db_103.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1"
+                      },
+                      "weight": 59,
+                      "avg_bitrate": 194101,
+                      "default_stream": 0,
+                      "size": 548730,
+                      "audio_duration": 22616,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "stream_type": 103,
+                      "audio_bitrate": 194101,
+                      "audio_profile": "LC",
+                      "format": "FMP4"
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/102/01ea42272d08b60a010370019f12692f29_102.m4a?sign=cb63a7e070ed9e3bac88ddea553280b2&t=6a545aad",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/102/01ea42272d08b60a010370019f12692f29_102.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/102/01ea42272d08b60a010370019f12692f29_102.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "weight": 60,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1"
+                      },
+                      "audio_duration": 22616,
+                      "default_stream": 0,
+                      "avg_bitrate": 130131,
+                      "size": 367887,
+                      "format": "FMP4",
+                      "audio_profile": "LC",
+                      "audio_bitrate": 130131,
+                      "audio_codec": "aac",
+                      "audio_samplerate": 44100,
+                      "stream_type": 102
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-v28.xhscdn.com/stream/1/110/101/01ea42272d08b60a010370019f12692f18_101.m4a?sign=7a7e43c8ace566b8f3c0513cb3cd6710&t=6a545aad",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/101/01ea42272d08b60a010370019f12692f18_101.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/101/01ea42272d08b60a010370019f12692f18_101.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "weight": 69,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1"
+                      },
+                      "size": 277547,
+                      "default_stream": 1,
+                      "audio_duration": 22616,
+                      "avg_bitrate": 98176,
+                      "format": "FMP4",
+                      "audio_profile": "LC",
+                      "stream_type": 101,
+                      "audio_bitrate": 98176,
+                      "audio_codec": "aac",
+                      "audio_samplerate": 44100
+                    }
+                  ]
+                },
+                "video_id": 137995474614924820
+              }
+            },
+            "result_from": "",
+            "liked_count": 105,
+            "click_score": 0.037830132991075516,
+            "desc": "基于Chatgpt网页pro模型，灰度到的5.6，怎么说呢，从5 .5到5.6，是 跨代际的提升。虽然AI的进化能力已经",
+            "xsec_token": "YBMzc5nhELtRz7oEhu3kanAuFPwhG-WSw84rUbNnSsLbE=",
+            "collected": false,
+            "interaction_area": {
+              "status": false,
+              "text": "105",
+              "type": 1
+            },
+            "images_list": [
+              {
+                "url": "https://sns-na-i11.xhscdn.com/1040g2sg32209ate072k047ide3cc12pal9gjuc0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=07ab5f19cc3180a59793d7bcbd02ddc4&t=6a4fbd6d&origin=0",
+                "fileid": "1040g2sg32209ate072k047ide3cc12pal9gjuc0",
+                "height": 1656,
+                "width": 2208,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g2sg32209ate072k047ide3cc12pal9gjuc0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=07ab5f19cc3180a59793d7bcbd02ddc4&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g2sg32209ate072k047ide3cc12pal9gjuc0"
+              }
+            ],
+            "title": "跨时代 ！GPT5.6 生成 3D 的能力",
+            "geo_info": {
+              "distance": ""
+            },
+            "timestamp": 1782720303
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e649e000000000f006b6e__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.04112522676587105,
+            "title": "GPT-5.6 来了，但重点不是更强",
+            "result_from": "",
+            "collected_count": 3,
+            "comments_count": 0,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k8322c5lopr6u7g5qhq6s33nm01i57snq0",
+                "height": 1448,
+                "need_load_original_image": false,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322c5lopr6u7g5qhq6s33nm01i57snq0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=c36c642690c59f1fd3ead40258831fc2&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k8322c5lopr6u7g5qhq6s33nm01i57snq0",
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322c5lopr6u7g5qhq6s33nm01i57snq0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=c36c642690c59f1fd3ead40258831fc2&t=6a4fbd6d&origin=0"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k8322c5lopr6u805qhq6s33nm01dee9qco",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322c5lopr6u805qhq6s33nm01dee9qco?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=78ced65b447f2aa70637f18e98622441&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8322c5lopr6u805qhq6s33nm01dee9qco"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k8322c5lopr6u8g5qhq6s33nm01ccg74eg",
+                "height": 1448,
+                "need_load_original_image": false,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322c5lopr6u8g5qhq6s33nm01ccg74eg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=a7b08bf42c50f2847950356f0c6f43c1&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k8322c5lopr6u8g5qhq6s33nm01ccg74eg",
+                "url": ""
+              },
+              {
+                "url": "",
+                "fileid": "notes_pre_post/1040g3k8322c5lopr6u905qhq6s33nm01uuihkc8",
+                "height": 1448,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322c5lopr6u905qhq6s33nm01uuihkc8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=b340a6609e164a2f9490fdb603d7de0c&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8322c5lopr6u905qhq6s33nm01uuihkc8"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k8322c5lopr6u9g5qhq6s33nm01e9bjm58",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322c5lopr6u9g5qhq6s33nm01e9bjm58?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=4651eb73635377c7cc04f9b4870daf20&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8322c5lopr6u9g5qhq6s33nm01e9bjm58"
+              }
+            ],
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "id": "6a4e649e000000000f006b6e",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo322caq8o1n0005qhq6s33nm0118sqie8?imageView2/2/w/80/format/jpg",
+              "red_id": "27247326341",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "show_red_official_verify_icon": false,
+              "nickname": "FourJ",
+              "red_official_verified": false,
+              "userid": "6a3a3706000000000e03d801"
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAMAWJMpGNrPCcSlFBT2xHmSdMb8MieBkpN3wyA7jMvvXqrm+Fe9DuhZXYsXNRWQKbCS5o3oFcYYGLQCt9VXs01vIGCoca+DEc"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783522462,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmNKOvbg_SwWql8YbBF9zQgU=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6a3a3706000000000e03d801\",\"author_name\":\"FourJ\"}",
+            "liked_count": 3,
+            "update_time": 1783574512000,
+            "desc": "OpenAI 三模型矩阵：Sol / Terra / Luna 这次不是一个模型，而是三个档位： ☀️ Sol：旗舰模型",
+            "interaction_area": {
+              "status": false,
+              "text": "3",
+              "type": 1
+            },
+            "last_update_time": 0,
+            "shared_count": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a449e970000000011005d7d__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 0,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI一口气发了3个GPT-5.6",
+            "click_score": 0.03126762434840202,
+            "result_from": "",
+            "collected_count": 2,
+            "comments_count": 0,
+            "collected": false,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k03222mhrt1ms005og7g9641pbcc3c5u4o",
+                "height": 1070,
+                "trace_id": "spectrum/1040g0k03222mhrt1ms005og7g9641pbcc3c5u4o",
+                "width": 1186,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k03222mhrt1ms005og7g9641pbcc3c5u4o?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=fb011e9bcc0cf61ec592466c0a86467c&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "url": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k03222mhrt1ms005og7g9641pbcc3c5u4o?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=fb011e9bcc0cf61ec592466c0a86467c&t=6a4fbd6d&origin=0"
+              }
+            ],
+            "tag_info": {
+              "title": "|#*@6a449e970000000011005d7d",
+              "type": ""
+            },
+            "type": "normal",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAtb/OP21fepVa6TTBKauHpqroyUTuDwYGVMdjld53WSLnYfa/QMGpem/MoI21Uk5iO22cg80uIEK8WsAa8HbsMZ5BJ3lI3/ht"
+              },
+              {
+                "text_en": "07-01",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "07-01"
+              }
+            ],
+            "user": {
+              "userid": "6207824c000000001000e56c",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ikn8ko9gc6g5og7g9641pbc4srcarg?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "nickname": "评测者说",
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_id": "1685760871",
+              "red_official_verified": false
+            },
+            "id": "6a449e97000000021100d847",
+            "timestamp": 1782881943,
+            "extract_text_enabled": 0,
+            "debug_info_str": "?c=vp3",
+            "xsec_token": "YBzLjm2ayCgkorfBUZ-8Ht8as_n3RVwAZL77hTAknw73o=",
+            "update_time": 1783034849000,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6207824c000000001000e56c\",\"author_name\":\"评测者说\"}",
+            "liked_count": 3,
+            "desc": "GPT-5.6来了，三个版本同时发——Sol旗舰、Terra均衡、Luna高并发，三层覆盖从前沿研究到高频生产。Sol超",
+            "interaction_area": {
+              "status": false,
+              "text": "3",
+              "type": 1
+            },
+            "shared_count": 2,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e207500000000110053ee__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.05562452971935272,
+            "title": "📢GPT-5.6要来了？！",
+            "result_from": "",
+            "collected_count": 1,
+            "comments_count": 2,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "|#*@6a4e207500000000110053ee",
+              "type": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k8322bsugdp72805nd182cg83bsudf19e0",
+                "height": 710,
+                "need_load_original_image": false,
+                "width": 1320,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bsugdp72805nd182cg83bsudf19e0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=d55b6f65fb8ba10477db719fbc6fc583&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k8322bsugdp72805nd182cg83bsudf19e0",
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bsugdp72805nd182cg83bsudf19e0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=d55b6f65fb8ba10477db719fbc6fc583&t=6a4fbd6d&origin=0"
+              }
+            ],
+            "user": {
+              "red_id": "923461288",
+              "red_official_verified": false,
+              "track_duration": 0,
+              "userid": "5da140990000000001000d7c",
+              "followed": false,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30t9dgfu7k2105nd182cg83bsmt4jlmo?imageView2/2/w/80/format/jpg",
+              "nickname": "本本",
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false
+            },
+            "id": "6a4e2075000000021100d6d4",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAjDAFuPaetrGZkASwTgw4seacHonuTJUlafHUPEtYf9ko13M8YQUW9wj6nciVjicLeT28IobT8wgYJdCPZcy7dxdFbqwE09JP"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783505013,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "3",
+              "type": 1
+            },
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmMc07WbkY80VibsKVrd6SBw=",
+            "debug_info_str": "?c=vp3",
+            "liked_count": 3,
+            "update_time": 1783516582000,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5da140990000000001000d7c\",\"author_name\":\"本本\"}",
+            "desc": "Sam Altman 刚刚发文： “GPT-5.6 Sol launches Thursday! Happy build",
+            "shared_count": 3,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "last_update_time": 0
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__6a3ecc8e00000000160242e7__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 1782633509,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "重磅！OpenAI发布最新款模型GPT 5.6！！",
+            "click_score": 0.035194385796785355,
+            "result_from": "",
+            "collected_count": 43,
+            "collected": false,
+            "comments_count": 36,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "images_list": [
+              {
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0321t07mr8nk2g5npkkok0bvmvejfnu6g?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=7fa3fdb932a209777f9f3d8c0bd4d0a7&t=6a4fbd6d&origin=0",
+                "fileid": "notes_pre_post/1040g3k0321t07mr8nk2g5npkkok0bvmvejfnu6g",
+                "height": 1448,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0321t07mr8nk2g5npkkok0bvmvejfnu6g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=7fa3fdb932a209777f9f3d8c0bd4d0a7&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0321t07mr8nk2g5npkkok0bvmvejfnu6g"
+              },
+              {
+                "fileid": "1040g2sg321v03m8s7ke05npkkok0bvmv5ebe8v8",
+                "height": 1572,
+                "url": "",
+                "width": 1180,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/1040g2sg321v03m8s7ke05npkkok0bvmv5ebe8v8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=a83de8538ae8c109252a33649c9d8220&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "1040g2sg321v03m8s7ke05npkkok0bvmv5ebe8v8"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0321t07mr8nk3g5npkkok0bvmvtp5g43o",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0321t07mr8nk3g5npkkok0bvmvtp5g43o?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=838cd46516340c60a567529ac69b0115&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0321t07mr8nk3g5npkkok0bvmvtp5g43o"
+              },
+              {
+                "url": "",
+                "fileid": "notes_pre_post/1040g3k0321t07mr8nk405npkkok0bvmve585cfg",
+                "height": 1448,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0321t07mr8nk405npkkok0bvmve585cfg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=d91f700cfe18cb2213979ceb3aff8921&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0321t07mr8nk405npkkok0bvmve585cfg"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0321t07mr8nk4g5npkkok0bvmv9cbjba0",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0321t07mr8nk4g5npkkok0bvmv9cbjba0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f8393580657dcd510b5e9d0f00bd3902&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0321t07mr8nk4g5npkkok0bvmv9cbjba0"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0321t07mr8nk505npkkok0bvmvu1s87b8",
+                "height": 631,
+                "url": "",
+                "width": 968,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0321t07mr8nk505npkkok0bvmvu1s87b8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=e48e1ea69dc0791f4953325aaa81221c&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0321t07mr8nk505npkkok0bvmvu1s87b8"
+              }
+            ],
+            "note_attributes": [],
+            "type": "normal",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RALwZf4YZvjmzGcST5muD8OzsQ9h8L68jnsrI6dSlI3n844lfLp/qjexmkfRbV7RHJNxmCMnWaviA8a3+EVdPl7P27ROnv7RJ0"
+              },
+              {
+                "text_en": "06-28",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-28"
+              }
+            ],
+            "id": "6a3ecc8e00000000160242e7",
+            "user": {
+              "userid": "5f34a628000000000101fedf",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31vcmgjk8jq005npkkok0bvmvgvpr1l0?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "nickname": "比奇堡居民",
+              "followed": false,
+              "show_red_official_verify_icon": false,
+              "red_id": "738353838",
+              "red_official_verified": false,
+              "red_official_verify_type": 0
+            },
+            "timestamp": 1782500494,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBFylIBSVcSNs8YoNLpW_zhCvKuciJtSthBff5ZhitupY=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5f34a628000000000101fedf\",\"author_name\":\"比奇堡居民\"}",
+            "liked_count": 211,
+            "interaction_area": {
+              "status": false,
+              "text": "211",
+              "type": 1
+            },
+            "desc": "GPT-5.6 终于来了！ 本次OpenAI还给新系列模型起了三个名字，这下GPT5.6和Fable以及Mythos可以",
+            "update_time": 1782634100000,
+            "shared_count": 200,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e098600000000170082cf__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "GPT5.6是悼明之作吗",
+            "click_score": 0.04006420075893402,
+            "result_from": "",
+            "collected_count": 42,
+            "collected": false,
+            "comments_count": 79,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bsretc7o705odkg7740nd619u0d28?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=f191787bd5b39a5fc60f80ec1556a420&t=6a4fbd6d&origin=0",
+                "fileid": "notes_pre_post/1040g3k8322bsretc7o705odkg7740nd619u0d28",
+                "height": 1600,
+                "width": 1200,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bsretc7o705odkg7740nd619u0d28?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f191787bd5b39a5fc60f80ec1556a420&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8322bsretc7o705odkg7740nd619u0d28"
+              }
+            ],
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "user": {
+              "red_official_verified": false,
+              "userid": "61b481ce0000000010005da6",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo311rppgl50u005odkg7740nd677qfoe0?imageView2/2/w/80/format/jpg",
+              "red_official_verify_type": 0,
+              "red_id": "2115953984",
+              "show_red_official_verify_icon": false,
+              "track_duration": 0,
+              "followed": false,
+              "nickname": "入水愿い"
+            },
+            "id": "6a4e098600000000170082cf",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAqIsispE7ve0kSzvIuB82B2oLEAJFjle8nIOHbZUiCa0iA/fNs/2oQXLd6YnPSPoMfCjt6Su98F0S126b6Tb8OnRz+JBdpedi"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783499142,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "text": "328",
+              "status": false
+            },
+            "debug_info_str": "",
+            "update_time": 1783610138000,
+            "liked_count": 328,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"61b481ce0000000010005da6\",\"author_name\":\"入水愿い\"}",
+            "desc": "为什么说 GPT-5.6 是悼明之作？ OpenAI以GPT-5.6之名，实则暗寓故国之思。其表面为人工智能迭代，内里则",
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmCSIXZ7QpROjAC0M_4d3K0s=",
+            "shared_count": 410,
+            "last_update_time": 1783500013,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e57c80000000008031a1b__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 1,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.03974330797791481,
+            "result_from": "",
+            "collected_count": 1,
+            "comments_count": 1,
+            "collected": false,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k0322c67r2674005puvo8o3ju1ts424tno",
+                "height": 1448,
+                "url": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r2674005puvo8o3ju1ts424tno?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=23df9714f6c11fc53be59b8a1c02c3a8&t=6a4fbd6d&origin=0",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r2674005puvo8o3ju1ts424tno?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=23df9714f6c11fc53be59b8a1c02c3a8&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c67r2674005puvo8o3ju1ts424tno"
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r26740g5puvo8o3ju1tsq1na08",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r26740g5puvo8o3ju1tsq1na08?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=bc8d0001f06f1c5704e8c2b731b87bab&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c67r26740g5puvo8o3ju1tsq1na08"
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r2674105puvo8o3ju1t9hklr50",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r2674105puvo8o3ju1t9hklr50?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=9632fd629bcec435d1f930a9179c8b87&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c67r2674105puvo8o3ju1t9hklr50"
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r26741g5puvo8o3ju1t00t6ea8",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r26741g5puvo8o3ju1t00t6ea8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=2493ffdc61651f4b59cf3d1c834b1b59&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c67r26741g5puvo8o3ju1t00t6ea8"
+              },
+              {
+                "height": 1448,
+                "url": "",
+                "fileid": "spectrum/1040g0k0322c67r2674205puvo8o3ju1tk4ri6d0",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r2674205puvo8o3ju1tk4ri6d0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=b98e29233c7ee46124a567351174b829&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c67r2674205puvo8o3ju1tk4ri6d0"
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r26742g5puvo8o3ju1tc4bagug",
+                "height": 1448,
+                "need_load_original_image": false,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r26742g5puvo8o3ju1tc4bagug?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=cfae766c9db872f3da3c3b27a15cb226&t=6a4fbd6d&origin=0",
+                "trace_id": "spectrum/1040g0k0322c67r26742g5puvo8o3ju1tc4bagug",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r2674305puvo8o3ju1t4sdhr7g",
+                "height": 1448,
+                "need_load_original_image": false,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r2674305puvo8o3ju1t4sdhr7g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=62233bb351ac3f53b7eb39c1b9039566&t=6a4fbd6d&origin=0",
+                "trace_id": "spectrum/1040g0k0322c67r2674305puvo8o3ju1t4sdhr7g",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r26743g5puvo8o3ju1t5deqqmg",
+                "height": 1448,
+                "trace_id": "spectrum/1040g0k0322c67r26743g5puvo8o3ju1t5deqqmg",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r26743g5puvo8o3ju1t5deqqmg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=6da98d89693145819cb1ebf171ee7110&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k0322c67r2674405puvo8o3ju1tj9beg58",
+                "height": 1448,
+                "url": "",
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/spectrum/1040g0k0322c67r2674405puvo8o3ju1tj9beg58?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=4fd09e75d964ddb6ea9ae247973869df&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "spectrum/1040g0k0322c67r2674405puvo8o3ju1tj9beg58"
+              }
+            ],
+            "tag_info": {
+              "title": "|#*@6a4e57c80000000008031a1b",
+              "type": ""
+            },
+            "type": "normal",
+            "user": {
+              "red_id": "26250050381",
+              "red_official_verified": false,
+              "track_duration": 0,
+              "nickname": "Ai 哟喂",
+              "show_red_official_verify_icon": false,
+              "userid": "67dfc230000000000e01f83d",
+              "followed": false,
+              "red_official_verify_type": 0,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo321h1ld47nu605puvo8o3ju1tkukne4g?imageView2/2/w/80/format/jpg"
+            },
+            "id": "6a4e57c80000000208039f21",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAqCkuUWfLxCjpMQUEPtG6VPz6DmmLMMt9TJcQozIpv2RVs6LLpkz/rtyw1ux3bAemRvVVDaSQQzxLoKSOcUT90dwTgX3uKbZE"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783519176,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "text": "3",
+              "status": false
+            },
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmBAKG_sGFMvK1DRzyFo7DI0=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"67dfc230000000000e01f83d\",\"author_name\":\"Ai 哟喂\"}",
+            "liked_count": 3,
+            "debug_info_str": "?c=vp3",
+            "desc": "GPT-5.6 终于来了。 这次发布，和前段时间 Claude Fable 5、Mythos 5 有点像：不是模型做完就",
+            "update_time": 1783532897000,
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a366fb7000000001101dde9__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "note": {
+            "shared_count": 185,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "GPT-5.6 Pro 泄露：将于 6.23发布",
+            "click_score": 0.041238754987716675,
+            "result_from": "",
+            "collected_count": 97,
+            "comments_count": 120,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k8321kr6p6i70005ngk3b109efdk9c7t68",
+                "height": 1608,
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8321kr6p6i70005ngk3b109efdk9c7t68?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=2f7c6c599fc23a85defe99b10d7fa64d&t=6a4fbd6d&origin=0",
+                "width": 1208,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8321kr6p6i70005ngk3b109efdk9c7t68?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=2f7c6c599fc23a85defe99b10d7fa64d&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8321kr6p6i70005ngk3b109efdk9c7t68"
+              }
+            ],
+            "note_attributes": [],
+            "user": {
+              "red_id": "797615388",
+              "red_official_verified": false,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo320i9v1ge6o005ngk3b109efdq7p1feo?imageView2/2/w/80/format/jpg",
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "track_duration": 0,
+              "userid": "5e141ac2000000000100b9ed",
+              "nickname": "眼眼",
+              "red_official_verify_type": 0
+            },
+            "id": "6a366fb7000000001101dde9",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAASmuVOCLt/FyXGpWDf4lA1yBk3fNdU+Xd6A+yUxo4ANUYI0RwcqQnWhBAQ1zpc3N/i4JC9iNv4cjvT80heZev1T4Ua5XXNj8"
+              },
+              {
+                "text_en": "06-20",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-20"
+              }
+            ],
+            "timestamp": 1781952439,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "254",
+              "type": 1
+            },
+            "xsec_token": "YBsz1wrRMgBngp7mXDicmMCkdB-dv0HpGU0rXwRlKq1-8=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5e141ac2000000000100b9ed\",\"author_name\":\"眼眼\"}",
+            "liked_count": 254,
+            "update_time": 1781952482000,
+            "desc": "- 推理努力（“Juice Value”）增加至960（相较于GPT-5.5的768）。 - 视觉和图像到设计复制功能大",
+            "debug_info_str": "",
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__6a4dc313000000000f0049c6__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "GPT-5.6获准广泛发布，但模型发布规则已经",
+            "click_score": 0.043738849461078644,
+            "result_from": "",
+            "collected_count": 1,
+            "comments_count": 0,
+            "collected": false,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k8322bihv1nmu905os6ko5nr4c01bro9pg",
+                "height": 2400,
+                "need_load_original_image": false,
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bihv1nmu905os6ko5nr4c01bro9pg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f30af223b744f395aa878430c4cb18eb&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k8322bihv1nmu905os6ko5nr4c01bro9pg",
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bihv1nmu905os6ko5nr4c01bro9pg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=f30af223b744f395aa878430c4cb18eb&t=6a4fbd6d&origin=0"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k8322bihv1nmu9g5os6ko5nr4c0hgi05i8",
+                "height": 2400,
+                "url": "",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bihv1nmu9g5os6ko5nr4c0hgi05i8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=8e8da1b5d323698f2ea6e4fed08551ff&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8322bihv1nmu9g5os6ko5nr4c0hgi05i8"
+              },
+              {
+                "height": 2400,
+                "url": "",
+                "fileid": "notes_pre_post/1040g3k8322bihv1nmua05os6ko5nr4c048sho50",
+                "width": 1440,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k8322bihv1nmua05os6ko5nr4c048sho50?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=61c8999e496a7dcd490b98106b4d9534&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k8322bihv1nmua05os6ko5nr4c048sho50"
+              }
+            ],
+            "note_attributes": [],
+            "type": "normal",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RA3DY1H1NuF8GRr0w+boExQTWgEo2zi+30QBIENXpo3RbwDtTct5MTcHUgl5F6+cXnXTAkHYLQeuVdGVlklGo7nU/IP1ikVDEj"
+              },
+              {
+                "text_en": "1 day ago",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "id": "6a4dc313000000000f0049c6",
+            "user": {
+              "red_official_verified": false,
+              "userid": "6386a60b000000001f019180",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo321tv8ka7n4005os6ko5nr4c0ib9bioo?imageView2/2/w/80/format/jpg",
+              "nickname": "logz",
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_id": "6247411970",
+              "track_duration": 0
+            },
+            "timestamp": 1783481107,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YB1TBtczoDvLH6XxRbVBGwDbytpvSHJ7WvgheP6IULpzY=",
+            "update_time": 1783481149000,
+            "liked_count": 4,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6386a60b000000001f019180\",\"author_name\":\"logz\"}",
+            "desc": "美国商务部批准OpenAI更广泛推出GPT-5.6，此前模型仅限少数机构测试。政府介入评估网络安全和国家安全风险，未来前",
+            "interaction_area": {
+              "status": false,
+              "text": "4",
+              "type": 1
+            },
+            "shared_count": 1,
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a4e48b9000000001003dc88__1bda88d16f3b4592__GPT-5.6",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 0,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "GPT-5.6 传闻来了，普通人先看懂这几点",
+            "click_score": 0.02749384380877018,
+            "result_from": "",
+            "collected_count": 1,
+            "comments_count": 0,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k0322c4j6nhmu004a3vugctmdqtvju9v4g",
+                "height": 1440,
+                "need_load_original_image": false,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c4j6nhmu004a3vugctmdqtvju9v4g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=917242d377c36b95fbef610317be6b7e&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0322c4j6nhmu004a3vugctmdqtvju9v4g",
+                "url": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c4j6nhmu004a3vugctmdqtvju9v4g?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=917242d377c36b95fbef610317be6b7e&t=6a4fbd6d&origin=0"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0322c4j6nhmu0g4a3vugctmdqtjca3030",
+                "height": 1440,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c4j6nhmu0g4a3vugctmdqtjca3030?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=2e8a9639a2e860a4ea101552f51382fb&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0322c4j6nhmu0g4a3vugctmdqtjca3030"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0322c4j6nhmu104a3vugctmdqtqlnbs48",
+                "height": 1440,
+                "trace_id": "notes_pre_post/1040g3k0322c4j6nhmu104a3vugctmdqtqlnbs48",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c4j6nhmu104a3vugctmdqtqlnbs48?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=17fa16800abf5bd7f38bca6e5cf18e24&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0322c4j6nhmu1g4a3vugctmdqtur5plj8",
+                "height": 1440,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c4j6nhmu1g4a3vugctmdqtur5plj8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=29b82801a513c5cfb3e56bd377fe2b5e&t=6a4fbd6d&origin=0",
+                "need_load_original_image": false,
+                "trace_id": "notes_pre_post/1040g3k0322c4j6nhmu1g4a3vugctmdqtur5plj8"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0322c4j6nhmu204a3vugctmdqtg67tie8",
+                "height": 1440,
+                "need_load_original_image": false,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i11.xhscdn.com/notes_pre_post/1040g3k0322c4j6nhmu204a3vugctmdqtg67tie8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=1a56014e875839ef43a421a272969403&t=6a4fbd6d&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0322c4j6nhmu204a3vugctmdqtg67tie8",
+                "url": ""
+              }
+            ],
+            "note_attributes": [],
+            "id": "6a4e48b9000000001003dc88",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/6354f3b6e3357191cc7f1e99.jpg?imageView2/2/w/80/format/jpg",
+              "red_id": "492099030",
+              "track_duration": 0,
+              "show_red_official_verify_icon": false,
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "nickname": "Cyrus_RR",
+              "userid": "5ab9d9dbe8ac2b6fb9c6375d"
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RA6bK6srngp6/ZiA6kuk1thxhHU1PRI0FgiJPKmEHRn+YyToDHQJTjHjffjhEuj7hNVMd09aNA6FRA0IdzFqqMi7e55dd+dAUt"
+              },
+              {
+                "text_en": "1 day ago",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "1 day(s) ago"
+              }
+            ],
+            "timestamp": 1783515321,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "0",
+              "type": 1
+            },
+            "xsec_token": "YBiAvYrV1jx38t8bRsvVnWmIwGee96oTogvse64PMc2q8=",
+            "debug_info_str": "",
+            "liked_count": 0,
+            "update_time": 1783515930000,
+            "desc": "截至 2026 年 7 月 8 日，我在 OpenAI 官方新闻页和开发者模型页没有看到 GPT-5.6、Luna、Te",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5ab9d9dbe8ac2b6fb9c6375d\",\"author_name\":\"Cyrus_RR\"}",
+            "shared_count": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        }
+      ],
+      "query_debug_info": {
+        "is_forbidden": false
+      },
+      "taxonomy1": "5ab094be481d26b8ef904606",
+      "video_intent_grade_v3": 1
+    },
+    "success": true,
+    "msg": "成功",
+    "search_id": "1bda88d16f3b4592",
+    "search_session_id": "64a3a13cd4834805a2a3d57838634225",
+    "page": 1,
+    "next_page": 2,
+    "debug_id": "4797f3b0",
+    "debug_info": "gAAAAABqT71ud2mhSh6LiqWtu2AltvWL8m3MKahlsiHHsqF_XF_jKeezjbRFnWNUjelgYpVQii5TNfon0yLF--AJVlGlbvryqUj5b6N1fQLg8mEE6dIOIx7H-OyxGl1qThM4mX4j5gDOB1vbomizmFnbFc-jHvxCIVl0D_0IshrsyEecJrX7dIDSfTqm8rwJI8Fp0UOvTPy4rGU4tvtVzTNHicmnvXgoODuCTmYGfBslFutJeP3N2wcNRqJzV1vszy8xIuCHdO_6spMMWjI7tMJDwWF4kLdDaP6pRAyK2u7x3kjBM1Cx4d-9SUnEFdHfKNTgNbDY4Fuwrp4Ftrivdt2NupEXYoNkaOft7auXY2UJ9rEY4479RQFPen1MxozbSqMHjetFy8SzPlr3zpRe17xvMugVH63eNiSl0epCcFODBnWfYZNg70Y="
+  }
+}

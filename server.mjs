@@ -16,7 +16,7 @@ app.get("/api/data", (_req, res) => {
   if (!fs.existsSync(file)) {
     return res.status(503).json({
       error: "No data yet. Run `npm run fetch` to pull brand data from monid.ai.",
-      company: { name: process.env.COMPANY_NAME || "Unknown" },
+      company: { name: process.env.SUBJECT || process.env.COMPANY_NAME || "Unknown" },
     });
   }
   res.setHeader("Cache-Control", "no-cache");
@@ -24,5 +24,10 @@ app.get("/api/data", (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Brand Solar System -> http://localhost:${PORT}  (company: ${process.env.COMPANY_NAME})`);
+  let subject = process.env.SUBJECT || process.env.COMPANY_NAME || "no data yet";
+  try {
+    // the loaded snapshot is the source of truth, not .env
+    subject = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "company.json"), "utf8")).company.name;
+  } catch { /* no snapshot yet */ }
+  console.log(`Signal Solar System -> http://localhost:${PORT}  (subject: ${subject})`);
 });

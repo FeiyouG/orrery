@@ -1,0 +1,96 @@
+{
+  "runId": "01KX3RDSY2WPZV4EJF3YDZJ2CM",
+  "provider": "api.kadec0.xyz",
+  "endpoint": "/v1/github",
+  "status": "COMPLETED",
+  "output": {
+    "count": 3,
+    "items": [
+      {
+        "type": "repository",
+        "fullName": "FeiyouG/monid-client",
+        "owner": "FeiyouG",
+        "name": "monid-client",
+        "description": "CLI and SDKs for monid.ai",
+        "url": "https://github.com/FeiyouG/monid-client",
+        "stars": 0,
+        "forks": 0,
+        "openIssuesCount": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "license": null,
+        "createdAt": "2026-03-17T21:07:25.000Z",
+        "updatedAt": "2026-04-05T23:14:44.000Z",
+        "pushedAt": "2026-04-05T23:14:39.000Z",
+        "homepage": null
+      },
+      {
+        "type": "repository",
+        "fullName": "peterkehinde673/Monid",
+        "owner": "peterkehinde673",
+        "name": "Monid",
+        "description": "Monid is the foundational token powering a decentralized Artificial Intelligence and data-sharing network. Users and developers utilize Monid to pay for computational power, access crowdsourced datasets, and reward node operators who contribute to AI model training and data verification.",
+        "url": "https://github.com/peterkehinde673/Monid",
+        "stars": 0,
+        "forks": 0,
+        "openIssuesCount": 0,
+        "language": null,
+        "topics": [],
+        "license": null,
+        "createdAt": "2026-07-08T07:51:36.000Z",
+        "updatedAt": "2026-07-08T07:51:41.000Z",
+        "pushedAt": "2026-07-08T07:51:37.000Z",
+        "homepage": null
+      },
+      {
+        "type": "repository",
+        "fullName": "Keith9922/chisha_liuyao",
+        "owner": "Keith9922",
+        "name": "chisha_liuyao",
+        "description": "吃啥六爻 · 玄学餐厅推荐(六爻起卦 + AI解卦 + 高德定位 + MONID小红书口碑)",
+        "url": "https://github.com/Keith9922/chisha_liuyao",
+        "stars": 0,
+        "forks": 0,
+        "openIssuesCount": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "license": null,
+        "createdAt": "2026-06-20T12:10:04.000Z",
+        "updatedAt": "2026-06-20T12:22:17.000Z",
+        "pushedAt": "2026-06-20T12:22:13.000Z",
+        "homepage": null
+      }
+    ]
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.022,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 22000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 20000
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 22000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:37:32.407Z",
+  "completedAt": "2026-07-09T15:37:35.532Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RDSY2WPZV4EJF3YDZJ2CM -H 'Authorization: Bearer <API_KEY>'"
+  }
+}
