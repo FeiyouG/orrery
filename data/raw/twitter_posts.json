@@ -1,0 +1,838 @@
+{
+  "runId": "01KX2PBRRD6YEFRQXP5EE3ZFHE",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "screen_name": "OpenAI"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "46ec30e3-e00a-46e0-a5bb-273efe68c4a1",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-08 22:42:17",
+      "time_stamp": 1783575737,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Twitter-Web-API/fetch_user_post_tweet_api_v1_twitter_web_fetch_user_post_tweet_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/46ec30e3-e00a-46e0-a5bb-273efe68c4a1?sign=2f1b79e2094e4830a2fe5092f12168989d35eed935dfe7de0ef73f48c7a35e21",
+      "router": "/api/v1/twitter/web/fetch_user_post_tweet",
+      "params": {
+        "screen_name": "OpenAI"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:14.157Z",
+  "startedAt": "2026-07-09T05:42:15.090Z",
+  "completedAt": "2026-07-09T05:42:17.570Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRRD6YEFRQXP5EE3ZFHE -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "pinned": {
+      "tweet_id": "2074907025537224840",
+      "bookmarks": 5271,
+      "created_at": "Wed Jul 08 17:22:39 +0000 2026",
+      "favorites": 19103,
+      "text": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction.\n\nRolling out in ChatGPT starting today.\n\nYou’ll want to turn the sound on for this one. https://t.co/WzoQFvA5ir",
+      "lang": "en",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "views": "3866825",
+      "quotes": 1273,
+      "replies": 970,
+      "retweets": 1695,
+      "conversation_id": "2074907025537224840",
+      "media": {
+        "video": [
+          {
+            "media_url_https": "https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg",
+            "variants": [
+              {
+                "content_type": "application/x-mpegURL",
+                "url": "https://video.twimg.com/amplify_video/2074902339463598081/pl/652siAcKDhpP-rsu.m3u8?tag=28"
+              },
+              {
+                "bitrate": 256000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/480x270/bNlVnmQpMKNO_Coi.mp4?tag=28"
+              },
+              {
+                "bitrate": 832000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/640x360/wdgZJnX1yOvGDZeT.mp4?tag=28"
+              },
+              {
+                "bitrate": 2176000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/1280x720/g24fTo-VEY8H5Ijg.mp4?tag=28"
+              },
+              {
+                "bitrate": 10368000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/1920x1080/NJGC4FQL3MGsbmQc.mp4?tag=28"
+              },
+              {
+                "bitrate": 25128000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/3840x2160/SlZg3Bq2mrXXDoO4.mp4?tag=28"
+              }
+            ],
+            "id": "2074902339463598081"
+          }
+        ]
+      },
+      "author": {
+        "rest_id": "4398626122",
+        "name": "OpenAI",
+        "screen_name": "OpenAI",
+        "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+        "followers_count": 4995578,
+        "blue_verified": true
+      }
+    },
+    "timeline": [
+      {
+        "tweet_id": "2075019750569378007",
+        "bookmarks": 219,
+        "created_at": "Thu Jul 09 00:50:35 +0000 2026",
+        "favorites": 2248,
+        "text": "GPT-Live is now fully rolled out to all ChatGPT users on Go, Plus, and Pro plans. Free user rollout is in progress. \n\nUpdate to the latest version of the ChatGPT app on iOS or Android to try it out.",
+        "lang": "en",
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "views": "363171",
+        "quotes": 58,
+        "entities": [],
+        "replies": 197,
+        "retweets": 185,
+        "conversation_id": "2075019750569378007",
+        "media": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        },
+        "quoted": {
+          "tweet_id": "2074907025537224840",
+          "bookmarks": 5271,
+          "created_at": "Wed Jul 08 17:22:39 +0000 2026",
+          "favorites": 19103,
+          "text": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction.\n\nRolling out in ChatGPT starting today.\n\nYou’ll want to turn the sound on for this one. https://t.co/WzoQFvA5ir",
+          "lang": "en",
+          "views": "3866825",
+          "quotes": 1273,
+          "replies": 970,
+          "retweets": 1695,
+          "conversation_id": "2074907025537224840",
+          "author": {
+            "rest_id": "4398626122",
+            "name": "OpenAI",
+            "screen_name": "OpenAI",
+            "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+            "followers_count": 4995578,
+            "blue_verified": true
+          },
+          "media": {
+            "video": [
+              {
+                "media_url_https": "https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg",
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/amplify_video/2074902339463598081/pl/652siAcKDhpP-rsu.m3u8?tag=28"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/480x270/bNlVnmQpMKNO_Coi.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/640x360/wdgZJnX1yOvGDZeT.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/1280x720/g24fTo-VEY8H5Ijg.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 10368000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/1920x1080/NJGC4FQL3MGsbmQc.mp4?tag=28"
+                  },
+                  {
+                    "bitrate": 25128000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/3840x2160/SlZg3Bq2mrXXDoO4.mp4?tag=28"
+                  }
+                ],
+                "aspect_ratio": [
+                  16,
+                  9
+                ],
+                "duration": 214047,
+                "original_info": {
+                  "focus_rects": [],
+                  "height": 1080,
+                  "width": 1920
+                },
+                "id": "2074902339463598081"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "tweet_id": "2074972179385720836",
+        "bookmarks": 1001,
+        "created_at": "Wed Jul 08 21:41:33 +0000 2026",
+        "favorites": 5170,
+        "text": "We audited SWE-Bench Pro, one of the most widely used AI coding benchmarks, and found it no longer reliably measures frontier coding capability.\n\nWe find 30% of SWE-Bench Pro tasks to be broken, and are retracting our previous recommendation that the research community use it as a leading coding eval.\nhttps://t.co/wDdSEjBe4F",
+        "lang": "en",
+        "views": "904782",
+        "quotes": 243,
+        "replies": 229,
+        "retweets": 366,
+        "conversation_id": "2074972179385720836",
+        "media": [],
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074972182640492731",
+        "bookmarks": 31,
+        "created_at": "Wed Jul 08 21:41:34 +0000 2026",
+        "favorites": 415,
+        "text": "To audit SWE-Bench Pro, we used model-based investigator agents alongside independent reviews from five independent experienced software engineers.\n\nThat helped us examine tasks at scale while keeping expert judgment at the center. https://t.co/3PNbk57uvF",
+        "lang": "en",
+        "views": "106309",
+        "quotes": 4,
+        "replies": 12,
+        "retweets": 9,
+        "conversation_id": "2074972179385720836",
+        "media": {
+          "photo": [
+            {
+              "media_url_https": "https://pbs.twimg.com/media/HMvHVlxbQAA67vB.png",
+              "id": "2074971227064844288"
+            }
+          ]
+        },
+        "reply_to": "2074972180769907186",
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074972185895342084",
+        "bookmarks": 12,
+        "created_at": "Wed Jul 08 21:41:34 +0000 2026",
+        "favorites": 396,
+        "text": "As coding models improve, evals need to become harder, fairer, and more trustworthy.\n\nBetter benchmarks help the field understand real progress and where the frontier is moving.",
+        "lang": "en",
+        "views": "87942",
+        "quotes": 2,
+        "replies": 11,
+        "retweets": 11,
+        "conversation_id": "2074972179385720836",
+        "media": [],
+        "reply_to": "2074972182640492731",
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074907027378511884",
+        "bookmarks": 294,
+        "created_at": "Wed Jul 08 17:22:39 +0000 2026",
+        "favorites": 1683,
+        "text": "GPT-Live makes talking with AI feel like having a real conversation. It’s also our smartest voice model yet.\nhttps://t.co/vMCjodjicC",
+        "lang": "en",
+        "views": "445287",
+        "quotes": 80,
+        "replies": 74,
+        "retweets": 122,
+        "conversation_id": "2074907025537224840",
+        "media": [],
+        "reply_to": "2074907025537224840",
+        "entities": {
+          "urls": [
+            {
+              "display_url": "openai.com/index/introduc…",
+              "expanded_url": "https://openai.com/index/introducing-gpt-live/",
+              "url": "https://t.co/vMCjodjicC"
+            }
+          ]
+        },
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074907033577693636",
+        "bookmarks": 139,
+        "created_at": "Wed Jul 08 17:22:41 +0000 2026",
+        "favorites": 981,
+        "text": "For questions that require web search, deeper reasoning, or more complex work, GPT-Live can delegate to our latest frontier model behind the scenes, and brings the result back into the conversation when it's ready. https://t.co/YvM67MxcsR",
+        "lang": "en",
+        "views": "228325",
+        "quotes": 30,
+        "replies": 24,
+        "retweets": 52,
+        "conversation_id": "2074907025537224840",
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/media/HMuNuUwaEAAJPOs.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074903054353313792/pl/q9hS566Jp3yg8iEQ.m3u8?tag=28&v=733"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074903054353313792/vid/avc1/480x270/6By00dQIPYjJXoq3.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074903054353313792/vid/avc1/640x360/EHgOuV9PLZg-0cbv.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074903054353313792/vid/avc1/1280x720/2RoTyt1DDySj-Bil.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074903054353313792/vid/avc1/1920x1080/v_iTmt5hKaoXmy-A.mp4?tag=28"
+                },
+                {
+                  "bitrate": 25128000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074903054353313792/vid/avc1/3840x2160/YJk3QKCTHKpDI7wC.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 68359,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2074903054353313792"
+            }
+          ]
+        },
+        "reply_to": "2074907031862190406",
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074907035225981169",
+        "bookmarks": 92,
+        "created_at": "Wed Jul 08 17:22:41 +0000 2026",
+        "favorites": 837,
+        "text": "These new models are rolling out to everyone over the next few days, starting today. \n\nThey’ll be available in ChatGPT across iOS, Android, and web. Coming soon to the API.\n\nJust tap the Voice button to talk with ChatGPT, and you’ll feel the magic of GPT-Live. https://t.co/E71B4eJiti",
+        "lang": "en",
+        "views": "127296",
+        "quotes": 14,
+        "replies": 38,
+        "retweets": 36,
+        "conversation_id": "2074907025537224840",
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2074904241559547904/img/XXuY2oC8xbRXcrmY.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074904241559547904/pl/-oPJ_0Zj3I4QKUiL.m3u8?tag=28"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074904241559547904/vid/avc1/480x270/WhFxYTE54rnPnMag.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074904241559547904/vid/avc1/640x360/QjJ_n_Z0Iil2P0jc.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074904241559547904/vid/avc1/1280x720/MruwXt02Mv1Xcd1n.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074904241559547904/vid/avc1/1920x1080/3p_aMldYFfMAjW7-.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 8200,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2074904241559547904"
+            }
+          ]
+        },
+        "reply_to": "2074907033577693636",
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074907025537224840",
+        "bookmarks": 5271,
+        "created_at": "Wed Jul 08 17:22:39 +0000 2026",
+        "favorites": 19103,
+        "text": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction.\n\nRolling out in ChatGPT starting today.\n\nYou’ll want to turn the sound on for this one. https://t.co/WzoQFvA5ir",
+        "lang": "en",
+        "views": "3866825",
+        "quotes": 1273,
+        "replies": 970,
+        "retweets": 1695,
+        "conversation_id": "2074907025537224840",
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074902339463598081/pl/652siAcKDhpP-rsu.m3u8?tag=28"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/480x270/bNlVnmQpMKNO_Coi.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/640x360/wdgZJnX1yOvGDZeT.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/1280x720/g24fTo-VEY8H5Ijg.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/1920x1080/NJGC4FQL3MGsbmQc.mp4?tag=28"
+                },
+                {
+                  "bitrate": 25128000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/3840x2160/SlZg3Bq2mrXXDoO4.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 214047,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2074902339463598081"
+            }
+          ]
+        },
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074897675343085993",
+        "bookmarks": 356,
+        "created_at": "Wed Jul 08 16:45:30 +0000 2026",
+        "favorites": 3422,
+        "text": "The next generation of ChatGPT Voice is here.\n\nLivestream starts at 10am PT.\nhttps://t.co/giS4K1yNh9",
+        "lang": "en",
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "views": "374391",
+        "quotes": 89,
+        "entities": {
+          "urls": [
+            {
+              "display_url": "openai.com/live/",
+              "expanded_url": "https://openai.com/live/",
+              "url": "https://t.co/giS4K1yNh9"
+            }
+          ]
+        },
+        "replies": 224,
+        "retweets": 271,
+        "conversation_id": "2074897675343085993",
+        "media": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2074871151302774869",
+        "bookmarks": 979,
+        "created_at": "Wed Jul 08 15:00:06 +0000 2026",
+        "favorites": 6683,
+        "text": "Listen up.\n\nLivestream at 10am. https://t.co/tfqMb74Ri6",
+        "lang": "en",
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "views": "1760552",
+        "quotes": 347,
+        "entities": [],
+        "replies": 469,
+        "retweets": 502,
+        "conversation_id": "2074871151302774869",
+        "media": {
+          "video": [
+            {
+              "media_url_https": "https://pbs.twimg.com/media/HMttZeeaEAAvJdn.jpg",
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2074870201217433600/pl/bS_VIwwRuyMuAG4p.m3u8?tag=28&v=7d0"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074870201217433600/vid/avc1/480x270/NokVblvJbMVlGOkR.mp4?tag=28"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074870201217433600/vid/avc1/640x360/1AfaIfnFPCioi-Nv.mp4?tag=28"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074870201217433600/vid/avc1/1280x720/A8TNybHsCJ_jPAlD.mp4?tag=28"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074870201217433600/vid/avc1/1920x1080/PxabLZ9pjBAYXZbB.mp4?tag=28"
+                },
+                {
+                  "bitrate": 25128000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2074870201217433600/vid/avc1/3840x2160/rLY2d8tYwyNzJaut.mp4?tag=28"
+                }
+              ],
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration": 12929,
+              "original_info": {
+                "focus_rects": [],
+                "height": 1080,
+                "width": 1920
+              },
+              "id": "2074870201217433600"
+            }
+          ]
+        },
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        },
+        "quoted": {
+          "tweet_id": "2052438197695877316",
+          "bookmarks": 137,
+          "created_at": "Thu May 07 17:19:33 +0000 2026",
+          "favorites": 2861,
+          "text": "We know you’re eager for voice updates in ChatGPT. Stay tuned, we’re cooking.",
+          "lang": "en",
+          "views": "1140365",
+          "quotes": 69,
+          "replies": 147,
+          "retweets": 104,
+          "conversation_id": "2052438194625593804",
+          "author": {
+            "rest_id": "4398626122",
+            "name": "OpenAI",
+            "screen_name": "OpenAI",
+            "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+            "followers_count": 4995578,
+            "blue_verified": true
+          },
+          "media": []
+        }
+      },
+      {
+        "tweet_id": "2074704958419792299",
+        "bookmarks": 4202,
+        "created_at": "Wed Jul 08 03:59:42 +0000 2026",
+        "favorites": 45484,
+        "text": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday.\n\nWe’re expanding preview access globally now. https://t.co/Uk5HcfSc2e",
+        "lang": "en",
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "views": "7716293",
+        "quotes": 3920,
+        "entities": [],
+        "replies": 2323,
+        "retweets": 6607,
+        "conversation_id": "2074704958419792299",
+        "media": {
+          "photo": [
+            {
+              "media_url_https": "https://pbs.twimg.com/media/HMrU7U7bwAEO8yf.jpg",
+              "id": "2074704694052896769",
+              "sizes": {
+                "h": 405,
+                "w": 720
+              }
+            }
+          ]
+        },
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2072004836674167294",
+        "bookmarks": 905,
+        "created_at": "Tue Jun 30 17:10:23 +0000 2026",
+        "favorites": 4582,
+        "text": "We’re introducing GeneBench-Pro, a research-level benchmark for a harder kind of AI progress: how well agents can navigate messy biological data, choose the right analysis path, and make judgment calls that real computational research depends on.\nhttps://t.co/AsilnnSxnE",
+        "lang": "en",
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "views": "1257695",
+        "quotes": 149,
+        "entities": {
+          "urls": [
+            {
+              "display_url": "openai.com/index/introduc…",
+              "expanded_url": "https://openai.com/index/introducing-genebench-pro/",
+              "url": "https://t.co/AsilnnSxnE"
+            }
+          ]
+        },
+        "replies": 370,
+        "retweets": 418,
+        "conversation_id": "2072004836674167294",
+        "media": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2070555272230384038",
+        "bookmarks": 6700,
+        "created_at": "Fri Jun 26 17:10:20 +0000 2026",
+        "favorites": 40719,
+        "text": "Introducing a limited preview of GPT-5.6 Sol, our next generation frontier model, as well as GPT-5.6 Terra, a balanced model for efficient, everyday work, and GPT-5.6 Luna, a fast and affordable model for high-volume work.\n\nhttps://t.co/OoM83SyISN",
+        "lang": "en",
+        "views": "18226872",
+        "quotes": 5302,
+        "replies": 3606,
+        "retweets": 5757,
+        "conversation_id": "2070555272230384038",
+        "media": [],
+        "entities": {
+          "urls": [
+            {
+              "display_url": "openai.com/index/previewi…",
+              "expanded_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+              "url": "https://t.co/OoM83SyISN"
+            }
+          ]
+        },
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2070555278576439306",
+        "bookmarks": 220,
+        "created_at": "Fri Jun 26 17:10:22 +0000 2026",
+        "favorites": 3424,
+        "text": "GPT-5.6 Sol is our most capable model yet for cybersecurity.\n\nIt shifts the performance-efficiency frontier for long-horizon security tasks including vulnerability research and exploitation. https://t.co/UcDaUEPrn7",
+        "lang": "en",
+        "views": "1017162",
+        "quotes": 158,
+        "replies": 107,
+        "retweets": 214,
+        "conversation_id": "2070555272230384038",
+        "media": {
+          "photo": [
+            {
+              "media_url_https": "https://pbs.twimg.com/media/HLwWT8TagAALRWm.jpg",
+              "id": "2070554460544466944"
+            }
+          ]
+        },
+        "reply_to": "2070555276370169969",
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      },
+      {
+        "tweet_id": "2070555280052826429",
+        "bookmarks": 140,
+        "created_at": "Fri Jun 26 17:10:22 +0000 2026",
+        "favorites": 2949,
+        "text": "GPT‑5.6 Sol launches with our most robust safety stack yet.\n\nWe strengthened real-time protections against high-risk cyber activity and repeated misuse, then spent weeks hardening the system with human red teaming and over 700,000 A100-equivalent GPU hours of automated testing.",
+        "lang": "en",
+        "views": "534234",
+        "quotes": 19,
+        "replies": 102,
+        "retweets": 101,
+        "conversation_id": "2070555272230384038",
+        "media": [],
+        "reply_to": "2070555278576439306",
+        "entities": [],
+        "author": {
+          "rest_id": "4398626122",
+          "name": "OpenAI",
+          "screen_name": "OpenAI",
+          "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+          "followers_count": 4995578,
+          "blue_verified": true
+        }
+      }
+    ],
+    "next_cursor": "DAAHCgABHMw2O4k___ULAAIAAAATMjA3MDU1NTI3NDgzNTA0NjQzMAgAAwAAAAIAAA",
+    "prev_cursor": "DAAHCgABHMw2O4lAJxELAAIAAAATMjA3NTAxOTc1MDU2OTM3ODAwNwgAAwAAAAEAAA",
+    "status": "ok",
+    "user": {
+      "status": "active",
+      "profile": null,
+      "rest_id": "4398626122",
+      "blue_verified": true,
+      "verification_type": "Business",
+      "affiliates": [],
+      "business_account": {
+        "affiliates_count": 7
+      },
+      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "header_image": "https://pbs.twimg.com/profile_banners/4398626122/1777662919",
+      "desc": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+      "name": "OpenAI",
+      "website": "openai.com",
+      "protected": false,
+      "location": "",
+      "friends": 4,
+      "sub_count": 4995563,
+      "statuses_count": 1959,
+      "media_count": 646,
+      "created_at": "Sun Dec 06 22:51:08 +0000 2015",
+      "pinned_tweet_ids_str": [
+        "2074907025537224840"
+      ],
+      "id": "4398626122"
+    }
+  }
+}

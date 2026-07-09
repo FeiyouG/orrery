@@ -1,0 +1,581 @@
+{
+  "runId": "01KX2QQ0G36M031WTJ5WE5ARGB",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/youtube/web/search_video",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "search_query": "OpenAI"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "92a6810a-049d-4195-949d-c22cf1e9f968",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-08 23:05:53",
+      "time_stamp": 1783577153,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/YouTube-Web-API/search_video_api_v1_youtube_web_search_video_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/92a6810a-049d-4195-949d-c22cf1e9f968?sign=43c27a6e8a931b3e556ae91a2c0840bf8d0df3beaa597d969f327dfec130a1f8",
+      "router": "/api/v1/youtube/web/search_video",
+      "params": {
+        "search_query": "OpenAI"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T06:05:51.161Z",
+  "startedAt": "2026-07-09T06:05:51.593Z",
+  "completedAt": "2026-07-09T06:05:54.174Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2QQ0G36M031WTJ5WE5ARGB -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "number_of_videos": 20,
+    "estimated_results": 317197,
+    "query": "OpenAI",
+    "country": "US",
+    "lang": "en",
+    "timezone": "America/New_York",
+    "continuation_token": "EpUFEgZPcGVuQUkajANFZ1FJQkJBQlNCU0NBUXRGUVU0MVEyb3pORGRRV1lJQkN6bG1MVVYzWDJ4RWRIaGpnZ0VMTTJKTU5rbHdaR2RrWkZHQ0FRdExMV1paUWs4NGRETXRRWUlCQzBOTmFsUm1jRlJrTFU1WmdnRUxaVmhpV25KNE5WaFhYMnVDQVF0QmQxZHRWV2h0TkhoWlFZSUJDMHh5U1VJNVRtdGtkemMwZ2dFTFJHSmphVTlUTVZWS1RrMkNBUXRVZEcxUVkyTlZWRVJRT0lJQkMwcHRaMFZDYUdWM1EzWkpnZ0VMU2tVM1ZIRjROVUV0TUhlQ0FRdEdhekUyTldwWlpraHdZNElCQzFBelMwUmxZbEJVVlhKM2dnRUxVbkZFUVUxbGNYWlZaMi1DQVFzd1FsZG1NMmR2UVV0VlFZSUJDMmxvYm5GNGVXNTNkRmxyZ2dFTFZscFViVk0wUWpnME1HdUNBUXRtWDFSdk1qaG1jRUpDWTRJQkMzbHdUekJ4WHpoNmFGZDNzZ0VHQ2dRSUZCQUOSAvoBL3NlYXJjaD9vcT1PcGVuQUkmZ3NfbD15b3V0dWJlLjMuLjBpNDMzaTEzMWsxajBpNTEyaTQzM2kxMzFrMWwyajBpNDMzaTEzMWsxajBpNTEyaTQzM2kxMzFrMWowaTQzM2kxMzFrMWwyajBpNTEyaTQzM2sxbDRqMGk1MTJrMWowaTUxMmk0MzNpMTMxazFsMi4xNTA2OC4xNTU5OC4wLjE2NDI5LjcuNy4wLjAuMC4wLjYyOC44NDUuMi0xajUtMS41LjAuLi4uMC4uLjFhYy4xLjY0LnlvdXR1YmUuLjIuMi44NDUuMC4uLjc2NS5TYkdUbGlSNkZOYxiB4OgYIgtzZWFyY2gtZmVlZA%3D%3D",
+    "videos": [
+      {
+        "video_id": "EAN5Cj347PY",
+        "title": "This is the new ChatGPT Voice, powered by GPT-Live",
+        "author": "OpenAI",
+        "number_of_views": 47974,
+        "video_length": "3:35",
+        "description": "You'll want to turn the sound on for this one. Read more here: https://openai.com/index/introducing-gpt-live/",
+        "is_live_content": null,
+        "published_time": "12 hours ago",
+        "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/EAN5Cj347PY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEBCd_DrVj6BoAhGTcmafIftlqjg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/EAN5Cj347PY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCRswb-SrQUVZI-fg69ZbQ67G-Ww",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "9f-Ew_lDtxc",
+        "title": "The next generation of ChatGPT Voice",
+        "author": "OpenAI",
+        "number_of_views": 56092,
+        "video_length": "18:22",
+        "description": "Join Kundan Kumar, Yuchen Zhang, Ehsan Asdar, and Rithesh Kumar as they introduce and demo a new generation of voice ...",
+        "is_live_content": null,
+        "published_time": "Streamed 12 hours ago",
+        "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/9f-Ew_lDtxc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8ptP9LRawOWptXjJ9TGvGqb77iw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/9f-Ew_lDtxc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZsgZIQiztt5mD02nGrh2QLQiq_A",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "3bL6IpdgddQ",
+        "title": "Natural Conversations with GPT-Live",
+        "author": "OpenAI",
+        "number_of_views": 9206,
+        "video_length": "2:58",
+        "description": "More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/",
+        "is_live_content": null,
+        "published_time": "12 hours ago",
+        "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/3bL6IpdgddQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD5Qui6n_kPLPcDjf8oV1rrMAG3CA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/3bL6IpdgddQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKIOAHvCdkgUrjghOcReCf02BDFA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "K-fYBO8t3-A",
+        "title": "Listening & Speaking with GPT-Live",
+        "author": "OpenAI",
+        "number_of_views": 16833,
+        "video_length": "2:36",
+        "description": "More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/",
+        "is_live_content": null,
+        "published_time": "12 hours ago",
+        "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/K-fYBO8t3-A/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0n3Jfk_bssm4aYjmgCJVLfj_JDQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/K-fYBO8t3-A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDPoF9sLEQrIi_Tf5r1ExrC4JVLLQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "CMjTfpTd-NY",
+        "title": "Grok 4.5 just BEAT everyone...",
+        "author": "Wes Roth",
+        "number_of_views": 15929,
+        "video_length": "35:20",
+        "description": "Try Genspark here: https://www.genspark.ai/?utm_source=yt&utm_campaign=WesRoth03 Use the above link to get free credits ...",
+        "is_live_content": null,
+        "published_time": "4 hours ago",
+        "channel_id": "UCqcbQf6yw5KzRoDDcZ_wBSw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/CMjTfpTd-NY/hq720_custom_2.jpg?sqp=CIz0vNIG-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-XB09Q-BN84L587GbQ1oCPXkv0g",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/CMjTfpTd-NY/hq720_custom_2.jpg?sqp=CIz0vNIG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwLDX7rqv9RyH40jx-uftEOYBGaQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "eXbZrx5XW_k",
+        "title": "OpenAI's Finances Just Leaked. We're Cooked",
+        "author": "MonkeyExplains",
+        "number_of_views": 411757,
+        "video_length": "15:05",
+        "description": "Jarvis, dump my life savings into OpenAI's IPO RIGHT NOW. ---- Music Used in Order of Appearance: ...",
+        "is_live_content": null,
+        "published_time": "2 days ago",
+        "channel_id": "UCiBGqUxeTe4AYQyRseSZaKw",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/eXbZrx5XW_k/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDVPpR9Ry26MFe5Zdu_Au8pVJW-Zw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/eXbZrx5XW_k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_2Xz0TmKgvS97vPMyL7eqV4AOzA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "AwWmUhm4xYA",
+        "title": "OpenAI Just Introduced The Future Of AI Voice - GPT- Live",
+        "author": "TheAIGRID",
+        "number_of_views": 1437,
+        "video_length": "10:47",
+        "description": "Learn AI With Me For Free - https://www.skool.com/the-aigrid-community-1726 Subscribe To My Newsletter ...",
+        "is_live_content": null,
+        "published_time": "3 hours ago",
+        "channel_id": "UCbY9xX3_jW5c2fjlZVBI4cg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/AwWmUhm4xYA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA_wAriQLpkhqa1HV8ggtU1uYk-gA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/AwWmUhm4xYA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCqtI_276B8jFFKfHk1QSNW3hSDA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "LrIB9Nkdw74",
+        "title": "OpenAI Is Rushing GPT-6 Because of Fable 5.1!",
+        "author": "Universe of AI",
+        "number_of_views": 13281,
+        "video_length": "9:54",
+        "description": "GPT-6 has reportedly finished training and OpenAI looks worried about Fable 5.1, which is in its final stages at Anthropic and ...",
+        "is_live_content": null,
+        "published_time": "8 hours ago",
+        "channel_id": "UCYwLV1gDwzGbg7jXQ52bVnQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/LrIB9Nkdw74/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD65X7-MzZPwGTX-ao0knH9y-OQkg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/LrIB9Nkdw74/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkH1wvhABXYKTxpOtf7XIfQldjPA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "DbciOS1UJNM",
+        "title": "OpenAI Expands Release of Top AI Model GPT-5.6",
+        "author": "Bloomberg Tech",
+        "number_of_views": 2800,
+        "video_length": "2:33",
+        "description": "OpenAI is expanding the release of its most advanced model after getting the green light from the Trump administration. GPT-5.6 ...",
+        "is_live_content": null,
+        "published_time": "10 hours ago",
+        "channel_id": "UCrM7B7SL_g1edFOnmj-SDKg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/DbciOS1UJNM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQlp7ITcbZgLSK0zcCYszbtdJRwA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/DbciOS1UJNM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAlPYj8Q1079_GvzfabFwsXTsrpqA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "TtmPccUTDP8",
+        "title": "Ed Zitron on CNBC: Generative AI Doesn't Work, And Big Tech Is Out Of Hypergrowth Ideas",
+        "author": "Ed Zitron",
+        "number_of_views": 489670,
+        "video_length": "8:06",
+        "description": "Ed Zitron joins 'Squawk on the Street' to discuss OpenAI, Anthropic and more. Subscribe to the newsletter at wheresyoured.at.",
+        "is_live_content": null,
+        "published_time": "6 days ago",
+        "channel_id": "UCbYVq4IZLSQb-SW_5NI1p0g",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/TtmPccUTDP8/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTICgofzAP&rs=AOn4CLBXXaExEhnZEaayyxK5IQBYtqc8Yw",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/TtmPccUTDP8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTICgofzAP&rs=AOn4CLDoyNttpeHn_W_E5Gk0BCg1rGMoyg",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "JmgEBhewCvI",
+        "title": "OpenAI gave ME early access to the new ChatGPT voice model (GPT-Live-1)",
+        "author": "FatherPhi",
+        "number_of_views": 16895,
+        "video_length": "13:37",
+        "description": "OpenAI gave me early access to ChatGPT's new gpt-live-1 model! I immediately played with it on camera, put it through a general ...",
+        "is_live_content": null,
+        "published_time": "13 hours ago",
+        "channel_id": "UCIw9p-0zI1rEPEs_SS6fDkg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/JmgEBhewCvI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8SPZntFbhyd2GALoXr9lyK50gdA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/JmgEBhewCvI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAsKQiBKamKsnXz7q7wa0Adt8gkYQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "JE7Tqx5A-0w",
+        "title": "OpenAI to unveil GPT-5.6 after delaying launch",
+        "author": "Reuters",
+        "number_of_views": 2669,
+        "video_length": "1:18",
+        "description": "OpenAI will launch its most capable model, GPT-5.6, on July 9 after a US government-requested delay over national security ...",
+        "is_live_content": null,
+        "published_time": "18 hours ago",
+        "channel_id": "UChqUTb7kYRX8-EiaN3XFrSQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/JE7Tqx5A-0w/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTIBMofzAP&rs=AOn4CLCSBEHa0n6brjR2vgSASI35ViyXlg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/JE7Tqx5A-0w/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTIBMofzAP&rs=AOn4CLAo0pacfaE7rVy53DjJMqVvqJVAhQ",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "Fk165jYfHpc",
+        "title": "OpenAI just spent $600k on Rust",
+        "author": "Let's Get Rusty",
+        "number_of_views": 17328,
+        "video_length": "6:24",
+        "description": "Join the Rust Live Accelerator waitlist: https://letsgetrusty.com/join/wv-Fk165jYfHpc OpenAI just invested $600K in Rust. But the ...",
+        "is_live_content": null,
+        "published_time": "1 day ago",
+        "channel_id": "UCSp-OaMpsO8K0KkOqyBl7_w",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/Fk165jYfHpc/hq720_custom_1.jpg?sqp=CIz0vNIG-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLClGi93r1E2dQQvUCOswzsmookmfg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/Fk165jYfHpc/hq720_custom_1.jpg?sqp=CIz0vNIG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGJ81_FL3w0G3wTWFxOaed5JNxbw",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "P3KDebPTUrw",
+        "title": "Why OpenAI is merging Codex and ChatGPT and the future of knowledge work | Andrew Ambrosino",
+        "author": "Lenny's Podcast",
+        "number_of_views": 44369,
+        "video_length": "1:09:57",
+        "description": "Andrew Ambrosino leads development of the Codex desktop app at OpenAI. Nearly 100% of OpenAI employees—not just ...",
+        "is_live_content": null,
+        "published_time": "10 days ago",
+        "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/P3KDebPTUrw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBtQNP7KAvcbJhz-Hs9Z5bLMP1NzQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/P3KDebPTUrw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI5nxVTwZUqDmxXOqVk8DlEpWHbg",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "RqDAMeqvUgo",
+        "title": "OpenAI Is Starting To Crack",
+        "author": "Prof G Markets",
+        "number_of_views": 194367,
+        "video_length": "1:03:29",
+        "description": "Today on Prof G Markets, Scott Galloway and Ed Elson unpack reports that Meta is launching a cloud business and explain why ...",
+        "is_live_content": null,
+        "published_time": "2 days ago",
+        "channel_id": "UCp4CBeq4nzeg9smAvdjPrig",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/RqDAMeqvUgo/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZPFRyuhWD2CzTOb4AtD7OOmZMLQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/RqDAMeqvUgo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBelnagMNnw5zLqN_bYvTlcV6NWeg",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "0BWf3goAKUA",
+        "title": "BofA Makes U-Turn on OpenAI, Provides $520M Credit Line",
+        "author": "Bloomberg Tech",
+        "number_of_views": 586,
+        "video_length": "1:51",
+        "description": "Bank of America is changing its tune on OpenAI: after initially passing on lending to the AI company, it is now extending a $520 ...",
+        "is_live_content": null,
+        "published_time": "11 hours ago",
+        "channel_id": "UCrM7B7SL_g1edFOnmj-SDKg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/0BWf3goAKUA/hq720_custom_2.jpg?sqp=CIz0vNIG-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpO0ebNMcpKeFEDxetzDKaxWwfJA",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/0BWf3goAKUA/hq720_custom_2.jpg?sqp=CIz0vNIG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAE2dYy_KGmkIxsn_iz9A6l8C498g",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "ihnqxynwtYk",
+        "title": "OpenAI Academy Abilene: Teaching AI literacy in the home of the first Stargate data center",
+        "author": "OpenAI",
+        "number_of_views": 1741,
+        "video_length": "1:39",
+        "description": "OpenAI Academy traveled to Abilene, Texas, home of OpenAI's first Stargate data center, to host hands-on AI training for local ...",
+        "is_live_content": null,
+        "published_time": "14 hours ago",
+        "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/ihnqxynwtYk/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFQoQTAP&rs=AOn4CLArgaessaobmBqPgGqnX65q-nyWlQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/ihnqxynwtYk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFQoQTAP&rs=AOn4CLA3saIz1bg9uHUFh9HMCBBYT1BPrA",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "VZTmS4B840k",
+        "title": "OpenAI President Greg Brockman: Our Plan To Merge Chat And Agents",
+        "author": "Alex Kantrowitz",
+        "number_of_views": 26352,
+        "video_length": "44:41",
+        "description": "Greg Brockman is the president and co-founder of OpenAI. Brockman joins Big Technology Podcast live from the Big Technology ...",
+        "is_live_content": null,
+        "published_time": "7 days ago",
+        "channel_id": "UCye1YedIypHffYb8k6Gp9wg",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/VZTmS4B840k/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnIzHl0ha2dq6N4-M1qFc4IjcchQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/VZTmS4B840k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDqZpSFA_0XWz1x6D-TkKfLHS4ang",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "f_To28fpBBc",
+        "title": "OpenAI Cuts AI Inference in Half - OpenAI is DEAD",
+        "author": "Eli the Computer Guy",
+        "number_of_views": 24163,
+        "video_length": "10:17",
+        "description": "Spotify - https://open.spotify.com/show/1KkKuQe82tf1bW78ReQ0wM Apple Podcasts ...",
+        "is_live_content": null,
+        "published_time": "2 days ago",
+        "channel_id": "UCD4EOyXKjfDUhCI6jlOZZYQ",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/f_To28fpBBc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHC92QrYAvcYIAYd-YMyp7pi2BgQ",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/f_To28fpBBc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDH58KOInjlKxkoKPkifDtYQoTw-g",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      },
+      {
+        "video_id": "ypO0q_8zhWw",
+        "title": "Why is OpenAI so much more efficient?",
+        "author": "Theo - t3․gg",
+        "number_of_views": 124940,
+        "video_length": "31:31",
+        "description": "OpenAI's models traditionally score higher on coding benchmarks using a FRACTION of the tokens of other models, especially ...",
+        "is_live_content": null,
+        "published_time": "8 days ago",
+        "channel_id": "UCbRP3c757lWg9M-U7TyEkXA",
+        "category": null,
+        "type": "NORMAL",
+        "keywords": [],
+        "thumbnails": [
+          {
+            "url": "https://i.ytimg.com/vi/ypO0q_8zhWw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCIhr_K6sv0mhBVEkZILuaK-ej1rg",
+            "width": 360,
+            "height": 202
+          },
+          {
+            "url": "https://i.ytimg.com/vi/ypO0q_8zhWw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCsYXYVdyRKAxtKNLfI859VqZFx8g",
+            "width": 720,
+            "height": 404
+          }
+        ]
+      }
+    ]
+  }
+}

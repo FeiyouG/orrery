@@ -1,0 +1,317 @@
+{
+  "runId": "01KX2PBRHVXD4GVY4Q1QRPMFSD",
+  "provider": "api.kadec0.xyz",
+  "endpoint": "/v1/hackernews",
+  "status": "COMPLETED",
+  "output": {
+    "count": 25,
+    "items": [
+      {
+        "type": "hn_hit",
+        "objectID": "38309611",
+        "title": "OpenAI's board has fired Sam Altman",
+        "url": "https://openai.com/blog/openai-announces-leadership-transition",
+        "author": "davidbarker",
+        "points": 5710,
+        "numComments": 2530,
+        "createdAt": "2023-11-17T20:28:50.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=38309611"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "35813322",
+        "title": "Google “We have no moat, and neither does OpenAI”",
+        "url": "https://www.semianalysis.com/p/google-we-have-no-moat-and-neither",
+        "author": "klelatti",
+        "points": 2455,
+        "numComments": 1039,
+        "createdAt": "2023-05-04T10:19:13.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=35813322"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "44800746",
+        "title": "Open models by OpenAI",
+        "url": "https://openai.com/open-models/",
+        "author": "lackoftactics",
+        "points": 2124,
+        "numComments": 876,
+        "createdAt": "2025-08-05T17:02:02.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=44800746"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "38375239",
+        "title": "We have reached an agreement in principle for Sam to return to OpenAI as CEO",
+        "url": "https://twitter.com/openai/status/1727206187077370115",
+        "author": "staranjeet",
+        "points": 1980,
+        "numComments": 1950,
+        "createdAt": "2023-11-22T06:01:45.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=38375239"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "47193478",
+        "title": "OpenAI – How to delete your account",
+        "url": "https://help.openai.com/en/articles/6378407-how-to-delete-your-account",
+        "author": "carlosrg",
+        "points": 1929,
+        "numComments": 362,
+        "createdAt": "2026-02-28T10:41:55.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=47193478"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "40447431",
+        "title": "Leaked OpenAI documents reveal aggressive tactics toward former employees",
+        "url": "https://www.vox.com/future-perfect/351132/openai-vested-equity-nda-sam-altman-documents-employees",
+        "author": "apengwin",
+        "points": 1791,
+        "numComments": 534,
+        "createdAt": "2024-05-22T22:22:30.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=40447431"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "42473321",
+        "title": "OpenAI O3 breakthrough high score on ARC-AGI-PUB",
+        "url": "https://arcprize.org/blog/oai-o3-pub-breakthrough",
+        "author": "maurycy",
+        "points": 1724,
+        "numComments": 1755,
+        "createdAt": "2024-12-20T18:11:13.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=42473321"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "32927360",
+        "title": "Whisper – open source speech recognition by OpenAI",
+        "url": "https://openai.com/blog/whisper/",
+        "author": "_just7_",
+        "points": 1705,
+        "numComments": 481,
+        "createdAt": "2022-09-21T16:16:16.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=32927360"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "34979981",
+        "title": "OpenAI is now everything it promised not to be: closed-source and for-profit",
+        "url": "https://www.vice.com/en/article/5d3naz/openai-is-now-everything-it-promised-not-to-be-corporate-closed-source-and-for-profit",
+        "author": "isaacfrond",
+        "points": 1623,
+        "numComments": 567,
+        "createdAt": "2023-03-01T08:21:22.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=34979981"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "40421225",
+        "title": "Statement from Scarlett Johansson on the OpenAI \"Sky\" voice",
+        "url": "https://twitter.com/BobbyAllyn/status/1792679435701014908",
+        "author": "mjcl",
+        "points": 1528,
+        "numComments": 1000,
+        "createdAt": "2024-05-20T22:28:27.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=40421225"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "47438723",
+        "title": "Astral to Join OpenAI",
+        "url": "https://astral.sh/blog/openai",
+        "author": "ibraheemdev",
+        "points": 1489,
+        "numComments": 901,
+        "createdAt": "2026-03-19T13:05:50.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=47438723"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48421442",
+        "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+        "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+        "author": "maltalex",
+        "points": 1484,
+        "numComments": 502,
+        "createdAt": "2026-06-06T04:38:36.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48421442"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "39559966",
+        "title": "Elon Musk sues Sam Altman, Greg Brockman, and OpenAI [pdf]",
+        "url": "https://www.courthousenews.com/wp-content/uploads/2024/02/musk-v-altman-openai-complaint-sf.pdf",
+        "author": "modeless",
+        "points": 1462,
+        "numComments": 1208,
+        "createdAt": "2024-03-01T08:56:05.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=39559966"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "47028013",
+        "title": "I’m joining OpenAI",
+        "url": "https://steipete.me/posts/2026/openclaw",
+        "author": "mfiguiere",
+        "points": 1449,
+        "numComments": 1131,
+        "createdAt": "2026-02-15T21:54:15.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=47028013"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "38347868",
+        "title": "OpenAI staff threaten to quit unless board resigns",
+        "url": "https://www.wired.com/story/openai-staff-walk-protest-sam-altman/",
+        "author": "skilled",
+        "points": 1441,
+        "numComments": 1260,
+        "createdAt": "2023-11-20T13:41:27.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=38347868"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "48212493",
+        "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+        "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+        "author": "tedsanders",
+        "points": 1429,
+        "numComments": 1055,
+        "createdAt": "2026-05-20T19:05:30.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=48212493"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "38312704",
+        "title": "Greg Brockman quits OpenAI",
+        "url": "https://twitter.com/gdb/status/1725667410387378559?s=20",
+        "author": "nickrubin",
+        "points": 1423,
+        "numComments": 662,
+        "createdAt": "2023-11-18T00:10:21.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=38312704"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "47189650",
+        "title": "OpenAI agrees with Dept. of War to deploy models in their classified network",
+        "url": "https://twitter.com/sama/status/2027578652477821175",
+        "author": "eoskx",
+        "points": 1407,
+        "numComments": 648,
+        "createdAt": "2026-02-28T02:59:02.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=47189650"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "42865527",
+        "title": "OpenAI Furious DeepSeek Might Have Stolen All the Data OpenAI Stole from Us",
+        "url": "https://www.404media.co/openai-furious-deepseek-might-have-stolen-all-the-data-openai-stole-from-us/",
+        "author": "latexr",
+        "points": 1361,
+        "numComments": 16,
+        "createdAt": "2025-01-29T14:52:34.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=42865527"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "41655954",
+        "title": "OpenAI to become for-profit company",
+        "url": "https://www.reuters.com/technology/artificial-intelligence/openai-remove-non-profit-control-give-sam-altman-equity-sources-say-2024-09-25/",
+        "author": "jspann",
+        "points": 1346,
+        "numComments": 745,
+        "createdAt": "2024-09-26T08:34:43.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=41655954"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "38971012",
+        "title": "I'm sorry but I cannot fulfill this request it goes against OpenAI use policy",
+        "url": "https://www.amazon.com/fulfill-request-respectful-information-users-Brown/dp/B0CM82FJL2",
+        "author": "edward",
+        "points": 1325,
+        "numComments": 736,
+        "createdAt": "2024-01-12T17:27:10.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=38971012"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "40393121",
+        "title": "OpenAI departures: Why can’t former employees talk?",
+        "url": "https://www.vox.com/future-perfect/2024/5/17/24158478/openai-departures-sam-altman-employees-chatgpt-release",
+        "author": "fnbr",
+        "points": 1254,
+        "numComments": 961,
+        "createdAt": "2024-05-17T18:55:02.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=40393121"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "38325552",
+        "title": "OpenAI board in discussions with Sam Altman to return as CEO",
+        "url": "https://www.theverge.com/2023/11/18/23967199/breaking-openai-board-in-discussions-with-sam-altman-to-return-as-ceo",
+        "author": "medler",
+        "points": 1243,
+        "numComments": 1611,
+        "createdAt": "2023-11-18T22:51:39.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=38325552"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "44185913",
+        "title": "OpenAI slams court order to save all ChatGPT logs, including deleted chats",
+        "url": "https://arstechnica.com/tech-policy/2025/06/openai-says-court-forcing-it-to-save-all-chatgpt-logs-is-a-privacy-nightmare/",
+        "author": "ColinWright",
+        "points": 1132,
+        "numComments": 932,
+        "createdAt": "2025-06-04T21:47:33.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=44185913"
+      },
+      {
+        "type": "hn_hit",
+        "objectID": "40361128",
+        "title": "Ilya Sutskever to leave OpenAI",
+        "url": "https://twitter.com/ilyasut/status/1790517455628198322",
+        "author": "wavelander",
+        "points": 1124,
+        "numComments": 782,
+        "createdAt": "2024-05-14T23:01:26.000Z",
+        "hnUrl": "https://news.ycombinator.com/item?id=40361128"
+      }
+    ]
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.011,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 10000
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:13.761Z",
+  "completedAt": "2026-07-09T05:42:16.968Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRHVXD4GVY4Q1QRPMFSD -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

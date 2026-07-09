@@ -1,0 +1,256 @@
+{
+  "runId": "01KX2PBRFWZR4SKRGKW458AW47",
+  "provider": "blockrun.ai",
+  "endpoint": "/api/v1/surf/search/news",
+  "status": "COMPLETED",
+  "output": {
+    "$schema": "https://api.asksurf.ai/schemas/DataResponseNewsArticleItem.json",
+    "data": [
+      {
+        "id": "74584509-a87c-4eb9-bea6-cbaf96f20d5c",
+        "title": "Ourbit SuperCEX SuperIPO continues to heat up | SpaceX and OpenAI tokens both rise, creating significant wealth.",
+        "summary": "Ourbit Super IPO's OpenAI (OPENAI) opened at 500 USDT, peaked at 899.82, now 886.52 (+77.3% 24h); subscription oversubscribed >10x with 3,943 participants.",
+        "source": "PANEWS",
+        "url": "https://www.panewslab.com/en/articles/019e3ed2-8e0c-7688-ae68-f7e2f074d472",
+        "published_at": 1779170280,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "Following the first phase's focus on SpaceX (SPAX), the second phase's target, <em>OpenAI</em> (<em>OPENAI</em>), also recorded significant gains after its launch, and the",
+            "The second project, <em>OpenAI</em> (<em>OPENAI</em>), also performed exceptionally well after its token settlement and listing on May 18th."
+          ],
+          "summary": [
+            "Ourbit Super IPO's <em>OpenAI</em> (<em>OPENAI</em>) opened at 500 USDT, peaked at 899.82, now 886.52 (+77.3% 24h); subscription oversubscribed >10x with 3,943 participants."
+          ],
+          "title": [
+            "Ourbit SuperCEX SuperIPO continues to heat up | SpaceX and <em>OpenAI</em> tokens both rise, creating significant wealth."
+          ]
+        }
+      },
+      {
+        "id": "3ab1d0fc-4ab7-4df8-9ba6-52320038e74e",
+        "title": "OpenAI CEO Offers $2 Million in OpenAI Tokens to YC Founder in Exchan…",
+        "summary": "OpenAI CEO Sam Altman offered $2M worth of OpenAI tokens to Y Combinator founders for equity, per The Information",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/newsletter/detail_123033.html",
+        "published_at": 1779253211,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "TechFlow News, May 20: According to The Information, <em>OpenAI</em> CEO Sam Altman offered $2 million worth of <em>OpenAI</em> tokens to Y Combinator (YC) founders in exchange"
+          ],
+          "summary": [
+            "<em>OpenAI</em> CEO Sam Altman offered $2M worth of <em>OpenAI</em> tokens to Y Combinator founders for equity, per The Information"
+          ],
+          "title": [
+            "<em>OpenAI</em> CEO Offers $2 Million in <em>OpenAI</em> Tokens to YC Founder in Exchan…"
+          ]
+        }
+      },
+      {
+        "id": "b196942f-18c5-469f-854e-29568fd18fdd",
+        "title": "Ourbit Super IPO Phase 2 is now open for subscription in OpenAI, with a subscription price of 699 USDT, the lowest price across the entire network.",
+        "summary": "Ourbit Super IPO opens OPENAI subscription: 3,000 OPENAI at 699 USDT each, up to 51% annualized yield, ends May 16",
+        "source": "PANEWS",
+        "url": "https://www.panewslab.com/en/articles/019e263a-cd63-739a-99ad-44b6ee1aac4e",
+        "published_at": 1778757780,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "The total subscription amount is 3,000 <em>OPENAI</em>, with a subscription price of 1 <em>OPENAI</em> = 699 USDT.",
+            "Following the first project, SpaceX (SPAX), <em>OPENAI</em> is the second project in this segment."
+          ],
+          "summary": [
+            "Ourbit Super IPO opens <em>OPENAI</em> subscription: 3,000 <em>OPENAI</em> at 699 USDT each, up to 51% annualized yield, ends May 16"
+          ],
+          "title": [
+            "Ourbit Super IPO Phase 2 is now open for subscription in <em>OpenAI</em>, with a subscription price of 699 USDT, the lowest price across the entire network."
+          ]
+        }
+      },
+      {
+        "id": "32655355-5263-40ad-a840-de9a1934367c",
+        "title": "Robinhood is gifting OpenAI and SpaceX tokens to eligible European users.",
+        "summary": "Robinhood EU launched the first private company stock tokens for OpenAI and SpaceX, with free tokens claimable in-app by eligible users until July 7.",
+        "source": "BLOCKBEATS",
+        "url": "https://en.theblockbeats.news/flash/300616",
+        "published_at": 1751298415,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "News, on June 30th, Robinhood announced that Robinhood EU has launched the world's first batch of private company stock tokens, including tokens for <em>OpenAI</em>",
+            "Robinhood EU is offering free tokens for the initial private company stocks of <em>OpenAI</em> and SpaceX."
+          ],
+          "summary": [
+            "Robinhood EU launched the first private company stock tokens for <em>OpenAI</em> and SpaceX, with free tokens claimable in-app by eligible users until July 7."
+          ],
+          "title": [
+            "Robinhood is gifting <em>OpenAI</em> and SpaceX tokens to eligible European users."
+          ]
+        }
+      },
+      {
+        "id": "239c28b9-2ad8-4c9b-b3e9-fae470cc3458",
+        "title": "Bitget Launches OpenAI Stock Contract Campaign—Up to $8,000 USDT Per…",
+        "summary": "Bitget launches OpenAI Stock Contract Campaign with $50k USDT prize pool, volume-based leaderboard rewards up to $8k, and mystery boxes up to $400, May 27–June 11.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/newsletter/detail_123718.html",
+        "published_at": 1779879070,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "TechFlow News: On May 27, Bitget launched the <em>OpenAI</em> Stock Contract Campaign with a total prize pool of $50,000 USDT."
+          ],
+          "summary": [
+            "Bitget launches <em>OpenAI</em> Stock Contract Campaign with $50k USDT prize pool, volume-based leaderboard rewards up to $8k, and mystery boxes up to $400, May 27–June 11."
+          ],
+          "title": [
+            "Bitget Launches <em>OpenAI</em> Stock Contract Campaign—Up to $8,000 USDT Per…"
+          ]
+        }
+      },
+      {
+        "id": "ba84ad87-ee5e-4576-93fb-52a7a9c4c956",
+        "title": "Inside the Controversy Brewing Over Robinhood’s Tokenized Stocks",
+        "summary": "OpenAI says Robinhood’s “OpenAI” tokens aren’t equity or approved. Robinhood offers EU-only tokens on Arbitrum via SPV; faces legal criticism.",
+        "source": "DECRYPT",
+        "url": "https://decrypt.co/328331/controversy-robinhood-tokenize-stocks",
+        "published_at": 1751507373,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "stock tokens labeled as \"<em>OpenAI</em>\" and \"SpaceX\" earlier in the week.",
+            "<em>OpenAI</em> and Robinhood declined *Decrypt’s* requests for comment."
+          ],
+          "summary": [
+            "<em>OpenAI</em> says Robinhood’s “<em>OpenAI</em>” tokens aren’t equity or approved. Robinhood offers EU-only tokens on Arbitrum via SPV; faces legal criticism."
+          ]
+        }
+      },
+      {
+        "id": "5cae573c-d149-46c5-bebb-dc42197e4a63",
+        "title": "OpenAI says Robinhood tokens are not equity in the company",
+        "summary": "OpenAI says Robinhood’s EU OpenAI tokens are not equity or endorsed. Robinhood says tokens give indirect exposure via an SPV. Musk criticized.",
+        "source": "COINTELEGRAPH",
+        "url": "https://cointelegraph.com/news/openai-clarifies-robinhood-tokens-not-equity",
+        "published_at": 1751495073,
+        "project_name": "OpenAI",
+        "project_id": "b7e00e07-2b94-49b2-bfac-587100e1ade0",
+        "highlights": {
+          "content": [
+            "=1434/https://s3.cointelegraph.com/uploads/2025-07/0197cd1a-882c-72c2-87c6-c0b7f41b6519)  \n\n\n<em>OpenAI</em> issued a statement on Wednesday clarifying that <em>OpenAI</em>",
+            "SpaceX and <em>OpenAI</em> co-founder Elon Musk took the opportunity to criticize OpenAI’s corporate structure."
+          ],
+          "summary": [
+            "<em>OpenAI</em> says Robinhood’s EU <em>OpenAI</em> tokens are not equity or endorsed. Robinhood says tokens give indirect exposure via an SPV. Musk criticized."
+          ],
+          "title": [
+            "<em>OpenAI</em> says Robinhood tokens are not equity in the company"
+          ]
+        }
+      },
+      {
+        "id": "e428fad3-7561-47ee-8ed8-fd8539e72a9d",
+        "title": "OpenAI denies authorizing Robinhood to launch tokenized stocks  ",
+        "summary": "OpenAI says Robinhood’s “OpenAI tokens” are unauthorized and not equity. Robinhood offers EU stock tokens without rights and other crypto services; Republic similar",
+        "source": "PANEWS",
+        "url": "https://www.panewslab.com/en/articles/es9f8lj9",
+        "published_at": 1751501899,
+        "project_name": "OpenAI tokens",
+        "highlights": {
+          "content": [
+            "PANews reported on July 3 that <em>OpenAI</em> stated on the social media platform X that the so-called \"<em>OpenAI</em> tokens\" launched by Robinhood were not authorized",
+            "<em>OpenAI</em> emphasized: \"These tokens are not OpenAI's equity. We have not cooperated with Robinhood and do not approve of this behavior."
+          ],
+          "summary": [
+            "<em>OpenAI</em> says Robinhood’s “<em>OpenAI</em> tokens” are unauthorized and not equity. Robinhood offers EU stock tokens without rights and other crypto services; Republic similar"
+          ],
+          "title": [
+            "<em>OpenAI</em> denies authorizing Robinhood to launch tokenized stocks"
+          ]
+        }
+      },
+      {
+        "id": "0be25011-63b8-469f-89c4-80531b699863",
+        "title": "Web3 lawyers analyze in depth: Robinhood&#39;s stock tokens, innovation or crossing the line",
+        "summary": "Robinhood launched stock tokens in Europe tied to SPV-held OpenAI/SpaceX shares; OpenAI says tokens aren’t equity; Lithuanian central bank probing",
+        "source": "ODAILY",
+        "url": "https://www.odaily.news/en/post/5205213",
+        "published_at": 1753273800,
+        "project_name": "OpenAI Token",
+        "highlights": {
+          "content": [
+            "What is the <em>OpenAI</em> Token?**\n\nFirst, let’s take a look at what the so-called “<em>OpenAI</em> Token” is.",
+            "When investors buy <em>OpenAI</em> tokens, they are not buying actual <em>OpenAI</em> shares or shares of the SPV, but rather gaining indirect exposure to the price of <em>OpenAI</em>"
+          ],
+          "summary": [
+            "Robinhood launched stock tokens in Europe tied to SPV-held <em>OpenAI</em>/SpaceX shares; <em>OpenAI</em> says tokens aren’t equity; Lithuanian central bank probing"
+          ]
+        }
+      },
+      {
+        "id": "fd6a2a53-61eb-44f4-aea5-1be98863795d",
+        "title": "OpenAI denies ties to “OpenAI tokens” or Robinhood",
+        "summary": "OpenAI denies connection to “OpenAI tokens”, no Robinhood partnership, and no endorsement of the initiative, per Solid Intel on X.",
+        "source": "COINNESS",
+        "url": "https://coinness.com/en/news/1132302",
+        "published_at": 1751487673,
+        "highlights": {
+          "content": [
+            "According to a post shared by Solid Intel on X, <em>OpenAI</em> stated it has no connection to “<em>OpenAI</em> tokens”, has not partnered with Robinhood and does not endorse"
+          ],
+          "summary": [
+            "<em>OpenAI</em> denies connection to “<em>OpenAI</em> tokens”, no Robinhood partnership, and no endorsement of the initiative, per Solid Intel on X."
+          ],
+          "title": [
+            "<em>OpenAI</em> denies ties to “<em>OpenAI</em> tokens” or Robinhood"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "total": 3593,
+      "limit": 10,
+      "offset": 0,
+      "credits_used": 1,
+      "cached": false
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.00825,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 7500
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:13.045Z",
+  "completedAt": "2026-07-09T05:42:16.599Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRFWZR4SKRGKW458AW47 -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

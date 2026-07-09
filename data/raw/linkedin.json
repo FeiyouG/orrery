@@ -1,0 +1,141 @@
+{
+  "runId": "01KX2PBRSNTA2QVDWJN7WCC15M",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/linkedin/web_v2/get_company_profile",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "url": "openai"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "66949d34-5ef5-404a-b4f7-e9a7f0998706",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-08 22:42:16",
+      "time_stamp": 1783575736,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/LinkedIn-Web-V2-API/get_company_profile_api_v1_linkedin_web_v2_get_company_profile_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/66949d34-5ef5-404a-b4f7-e9a7f0998706?sign=b9e543e8dac8e8d0eb717db8716e4be94a976cc9591e59717b6bf6dcf0be93da",
+      "router": "/api/v1/linkedin/web_v2/get_company_profile",
+      "params": {
+        "url": "openai"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:14.284Z",
+  "startedAt": "2026-07-09T05:42:15.293Z",
+  "completedAt": "2026-07-09T05:42:17.191Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRSNTA2QVDWJN7WCC15M -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "input_url": "openai",
+    "universal_name": "openai",
+    "url": "https://www.linkedin.com/company/openai",
+    "name": "OpenAI",
+    "description": "OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. AI is an extremely powerful tool that must be created with safety and human needs at its core. OpenAI is dedicated to putting that alignment of interests first — ahead of profit. To achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity. Our investment in diversity, equity, and inclusion is ongoing, executed through a wide range of initiatives, and championed and supported by leadership. At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",
+    "employee_count": 10198,
+    "website": "https://openai.com/",
+    "logo": "https://media.licdn.com/dms/image/v2/D560BAQHpzXbqSyR74A/company-logo_200_200/B56ZT8EYB8HsAI-/0/1739395793272/openai_logo?e=2147483647&v=beta&t=KqQyuosYiiBMx7W0kz3PILrchXDcy1wsCN8EjnQdUJc",
+    "address": {
+      "street": null,
+      "locality": "San Francisco",
+      "region": "CA",
+      "postal_code": "94110",
+      "country": "US"
+    },
+    "recent_posts": [
+      {
+        "text": "Tomorrow, we're introducing a new partner for your most ambitious work. Join us live at 10am PT.",
+        "url": "https://www.linkedin.com/posts/openai_tomorrow-were-introducing-a-new-partner-activity-7480717611811635201-a420",
+        "date_published": "2026-07-08T20:21:03.653Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction. Rolling out in ChatGPT starting today. GPT-Live makes talking with AI feel like having a real conversation. It’s also our smartest voice model yet. It’s built on a full-duplex architecture, meaning it can listen and speak at the same time. This allows the model to engage in more natural back-and-forth, maintain a better sense of time, and even perform live translation. A good voice model should be enjoyable to talk to, and GPT-Live is a great conversationalist with a more natural and defined personality than previous voice models. For questions that require web search, deeper reasoning, or more complex work, GPT-Live can delegate to our latest frontier model behind the scenes, and brings the result back into the conversation when it's ready. These new models are rolling out now to everyone in ChatGPT across iOS, Android, and web. Coming soon to the API. Just tap the Voice button to talk with ChatGPT, and you’ll get the new experience powered by GPT-Live. Learn more about GPT-Live and ChatGPT Voice: https://lnkd.in/g8_uW3Kj",
+        "url": "https://www.linkedin.com/posts/openai_introducing-gpt-live-a-new-generation-of-activity-7480679048826802176-IE6R",
+        "date_published": "2026-07-08T17:47:49.510Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "We’re introducing GeneBench-Pro, a research-level benchmark for a harder kind of AI progress: how well agents can navigate messy biological data, choose the right analysis path, and make judgment calls that real computational research depends on. GeneBench-Pro represents an initial effort to evaluate the more abstract skills involved in good scientific judgment possessed by experienced. We anticipate that as model capabilities advance, benchmarks that probe model abilities at these higher levels of abstraction will become increasingly useful, beyond those that simply test book knowledge or the ability to execute routine analyses. https://lnkd.in/eeZaipbH",
+        "url": "https://www.linkedin.com/posts/openai_introducing-genebench-pro-activity-7477771047606521856-ufZi",
+        "date_published": "2026-06-30T17:12:28.000Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "Introducing a limited preview of GPT-5.6 Sol, our next generation frontier model, as well as GPT-5.6 Terra, a balanced model for efficient, everyday work, and GPT-5.6 Luna, a fast and affordable model for high-volume work. We believe in broad access and plan to make GPT-5.6 Sol, Terra, and Luna generally available in the coming weeks. For now, at the request of the U.S. government, we’re starting with a limited preview among a small group of trusted partners in Codex and the API. We’re excited to continue learning from this preview period, and to bring GPT‑5.6 Sol, Terra and Luna to more people soon. https://lnkd.in/eYiKri9U",
+        "url": "https://www.linkedin.com/posts/openai_previewing-gpt-56-sol-a-next-generation-activity-7476321920909762560-u8y4",
+        "date_published": "2026-06-26T17:14:09.270Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "Codex usage at OpenAI gives us a preview of what agentic work may look like in the future. A new OpenAI Economic Research paper finds that agentic AI is expanding the frontier of productive work: - Users increasingly ask Codex to take on work estimated to require 30 minutes, one hour, or even eight hours of human effort. - At OpenAI, Codex became the main interface for work-related AI use across the company, including non-technical functions. - Workers use Codex for a broader mix of tasks, including debugging, validation, automation, tooling, documentation, data transformation, and structured analysis. The findings are early, but they point to a broader shift: as agents improve, people use them for more complex, longer-running, and more cross-functional work. https://lnkd.in/e_-X3NhX",
+        "url": "https://www.linkedin.com/posts/openai_how-agents-are-transforming-work-activity-7475944710809964544-k1vp",
+        "date_published": "2026-06-25T16:15:15.372Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "We’ve designed and built our first AI chip: Jalapeño. Designed from the ground up by OpenAI and brought to production with Broadcom, Jalapeño is purpose-built for the LLM workloads powering ChatGPT, Codex, the API, and future agentic products. Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to models to infrastructure, and will help us scale intelligence, serve more people, and expand access to AI. https://lnkd.in/gg8UvTwE",
+        "url": "https://www.linkedin.com/posts/openai_weve-designed-and-built-our-first-ai-chip-activity-7475540009161248768-s7RI",
+        "date_published": "2026-06-24T13:27:06.984Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "The next generation is already building the future with AI. The ChatGPT Futures Class of 2026 came together in San Francisco to share the ideas they're pursuing, the projects they're building, and the experiences that inspired them to start. As the first graduating class to have ChatGPT throughout college, they offer a glimpse of how young builders, researchers, creators, and advocates are turning new tools into real-world progress.",
+        "url": "https://www.linkedin.com/posts/openai_the-chatgpt-futures-class-of-2026-activity-7474923486025682946-IaB9",
+        "date_published": "2026-06-22T20:37:16.409Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "We’re expanding OpenAI Daybreak to help democratize patching vulnerable software at machine speed: - Codex Security plugin: find, validate, and fix vulnerabilities right inside Codex - The full version of GPT-5.5-Cyber model: a strong model for trusted defenders - Cyber Partner Program: powering products built on top of our best cyber capabilities for 20+ leading security companies to secure the world's software - Patch the Planet: working with maintainers to secure critical open source projects With an update to GPT‑5.5‑Cyber, it’s now more permissive and more capable for advanced, authorized cybersecurity work. It is our most capable cyber model yet, with stronger performance on defensive workflows like tracing vulnerable code, validating issues, developing patches, and preparing evidence for human review. Codex Security brings these capabilities into real security workflows. Teams can run deep scans, validate findings, trace attack paths, build threat models, generate codebase-specific patches for review, and export into the tools they already use. We’re also launching the OpenAI Daybreak Cyber Partner Program with leading security software and services providers. Participating partners can use GPT‑5.5 with Trusted Access for Cyber in the security products and services they provide to customers. This helps their customers benefit from advanced defensive AI, while keeping direct model access with trusted partners. Our goal is to move beyond using models to find more vulnerabilities, towards a world of safer software and cyber resilience. https://lnkd.in/eTjgMDUw",
+        "url": "https://www.linkedin.com/posts/openai_were-expanding-openai-daybreak-to-help-democratize-activity-7474871661180420097-EXCo",
+        "date_published": "2026-06-22T17:11:20.402Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      },
+      {
+        "text": "More than 230 million people ask ChatGPT health and wellness questions every week. GPT-5.5 Instant is now on par with our frontier Thinking models for health-related questions, with major improvements in recognizing when urgent care may be needed, asking for relevant context, explaining uncertainty, and making complex information easier to understand. These gains were shaped by physician-led evaluations and feedback from a global network of hundreds of physicians across 60 countries, 49 languages, and 26 specialties. Their input helps us identify where responses miss important context, sound overly confident, need clearer next steps, or should more strongly encourage someone to seek medical care. Because GPT-5.5 Instant is available to all free users in ChatGPT, these improvements can help more people in some of the most personal moments they bring to AI. https://lnkd.in/e-cDvJbt",
+        "url": "https://www.linkedin.com/posts/openai_improving-health-intelligence-in-chatgpt-activity-7473441251686752257-cfCj",
+        "date_published": "2026-06-18T18:27:24.206Z",
+        "likes": null,
+        "comments": null,
+        "author": "OpenAI"
+      }
+    ]
+  }
+}

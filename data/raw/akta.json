@@ -1,0 +1,844 @@
+{
+  "runId": "01KX2RFG3JJ8GYYT467H4T0QCP",
+  "provider": "akta",
+  "endpoint": "/v1/company/enrichment",
+  "status": "COMPLETED",
+  "output": {
+    "data": {
+      "uuid": "0000008",
+      "digital_presence": {
+        "social_media_profiles": [
+          {
+            "platform": "x",
+            "url": "https://x.com/OpenAI"
+          },
+          {
+            "platform": "github",
+            "url": "https://github.com/openai"
+          },
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/OpenAI"
+          },
+          {
+            "platform": "linkedin",
+            "url": "https://www.linkedin.com/company/openai"
+          },
+          {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/openai/"
+          },
+          {
+            "platform": "tiktok",
+            "url": "https://www.tiktok.com/@openai"
+          }
+        ]
+      },
+      "company_assessment": {
+        "market_position": "OpenAI is an AI research and deployment company headquartered in San Francisco, founded in 2015, operating through a hybrid structure where the nonprofit OpenAI Foundation governs the for-profit OpenAI Group (a public benefit corporation). At an $852 billion post-money valuation following its $122 billion April 2026 funding round—the largest private market raise in history—OpenAI is the most valuable private AI company globally, serving over 900 million weekly active ChatGPT users, 50+ million paid subscribers, and 5+ million weekly Codex users. The company has applied for a confidential S-1 with the SEC, signaling a near-term IPO, and has spent approximately $600 billion over five years on AI infrastructure.",
+        "strengths": [
+          {
+            "details": "API revenue scaled from $1B/quarter to $2B/month in ~12 months, driven by 40% enterprise mix and marquee wins (HP, Morgan Stanley, Cisco). Each new flagship (GPT-5.6 Sol/Terra/Luna) creates step-function pricing tiers and use-case expansion, locking in developers before competitors close quality gaps.",
+            "headline": "Frontier model lead compounds into durable enterprise share.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ]
+          },
+          {
+            "details": "Role-specific plugins for sales, data analytics, creative production, investment research, and product design grew non-developer adoption 137x since Aug 2025. Tying Codex to Salesforce, Snowflake, HubSpot, Databricks and others turns the product into horizontal workflow infrastructure, not just a coding tool.",
+            "headline": "Codex platform expands into every knowledge-worker role.",
+            "source": [
+              "http://openai.com/index/how-agents-are-transforming-work/"
+            ]
+          },
+          {
+            "details": "Custom inference silicon delivers ~50% lower cost vs GPU setups per company disclosure. As Jalapeño volume scales with Broadcom/TSMC, OpenAI can either widen margins on API/Codex or undercut competitor pricing while sustaining growth.",
+            "headline": "Jalapeño chip compresses unit economics over time.",
+            "source": [
+              "https://finance.yahoo.com/technology/ai/articles/broadcom-avgo-openai-launch-jalape-041540441.html"
+            ]
+          },
+          {
+            "details": "Diversification across Microsoft Azure, AWS ($100B/8-year), Oracle, and Cerebras ($20B) plus CoreWeave ($99B backlog) insulates OpenAI from single-supplier shocks and supports continued aggressive training and inference expansion.",
+            "headline": "Multi-cloud, multi-silicon compute stack de-risks scale-up.",
+            "source": [
+              "https://cybersecuritynews.com/gpt-5-6-release/"
+            ]
+          },
+          {
+            "details": "India already has 100M+ weekly ChatGPT users and three new offices (New Delhi opened, Mumbai and Bengaluru planned), creating monetizable headroom in the second-largest market as paid tiers and enterprise rollouts ramp.",
+            "headline": "International expansion, especially India, opens next growth wave.",
+            "source": [
+              "https://www.cnbctv18.com/videos/technology/ai-openai-oracle-artificial-intelligence-spending-anthropic-zhipu-meta-google-apple-19933869.htm"
+            ]
+          }
+        ],
+        "weakness": [
+          {
+            "details": "Planned $600B in spending over five years combined with a $38.5B 2025 net loss means forward profitability hinges on revenue compounding multiple fold. Any growth deceleration would force OpenAI to either raise dilutive capital or pull back on training/inference investment, ceding frontier lead.",
+            "headline": "Capex trajectory could outpace cash generation.",
+            "source": [
+              "https://www.thehindu.com/sci-tech/technology/openai-cfo-raises-concerns-over-sam-altmans-2026-ipo-plans-report/article70828785.ece"
+            ]
+          },
+          {
+            "details": "US-only, foreign-national-excluded access for GPT-5.6 may trigger reciprocal action in EU, China, and other jurisdictions, fragmenting the addressable market for OpenAI's most capable models just as competitors localize offerings.",
+            "headline": "Government-mandated release restrictions risk fragmentation.",
+            "source": [
+              "https://www.thehindu.com/sci-tech/technology/openai-restricts-limited-release-of-new-model-to-us-only/article71159948.ece"
+            ]
+          },
+          {
+            "details": "The NYT amended complaint and the 400-publisher coalition lawsuit allege willful mass infringement of copyrighted content. A negative outcome could mandate expensive licensing, content filtering, or retraining costs that compress margins across the API and ChatGPT businesses.",
+            "headline": "Copyright litigation could impose structural cost or limits.",
+            "source": [
+              "https://yro.slashdot.org/story/26/06/28/2256226/microsoft-slammed-for-building-copyright-infringing-supercomputer-for-openai-in-new-court-filing?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+            ]
+          },
+          {
+            "details": "With CoreWeave ($99B backlog), Oracle, Microsoft, AWS, and Cerebras as primary compute sources, capacity tightness, pricing renegotiation, or partner-side financial distress could materially constrain training/inference throughput.",
+            "headline": "Compute concentration exposes OpenAI to partner shocks.",
+            "source": [
+              "https://www.business-standard.com/technology/tech-news/india-s-ai-ambitions-hinge-on-overcoming-regional-language-divide-126062900104_1.html"
+            ]
+          },
+          {
+            "details": "Anthropic, Google DeepMind, xAI, and Meta (Llama) continue shipping competitive reasoning and open-weight models. If quality gaps narrow while OpenAI's per-token costs remain higher due to scale, price/performance competition could compress API gross margins.",
+            "headline": "Frontier labs compress OpenAI's quality moat.",
+            "source": [
+              "http://openai.com/"
+            ]
+          }
+        ],
+        "competitive_moat": [
+          {
+            "details": "ChatGPT exceeds 900 million weekly active users across consumer and enterprise surfaces, generating the scale of real-world interaction data that compounds model improvement. This breadth of usage across languages, regions (e.g., 100M+ weekly users in India), and verticals creates a training signal loop competitors with narrower distribution cannot match.",
+            "type": {
+              "code": "data_advantage",
+              "label": "Data Advantage"
+            }
+          },
+          {
+            "details": "OpenAI continues to attract leading AI researchers (Jakub Pachocki as Chief Scientist, Mark Chen as Chief Research Officer) and has poached hardware executives such as Paul Meade from Apple. Concentrated frontier-AI expertise of this caliber is structurally scarce and is the primary input to state-of-the-art model development.",
+            "type": {
+              "code": "talent_moat",
+              "label": "Talent Moat"
+            }
+          },
+          {
+            "details": "Frontier-model IP across the GPT-5.6 series (Sol/Terra/Luna), o-series reasoning models, Codex, Sora 2, DALL-E, and Whisper, supported by Daybreak, GPT-Rosalind, and the Jalapeño inference chip. Brand recognition around ChatGPT at 900M+ WAU is among the strongest consumer AI brands in existence and extends through 50M+ subscribers.",
+            "type": {
+              "code": "intangible_assets",
+              "label": "Intangible Assets"
+            }
+          },
+          {
+            "details": "Codex's role-specific plugin ecosystem bundles 62 popular apps and 110 skills, with developer adoption (5M+ weekly Codex users, 2M+ WAU on Codex platform) creating two-sided value: more integrations improve agent utility, which drives more usage, which attracts more integration partners.",
+            "type": {
+              "code": "network_effects",
+              "label": "Network Effects"
+            }
+          },
+          {
+            "details": "Enterprise integrations span Salesforce, Slack, HubSpot, Snowflake, Databricks, Tableau, Hex, Figma, Canva, GitHub, plus vertical financial-data integrations (Moody's, FactSet, LSEG, S&P, PitchBook). Switching costs rise with each workflow embedded; Codex is reportedly the primary AI tool across all OpenAI departments, signaling deep internal lock-in that enterprises replicate.",
+            "type": {
+              "code": "ecosystem_lock_in",
+              "label": "Ecosystem Lock In"
+            }
+          },
+          {
+            "details": "Jalapeño, the custom inference chip co-developed with Broadcom and manufactured by TSMC, is engineered for LLM workloads at approximately 50% lower cost versus GPU equivalents. Combined with a multi-cloud build across Microsoft Azure, AWS ($100B over 8 years), Oracle, CoreWeave ($99B backlog), and Cerebras ($20B), OpenAI secures both cost leadership and supply optionality.",
+            "type": {
+              "code": "cost_advantage",
+              "label": "Cost Advantage"
+            }
+          }
+        ],
+        "key_risks": [
+          {
+            "details": "OpenAI disclosed plans to spend $600B over five years including AI server investments. Combined with $38.5B net loss reported for 2025, the path to profitability requires continued execution and growth at unprecedented scale.",
+            "headline": "Planned $600B capex over 5 years could outrun even aggressive revenue growth.",
+            "source": [
+              "https://www.thehindu.com/sci-tech/technology/openai-cfo-raises-concerns-over-sam-altmans-2026-ipo-plans-report/article70828785.ece"
+            ]
+          },
+          {
+            "details": "The Trump administration requested a US-only limited release of GPT-5.6 and barred foreign nationals from accessing advanced models, which limits near-term international expansion and may invite reciprocal restrictions abroad.",
+            "headline": "US government has restricted GPT-5.6 release and access scope.",
+            "source": [
+              "https://www.thehindu.com/sci-tech/technology/openai-restricts-limited-release-of-new-model-to-us-only/article71159948.ece"
+            ]
+          },
+          {
+            "details": "The New York Times and a coalition of ~400 US newspaper publishers filed amended complaints alleging systematic use of copyrighted content for AI training, creating potential for large damages or licensing-mandated operating cost.",
+            "headline": "Active copyright litigation from NYT and major newspaper groups.",
+            "source": [
+              "https://yro.slashdot.org/story/26/06/28/2256226/microsoft-slammed-for-building-copyright-infringing-supercomputer-for-openai-in-new-court-filing?utm_source=rss1.0mainlinkanon&utm_medium=feed"
+            ]
+          },
+          {
+            "details": "OpenAI Foundation governs for-profit OpenAI Group as a PBC. $35B of Amazon's $50B commitment is contingent on an IPO or AGI achievement, and the company is reportedly weighing an IPO delay to pursue a $1T valuation.",
+            "headline": "Hybrid nonprofit/for-profit governance complicates capital and exit decisions.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ]
+          },
+          {
+            "details": "CoreWeave carries a $99B backlog, Oracle is a major data-center partner, and Microsoft/AWS/Azure still anchor compute. Concentration creates counterparty and pricing risk if any partner's capacity tightens or pricing escalates.",
+            "headline": "Heavy compute and capital concentration across a few infrastructure partners.",
+            "source": [
+              "https://www.business-standard.com/technology/tech-news/india-s-ai-ambitions-hinge-on-overcoming-regional-language-divide-126062900104_1.html"
+            ]
+          }
+        ],
+        "key_highlights": [
+          {
+            "details": "OpenAI reached approximately $2B in monthly revenue, up from $1B/quarter at end of 2024; enterprise sales now comprise 40% of revenue.",
+            "headline": "Revenue scaled to ~$25B ARR in roughly 12 months, 24x growth from end of 2024.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ]
+          },
+          {
+            "details": "Closed a $122B round led by Amazon ($50B), Nvidia ($30B), and SoftBank ($30B), with Microsoft, BlackRock, Blackstone, Sequoia, and Temasek participating.",
+            "headline": "Largest private market raise in history at $852B post-money valuation.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ]
+          },
+          {
+            "details": "ChatGPT exceeds 900M weekly active users globally, with India alone accounting for 100M+ weekly users and 50M+ paying subscribers company-wide.",
+            "headline": "Consumer scale of 900M weekly active users and 50M+ paying subscribers.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ]
+          },
+          {
+            "details": "Codex reached 5M+ weekly users including 2M weekly active users, with non-developers now 20% of users growing 3x faster than developers via role-specific plugins.",
+            "headline": "Codex has scaled 137x in non-developer adoption since Aug 2025.",
+            "source": [
+              "http://openai.com/index/how-agents-are-transforming-work/"
+            ]
+          },
+          {
+            "details": "Jointly developed with Broadcom and manufactured by TSMC in ~9 months; engineering samples running GPT-5.3 Codex Spark workloads at target speeds.",
+            "headline": "Custom Jalapeño inference chip delivers ~50% lower cost vs GPU setups.",
+            "source": [
+              "https://finance.yahoo.com/technology/ai/articles/broadcom-avgo-openai-launch-jalape-041540441.html"
+            ]
+          },
+          {
+            "details": "Signed enterprise deployments with Morgan Stanley, Cisco, BNY, Moderna, Uber, Samsung, HP Inc., and KEPCO, plus system-integrator rollout with Accenture.",
+            "headline": "Enterprise marquee customer wins across Fortune 500 verticals.",
+            "source": [
+              "http://openai.com/business/"
+            ]
+          }
+        ],
+        "customer_concentration": {
+          "details": "Enterprise sales contribute approximately 40% of revenue (WX2PLOF0FP), creating meaningful single-channel exposure to large contract performance with named anchors like Morgan Stanley, Cisco, BNY, Moderna, Uber, HP, and Samsung. The remaining 60% of revenue is distributed across a 50M+ ChatGPT subscriber base and a usage-based API platform spanning thousands of developers, with 900M+ weekly active users providing a long-tail demand buffer. Concentration risk is amplified by the fact that HP, Samsung, and other strategic deals concentrate multi-year commitments with a small number of counterparties. Diversification across industries (financial services, healthcare, transportation, food distribution, electronics, racing) somewhat mitigates vertical concentration, but the small absolute number of seven- and eight-figure enterprise contracts means churn in any single anchor would be material to revenue. Net assessment: Moderate concentration, with the consumer+developer long tail offsetting — but not eliminating — enterprise dependence.",
+          "classification": {
+            "code": "Moderate",
+            "label": "Moderate"
+          }
+        },
+        "peers": [
+          {
+            "description": "Closest direct competitor to OpenAI, developing frontier Claude foundation models with a strong API and enterprise focus (Claude for Work). Competes head-to-head with OpenAI for developer and enterprise AI spend.",
+            "name": "Anthropic",
+            "type": {
+              "code": "direct_peer",
+              "label": "Direct Peer"
+            }
+          },
+          {
+            "description": "Develops Google's Gemini family of frontier foundation models and AI products integrated across Search, Workspace, and Cloud. Direct competitor to OpenAI on model capability, API distribution, and enterprise AI platforms.",
+            "name": "Google DeepMind",
+            "type": {
+              "code": "direct_peer",
+              "label": "Direct Peer"
+            }
+          },
+          {
+            "description": "Elon Musk's AI lab building Grok foundation models tightly integrated with X. Competes with OpenAI at the frontier model layer and is rapidly building its own data-center and chip capacity similar to OpenAI.",
+            "name": "xAI",
+            "type": {
+              "code": "direct_peer",
+              "label": "Direct Peer"
+            }
+          },
+          {
+            "description": "European foundation-model lab offering both open-weight and commercial models via API and on-prem. Competes with OpenAI's models on enterprise and developer workloads, particularly for European customers concerned with data residency.",
+            "name": "Mistral AI",
+            "type": {
+              "code": "emerging_player",
+              "label": "Emerging Player"
+            }
+          },
+          {
+            "description": "Enterprise-focused foundation model provider with North-platform offerings for secure deployment. Competes with OpenAI's enterprise/API tier for retrieval, summarization, and workflow use cases inside regulated industries.",
+            "name": "Cohere",
+            "type": {
+              "code": "direct_peer",
+              "label": "Direct Peer"
+            }
+          },
+          {
+            "description": "Open-weights Llama family sets the de facto standard for self-hostable foundation models, putting pricing pressure on OpenAI's API and serving as the main open-source alternative to GPT and Claude.",
+            "name": "Meta (Llama)",
+            "type": {
+              "code": "broad_incumbent",
+              "label": "Broad Incumbent"
+            }
+          },
+          {
+            "description": "Both a major OpenAI partner (Azure distribution, $13B investment) and a competing provider of Copilot products across Office 365, GitHub, and Dynamics. Competes with ChatGPT Enterprise and Codex at the productivity layer.",
+            "name": "Microsoft (Copilot)",
+            "type": {
+              "code": "broad_incumbent",
+              "label": "Broad Incumbent"
+            }
+          },
+          {
+            "description": "AI-native answer engine built on top of frontier models including OpenAI's. Competes with ChatGPT for consumer/knowledge-worker attention and has overlapping enterprise PRO offerings.",
+            "name": "Perplexity",
+            "type": {
+              "code": "emerging_player",
+              "label": "Emerging Player"
+            }
+          },
+          {
+            "description": "Rebuilt as an enterprise AI studio (Pi → Inflection for Enterprise) after the Microsoft/PI talent deal. Competes with OpenAI in conversational and enterprise assistant categories.",
+            "name": "Inflection AI",
+            "type": {
+              "code": "emerging_player",
+              "label": "Emerging Player"
+            }
+          },
+          {
+            "description": "Hub and inference platform for open-weights models and AI applications. Adjacent ecosystem participant that channels developer mindshare away from OpenAI's API by enabling self-hosted alternatives.",
+            "name": "Hugging Face",
+            "type": {
+              "code": "others",
+              "label": "Others"
+            }
+          }
+        ]
+      },
+      "strategic_signal": {
+        "scale_indicator": [
+          {
+            "description": "Valuation after $122 billion funding round in April 2026",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ],
+            "type": {
+              "code": "valuation",
+              "label": "Valuation"
+            },
+            "value": "$852 billion"
+          },
+          {
+            "description": "Record funding round closed April 2026, largest private market raise in history. Led by Amazon ($50B), Nvidia ($30B), SoftBank ($30B), with Microsoft, BlackRock, Blackstone, Sequoia, Temasek participation.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ],
+            "type": {
+              "code": "funding_raised",
+              "label": "Funding Raised"
+            },
+            "value": "$122 billion"
+          },
+          {
+            "description": "Monthly revenue approximately $2 billion, up from $1 billion per quarter at end of 2024. Enterprise sales comprise 40% of revenue.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ],
+            "type": {
+              "code": "revenue",
+              "label": "Revenue"
+            },
+            "value": "$2 billion per month ($25 billion ARR)"
+          },
+          {
+            "description": "ChatGPT exceeds 900 million weekly active users with over 50 million subscribers.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ],
+            "type": {
+              "code": "user_engagement",
+              "label": "User Engagement"
+            },
+            "value": "900 million weekly active users"
+          },
+          {
+            "description": "Codex has grown to over 5 million weekly users, with over 2 million weekly active users on Codex platform.",
+            "source": [
+              "http://openai.com/index/codex-for-every-role-tool-workflow/"
+            ],
+            "type": {
+              "code": "user_engagement",
+              "label": "User Engagement"
+            },
+            "value": "5+ million weekly Codex users"
+          },
+          {
+            "description": "Over 50 million ChatGPT subscribers",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ],
+            "type": {
+              "code": "customer_count",
+              "label": "Customer Count"
+            },
+            "value": "50+ million"
+          },
+          {
+            "description": "OpenAI plans to spend $600 billion over five years including AI server investments",
+            "source": [
+              "https://www.thehindu.com/sci-tech/technology/openai-cfo-raises-concerns-over-sam-altmans-2026-ipo-plans-report/article70828785.ece"
+            ],
+            "type": {
+              "code": "cost_economics",
+              "label": "Cost Economics"
+            },
+            "value": "$600 billion over 5 years"
+          },
+          {
+            "description": "India is OpenAI's second-largest market with over 100 million weekly ChatGPT users",
+            "source": [
+              "https://www.cnbctv18.com/videos/technology/ai-openai-oracle-artificial-intelligence-spending-anthropic-zhipu-meta-google-apple-19933869.htm"
+            ],
+            "type": {
+              "code": "user_engagement",
+              "label": "User Engagement"
+            },
+            "value": "100+ million weekly ChatGPT users in India"
+          }
+        ],
+        "partnership": [
+          {
+            "announced_on": {
+              "day": 28,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "HP announced strategic partnership to deploy OpenAI Frontier platform across its global operations. HP became one of the first global enterprises to adopt Frontier for customer-facing experiences, internal operations, employee productivity, and software development. Pilot programs began February 2026 with early results showing significant productivity gains.",
+            "name": "HP Inc.",
+            "source": [
+              "https://www.ainvest.com/news/hp-ai-architecture-splitting-point-2606/"
+            ],
+            "strategic_tier": "Flagship",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 24,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "Joint development of Jalapeño, OpenAI's first custom AI inference chip. Developed in approximately 9 months, the chip is optimized for large language model workloads with ~50% lower cost than GPU setups. Part of multi-generation AI compute platform roadmap.",
+            "name": "Broadcom",
+            "source": [
+              "https://finance.yahoo.com/technology/ai/articles/broadcom-avgo-openai-launch-jalape-041540441.html"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 29,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "Cerebras providing inference compute for OpenAI models. GPT-5.6 Sol launching on Cerebras hardware achieving up to 750 tokens per second. $20 billion contract with Cerebras for compute capacity.",
+            "name": "Cerebras",
+            "source": [
+              "https://cybersecuritynews.com/gpt-5-6-release/"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "technology_integration",
+              "label": "Technology or Integration"
+            }
+          },
+          {
+            "description": "Accenture partnered with OpenAI and Anthropic to position itself as an enterprise AI deployment layer. Helps deploy OpenAI solutions to enterprise customers globally.",
+            "name": "Accenture",
+            "source": [
+              "https://finance.yahoo.com/markets/stocks/articles/accenture-shares-plunged-50-heres-215000434.html"
+            ],
+            "strategic_tier": "Major",
+            "type": {
+              "code": "implementation_si_consulting",
+              "label": "Implementation/ SI/ Consulting Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 26,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "KEPCO signed MOU with OpenAI for AI transformation of the energy industry. First public energy company in Korea to directly partner with OpenAI, combining power system infrastructure with AI technology.",
+            "name": "KEPCO (Korea Electric Power Corporation)",
+            "source": [
+              "https://news.nate.com/view/20260628n03680?mid=n0100"
+            ],
+            "strategic_tier": "Strategic",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 19,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "OpenAI acquiring Astral, developer of open source Python tools (uv, Ruff, ty). Astral team will join Codex to accelerate AI across software development lifecycle. Acquisition subject to regulatory approval.",
+            "name": "Astral",
+            "source": [
+              "https://finance.yahoo.com/sectors/technology/articles/openai-acquire-developer-tools-startup-160500577.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAKequAShCj5k1l5XGeVguzBM_16uoG5PWQxk77qvu8fK7zRj1ZjVdhNwWGivDfzGMT8z6rhLRWSPzTXHLD9-0PTvpwJM50n9Y2B6NpFF_BTqHLeVCoab81jOLjMASuNHvUyLWxeXrmni1jt4SPMaoSHUkllvhU2-OCcoiCQPWH5i"
+            ],
+            "strategic_tier": "Strategic",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 10,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "OpenAI acquired Promptfoo, a cybersecurity startup for AI testing and safeguarding. Team of 11-23 people will join OpenAI Frontier division. Platform used by 350,000+ developers including Fortune 500.",
+            "name": "Promptfoo",
+            "source": [
+              "https://techstartups.com/2026/03/10/openai-acquires-promptfoo-to-secure-ai-agents-as-the-next-security-battleground-emerges/"
+            ],
+            "strategic_tier": "Strategic",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 2,
+              "month": 4,
+              "year": 2026
+            },
+            "description": "OpenAI acquired TBPN, a tech news podcast hosted by John Coogan and Jordi Hays. Founders join OpenAI as part of transaction. TBPN maintains editorial independence while housed in strategy organization.",
+            "name": "TBPN",
+            "source": [
+              "https://www.reuters.com/business/media-telecom/openai-acquires-technology-talk-show-tbpn-surprise-move-2026-04-02/"
+            ],
+            "strategic_tier": "Strategic",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 25,
+              "month": 6,
+              "year": 2024
+            },
+            "description": "OpenAI acquired Rockset, a real-time analytics database company. Integration aimed to improve retrieval infrastructure across OpenAI's offerings with advanced data indexing and querying.",
+            "name": "Rockset",
+            "source": [
+              "https://www.pymnts.com/cpi-posts/openai-expands-through-acquisition-spree-with-multi-and-rockset-purchases/"
+            ],
+            "strategic_tier": "Strategic",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 25,
+              "month": 6,
+              "year": 2024
+            },
+            "description": "OpenAI acquired collaboration platform Multi to enhance remote collaboration capabilities.",
+            "name": "Multi",
+            "source": [
+              "https://www.pymnts.com/cpi-posts/openai-expands-through-acquisition-spree-with-multi-and-rockset-purchases/"
+            ],
+            "strategic_tier": "Strategic",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          },
+          {
+            "announced_on": {
+              "day": 28,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "CoreWeave is a key AI infrastructure supplier to OpenAI with a $99 billion backlog. Provides GPU cloud capacity for AI workloads.",
+            "name": "CoreWeave",
+            "source": [
+              "https://www.business-standard.com/technology/tech-news/india-s-ai-ambitions-hinge-on-overcoming-regional-language-divide-126062900104_1.html"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "technology_integration",
+              "label": "Technology or Integration"
+            }
+          }
+        ],
+        "recent_move": [
+          {
+            "date": {
+              "month": 4,
+              "year": 2026
+            },
+            "description": "Closed a $122 billion funding round at an $852 billion post-money valuation, anchored by Amazon ($50B), Nvidia ($30B), and SoftBank ($30B), the largest private market raise on record, with $35B of Amazon's commitment contingent on an IPO or AGI milestone.",
+            "source": [
+              "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month"
+            ],
+            "type": {
+              "code": "funding_round",
+              "label": "Funding Round"
+            }
+          },
+          {
+            "date": {
+              "day": 8,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "Submitted a confidential draft S-1 to the SEC, formally initiating the IPO process, with management indicating timing may shift toward 2027 to potentially reach a $1 trillion valuation.",
+            "source": [
+              "http://openai.com/index/openai-submits-confidential-s-1/"
+            ],
+            "type": {
+              "code": "ipo",
+              "label": "Ipo"
+            }
+          },
+          {
+            "date": {
+              "month": 6,
+              "year": 2026
+            },
+            "description": "Released the GPT-5.6 model family (Sol flagship, Terra, Luna) with tiered pricing down to $1/$6 per million tokens, plus unveiled the Jalapeño custom AI inference chip co-developed with Broadcom and manufactured by TSMC.",
+            "source": [
+              "http://openai.com/"
+            ],
+            "type": {
+              "code": "product_launch",
+              "label": "Product Launch"
+            }
+          },
+          {
+            "date": {
+              "day": 28,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "Signed a flagship strategic partnership with HP Inc. to deploy the OpenAI Frontier enterprise platform across HP's global operations for customer experience, internal productivity, and software development.",
+            "source": [
+              "https://www.ainvest.com/news/hp-ai-architecture-splitting-point-2606/"
+            ],
+            "type": {
+              "code": "partnership",
+              "label": "Partnership"
+            }
+          },
+          {
+            "date": {
+              "month": 11,
+              "year": 2025
+            },
+            "description": "Opened its first India office in New Delhi with follow-on locations planned in Mumbai and Bengaluru, formalizing India — already the second-largest market with 100M+ weekly ChatGPT users — as a strategic geography under new MD Prabhjeet Singh.",
+            "source": [
+              "https://www.thedailystar.net/news/tech-startup/news/ex-uber-india-head-joins-openai-4210381"
+            ],
+            "type": {
+              "code": "expansion",
+              "label": "Expansion"
+            }
+          },
+          {
+            "date": {
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Acquired Astral (Python developer-tooling, including uv, Ruff, ty) and Promptfoo (AI security testing, 350,000+ developer users) to deepen the Codex and Frontier platforms, part of a broader ~15-deal acquisition cadence from 2024 through mid-2026.",
+            "source": [
+              "https://www.bloomberg.com/news/articles/2026-03-19/openai-to-acquire-python-startup-astral-expanding-push-into-coding?sref=Dd2N48n2"
+            ],
+            "type": {
+              "code": "acquisition",
+              "label": "Acquisition"
+            }
+          },
+          {
+            "date": {
+              "day": 8,
+              "month": 6,
+              "year": 2026
+            },
+            "description": "OpenAI submitted a confidential S-1 to the SEC for a potential IPO, with the company stating it has not decided on timing yet as there are things they want to do that are likely easier as a private company.",
+            "source": [
+              "http://openai.com/index/openai-submits-confidential-s-1/"
+            ],
+            "title": "Confidential S-1 Filing",
+            "type": {
+              "code": "ipo",
+              "label": "Ipo"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "OpenAI is considering delaying its IPO from 2026 to potentially achieve a $1 trillion valuation, according to The New York Times citing people familiar with the matter.",
+            "source": [
+              "https://finance.yahoo.com/technology/ai/articles/openai-reportedly-considers-delaying-ipo-233000174.html"
+            ],
+            "title": "IPO Delay Consideration",
+            "type": {
+              "code": "ipo",
+              "label": "Ipo"
+            }
+          }
+        ],
+        "leadership_change": [
+          {
+            "description": "OpenAI appointed Prabhjeet Singh, former Uber India head, as its first Managing Director for India, effective September, to oversee consumer growth, enterprise adoption, partnerships, regulatory engagement, and operations in the country.",
+            "source": [
+              "https://www.thedailystar.net/news/tech-startup/news/ex-uber-india-head-joins-openai-4210381"
+            ],
+            "title": "India Leadership Appointment",
+            "type": {
+              "code": "leadership_change",
+              "label": "Leadership Change"
+            }
+          },
+          {
+            "description": "Apple executive Paul Meade, who led the smart glasses project and oversaw Vision Pro headset engineering, is leaving Apple to join OpenAI's hardware unit to work on AI-powered devices.",
+            "source": [
+              "https://www.pymnts.com/news/artificial-intelligence/2026/apple-smart-glasses-and-vision-pro-boss-leaving-for-openai/"
+            ],
+            "title": "Paul Meade Hire",
+            "type": {
+              "code": "leadership_change",
+              "label": "Leadership Change"
+            }
+          }
+        ],
+        "expansion_highlight": [
+          {
+            "description": "First office opened in New Delhi in November 2025 with planned expansions in Mumbai and Bengaluru; new MD Prabhjeet Singh (ex-Uber India) hired September 2025 (WX19MUGKS4). India is already OpenAI's second-largest market at 100M+ weekly ChatGPT users (WX3JF4B8XY), making this a formalization of an existing user base rather than a greenfield entry.",
+            "type": {
+              "code": "new_geography",
+              "label": "New Geography"
+            }
+          },
+          {
+            "description": "MOU with KEPCO (Korea Electric Power Corporation) announced June 2026, the first direct partnership with a Korean public energy company (WX5NEC9WEI). Combined with Sora 2, GPT-Rosalind, and Daybreak, this signals vertical push into regulated, critical-infrastructure industries.",
+            "type": {
+              "code": "new_vertical",
+              "label": "New Vertical"
+            }
+          },
+          {
+            "description": "FLAGSHIP HP Inc. partnership (June 2026) deploys Frontier across HP's global operations for customer experience and software development (WX5W74AAZ3); Samsung deployment to employees (WX6DOURGZ0); Fortune 500 logos span Morgan Stanley, Cisco, BNY, Moderna, Uber. Enterprise already contributes 40% of revenue, indicating deliberate mid-market and F500 expansion.",
+            "type": {
+              "code": "new_customer_segment",
+              "label": "New Customer Segment"
+            }
+          },
+          {
+            "description": "Launches of Jalapeño custom inference chip with Broadcom/TSMC (WXTVZCGS33), Daybreak cybersecurity suite including GPT-5.5-Cyber and Codex Security (WXZML9YX3X), and GPT-Rosalind for life sciences (April 2026) extend the platform beyond core LLMs into silicon, security, and domain-specific research — each opening new revenue categories.",
+            "type": {
+              "code": "new_product_line",
+              "label": "New Product Line"
+            }
+          },
+          {
+            "description": "Introduction of the OpenAI Partner Network for solution providers and resellers (June 2026), Accenture as an implementation SI partner (WX1K2XH1WS), and a Cloud Marketplace presence via Oracle (WX5RNJQ6UY) build a formal channel motion beyond direct enterprise sales.",
+            "type": {
+              "code": "new_channel",
+              "label": "New Channel"
+            }
+          },
+          {
+            "description": "New advertising revenue stream introduced on ChatGPT Free and Go tiers, already generating approximately $100M annualized (WXTVZCGS33), adds a third monetization model on top of subscription and usage-based pricing.",
+            "type": {
+              "code": "new_pricing_model",
+              "label": "New Pricing Model"
+            }
+          },
+          {
+            "description": "Aggressive M&A cadence of ~15 deals from 2024 through mid-2026 (Rockset, Multi, io/$6.5B, Software Applications Incorporated, Statsig/$1.1B, Roi, Crossing Minds, Jams, neptune.ai, OpenClaw, Crixet, Convogo, Torch Health, Promptfoo, Astral, TBPN, Weights, Hiro, Chalkie, Ona), most being acqui-hires targeting Codex, hardware, and agentic capability vectors.",
+            "type": {
+              "code": "m_and_a_signal",
+              "label": "M And A Signal"
+            }
+          },
+          {
+            "description": "Hire of Apple hardware executive Paul Meade from the Vision Pro / smart glasses program to OpenAI's hardware unit (WX39HKW1VZ), together with the io/Jony Ive acquisition, signals a deliberate build-out of an AI-native consumer hardware function.",
+            "type": {
+              "code": "hiring_signal",
+              "label": "Hiring Signal"
+            }
+          },
+          {
+            "description": "$122B April 2026 raise and confidential S-1 filed June 8, 2026 together indicate preparation for a public-market listing in late 2026 or 2027, with management weighing a $1 trillion private valuation scenario (WXPD91DGJ3).",
+            "type": {
+              "code": "funding_signal",
+              "label": "Funding Signal"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_RESULT",
+    "amount": 0.125,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 375000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "currency": "USD",
+      "value": 200000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 375000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 3,
+  "createdAt": "2026-07-09T06:19:12.772Z",
+  "completedAt": "2026-07-09T06:19:14.684Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2RFG3JJ8GYYT467H4T0QCP -H 'Authorization: Bearer <API_KEY>'"
+  }
+}

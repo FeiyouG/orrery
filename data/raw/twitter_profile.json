@@ -1,0 +1,77 @@
+{
+  "runId": "01KX2PBRREFPVZ1MTAN960Q1GN",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/twitter/web/fetch_user_profile",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "screen_name": "OpenAI"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "086937fe-31ae-4a12-ad56-9f1b99b4e2f1",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-08 22:42:17",
+      "time_stamp": 1783575737,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Twitter-Web-API/fetch_user_profile_api_v1_twitter_web_fetch_user_profile_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/086937fe-31ae-4a12-ad56-9f1b99b4e2f1?sign=d884a57724ace4afe63aec5c7dc2a813a58fbc08085e50ddc7ba887c82ce69ad",
+      "router": "/api/v1/twitter/web/fetch_user_profile",
+      "params": {
+        "screen_name": "OpenAI"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:14.262Z",
+  "startedAt": "2026-07-09T05:42:15.489Z",
+  "completedAt": "2026-07-09T05:42:18.304Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRREFPVZ1MTAN960Q1GN -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "status": "active",
+    "profile": "OpenAI",
+    "rest_id": "4398626122",
+    "blue_verified": true,
+    "verification_type": "Business",
+    "affiliates": [],
+    "business_account": {
+      "affiliates_count": 7
+    },
+    "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+    "header_image": "https://pbs.twimg.com/profile_banners/4398626122/1777662919",
+    "desc": "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. We’re hiring: https://t.co/dJGr6LgzPA",
+    "name": "OpenAI",
+    "website": "https://openai.com",
+    "protected": false,
+    "location": "",
+    "friends": 4,
+    "sub_count": 4995575,
+    "statuses_count": 1959,
+    "media_count": 646,
+    "pinned_tweet_ids_str": [
+      "2074907025537224840"
+    ],
+    "created_at": "Sun Dec 06 22:51:08 +0000 2015",
+    "id": "4398626122"
+  }
+}

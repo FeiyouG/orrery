@@ -1,0 +1,3244 @@
+{
+  "runId": "01KX2PBRRENMMZ40B5KGAVY4EA",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/reddit/app/fetch_dynamic_search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "query": "OpenAI",
+      "need_format": true,
+      "sort": "HOT",
+      "time_range": "month"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "f9d261e7-eb23-429e-99aa-f73f6988435e",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-08 22:42:18",
+      "time_stamp": 1783575738,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Reddit-APP-API/fetch_dynamic_search_api_v1_reddit_app_fetch_dynamic_search_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/f9d261e7-eb23-429e-99aa-f73f6988435e?sign=fbd9da17b40b919897510fb2c7fc9f82b59392512cc56182d9a9e89ea9c9eec3",
+      "router": "/api/v1/reddit/app/fetch_dynamic_search",
+      "params": {
+        "query": "OpenAI",
+        "need_format": "true",
+        "sort": "HOT",
+        "time_range": "month"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:14.287Z",
+  "startedAt": "2026-07-09T05:42:15.578Z",
+  "completedAt": "2026-07-09T05:42:19.308Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRRENMMZ40B5KGAVY4EA -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "search": {
+      "dynamic": {
+        "components": {
+          "appliedState": {
+            "pane": "posts",
+            "filters": [
+              {
+                "key": "component",
+                "value": "SearchAppliedState"
+              },
+              {
+                "key": "experience_selection",
+                "value": "post"
+              },
+              {
+                "key": "safe_search",
+                "value": "unset"
+              },
+              {
+                "key": "sort",
+                "value": "HOT"
+              },
+              {
+                "key": "structure_type",
+                "value": "search"
+              },
+              {
+                "key": "time_range",
+                "value": "month"
+              }
+            ]
+          },
+          "main": {
+            "edges": [
+              {
+                "node": {
+                  "presentation": {
+                    "isDefaultPresentation": false
+                  },
+                  "children": [
+                    {
+                      "post": {
+                        "id": "t3_1uqq0ci",
+                        "createdAt": "2026-07-08T11:32:44.088000+0000",
+                        "postTitle": "OpenAI Billing Loop",
+                        "url": "https://www.reddit.com/r/ChatGPT/comments/1uqq0ci/openai_billing_loop/",
+                        "content": {
+                          "markdown": "Hey everyone, I am stuck in a frustrating billing loop with OpenAI support and wanted to see if anyone else has experienced this or knows how to escalate it properly.\n\nThe Rundown:  \nI accidentally double-upgraded my ChatGPT subscription. Support refunded the accidental charge but canceled my entire account instead of reverting me to the tier I already paid for. Now I am stuck on the Free tier, they still have my money, and the exact same support staff member keeps shutting down my tickets.\n\nThe Full Timeline:  \nOn July 4, 2026, I paid $20.00 for my normal ChatGPT Plus subscription.   \nOn July 7, 2026, I decided to upgrade to the ChatGPT Pro ($100/month) tier and paid a prorated amount of $81.91.   \nLater that same day (July 7, 2026), the system accidentally upgraded me to the $200.00 tier, charging me an extra $100.00.   \nBecause that final $100.00 charge was an accident, I reached out to support for a refund on just that specific invoice. \n\nThe Issue:  \nThe refund for the $100.00 accidental upgrade was successfully processed. However, instead of dropping my account back down to the $100/month Pro tier, my subscription was completely canceled, and my account was bumped all the way down to the Free tier.   \nOpenAI still has my $20.00 and $81.91 payments, meaning I am fully paid up for the $100/month Pro tier for the July to August billing cycle. I don't want any more refunds; I just want my account manually reinstated to the tier I paid for. \n\nThe Support Brick Wall:  \nTo make matters worse, every time I open a new ticket to explain the math, the exact same support staff member is the only one who replies. They continue to give me the same canned response, stating that \"subscriptions are non-refundable\" (even though I am not asking for a refund, just what I paid for) and that the subscription \"cannot be reinstated.\"\n\nHas anyone successfully navigated this specific loop? Any advice on how to get a ticket escalated past a single unhelpful staff member who refuses to actually read the issue?",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"Hey everyone, I am stuck in a frustrating billing loop with OpenAI support and wanted to see if anyone else has experienced this or knows how to escalate it properly.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"The Rundown:\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"I accidentally double-upgraded my ChatGPT subscription. Support refunded the accidental charge but canceled my entire account instead of reverting me to the tier I already paid for. Now I am stuck on the Free tier, they still have my money, and the exact same support staff member keeps shutting down my tickets.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"The Full Timeline:\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"On July 4, 2026, I paid $20.00 for my normal ChatGPT Plus subscription.\\u00a0\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"On July 7, 2026, I decided to upgrade to the ChatGPT Pro ($100/month) tier and paid a prorated amount of $81.91.\\u00a0\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"Later that same day (July 7, 2026), the system accidentally upgraded me to the $200.00 tier, charging me an extra $100.00.\\u00a0\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"Because that final $100.00 charge was an accident, I reached out to support for a refund on just that specific invoice.\\u00a0\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"The Issue:\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"The refund for the $100.00 accidental upgrade was successfully processed. However, instead of dropping my account back down to the $100/month Pro tier, my subscription was completely canceled, and my account was bumped all the way down to the Free tier.\\u00a0\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"OpenAI still has my $20.00 and $81.91 payments, meaning I am fully paid up for the $100/month Pro tier for the July to August billing cycle. I don't want any more refunds; I just want my account manually reinstated to the tier I paid for.\\u00a0\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"The Support Brick Wall:\"},{\"e\":\"br\"},{\"e\":\"text\",\"t\":\"To make matters worse, every time I open a new ticket to explain the math, the exact same support staff member is the only one who replies. They continue to give me the same canned response, stating that \\\"subscriptions are non-refundable\\\" (even though I am not asking for a refund, just what I paid for) and that the subscription \\\"cannot be reinstated.\\\"\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Has anyone successfully navigated this specific loop? Any advice on how to get a ticket escalated past a single unhelpful staff member who refuses to actually read the issue?\"}],\"e\":\"par\"}]}",
+                          "html": "Hey everyone, I am stuck in a frustrating billing loop with OpenAI support and wanted to see if anyone else has experienced this or knows how to escalate it properly.\nThe Rundown:\nI accidentally double-upgraded my ChatGPT subscription. Support refunded the accidental charge but canceled my entire account instead of reverting me to the tier I already paid for. Now I am stuck on the Free tier, they still have my money, and the exact same support staff member keeps shutting down my tickets.\nThe Full Timeline:\nOn July 4, 2026, I paid $20.00 for my normal ChatGPT Plus subscription. \nOn July 7, 2026, I decided to upgrade to the ChatGPT Pro ($100/month) tier and paid a prorated amount of $81.91. \nLater that same day (July 7, 2026), the system accidentally upgraded me to the $200.00 tier, charging me an extra $100.00. \nBecause that final $100.00 charge was an accident, I reached out to support for a refund on just that specific invoice. \nThe Issue:\nThe refund for the $100.00 accidental upgrade was successfully processed. However, instead of dropping my account back down to the $100/month Pro tier, my subscription was completely canceled, and my account was bumped all the way down to the Free tier. \nOpenAI still has my $20.00 and $81.91 payments, meaning I am fully paid up for the $100/month Pro tier for the July to August billing cycle. I don't want any more refunds; I just want my account manually reinstated to the tier I paid for. \nThe Support Brick Wall:\nTo make matters worse, every time I open a new ticket to explain the math, the exact same support staff member is the only one who replies. They continue to give me the same canned response, stating that \"subscriptions are non-refundable\" (even though I am not asking for a refund, just what I paid for) and that the subscription \"cannot be reinstated.\"\nHas anyone successfully navigated this specific loop? Any advice on how to get a ticket escalated past a single unhelpful staff member who refuses to actually read the issue?",
+                          "preview": "Hey everyone, I am stuck in a frustrating billing loop with OpenAI support and wanted to see if anyone else has experienced this or knows how to escalate it properly. The Rundown: I accidentally double-upgraded my ChatGPT subscription. Support refunded the accidental charge but canceled my entire ac"
+                        },
+                        "domain": "self.ChatGPT",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 3,
+                        "commentCount": 6,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Other ",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Other \"}]",
+                          "textColor": "LIGHT",
+                          "template": {
+                            "id": "b4536a20-7be9-11ed-9a10-deed22fd00f8",
+                            "isEditable": false,
+                            "backgroundColor": "#94E044"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_ixf0mryy",
+                          "name": "GateAgent",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_5q1lzd/styles/profileIcon_snoo27ab1858-c148-48eb-a9e3-5ff0b335b9bd-headshot.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=08ebf4f2f02903bc7c570a362a36c5016af90fb8",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_5q1lzd/styles/profileIcon_snoo27ab1858-c148-48eb-a9e3-5ff0b335b9bd-headshot.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=7537a15e938dbf161088a33321b7a69d9e5f025a",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/27ab1858-c148-48eb-a9e3-5ff0b335b9bd.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/ChatGPT/comments/1uqq0ci/openai_billing_loop/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_7hqomg",
+                          "name": "ChatGPT",
+                          "prefixedName": "r/ChatGPT",
+                          "isQuarantined": false,
+                          "title": "ChatGPT",
+                          "type": "PUBLIC",
+                          "subscribersCount": 11555864,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_7hqomg/styles/communityIcon_bzj6d1z1oizc1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=ac31a0dc043676c9bff62b107e466a7610d70a34",
+                            "primaryColor": "#0DD3BB",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_7hqomg/styles/bannerBackgroundImage_9ujha2cxxgzc1.jpg?frame=1&auto=webp&format=pjpg&s=a5b9dafe45484318a8958afec7e3ecc904ceed37",
+                            "legacyPrimaryColor": "#25B79F"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "[https://discord.gg/r-chatgpt-1050422060352024636](https://discord.gg/r-chatgpt-1050422060352024636)",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"https://discord.gg/r-chatgpt-1050422060352024636\",\"u\":\"https://discord.gg/r-chatgpt-1050422060352024636\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "SpinAI",
+                              "url": "https://emoji.redditmedia.com/k6oywioqmizc1_t5_7hqomg/SpinAI"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/ChatGPT/comments/1uqq0ci/openai_billing_loop/",
+                          "expiresAt": "2026-07-09T10:42:17.995113+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_7hqomg",
+                          "name": "ChatGPT",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "community",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1uqq0ci",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Billing Loop",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_ixf0mryy",
+                                "name": "GateAgent"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqq0ci",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "post",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1uqq0ci",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Billing Loop",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_ixf0mryy",
+                                "name": "GateAgent"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_5q1lzd",
+                          "name": "u_GateAgent",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "profile",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1uqq0ci",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Billing Loop",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_ixf0mryy",
+                                "name": "GateAgent"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqq0ci",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "thumbnail",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1uqq0ci",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Billing Loop",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7hqomg",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ChatGPT"
+                              },
+                              "profile": {
+                                "id": "t2_ixf0mryy",
+                                "name": "GateAgent"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 0,
+                            "relativePosition": 0
+                          },
+                          "post": {
+                            "id": "t3_1uqq0ci",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI Billing Loop",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_7hqomg",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ChatGPT"
+                          },
+                          "profile": {
+                            "id": "t2_ixf0mryy",
+                            "name": "GateAgent"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uptres",
+                        "createdAt": "2026-07-07T12:33:55.366000+0000",
+                        "postTitle": "OpenAI API",
+                        "url": "https://www.reddit.com/r/HopToDesk/comments/1uptres/openai_api/",
+                        "content": {
+                          "markdown": "u/HopToDesk I'm hoping that on your roadmap there will be an option to add an OpenAI API option so we can bring in our own AI via Openrouter for example.",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"u/\",\"l\":false,\"t\":\"HopToDesk\"},{\"e\":\"text\",\"t\":\" I'm hoping that on your roadmap there will be an option to add an OpenAI API option so we can bring in our own AI via Openrouter for example.\"}],\"e\":\"par\"}]}",
+                          "html": "u/HopToDesk I'm hoping that on your roadmap there will be an option to add an OpenAI API option so we can bring in our own AI via Openrouter for example.",
+                          "preview": "u/HopToDesk I'm hoping that on your roadmap there will be an option to add an OpenAI API option so we can bring in our own AI via Openrouter for example."
+                        },
+                        "domain": "self.HopToDesk",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 2,
+                        "authorInfo": {
+                          "id": "t2_10m90giv",
+                          "name": "Oxide-ZA",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_gnjcf/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV8xMjY5NDE4_rare_1cb65e10-20cd-4b65-803f-0f358a0bd534-headshot.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=b1f603d816bbe8f2821d81e3c97fb0ec8e009fd3",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_gnjcf/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV8xMjY5NDE4_rare_1cb65e10-20cd-4b65-803f-0f358a0bd534-headshot.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=75463a4f38b890bed4a8d39b6101143a213d4fdf",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV8xMjY5NDE4_rare_1cb65e10-20cd-4b65-803f-0f358a0bd534.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/HopToDesk/comments/1uptres/openai_api/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_6cs3g9",
+                          "name": "HopToDesk",
+                          "prefixedName": "r/HopToDesk",
+                          "isQuarantined": false,
+                          "title": "HopToDesk",
+                          "type": "PUBLIC",
+                          "subscribersCount": 668,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_6cs3g9/styles/communityIcon_a31fw1hr2iwa1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=35daa7f847f29ae65965ec0c113b741aeec609db"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/HopToDesk/comments/1uptres/openai_api/",
+                          "expiresAt": "2026-07-09T10:42:17.995257+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_6cs3g9",
+                          "name": "HopToDesk",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "community",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uptres",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI API",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_6cs3g9",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "HopToDesk"
+                              },
+                              "profile": {
+                                "id": "t2_10m90giv",
+                                "name": "Oxide-ZA"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uptres",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "post",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uptres",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI API",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_6cs3g9",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "HopToDesk"
+                              },
+                              "profile": {
+                                "id": "t2_10m90giv",
+                                "name": "Oxide-ZA"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_gnjcf",
+                          "name": "u_Oxide-ZA",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "profile",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uptres",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI API",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_6cs3g9",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "HopToDesk"
+                              },
+                              "profile": {
+                                "id": "t2_10m90giv",
+                                "name": "Oxide-ZA"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uptres",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "thumbnail",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uptres",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI API",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_6cs3g9",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "HopToDesk"
+                              },
+                              "profile": {
+                                "id": "t2_10m90giv",
+                                "name": "Oxide-ZA"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 1,
+                            "relativePosition": 1
+                          },
+                          "post": {
+                            "id": "t3_1uptres",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI API",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_6cs3g9",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "HopToDesk"
+                          },
+                          "profile": {
+                            "id": "t2_10m90giv",
+                            "name": "Oxide-ZA"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqmm2h",
+                        "createdAt": "2026-07-08T08:26:18.616000+0000",
+                        "postTitle": "OpenAI Platform or Claude Console?",
+                        "url": "https://www.reddit.com/r/SideProject/comments/1uqmm2h/openai_platform_or_claude_console/",
+                        "content": {
+                          "markdown": "I'm going to use one of them for my software's AI Agent  \n  \nWhich one do you recommend me to use in the long run?",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"I'm going to use one of them for my software's AI Agent\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Which one do you recommend me to use in the long run?\"}],\"e\":\"par\"}]}",
+                          "html": "I'm going to use one of them for my software's AI Agent  \nWhich one do you recommend me to use in the long run?",
+                          "preview": "I'm going to use one of them for my software's AI Agent Which one do you recommend me to use in the long run?"
+                        },
+                        "domain": "self.SideProject",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 5,
+                        "commentCount": 12,
+                        "authorInfo": {
+                          "id": "t2_16ytgmzay4",
+                          "name": "Tough_Cell8624",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "suggestedCommentSort": "CONFIDENCE",
+                        "permalink": "/r/SideProject/comments/1uqmm2h/openai_platform_or_claude_console/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_2w2vn",
+                          "name": "SideProject",
+                          "prefixedName": "r/SideProject",
+                          "isQuarantined": false,
+                          "title": "r/SideProject - A community for sharing side projects",
+                          "type": "PUBLIC",
+                          "subscribersCount": 772284,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_2w2vn/styles/communityIcon_2rp6f1udtz7g1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=f5b995fd34f6901d303baba0af314741d9967647",
+                            "primaryColor": "#1A365D",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_2w2vn/styles/bannerBackgroundImage_ixvnc21itz7g1.png?frame=1&auto=webp&s=6d5b769134390ed61625fe059215cc3c6d9835b6"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/SideProject/comments/1uqmm2h/openai_platform_or_claude_console/",
+                          "expiresAt": "2026-07-09T10:42:17.995162+0000"
+                        },
+                        "upvoteRatio": 0.8571428571428571,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2w2vn",
+                          "name": "SideProject",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "community",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uqmm2h",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2w2vn",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SideProject"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqmm2h",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "post",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uqmm2h",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2w2vn",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SideProject"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_c8vecl",
+                          "name": "u_Tough_Cell8624",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "profile",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uqmm2h",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2w2vn",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SideProject"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqmm2h",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "thumbnail",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1uqmm2h",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2w2vn",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SideProject"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 2,
+                            "relativePosition": 2
+                          },
+                          "post": {
+                            "id": "t3_1uqmm2h",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI Platform or Claude Console?",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_2w2vn",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "SideProject"
+                          },
+                          "profile": {
+                            "id": "t2_16ytgmzay4",
+                            "name": "Tough_Cell8624"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqmmge",
+                        "createdAt": "2026-07-08T08:26:53.957000+0000",
+                        "postTitle": "OpenAI Platform or Claude Console?",
+                        "url": "https://www.reddit.com/r/vibecoding/comments/1uqmmge/openai_platform_or_claude_console/",
+                        "content": {
+                          "markdown": "I'm going to use one of them for my software's AI Agent  \n  \nWhich one do you recommend me to use in the long run?",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"I'm going to use one of them for my software's AI Agent\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Which one do you recommend me to use in the long run?\"}],\"e\":\"par\"}]}",
+                          "html": "I'm going to use one of them for my software's AI Agent  \nWhich one do you recommend me to use in the long run?",
+                          "preview": "I'm going to use one of them for my software's AI Agent Which one do you recommend me to use in the long run?"
+                        },
+                        "domain": "self.vibecoding",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 2,
+                        "authorInfo": {
+                          "id": "t2_16ytgmzay4",
+                          "name": "Tough_Cell8624",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/vibecoding/comments/1uqmmge/openai_platform_or_claude_console/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_djga4z",
+                          "name": "vibecoding",
+                          "prefixedName": "r/vibecoding",
+                          "isQuarantined": false,
+                          "title": "vibecoding",
+                          "type": "PUBLIC",
+                          "subscribersCount": 306668,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_djga4z/styles/communityIcon_d3jghm1vyrhe1.PNG?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=0517e6fe31934669c87fb016b7a2e03411d2ff67",
+                            "primaryColor": "#E31C90",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_djga4z/styles/bannerBackgroundImage_9s2joe2jqyhe1.jpg?frame=1&auto=webp&format=pjpg&s=6bc01cdc5f3d7f552c9c72419400aa173a3cdf5b"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "[discord.gg/vibecoding](http://discord.gg/vibecoding)",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"discord.gg/vibecoding\",\"u\":\"http://discord.gg/vibecoding\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "discord",
+                              "url": "https://emoji.redditmedia.com/egxbk4ufgl2h1_t5_djga4z/discord"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/vibecoding/comments/1uqmmge/openai_platform_or_claude_console/",
+                          "expiresAt": "2026-07-09T10:42:17.995158+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_djga4z",
+                          "name": "vibecoding",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "community",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqmmge",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_djga4z",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "vibecoding"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqmmge",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "post",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqmmge",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_djga4z",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "vibecoding"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_c8vecl",
+                          "name": "u_Tough_Cell8624",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "profile",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqmmge",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_djga4z",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "vibecoding"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqmmge",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "thumbnail",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uqmmge",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_djga4z",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "vibecoding"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 3,
+                            "relativePosition": 3
+                          },
+                          "post": {
+                            "id": "t3_1uqmmge",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI Platform or Claude Console?",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_djga4z",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "vibecoding"
+                          },
+                          "profile": {
+                            "id": "t2_16ytgmzay4",
+                            "name": "Tough_Cell8624"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqml79",
+                        "createdAt": "2026-07-08T08:24:53.825000+0000",
+                        "postTitle": "OpenAI Platform or Claude Console?",
+                        "url": "https://www.reddit.com/r/SaaS/comments/1uqml79/openai_platform_or_claude_console/",
+                        "content": {
+                          "markdown": "I'm going to use one of them for my software's AI Agent  \n  \nWhich one do you recommend me to use in the long run?",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"I'm going to use one of them for my software's AI Agent\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Which one do you recommend me to use in the long run?\"}],\"e\":\"par\"}]}",
+                          "html": "I'm going to use one of them for my software's AI Agent  \nWhich one do you recommend me to use in the long run?",
+                          "preview": "I'm going to use one of them for my software's AI Agent Which one do you recommend me to use in the long run?"
+                        },
+                        "domain": "self.SaaS",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 5,
+                        "authorInfo": {
+                          "id": "t2_16ytgmzay4",
+                          "name": "Tough_Cell8624",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/SaaS/comments/1uqml79/openai_platform_or_claude_console/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_2qkq6",
+                          "name": "SaaS",
+                          "prefixedName": "r/SaaS",
+                          "isQuarantined": false,
+                          "title": "Software as a Service",
+                          "type": "PUBLIC",
+                          "subscribersCount": 747145,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_2qkq6/styles/communityIcon_u7ddkuay2xn21.jpg?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=7e3bc53328273d2705ce8e625fd4237b0da4519a",
+                            "primaryColor": "#7193FF",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_2qkq6/styles/bannerBackgroundImage_14vtchci2xn21.jpg?frame=1&auto=webp&format=pjpg&s=4e566a8c8e1bda1de2b6b5341257a8348b9e6e40"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "Cleanup",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"Cleanup\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "table_flip",
+                              "url": "https://emoji.redditmedia.com/l7sfl3z0aezz_t5_3nqvj/table_flip"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/SaaS/comments/1uqml79/openai_platform_or_claude_console/",
+                          "expiresAt": "2026-07-09T10:42:17.995117+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2qkq6",
+                          "name": "SaaS",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "community",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uqml79",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqml79",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "post",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uqml79",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_c8vecl",
+                          "name": "u_Tough_Cell8624",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "profile",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uqml79",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqml79",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "thumbnail",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1uqml79",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qkq6",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "SaaS"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 4,
+                            "relativePosition": 4
+                          },
+                          "post": {
+                            "id": "t3_1uqml79",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI Platform or Claude Console?",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_2qkq6",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "SaaS"
+                          },
+                          "profile": {
+                            "id": "t2_16ytgmzay4",
+                            "name": "Tough_Cell8624"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqmlrg",
+                        "createdAt": "2026-07-08T08:25:49.298000+0000",
+                        "postTitle": "OpenAI Platform or Claude Console?",
+                        "url": "https://www.reddit.com/r/ClaudeCode/comments/1uqmlrg/openai_platform_or_claude_console/",
+                        "content": {
+                          "markdown": "I'm going to use one of them for my software's AI Agent  \n  \nWhich one do you recommend me to use in the long run?",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"I'm going to use one of them for my software's AI Agent\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Which one do you recommend me to use in the long run?\"}],\"e\":\"par\"}]}",
+                          "html": "I'm going to use one of them for my software's AI Agent  \nWhich one do you recommend me to use in the long run?",
+                          "preview": "I'm going to use one of them for my software's AI Agent Which one do you recommend me to use in the long run?"
+                        },
+                        "domain": "self.ClaudeCode",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 3,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Question",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Question\"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "250d128e-990b-11f0-bd32-3e585aa937c5",
+                            "isEditable": false,
+                            "backgroundColor": "#63B3ED"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_16ytgmzay4",
+                          "name": "Tough_Cell8624",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/ClaudeCode/comments/1uqmlrg/openai_platform_or_claude_console/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_dp6k3k",
+                          "name": "ClaudeCode",
+                          "prefixedName": "r/ClaudeCode",
+                          "isQuarantined": false,
+                          "title": "ClaudeCode",
+                          "type": "PUBLIC",
+                          "subscribersCount": 346080,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_dp6k3k/styles/communityIcon_g3ehwz8f4sbf1.jpg?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=f2d1a7b5dfb0a41df9b2a117d5ddc539188db307",
+                            "primaryColor": "#CD7E5C",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_dp6k3k/styles/bannerBackgroundImage_b4p0taca3sbf1.png?frame=1&auto=webp&s=8aa4d70595128639035d7599454875897db09c4a",
+                            "legacyPrimaryColor": "#FF4500"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "**weekly limit reached.**",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"f\":[[1,0,21]],\"t\":\"weekly limit reached.\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "claude",
+                              "url": "https://emoji.redditmedia.com/d9f9cte1i8sf1_t5_dp6k3k/claude"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/ClaudeCode/comments/1uqmlrg/openai_platform_or_claude_console/",
+                          "expiresAt": "2026-07-09T10:42:17.995199+0000"
+                        },
+                        "upvoteRatio": 0.6666666666666666,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_dp6k3k",
+                          "name": "ClaudeCode",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "community",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqmlrg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqmlrg",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "post",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqmlrg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_c8vecl",
+                          "name": "u_Tough_Cell8624",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "profile",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqmlrg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqmlrg",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "thumbnail",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1uqmlrg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "OpenAI Platform or Claude Console?",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_16ytgmzay4",
+                                "name": "Tough_Cell8624"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 5,
+                            "relativePosition": 5
+                          },
+                          "post": {
+                            "id": "t3_1uqmlrg",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "OpenAI Platform or Claude Console?",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_dp6k3k",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ClaudeCode"
+                          },
+                          "profile": {
+                            "id": "t2_16ytgmzay4",
+                            "name": "Tough_Cell8624"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1ur0pt6",
+                        "createdAt": "2026-07-08T18:11:23.424000+0000",
+                        "editedAt": "2026-07-08T18:27:12.462000+0000",
+                        "postTitle": "AssistantMD now supports OpenAI subscriptions",
+                        "url": "https://www.reddit.com/r/ObsidianAI/comments/1ur0pt6/assistantmd_now_supports_openai_subscriptions/",
+                        "content": {
+                          "markdown": "Just released, v0.6.10: You can use your ChatGPT / Codex subscription with AssistantMD. The OpenAI provider supports logging in with OAuth or device code. Please note that third-party OAuth is not officially supported by OpenAI, but they have been turning a blind-eye to it since embracing OpenClaw.\n\nI have been running my instance on subscription for three weeks with daily use and so far so good. OpenAI could change their stance at any time, so this new feature is considered experimental - use at your own risk. It includes a global kill-switch and opt-in API fallback setting.\n\nRelease notes: [https://github.com/DodgyBadger/AssistantMD/pull/50](https://github.com/DodgyBadger/AssistantMD/pull/50)\n\n\n\\---\n\nAssistantMD: Markdown-native AI workbench. A bit like NotebookLM, but self-hosted and super customizable. Use alongside Obsidian or other markdown editor.",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"Just released, v0.6.10: You can use your ChatGPT / Codex subscription with AssistantMD. The OpenAI provider supports logging in with OAuth or device code. Please note that third-party OAuth is not officially supported by OpenAI, but they have been turning a blind-eye to it since embracing OpenClaw.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"I have been running my instance on subscription for three weeks with daily use and so far so good. OpenAI could change their stance at any time, so this new feature is considered experimental - use at your own risk. It includes a global kill-switch and opt-in API fallback setting.\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"Release notes: \"},{\"e\":\"link\",\"t\":\"https://github.com/DodgyBadger/AssistantMD/pull/50\",\"u\":\"https://github.com/DodgyBadger/AssistantMD/pull/50\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"---\"}],\"e\":\"par\"},{\"c\":[{\"e\":\"text\",\"t\":\"AssistantMD: Markdown-native AI workbench. A bit like NotebookLM, but self-hosted and super customizable. Use alongside Obsidian or other markdown editor.\"}],\"e\":\"par\"}]}",
+                          "html": "Just released, v0.6.10: You can use your ChatGPT / Codex subscription with AssistantMD. The OpenAI provider supports logging in with OAuth or device code. Please note that third-party OAuth is not officially supported by OpenAI, but they have been turning a blind-eye to it since embracing OpenClaw.\nI have been running my instance on subscription for three weeks with daily use and so far so good. OpenAI could change their stance at any time, so this new feature is considered experimental - use at your own risk. It includes a global kill-switch and opt-in API fallback setting.\nRelease notes: https://github.com/DodgyBadger/AssistantMD/pull/50\n---\nAssistantMD: Markdown-native AI workbench. A bit like NotebookLM, but self-hosted and super customizable. Use alongside Obsidian or other markdown editor.",
+                          "preview": "Just released, v0.6.10: You can use your ChatGPT / Codex subscription with AssistantMD. The OpenAI provider supports logging in with OAuth or device code. Please note that third-party OAuth is not officially supported by OpenAI, but they have been turning a blind-eye to it since embracing OpenClaw. "
+                        },
+                        "domain": "self.ObsidianAI",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 2,
+                        "commentCount": 0,
+                        "authorInfo": {
+                          "id": "t2_7igfos5e",
+                          "name": "MaskedSmizer",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_2xqczn/styles/profileIcon_4ib6zismchub1.jpeg?frame=1&auto=webp&crop=256%3A256%2Csmart&s=ba84d9feccd057962bce1a9bc3507ce6dd14df1b",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_2xqczn/styles/profileIcon_4ib6zismchub1.jpeg?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=11668c3840b6b052de322d5612fb9441a8036733",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "media": {
+                          "previewMediaId": "9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM",
+                          "still": {
+                            "source": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?auto=webp&s=bf37ac0b78e31d7a2d14617da17a7390f0da0ac2",
+                              "dimensions": {
+                                "width": 1200,
+                                "height": 600
+                              }
+                            },
+                            "small": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?width=108&auto=webp&s=76be4a0a6147013ad3e7a65f84a7788700bcf670",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 54
+                              }
+                            },
+                            "medium": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?width=216&auto=webp&s=101b699191f14754305f27b38361cbdf8b72b504",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 108
+                              }
+                            },
+                            "large": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?width=320&auto=webp&s=3c2368093b304416988831174bbaa099e5d24c2f",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 160
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?width=640&auto=webp&s=784da617b0032b39f65d201f2fcefe294b6f6545",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 320
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?width=960&auto=webp&s=d07b0db1a677428620fa8beba817ca4a4ece1deb",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 480
+                              }
+                            },
+                            "xxxlarge": {
+                              "url": "https://external-preview.redd.it/9WZz56exvkTKs31rn8ss4NM2t8gx0-HDP7e1bBsoVuM.png?width=1080&auto=webp&s=ae66bf43a847af7dd07fde75255822c25b7bdb55",
+                              "dimensions": {
+                                "width": 1080,
+                                "height": 540
+                              }
+                            }
+                          }
+                        },
+                        "permalink": "/r/ObsidianAI/comments/1ur0pt6/assistantmd_now_supports_openai_subscriptions/",
+                        "isSelfPost": true,
+                        "postHint": "SELF",
+                        "subreddit": {
+                          "id": "t5_gmuq3b",
+                          "name": "ObsidianAI",
+                          "prefixedName": "r/ObsidianAI",
+                          "isQuarantined": false,
+                          "title": "ObsidianAI",
+                          "type": "PUBLIC",
+                          "subscribersCount": 129,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_gmuq3b/styles/communityIcon_vr2btfakfujg1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=bb04d27854a33a16cabc3f7810754d1e4f060542",
+                            "primaryColor": "#7B00FF",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_gmuq3b/styles/bannerBackgroundImage_mk2e5bq0bujg1.png?frame=1&auto=webp&s=246683cf88d3b4f694088907bfd84ee27d93f538"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/ObsidianAI/comments/1ur0pt6/assistantmd_now_supports_openai_subscriptions/",
+                          "expiresAt": "2026-07-09T10:42:17.995174+0000"
+                        },
+                        "upvoteRatio": 1,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_gmuq3b",
+                          "name": "ObsidianAI",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "community",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0pt6",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "AssistantMD now supports OpenAI subscriptions",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_gmuq3b",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ObsidianAI"
+                              },
+                              "profile": {
+                                "id": "t2_7igfos5e",
+                                "name": "MaskedSmizer"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1ur0pt6",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "post",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0pt6",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "AssistantMD now supports OpenAI subscriptions",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_gmuq3b",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ObsidianAI"
+                              },
+                              "profile": {
+                                "id": "t2_7igfos5e",
+                                "name": "MaskedSmizer"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_2xqczn",
+                          "name": "u_MaskedSmizer",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "profile",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0pt6",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "AssistantMD now supports OpenAI subscriptions",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_gmuq3b",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ObsidianAI"
+                              },
+                              "profile": {
+                                "id": "t2_7igfos5e",
+                                "name": "MaskedSmizer"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1ur0pt6",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "OpenAI",
+                                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "thumbnail",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1ur0pt6",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "AssistantMD now supports OpenAI subscriptions",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_gmuq3b",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ObsidianAI"
+                              },
+                              "profile": {
+                                "id": "t2_7igfos5e",
+                                "name": "MaskedSmizer"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "OpenAI",
+                            "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 6,
+                            "relativePosition": 6
+                          },
+                          "post": {
+                            "id": "t3_1ur0pt6",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "AssistantMD now supports OpenAI subscriptions",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_gmuq3b",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ObsidianAI"
+                          },
+                          "profile": {
+                            "id": "t2_7igfos5e",
+                            "name": "MaskedSmizer"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "hasPreviousPage": false,
+              "endCursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiMlwiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIyXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaFwiOlwiN1wifSIsImV4cGVyaWVuY2Vfc2VsZWN0aW9uIjoicG9zdCIsImV4cGVyaWVuY2VfdmVyc2lvbiI6ImRlZmF1bHQiLCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaCI6IjcifQ=="
+            }
+          },
+          "top": {
+            "filterBar": [
+              {
+                "presentation": {
+                  "id": "post_sort",
+                  "title": "排序方式",
+                  "buttonText": "热门",
+                  "options": [
+                    {
+                      "text": "相关性",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "热门",
+                      "isSelected": true
+                    },
+                    {
+                      "text": "最受欢迎",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "新",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "评论计数",
+                      "isSelected": false
+                    }
+                  ]
+                },
+                "behaviors": [
+                  {
+                    "id": "relevance",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "RELEVANCE"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "OpenAI",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "relevance",
+                          "query": "OpenAI",
+                          "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "hot",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "HOT"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "OpenAI",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "hot",
+                          "query": "OpenAI",
+                          "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "top",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "TOP"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "OpenAI",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "top",
+                          "query": "OpenAI",
+                          "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "new",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "NEW"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "OpenAI",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "new",
+                          "query": "OpenAI",
+                          "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "comments",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "COMMENTS"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "OpenAI",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "comments",
+                          "query": "OpenAI",
+                          "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "navigation": {
+              "listPresentation": {
+                "items": [
+                  {
+                    "id": "all",
+                    "text": "全部",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "posts",
+                    "text": "帖子",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "communities",
+                    "text": "社区",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "comments",
+                    "text": "评论",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "media",
+                    "text": "媒体",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "people",
+                    "text": "个人资料",
+                    "isSelected": false
+                  }
+                ]
+              },
+              "behaviors": [
+                {
+                  "id": "all",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "all",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "OpenAI",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "OpenAI",
+                        "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "all"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "isNoOpBehavior": true
+                },
+                {
+                  "id": "communities",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "communities",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "OpenAI",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "OpenAI",
+                        "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "communities"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "comments",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "comments",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "OpenAI",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "OpenAI",
+                        "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "comments"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "media",
+                  "filters": [
+                    {
+                      "key": "post_types",
+                      "value": "image,gif,video,gallery"
+                    },
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "media",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "OpenAI",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "OpenAI",
+                        "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "media"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "people",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "people",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "OpenAI",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "OpenAI",
+                        "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "people"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "telemetry": {
+            "trackingContext": {
+              "search": {
+                "isNsfw": false,
+                "range": "month",
+                "safeSearch": "UNAVAILABLE",
+                "scope": {
+                  "path": "/",
+                  "type": "GLOBAL"
+                },
+                "sort": "HOT",
+                "query": "OpenAI",
+                "queryID": "47bbb516-e3f9-4dc9-ae0d-ee07b639782a"
+              },
+              "actionInfo": {
+                "paneName": "posts"
+              }
+            },
+            "events": [
+              {
+                "source": "search",
+                "action": "load",
+                "noun": "feed",
+                "trigger": "LOAD"
+              },
+              {
+                "source": "search",
+                "action": "view",
+                "noun": "dwell",
+                "trigger": "DWELL",
+                "triggerConfiguration": {
+                  "timerDurations": [
+                    3000,
+                    5000,
+                    10000,
+                    15000,
+                    30000
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

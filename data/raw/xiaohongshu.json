@@ -1,0 +1,4277 @@
+{
+  "runId": "01KX2PBRHWXSGV3DXSRB1GZN7Q",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/xiaohongshu/app_v2/search_notes",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "keyword": "OpenAI"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "ab7f77d4-483d-4816-b507-8bee5d574337",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-08 22:42:17",
+      "time_stamp": 1783575737,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Xiaohongshu-App-V2-API/search_notes_api_v1_xiaohongshu_app_v2_search_notes_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/ab7f77d4-483d-4816-b507-8bee5d574337?sign=5e99fa05d89d32fc65b84d9631a291432811f88be8476ab0093b0ff5aeba9810",
+      "router": "/api/v1/xiaohongshu/app_v2/search_notes",
+      "params": {
+        "keyword": "OpenAI"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T05:42:13.757Z",
+  "startedAt": "2026-07-09T05:42:14.469Z",
+  "completedAt": "2026-07-09T05:42:18.085Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2PBRHWXSGV3DXSRB1GZN7Q -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "success": true,
+    "data": {
+      "request_dqa_instant": false,
+      "ai_mode_enable": false,
+      "items": [
+        {
+          "mix_track_id": "NOTE__69d8ac560000000022028c0f__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI现在的coding门槛已经next level",
+            "click_score": 0.08939498662948608,
+            "result_from": "",
+            "collected_count": 230,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 107,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g0k031up98cj6hu005p8068uh4uscplki8do",
+                "height": 2390,
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031up98cj6hu005p8068uh4uscplki8do?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=07197348a3ed15fd0130ca244d89b9f6&t=6a4f34b8&origin=0",
+                "width": 1792,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031up98cj6hu005p8068uh4uscplki8do?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=07197348a3ed15fd0130ca244d89b9f6&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031up98cj6hu005p8068uh4uscplki8do",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "spectrum/1040g0k031up8rcdd2s005p8068uh4usc6v3nsco",
+                "height": 1572,
+                "url": "",
+                "width": 1179,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031up8rcdd2s005p8068uh4usc6v3nsco?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=93e4e97f53fab9cdc1a007d2046a4844&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031up8rcdd2s005p8068uh4usc6v3nsco",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "spectrum/1040g0k031up8rcdd2s0g5p8068uh4uscmvr08n0",
+                "height": 1532,
+                "trace_id": "spectrum/1040g0k031up8rcdd2s0g5p8068uh4uscmvr08n0",
+                "width": 1149,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031up8rcdd2s0g5p8068uh4uscmvr08n0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=13ca0d6ed9591998fbbbb1c90e56443d&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031up8rcdd2s105p8068uh4uscrjqqh3g",
+                "height": 1660,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031up8rcdd2s105p8068uh4uscrjqqh3g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=d789dd632f38d687095ed9ef4006192a&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031up8rcdd2s105p8068uh4uscrjqqh3g",
+                "url": ""
+              }
+            ],
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAE1zJXNs5J7qoTEXUF6ohcR179cnqCS/bNXfyDBy5HNrP8C9tvHkzYNARaf/k5fIP1Bj1QZGUkIfow7iuXOJioZcInD2z8ZoQ"
+              },
+              {
+                "text_en": "04-10",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "04-10"
+              }
+            ],
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/65237d5c8fc6500001eb4d39.jpg?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "userid": "6500323d0000000004027b8c",
+              "nickname": "Norah学姐的大厂日记",
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "red_id": "63071836318"
+            },
+            "id": "69d8ac560000000022028c0f",
+            "timestamp": 1775807574,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "249"
+            },
+            "update_time": 1775810121000,
+            "liked_count": 249,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6500323d0000000004027b8c\",\"author_name\":\"Norah学姐的大厂日记\"}",
+            "desc": "深扒了O家最新技术考核，北美CS党如果还在死记硬背真的容易当炮灰，现在的门槛绝对是Next Level。 🌳 Tree",
+            "xsec_token": "YBoQTYaCHzGHcwpEHp8X-bT-aN4gUb8SOz5bEh7Ld78fI=",
+            "last_update_time": 0,
+            "shared_count": 49,
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__68be3bab000000001d0045f6__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "入职 OpenAI 六个月的感受",
+            "click_score": 0.06474273651838303,
+            "result_from": "",
+            "collected_count": 320,
+            "comments_count": 146,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "note_attributes": [],
+            "images_list": [
+              {
+                "height": 1600,
+                "need_load_original_image": false,
+                "fileid": "1040g2sg31m5esm2m527g5nbanl808i6ji2b4lj0",
+                "width": 1200,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/1040g2sg31m5esm2m527g5nbanl808i6ji2b4lj0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=d2ce3f44043192f7d4cbb8223a6d69cb&t=6a4f34b8&origin=0",
+                "trace_id": "1040g2sg31m5esm2m527g5nbanl808i6ji2b4lj0",
+                "url": "https://sns-na-i27.xhscdn.com/1040g2sg31m5esm2m527g5nbanl808i6ji2b4lj0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=d2ce3f44043192f7d4cbb8223a6d69cb&t=6a4f34b8&origin=0"
+              }
+            ],
+            "type": "normal",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAJ7KnQ375ueITFCi8s7qa8q9O+3GsEyBdFnAdiZMxJit6TT8XFCBO2NMnXXQRm/CHfb3eBmpyogml0zWEP2X/9mOWd9SnpA/d"
+              },
+              {
+                "text_en": "2025-09-08",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "2025-09-08"
+              }
+            ],
+            "user": {
+              "red_official_verified": false,
+              "userid": "5d6abd5000000000010048d3",
+              "track_duration": 0,
+              "nickname": "阿布",
+              "followed": false,
+              "red_id": "986385088",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30s8eiipeig005nbanl808i6jbjun9mg?imageView2/2/w/80/format/jpg",
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false
+            },
+            "id": "68be3bab000000001d0045f6",
+            "timestamp": 1757297579,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "695"
+            },
+            "xsec_token": "YBljswb7ks1VdVJwWzDKXhhFekwlhzwTJsy7ltZuObFH4=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5d6abd5000000000010048d3\",\"author_name\":\"阿布\"}",
+            "liked_count": 695,
+            "update_time": 1757297619000,
+            "desc": "入职已经 6 个月了，以前在某个大厂，这里的人和事跟以前很不一样。也算是过了蜜月期所以尽量公正的记录下自己感受到的",
+            "debug_info_str": "",
+            "last_update_time": 0,
+            "shared_count": 174,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "mix_track_id": "NOTE__69fc18cf000000003601f962__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "update_time": 1778239287000,
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAGaGglef533fq2TLy9+/u6tc3WxSCeBcr2jdpQq3uNIgqwwh7YzGGXtogi5hpZD83zyxx/z43FZqtDqkgSEo9nJABB8yUNNhg"
+              },
+              {
+                "text_en": "05-07",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "05-07"
+              }
+            ],
+            "extract_text_enabled": 0,
+            "id": "69fc18cf000000003601f962",
+            "last_update_time": 0,
+            "cover_image_index": 0,
+            "has_music": false,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "note_collection",
+                    "cooperate_binds",
+                    "rec_next_infos",
+                    "video_marks",
+                    "product_review",
+                    "related_search",
+                    "video_goods_cards",
+                    "cooperate_comment_component",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "video_recommend_tag",
+                    "buyable_goods_card_v2",
+                    "cooperate_search_component",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "related_recommend",
+                    "next_note_guide",
+                    "widgets_ndb",
+                    "pgy_bbc_exp",
+                    "brand_max_trailer",
+                    "super_activity",
+                    "note_nice_guide",
+                    "pin_search_highlights",
+                    "widgets_enhance",
+                    "packed_goods",
+                    "packed_buyable_goods",
+                    "widgets_ncb",
+                    "note_nice_compound",
+                    "live_shooting_flag",
+                    "widgets_nbb",
+                    "poi_declare",
+                    "async_group"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "guide_post",
+                    "video_foot_bar",
+                    "follow_guide",
+                    "share_to_msg",
+                    "note_share_prompt_v1",
+                    "note_share_prompt_v2",
+                    "group_share",
+                    "share_guide_bubble",
+                    "goods_enhance_component",
+                    "guide_navigator",
+                    "sync_group"
+                  ]
+                }
+              ]
+            },
+            "type": "video",
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "collected_count": 1691,
+            "niced": false,
+            "user": {
+              "userid": "60963da8000000000100b971",
+              "red_official_verified": false,
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "nickname": "36氪",
+              "show_red_official_verify_icon": false,
+              "red_id": "36krcaijing",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/63d4906d7e6506b15327c988.jpg?imageView2/2/w/80/format/jpg"
+            },
+            "shared_count": 2062,
+            "comments_count": 949,
+            "video_duration": "4:41",
+            "liked": false,
+            "widgets_context": "{\"video\":true,\"origin_video_key\":\"spectrum/1040g0jg31vrs3nal56005o4m7mk09ebhm7dc5qg\",\"flags\":{\"sound_track\":true},\"author_id\":\"60963da8000000000100b971\",\"author_name\":\"36氪\",\"video_duration\":281}",
+            "debug_info_str": "",
+            "nice_count": 0,
+            "note_attributes": [],
+            "video_info_v2": {
+              "capa": {
+                "is_user_select": false,
+                "is_upload": false,
+                "frame_ts": 0,
+                "duration": 281
+              },
+              "consumer": {
+                "can_super_resolution": false
+              },
+              "image": {
+                "thumbnail_dim": "https://sns-na-i27.xhscdn.com/frame/110/0/01e9fc17ea170bc50010000000019e00c139c9_0.webp?imageView2/2/w/720/h/720/format/webp&ap=5&sc=SRH_SPRT&sign=fe14fbe901d481aa18f71567b2a38ca3&t=6a4f34b8&origin=0",
+                "thumbnail": "https://sns-na-i27.xhscdn.com/frame/110/0/01e9fc17ea170bc50010000000019e00c139c9_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=5&sc=SRH_ORG&sign=fe14fbe901d481aa18f71567b2a38ca3&t=6a4f34b8&origin=0"
+              },
+              "media": {
+                "stream": {
+                  "h265": [
+                    {
+                      "audio_bitrate": 0,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/3032/01e9fc17ea170bc5010370019e00f374b6_3032.m4s?sign=4cf656dce5925ec5f7e5dd55de3c9316&t=6a53d1f8",
+                      "stream_type": 3032,
+                      "weight": 48,
+                      "volume": 0,
+                      "video_duration": 281920,
+                      "duration": 281920,
+                      "vmaf": -1,
+                      "psnr": 41.97800064086914,
+                      "audio_channels": 0,
+                      "video_codec": "hevc",
+                      "default_stream": 1,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3032/01e9fc17ea170bc5010370019e00f374b6_3032.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3032/01e9fc17ea170bc5010370019e00f374b6_3032.m4s"
+                      ],
+                      "video_bitrate": 278203,
+                      "opaque1": {
+                        "roiWeight": "82.446955",
+                        "quality_grade_fallback": "720P",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "720p HD",
+                        "pcdn_302_flag": "false",
+                        "quality_grade_name_v2": "720P",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"86.62\"}",
+                        "use_pcdn": "1",
+                        "stream_index": "9999",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_720P",
+                        "quality_index": "130",
+                        "quality_grade_name": "720p HD"
+                      },
+                      "fps": 25,
+                      "size": 9803907,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "height": 1280,
+                      "audio_duration": 0,
+                      "stream_desc": "R265_FMP4_720P_3032_IOS",
+                      "quality_type": "HD",
+                      "width": 720,
+                      "avg_bitrate": 278203,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 0,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/3033/01e9fc17ea170bc5010370019e00e92f3b_3033.m4s?sign=228320c4e101796485b72fa9d3e4ed9f&t=6a53d1f8",
+                      "weight": 49,
+                      "stream_type": 3033,
+                      "video_duration": 281920,
+                      "volume": 0,
+                      "duration": 281920,
+                      "vmaf": -1,
+                      "psnr": 42.62200164794922,
+                      "audio_channels": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3033/01e9fc17ea170bc5010370019e00e92f3b_3033.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3033/01e9fc17ea170bc5010370019e00e92f3b_3033.m4s"
+                      ],
+                      "default_stream": 0,
+                      "video_codec": "hevc",
+                      "video_bitrate": 396221,
+                      "fps": 25,
+                      "opaque1": {
+                        "quality_grade_fallback": "1080P",
+                        "roiWeight": "84.386685",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "1080p HD",
+                        "pcdn_302_flag": "false",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"90.33\"}",
+                        "quality_grade_name_v2": "1080P",
+                        "use_pcdn": "1",
+                        "stream_index": "9998",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_1080P",
+                        "quality_index": "110",
+                        "quality_grade_name": "1080p HD"
+                      },
+                      "size": 13962855,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "height": 1920,
+                      "audio_duration": 0,
+                      "width": 1080,
+                      "quality_type": "FHD",
+                      "stream_desc": "R265_FMP4_1080P_3033_ios",
+                      "avg_bitrate": 396221,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 0,
+                      "stream_type": 3035,
+                      "weight": 50,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/3035/01e9fc17ea170bc5010370019e01661a87_3035.m4s?sign=a43718a2435baa5ae4cb737f5df61d19&t=6a53d1f8",
+                      "video_duration": 281920,
+                      "volume": 0,
+                      "duration": 281920,
+                      "vmaf": -1,
+                      "psnr": 43.16299819946289,
+                      "audio_channels": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/3035/01e9fc17ea170bc5010370019e01661a87_3035.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/3035/01e9fc17ea170bc5010370019e01661a87_3035.m4s"
+                      ],
+                      "video_codec": "hevc",
+                      "default_stream": 0,
+                      "video_bitrate": 453810,
+                      "opaque1": {
+                        "roiWeight": "84.91285",
+                        "quality_grade_fallback": "1080P",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "1080p HD",
+                        "pcdn_302_flag": "false",
+                        "quality_grade_name_v2": "1080P",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"91.72\"}",
+                        "use_pcdn": "1",
+                        "stream_index": "9997",
+                        "quality_grade": "HD_1080P",
+                        "pcdn_supplier": "",
+                        "quality_index": "100",
+                        "quality_grade_name": "1080p HD"
+                      },
+                      "fps": 25,
+                      "size": 15992286,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "audio_duration": 0,
+                      "height": 1920,
+                      "stream_desc": "R265_FMP4_1080P_3035_ios",
+                      "quality_type": "FHD",
+                      "width": 1080,
+                      "avg_bitrate": 453810,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "av1": [],
+                  "h264": [
+                    {
+                      "audio_bitrate": 56004,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/258/01e9fc17ea170bc5010370019e00c19137_258.mp4?sign=93f7f19d0821f2455880f9ee59258ea1&t=6a53d1f8",
+                      "weight": 47,
+                      "stream_type": 258,
+                      "volume": 0,
+                      "video_duration": 281920,
+                      "duration": 281920,
+                      "vmaf": -1,
+                      "psnr": 0,
+                      "video_codec": "h264",
+                      "audio_channels": 2,
+                      "default_stream": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/258/01e9fc17ea170bc5010370019e00c19137_258.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/258/01e9fc17ea170bc5010370019e00c19137_258.mp4"
+                      ],
+                      "video_bitrate": 1178275,
+                      "fps": 25,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "stream_index": "10000",
+                        "use_pcdn": "0",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "720P",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "720p HD"
+                      },
+                      "size": 43670681,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "stream_desc": "X264_MP4",
+                      "height": 1280,
+                      "width": 720,
+                      "quality_type": "HD",
+                      "audio_duration": 281920,
+                      "avg_bitrate": 1239236,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "h266": []
+                },
+                "user_level": 0,
+                "audio_info": {
+                  "stream_types": [
+                    103,
+                    102,
+                    101
+                  ]
+                },
+                "audio_stream": {
+                  "AAC": [
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/103/01e9fc17ea170bc5010370019e00c5ea71_103.m4a?sign=7c0efc34c166c4de3eb22a611646e046&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/103/01e9fc17ea170bc5010370019e00c5ea71_103.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/103/01e9fc17ea170bc5010370019e00c5ea71_103.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1"
+                      },
+                      "weight": 59,
+                      "audio_duration": 281920,
+                      "avg_bitrate": 193611,
+                      "default_stream": 0,
+                      "size": 6822879,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 193611,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 103
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/102/01e9fc17ea170bc5010370019e00c5ed25_102.m4a?sign=1cefbe56c6ee319e9e2066bab19d60a0&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/102/01e9fc17ea170bc5010370019e00c5ed25_102.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/102/01e9fc17ea170bc5010370019e00c5ed25_102.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1"
+                      },
+                      "weight": 60,
+                      "audio_duration": 281920,
+                      "avg_bitrate": 129608,
+                      "default_stream": 0,
+                      "size": 4567386,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 129608,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 102
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/101/01e9fc17ea170bc5010370019e00c5da75_101.m4a?sign=50c5b448c17829bc267c14951bc4c803&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/101/01e9fc17ea170bc5010370019e00c5da75_101.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/101/01e9fc17ea170bc5010370019e00c5da75_101.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1"
+                      },
+                      "weight": 69,
+                      "audio_duration": 281920,
+                      "avg_bitrate": 97606,
+                      "default_stream": 1,
+                      "size": 3439639,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 97606,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 101
+                    }
+                  ]
+                },
+                "video": {
+                  "biz_id": "282033635183950178",
+                  "md5": "c2dfd3234a1b8336e89fbc1a66311823",
+                  "bound": [
+                    {
+                      "y": 0,
+                      "w": 0,
+                      "x": 0,
+                      "h": 0
+                    }
+                  ],
+                  "stream_types": [
+                    258,
+                    3032,
+                    3033,
+                    3035
+                  ],
+                  "height": 1280,
+                  "width": 720,
+                  "duration": 282,
+                  "opaque1": {
+                    "loudnorm": "{\"lra\":4.2,\"htp\":0.13,\"hldn\":-15.17,\"ldn\":-15.32,\"thr\":-25.37}",
+                    "supportAbr": "1",
+                    "amend_2k": "26",
+                    "topAvgLuma": "108",
+                    "audioClsInfo": "{\"music_ratio\":0.9767815646480387,\"freesound_ratio\":0.002571887827926816,\"speech_ratio\":0.9959278407003828}",
+                    "amend_4k": "1",
+                    "rightAvgLuma": "53",
+                    "hasHumanVoice": "true",
+                    "weakNetUserFlag": "1",
+                    "domestic": "0",
+                    "audioLevInfo": "{\"audio_quality_level\":\"E\",\"mos_overall\":3.9043,\"version\":\"3.0\"}",
+                    "bottomAvgLuma": "40",
+                    "amend": "18",
+                    "videoLanguage": "[\"zh-CN\"]",
+                    "insertSubtitleLanguages": "[\"zh-CN\"]",
+                    "default_screencast_stream": "http://sns-video-zl.xhscdn.com/stream/1/110/258/01e9fc17ea170bc5010370019e00c19137_258.mp4?sign=93f7f19d0821f2455880f9ee59258ea1&t=6a53d1f8",
+                    "isSupportSubtitle": "true",
+                    "amend_mobile": "40",
+                    "hd_screencast_stream": "http://sns-video-zl.xhscdn.com/stream/1/110/179/01e9fc17ea170bc5010370019e00e94258_179.mp4?sign=9c8b9b802bb762cec3dd23ed8e10a438&t=6a53d1f8"
+                  },
+                  "biz_name": 110,
+                  "drm_type": 0,
+                  "hdr_type": 0
+                },
+                "video_id": 137918443253337020
+              }
+            },
+            "result_from": "",
+            "collected": false,
+            "click_score": 0.05894744396209717,
+            "desc": "ChatGPT造的手机什么水平？ #ChatGPT  #OpenAI  #iPhone  #AI手机  #换手机",
+            "video_preview_type": "full_vertical_screen",
+            "xsec_token": "YBngf9omTV8ua7Wn42XguOkZeZ0vWSVUBLfPoPWhXWZp0=",
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "4909"
+            },
+            "liked_count": 4909,
+            "title": "2028年量产，OpenAI手机要来了！【36氪】",
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g34o31vrs4rjris105o4m7mk09ebhl1s8rj0",
+                "height": 2022,
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31vrs4rjris105o4m7mk09ebhl1s8rj0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=6829d7b119f2b0aab5bd84ab32004efa&t=6a4f34b8&origin=0",
+                "width": 1516,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31vrs4rjris105o4m7mk09ebhl1s8rj0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=6829d7b119f2b0aab5bd84ab32004efa&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31vrs4rjris105o4m7mk09ebhl1s8rj0",
+                "need_load_original_image": false
+              }
+            ],
+            "geo_info": {
+              "distance": ""
+            },
+            "timestamp": 1778148166
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6981638d000000002202cdc4__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI新推出的CodeX应用，夯还是拉？",
+            "click_score": 0.08810881525278091,
+            "result_from": "",
+            "collected_count": 2834,
+            "comments_count": 216,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g34o31s41kd5b5e105oh8gs5413k8ihabjc0",
+                "height": 1172,
+                "need_load_original_image": false,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s41kd5b5e105oh8gs5413k8ihabjc0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=a7f35ed473feb35710f94b3f22682955&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s41kd5b5e105oh8gs5413k8ihabjc0",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s41kd5b5e105oh8gs5413k8ihabjc0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=a7f35ed473feb35710f94b3f22682955&t=6a4f34b8&origin=0"
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031s41d5li5e005oh8gs5413k8ge3vpoo",
+                "height": 1172,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s41d5li5e005oh8gs5413k8ge3vpoo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=90edb631b2db8e7717160f462c6d9d35&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s41d5li5e005oh8gs5413k8ge3vpoo",
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031s41d5li5e0g5oh8gs5413k8c9dr128",
+                "height": 1172,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s41d5li5e0g5oh8gs5413k8c9dr128?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=7c39ea828a56c7fd856bcb95f891db72&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s41d5li5e0g5oh8gs5413k8c9dr128",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031s41d5li5e105oh8gs5413k86anp8qo",
+                "height": 1172,
+                "url": "",
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s41d5li5e105oh8gs5413k86anp8qo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=585b73295b154a657a7e6c0f425fed0f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s41d5li5e105oh8gs5413k86anp8qo",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "spectrum/1040g0k031s41d5li5e1g5oh8gs5413k8rb14bm0",
+                "height": 1172,
+                "need_load_original_image": false,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s41d5li5e1g5oh8gs5413k8rb14bm0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=190a52657bc7c8fcb35a3e0ec755bd81&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s41d5li5e1g5oh8gs5413k8rb14bm0",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031s41d5li5e205oh8gs5413k8t9sbjto",
+                "height": 1172,
+                "need_load_original_image": false,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s41d5li5e205oh8gs5413k8t9sbjto?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f2ff4000bb4dfd5edc0617bc18b07cdf&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s41d5li5e205oh8gs5413k8t9sbjto",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031s4d3hbqla005oh8gs5413k89nsu1co",
+                "height": 1172,
+                "need_load_original_image": false,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s4d3hbqla005oh8gs5413k89nsu1co?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=9c45734bd3549bd5f20888409a10b3e9&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s4d3hbqla005oh8gs5413k89nsu1co",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31s4d3kjbl8105oh8gs5413k8cvur6fg",
+                "height": 1396,
+                "url": "",
+                "width": 1162,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d3kjbl8105oh8gs5413k8cvur6fg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=35b80a8d75dacffc199af5257bb4a349&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s4d3kjbl8105oh8gs5413k8cvur6fg",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "spectrum/1040g34o31s4d4nmal82g5oh8gs5413k83k94nr0",
+                "height": 1172,
+                "need_load_original_image": false,
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d4nmal82g5oh8gs5413k83k94nr0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=81ed7a831f01032700d9d2ca21f57474&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s4d4nmal82g5oh8gs5413k83k94nr0",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31s4d4nmal8305oh8gs5413k8bst465o",
+                "height": 1172,
+                "url": "",
+                "width": 880,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d4nmal8305oh8gs5413k8bst465o?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=8aa5791901534644b9f2ac4c5655a885&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s4d4nmal8305oh8gs5413k8bst465o",
+                "need_load_original_image": false
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31s4d7eifle0g5oh8gs5413k8ognq1mo",
+                "height": 2966,
+                "width": 2652,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d7eifle0g5oh8gs5413k8ognq1mo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=395926f0634ca88a2beeb720863aa0bc&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s4d7eifle0g5oh8gs5413k8ognq1mo",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31s4d7gbole305oh8gs5413k88nmah7g",
+                "height": 2961,
+                "trace_id": "spectrum/1040g34o31s4d7gbole305oh8gs5413k88nmah7g",
+                "width": 2640,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d7gbole305oh8gs5413k88nmah7g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=99ac363e412b8602f124277b086747dd&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31s4d7gbole3g5oh8gs5413k8pganaig",
+                "height": 2982,
+                "width": 2644,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d7gbole3g5oh8gs5413k8pganaig?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=96dadc63d06a4b984043210cfbf981e7&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s4d7gbole3g5oh8gs5413k8pganaig",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31s4d7gbole405oh8gs5413k8q8uggi8",
+                "height": 2973,
+                "need_load_original_image": false,
+                "width": 2640,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31s4d7gbole405oh8gs5413k8q8uggi8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=e292c9152e0a1591d5fc2ab948a4dc9f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31s4d7gbole405oh8gs5413k8q8uggi8",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031s4d818356e05oh8gs5413k8vekv0eo",
+                "height": 2972,
+                "trace_id": "spectrum/1040g0k031s4d818356e05oh8gs5413k8vekv0eo",
+                "width": 2628,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s4d818356e05oh8gs5413k8vekv0eo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f110be566130d4f9e31c03c375c2c99f&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031s4d818356eg5oh8gs5413k8eaesjt0",
+                "height": 2971,
+                "need_load_original_image": false,
+                "width": 2628,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031s4d818356eg5oh8gs5413k8eaesjt0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=dd6e547a85ba3cd3fca56fb88a993a7f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031s4d818356eg5oh8gs5413k8eaesjt0",
+                "url": ""
+              }
+            ],
+            "type": "normal",
+            "note_attributes": [],
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAylRrARxJYDhBEGtenW4VY5t4QQFCPPJ5aQObZr5pDe0bv/ym8RrI3CHS+1c2TVwhQ2Du4BdFhtanVXjkUTJJcNiCcHd4ALvP"
+              },
+              {
+                "text_en": "02-03",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "02-03"
+              }
+            ],
+            "id": "6981638d000000002202cdc4",
+            "user": {
+              "red_official_verified": false,
+              "userid": "6228870a0000000010008e88",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/622887c64f1c23567e524733.jpg?imageView2/2/w/80/format/jpg",
+              "red_official_verify_type": 0,
+              "nickname": "量子位",
+              "show_red_official_verify_icon": false,
+              "track_duration": 0,
+              "followed": false,
+              "red_id": "QbitAI"
+            },
+            "timestamp": 1770087309,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "2797",
+              "type": 1
+            },
+            "xsec_token": "YBTZiZNZwBHHmg4hWIhtPC7W69Z75g61H_7RqtBZP1nQ4=",
+            "update_time": 1781439891000,
+            "liked_count": 2797,
+            "debug_info_str": "",
+            "desc": "CodeX应用就是个壳，底层还是基于CodeX模型。虽然CodeX主要是编程用的，但OpenAI宣传的是应用中加入了各种",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6228870a0000000010008e88\",\"author_name\":\"量子位\"}",
+            "last_update_time": 1770111691,
+            "shared_count": 487,
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6979c3260000000022039e2c__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "科普下上岸openai SDE的面试强度",
+            "click_score": 0.05147537216544151,
+            "result_from": "",
+            "collected_count": 89,
+            "collected": false,
+            "comments_count": 68,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g34o31rsj8g4p203g5plravj7cc9jtmhck2o",
+                "height": 1440,
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p203g5plravj7cc9jtmhck2o?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=cd65d7f5616f8ee40263c006c8362798&t=6a4f34b8&origin=0",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p203g5plravj7cc9jtmhck2o?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=cd65d7f5616f8ee40263c006c8362798&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p203g5plravj7cc9jtmhck2o",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "spectrum/1040g34o31rsj8g4p20405plravj7cc9jccsdrl0",
+                "height": 1440,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p20405plravj7cc9jccsdrl0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=456363e1f33ab234aa890c6f9868193e&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p20405plravj7cc9jccsdrl0",
+                "need_load_original_image": false
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31rsj8g4p204g5plravj7cc9jesn1p20",
+                "height": 1440,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p204g5plravj7cc9jesn1p20?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=7f869f150da9a3d50ac63c18368bcd74&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p204g5plravj7cc9jesn1p20",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31rsj8g4p20505plravj7cc9jnr99vso",
+                "height": 1440,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p20505plravj7cc9jnr99vso?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=88a05d66d3408916dc9d51a44b0b0088&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p20505plravj7cc9jnr99vso",
+                "need_load_original_image": false
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31rsj8g4p205g5plravj7cc9jajnkt3g",
+                "height": 1440,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p205g5plravj7cc9jajnkt3g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=8aaf3a4715323b3a9c4a2a2b1f1a908f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p205g5plravj7cc9jajnkt3g",
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31rsj8g4p20605plravj7cc9julcci00",
+                "height": 1440,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p20605plravj7cc9julcci00?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=4978febe5b034b00e5dd6882b1581f4f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p20605plravj7cc9julcci00",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31rsj8g4p206g5plravj7cc9jpkr4788",
+                "height": 1440,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31rsj8g4p206g5plravj7cc9jpkr4788?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=07a9f8c5420e7fa481c664f33528025b&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31rsj8g4p206g5plravj7cc9jpkr4788",
+                "need_load_original_image": false
+              }
+            ],
+            "type": "normal",
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "user": {
+              "userid": "66bb57e6000000001d023133",
+              "red_id": "63083354240",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/9a12be2a-7dd3-3dd2-a60f-fedeb58dee55?imageView2/2/w/80/format/jpg",
+              "nickname": "湾区Richard",
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_official_verify_type": 0,
+              "red_official_verified": false,
+              "track_duration": 0
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAd/CmGe0iri64w2INJ+wFPT73uajPqYRjpzoumWiPtQ92YcLFhj1qzSkfm57GJuY5Mr6jfpxSSoKWrf8uO7URpA/vZfQfODUo"
+              },
+              {
+                "text_en": "01-29",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "01-29"
+              }
+            ],
+            "id": "6979c3260000000022039e2c",
+            "timestamp": 1769591089,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBtH9I7Fjwy7P_wcNNK1mKVCbvRdffe0dQXKaWzS-0Brs=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"66bb57e6000000001d023133\",\"author_name\":\"湾区Richard\"}",
+            "liked_count": 59,
+            "update_time": 1769755523000,
+            "desc": "之前参加了 OpenAI 的interview，整个过程相当有挑战性，来给大家讲讲整体感受。 📌OA：90分钟，Ope",
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "59"
+            },
+            "shared_count": 32,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "last_update_time": 1769679086
+          }
+        },
+        {
+          "mix_track_id": "NOTE__69a50d58000000002203a625__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 162,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI coding现在都开始考新八股了",
+            "click_score": 0.08905740082263947,
+            "result_from": "",
+            "collected_count": 1065,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 471,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g34o31t6s2to6la2g5plrf4j7c6g4th5jce0",
+                "height": 1656,
+                "need_load_original_image": false,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31t6s2to6la2g5plrf4j7c6g4th5jce0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=bb833508638e4bb925f935c39cae2ad9&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31t6s2to6la2g5plrf4j7c6g4th5jce0",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31t6s2to6la2g5plrf4j7c6g4th5jce0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=bb833508638e4bb925f935c39cae2ad9&t=6a4f34b8&origin=0"
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31t6s2to6la305plrf4j7c6g4bcr8eoo",
+                "height": 1656,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31t6s2to6la305plrf4j7c6g4bcr8eoo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=fd79fbfe032b404120d40498de3871ef&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31t6s2to6la305plrf4j7c6g4bcr8eoo",
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31t6s2to6la3g5plrf4j7c6g4mv1p9qo",
+                "height": 1656,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31t6s2to6la3g5plrf4j7c6g4mv1p9qo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=6d841b9fcac0c9c1780f96d90c813626&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31t6s2to6la3g5plrf4j7c6g4mv1p9qo",
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31t6s2to6la405plrf4j7c6g454gh8ng",
+                "height": 1656,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31t6s2to6la405plrf4j7c6g454gh8ng?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=05cb3bb9bec88a6c3b06647eff4d4bbb&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31t6s2to6la405plrf4j7c6g454gh8ng",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31t6s2to6la4g5plrf4j7c6g4t5614rg",
+                "height": 1656,
+                "url": "",
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31t6s2to6la4g5plrf4j7c6g4t5614rg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=cc430befa280f385c4f15e7186eb3103&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31t6s2to6la4g5plrf4j7c6g4t5614rg",
+                "need_load_original_image": false
+              }
+            ],
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "id": "69a50d58000000002203a625",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/775f37de-889f-3dc2-b57d-3e2a69590967?imageView2/2/w/80/format/jpg",
+              "red_id": "63044648035",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "show_red_official_verify_icon": false,
+              "nickname": "Daisy STEM 找工ing",
+              "red_official_verified": false,
+              "userid": "66bb7926000000001d021a04"
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RA57eYEKhbEzLPj46uoOQDHuSCfnL0ZxTLGkDov57VK1sD46GUAO5Vj4X01/XIHud6SGLqRmSTzbmtoLYtuoAEWIZxXyUIOFhY"
+              },
+              {
+                "text_en": "03-02",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "03-02"
+              }
+            ],
+            "timestamp": 1772424536,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBVPGkkXDU9sb4sD27mLsXBO-SmVGiMOK3Ghom4CezszU=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"66bb7926000000001d021a04\",\"author_name\":\"Daisy STEM 找工ing\"}",
+            "liked_count": 972,
+            "update_time": 1772498636000,
+            "desc": "OpenAI的coding向来是以考老八股著称的，但是今年题型明显变了，对26ng的同学来说是个挑战。 整体都在往能够上",
+            "interaction_area": {
+              "status": false,
+              "text": "972",
+              "type": 1
+            },
+            "last_update_time": 1772424800,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__69ad017c000000000e03d40a__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "拆！OpenAI入职礼包+两周体验🙇‍♀️",
+            "click_score": 0.05189375579357147,
+            "result_from": "",
+            "collected_count": 147,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 95,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k831tfe5fngm270444ap8eduv2m4fn44v0",
+                "height": 4032,
+                "url": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831tfe5fngm270444ap8eduv2m4fn44v0?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=4800de38c1369e9b1de728094753adfe&t=6a4f34b8&origin=0",
+                "width": 3024,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831tfe5fngm270444ap8eduv2m4fn44v0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=4800de38c1369e9b1de728094753adfe&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k831tfe5fngm270444ap8eduv2m4fn44v0",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r031tekhdj0m240444ap8eduv2maol66a0",
+                "height": 2560,
+                "url": "",
+                "width": 1920,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/note_pre_post_uhdr/1040g3r031tekhdj0m240444ap8eduv2maol66a0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f2ce79448dff7e97db9bd2baf716283d&t=6a4f34b8&origin=0",
+                "trace_id": "note_pre_post_uhdr/1040g3r031tekhdj0m240444ap8eduv2maol66a0",
+                "need_load_original_image": false
+              },
+              {
+                "height": 2560,
+                "need_load_original_image": false,
+                "fileid": "notes_pre_post/1040g3k831tekk1dplk7g444ap8eduv2msgl6jh8",
+                "width": 1920,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831tekk1dplk7g444ap8eduv2msgl6jh8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=836b01749659167741403b05682faad0&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k831tekk1dplk7g444ap8eduv2msgl6jh8",
+                "url": ""
+              },
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r031tekhdj0m24g444ap8eduv2mk37lrko",
+                "height": 2560,
+                "url": "",
+                "width": 1920,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/note_pre_post_uhdr/1040g3r031tekhdj0m24g444ap8eduv2mk37lrko?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=c08fcaec2b211819215c9f63d5170c3d&t=6a4f34b8&origin=0",
+                "trace_id": "note_pre_post_uhdr/1040g3r031tekhdj0m24g444ap8eduv2mk37lrko",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r031tekhdj0m250444ap8eduv2mp15sm78",
+                "height": 2560,
+                "trace_id": "note_pre_post_uhdr/1040g3r031tekhdj0m250444ap8eduv2mp15sm78",
+                "width": 1920,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/note_pre_post_uhdr/1040g3r031tekhdj0m250444ap8eduv2mp15sm78?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=d13555b63ba3adb43b53271fdd944b7f&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              }
+            ],
+            "id": "69ad017c000000000e03d40a",
+            "user": {
+              "red_id": "187483222",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo316omo8973m00444ap8eduv2mtg5m6jo?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "show_red_official_verify_icon": false,
+              "track_duration": 0,
+              "nickname": "努力小遥",
+              "userid": "566cdcdf4476082a12a67c56"
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAJbo+zOmKRhaBD1v1EaXFNK3TIzXl1NyRwjCZrAdAkLOXIo9XEcwc9/fGjNGgNRxF4y8lAWTqJWCTSXG7lnX2VvIKsVNLb+PV"
+              },
+              {
+                "text_en": "03-09",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "03-09"
+              }
+            ],
+            "timestamp": 1772945788,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBsQ_kcBYjIIVQQPH-dym__o5E6Iun8T4gMfCSPVZtnBQ=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"566cdcdf4476082a12a67c56\",\"author_name\":\"努力小遥\"}",
+            "interaction_area": {
+              "type": 1,
+              "text": "622",
+              "status": false
+            },
+            "update_time": 1772999377000,
+            "desc": "转眼间就入职两周了！入职礼包刚好在两周节点到家。打开之后映入眼帘的就是这个可爱蓝色小帽子，本帽子星人狂喜，说实话帽型很一",
+            "liked_count": 622,
+            "last_update_time": 1772999339,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "shared_count": 180
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__69cb3d3e000000001b023e0a__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 89,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "在OpenAI工作一段时间后，我的一些真实感受",
+            "click_score": 0.05531444773077965,
+            "result_from": "",
+            "collected_count": 156,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 67,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "note_pre_post_uhdr/1040g3r031uc66j0nig0g5ng8l4vg9db26d45gp8",
+                "height": 4032,
+                "trace_id": "note_pre_post_uhdr/1040g3r031uc66j0nig0g5ng8l4vg9db26d45gp8",
+                "width": 3024,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/note_pre_post_uhdr/1040g3r031uc66j0nig0g5ng8l4vg9db26d45gp8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=b4d08a0b8a24b7244cd9011721749536&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": "https://sns-na-i27.xhscdn.com/note_pre_post_uhdr/1040g3r031uc66j0nig0g5ng8l4vg9db26d45gp8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=b4d08a0b8a24b7244cd9011721749536&t=6a4f34b8&origin=0"
+              }
+            ],
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAe/JDPGJZCt4b24aONp24Jr+/tbJNv69du9g7h8b/65r8tXi5qoDqerlm8bm+0nxJbrWxC8qMwpPjgS/N3Ayh8q1bytoA0P4P"
+              },
+              {
+                "text_en": "03-31",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "03-31"
+              }
+            ],
+            "id": "69cb3d3e000000001b023e0a",
+            "user": {
+              "red_id": "796913103",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31uc5ac64io005ng8l4vg9db2gdhg8tg?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "nickname": "有梦想的神经蛙",
+              "red_official_verify_type": 0,
+              "red_official_verified": false,
+              "userid": "5e08a93f000000000100b562"
+            },
+            "timestamp": 1774927166,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBXPUN1KDbrYUF4hYmUfUAdULf6u1aCIQsM1RCJmOm4lA=",
+            "update_time": 1774928766000,
+            "liked_count": 331,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "331"
+            },
+            "desc": "下半年入职OpenAI，到现在也有一段时间了。 正好趁公司给全体员工放了一周假，回头看了一下这段经历，有一些挺真实的感受",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5e08a93f000000000100b562\",\"author_name\":\"有梦想的神经蛙\"}",
+            "last_update_time": 1774928724,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6937ea52000000001b021ea8__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "note": {
+            "last_update_time": 0,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.06474186480045319,
+            "title": "OpenAI对coding的要求震惊我300年...",
+            "result_from": "",
+            "collected_count": 185,
+            "comments_count": 59,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031ps9dk3iju005pm733rnebmgdu5ghgo",
+                "height": 1440,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031ps9dk3iju005pm733rnebmgdu5ghgo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=01d7ac753e5d63e0f909d7d8106d1b7b&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031ps9dk3iju005pm733rnebmgdu5ghgo",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031ps9dk3iju005pm733rnebmgdu5ghgo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=01d7ac753e5d63e0f909d7d8106d1b7b&t=6a4f34b8&origin=0"
+              },
+              {
+                "height": 1440,
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031ps9dk3iju105pm733rnebmgqa306r8",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031ps9dk3iju105pm733rnebmgqa306r8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=e00ecc2af37242ab3de26ad5de1204e3&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031ps9dk3iju105pm733rnebmgqa306r8",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031ps9dk3iju1g5pm733rnebmg2iajod8",
+                "height": 1440,
+                "need_load_original_image": false,
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031ps9dk3iju1g5pm733rnebmg2iajod8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=8d919414ab378b48a118973c518a607f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031ps9dk3iju1g5pm733rnebmg2iajod8",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g0k031ps9dk3iju0g5pm733rnebmgkvrms68",
+                "height": 1440,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031ps9dk3iju0g5pm733rnebmgkvrms68?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=75233e2ee35c131c54d5da0ca83a29f0&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031ps9dk3iju0g5pm733rnebmgkvrms68",
+                "need_load_original_image": false
+              }
+            ],
+            "type": "normal",
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAiN/2m4gyavHwAIombQJFZ9PzBkxWL+BCTavll1WwTLqmt/Oyyufm/LEHqFdWwM2r6iJxe21ya87NNaisKZy5wHxtjR/CQ5pb"
+              },
+              {
+                "text_en": "2025-12-09",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "2025-12-09"
+              }
+            ],
+            "id": "6937ea52000000001b021ea8",
+            "user": {
+              "red_id": "63019618000",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/72a5ae38-081d-30d9-848f-d8d6288816fe?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "nickname": "Ruby in Central",
+              "red_official_verify_type": 0,
+              "userid": "66c718f7000000001d032ed0",
+              "track_duration": 0,
+              "followed": false,
+              "show_red_official_verify_icon": false
+            },
+            "timestamp": 1765272146,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "205"
+            },
+            "xsec_token": "YBVpEaDnDOVIArLDLAhhU8QoLxMA5Oa4ET34udpzIBJt0=",
+            "debug_info_str": "",
+            "liked_count": 205,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"66c718f7000000001d032ed0\",\"author_name\":\"Ruby in Central\"}",
+            "update_time": 1767719086000,
+            "desc": "最近在扒 OpenAI 的面试题，说实话我是真的被震到了😵‍💫 它不是那种只刷 LeetCode 就能稳过的类型，考",
+            "shared_count": 37,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__6a0210020000000013020400__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "note": {
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI今日官宣成立交付公司：AI下半场开打",
+            "click_score": 0.04676854610443115,
+            "result_from": "",
+            "collected_count": 828,
+            "comments_count": 107,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "images_list": [
+              {
+                "fileid": "oss-sg/notes_pre_post/1040g3mo3201mir1knk005nntamtg8ea7q1h2vr8",
+                "height": 940,
+                "url": "https://sns-na-i27.xhscdn.com/oss-sg/notes_pre_post/1040g3mo3201mir1knk005nntamtg8ea7q1h2vr8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=9cdb934bbcf806364493c589ed8610f2&t=6a4f34b8&origin=0",
+                "width": 910,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/oss-sg/notes_pre_post/1040g3mo3201mir1knk005nntamtg8ea7q1h2vr8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=9cdb934bbcf806364493c589ed8610f2&t=6a4f34b8&origin=0",
+                "trace_id": "oss-sg/notes_pre_post/1040g3mo3201mir1knk005nntamtg8ea7q1h2vr8",
+                "need_load_original_image": false
+              }
+            ],
+            "type": "normal",
+            "note_attributes": [],
+            "user": {
+              "red_official_verified": false,
+              "userid": "5efd55bb0000000001003947",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "show_red_official_verify_icon": false,
+              "red_id": "824130173",
+              "nickname": "是梅小姐呀",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31v0jd0v2i8005nntamtg8ea7cjq5jeg?imageView2/2/w/80/format/jpg"
+            },
+            "id": "6a0210020000000013020400",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAfLWkQoVtV7sMgoJqh7V2raOyzAq9k01+KMFky5UEltOrS/hd0CTJEQzYPnXz6zJdDbAdkNPY1Xz0xDfvOWxnZheuQpWqWTeJ"
+              },
+              {
+                "text_en": "05-12",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "05-12"
+              }
+            ],
+            "timestamp": 1778520066,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "1527"
+            },
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5efd55bb0000000001003947\",\"author_name\":\"是梅小姐呀\"}",
+            "update_time": 1778520194000,
+            "xsec_token": "YBkoqt6sl-0rGE25hrmza5WkonDDo5o6x4ANfjx3J2QXw=",
+            "desc": "OpenAI今天正式成立一家新公司，OpenAI Deployment Company。模式简单粗暴：派工程师（叫For",
+            "liked_count": 1527,
+            "last_update_time": 0,
+            "shared_count": 880,
+            "has_music": false
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__6a1e6e61000000002202d749__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 0,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.04364645108580589,
+            "title": "OpenAI凑齐华人三杰，这个信号太明显了",
+            "result_from": "",
+            "collected_count": 562,
+            "comments_count": 128,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k0320td5e57n2005n26mrck39biv82m798",
+                "height": 2000,
+                "need_load_original_image": false,
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n2005n26mrck39biv82m798?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=3ec57699f23c61e72e1fa9a6958b1225&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n2005n26mrck39biv82m798",
+                "url": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n2005n26mrck39biv82m798?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=3ec57699f23c61e72e1fa9a6958b1225&t=6a4f34b8&origin=0"
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "notes_pre_post/1040g3k0320td5e57n20g5n26mrck39bil0kdbho",
+                "height": 2000,
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n20g5n26mrck39bil0kdbho?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=8c076a4617e99a7956b633bf5c159193&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n20g5n26mrck39bil0kdbho",
+                "url": ""
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0320td5e57n2105n26mrck39bipgrnib0",
+                "height": 2000,
+                "url": "",
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n2105n26mrck39bipgrnib0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=fa5c500c651b5d50cfa6f004c97e015d&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n2105n26mrck39bipgrnib0",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0320td5e57n21g5n26mrck39bid11gd3o",
+                "height": 2000,
+                "url": "",
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n21g5n26mrck39bid11gd3o?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=73488a328de2102ff31561e33e0981af&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n21g5n26mrck39bid11gd3o",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0320td5e57n2205n26mrck39big8jj9co",
+                "height": 2000,
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n2205n26mrck39big8jj9co",
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n2205n26mrck39big8jj9co?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=07c913ee47b81cdfaccb41c29684d9f5&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": ""
+              },
+              {
+                "height": 2000,
+                "need_load_original_image": false,
+                "fileid": "notes_pre_post/1040g3k0320td5e57n22g5n26mrck39bif29e590",
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n22g5n26mrck39bif29e590?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=e8661c2d182d378ffdbae43cb1fd4b99&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n22g5n26mrck39bif29e590",
+                "url": ""
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0320td5e57n2305n26mrck39bi65bj3c8",
+                "height": 2000,
+                "url": "",
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n2305n26mrck39bi65bj3c8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=94071fa9fce732d47f164be5b25bdbee&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n2305n26mrck39bi65bj3c8",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k0320td5e57n23g5n26mrck39bi2g42tk0",
+                "height": 2000,
+                "url": "",
+                "width": 1500,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k0320td5e57n23g5n26mrck39bi2g42tk0?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=ce27411b83b3d963cf2ae02df104f689&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k0320td5e57n23g5n26mrck39bi2g42tk0",
+                "need_load_original_image": false
+              }
+            ],
+            "user": {
+              "red_official_verified": false,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hv17tv1lq005n26mrck39bijcn7gq8?imageView2/2/w/80/format/jpg",
+              "userid": "5c46b6d9000000001001a572",
+              "show_red_official_verify_icon": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "followed": false,
+              "red_id": "226369687",
+              "nickname": "阿进AI大厂观察"
+            },
+            "id": "6a1e6e61000000002202d749",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAycSeeWGQf3cIHf8gL3dWYk6pZeG7Ifra72fcG/mWvlJ/i1EdOwFkBzrw5sP1QLiXDF1gZtkliK0ssVpkjfeR3b8z15mRkpJu"
+              },
+              {
+                "text_en": "06-02",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-02"
+              }
+            ],
+            "timestamp": 1780379233,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBrjCuEssUGhTKKwKNVS_tLiZJkRgZ9ujKV8HZy0C-uDw=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5c46b6d9000000001001a572\",\"author_name\":\"阿进AI大厂观察\"}",
+            "liked_count": 879,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "879"
+            },
+            "desc": "刚拿了「统计学诺奖」的人，转头去了OpenAI。我第一反应是，啊？ 苏炜杰，宾大沃顿正教授，今年刚刚拿下COPSS Pr",
+            "update_time": 1780379291000,
+            "shared_count": 619,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__687f0185000000002400c2ed__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 1753764341,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.07232414186000824,
+            "title": "🇺🇸加州OpenAI：Hiring！中文优势",
+            "result_from": "",
+            "collected_count": 20,
+            "comments_count": 23,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k031k7n2rc0io505oussaaa3agn6hl0v68",
+                "height": 1656,
+                "need_load_original_image": false,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k031k7n2rc0io505oussaaa3agn6hl0v68?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=d60ffeea3cf12aab9f45f57fe4f51114&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k031k7n2rc0io505oussaaa3agn6hl0v68",
+                "url": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k031k7n2rc0io505oussaaa3agn6hl0v68?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=d60ffeea3cf12aab9f45f57fe4f51114&t=6a4f34b8&origin=0"
+              }
+            ],
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAdhvdcXnXyB9rzXYUhevHKm2bdL1BcjcLnqMU5hFGzVxtyUqZMlagIu4RrNtY8Lo27P4aa6pEIg+bX9yh1a+s0F2zoPZJuS4E"
+              },
+              {
+                "text_en": "2025-07-29",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "2025-07-29"
+              }
+            ],
+            "id": "687f0185000000002400c2ed",
+            "user": {
+              "red_id": "5057098668",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/663f0f3ec009b200017d5d44.jpg?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "nickname": "Adora学姐咨询-智文",
+              "red_official_verified": false,
+              "userid": "63dce294000000002801aa17"
+            },
+            "timestamp": 1753153925,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBM4HcwkpGIlhlfbwCTMeOTnqIcbknzY2HTy4vk6gSd9I=",
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "26"
+            },
+            "liked_count": 26,
+            "update_time": 1753764412000,
+            "desc": "Open AI是一家领先的人工智能研究公司，总部base旧金山，朋友组里有空缺，full time和intern都可以帮",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"63dce294000000002801aa17\",\"author_name\":\"Adora学姐咨询-智文\"}",
+            "shared_count": 23,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__69038a4b0000000003038569__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI 计划上市！将刷新首上市历史纪录",
+            "click_score": 0.061042580753564835,
+            "result_from": "",
+            "collected_count": 91,
+            "collected": false,
+            "comments_count": 37,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "type": "normal",
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k831o94qq52mgdg5n5ljah443d3n483nt8",
+                "height": 666,
+                "trace_id": "notes_pre_post/1040g3k831o94qq52mgdg5n5ljah443d3n483nt8",
+                "width": 999,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831o94qq52mgdg5n5ljah443d3n483nt8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=3750c750b9ce9f132f3392df08f9c755&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831o94qq52mgdg5n5ljah443d3n483nt8?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=3750c750b9ce9f132f3392df08f9c755&t=6a4f34b8&origin=0"
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k031o94qq6llm605n5ljah443d3c5chta8",
+                "height": 1959,
+                "url": "",
+                "width": 1080,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k031o94qq6llm605n5ljah443d3c5chta8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=259e53a9bdf98e77a23605b1676590d2&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k031o94qq6llm605n5ljah443d3c5chta8",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "notes_pre_post/1040g3k031o94qq7s066g5n5ljah443d39h4ei50",
+                "height": 638,
+                "need_load_original_image": false,
+                "width": 591,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k031o94qq7s066g5n5ljah443d39h4ei50?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=cbb662b7e373ea0f8b742dbdc8a7b362&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k031o94qq7s066g5n5ljah443d39h4ei50",
+                "url": ""
+              }
+            ],
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RARFUBiX7um5DLIZmCF0WH+bvRd0lwJOagInN3fUtHmvsCO6OO3YnVVnhUU4lr5PyIlLomj36lz0RoR0969N0na8aKKQrE76g2"
+              },
+              {
+                "text_en": "2025-10-30",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "2025-10-30"
+              }
+            ],
+            "id": "69038a4b0000000003038569",
+            "user": {
+              "userid": "5cb59aa20000000010020da3",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo311gu0qat6m6g5n5ljah443d3ft0usv8?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "red_official_verified": false,
+              "followed": false,
+              "red_id": "973934501",
+              "nickname": "天天##"
+            },
+            "timestamp": 1761839691,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBCyj7yWa66cDY1BFPzAEScI46PfiTbFl6AwD9VdAg0VE=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5cb59aa20000000010020da3\",\"author_name\":\"天天##\"}",
+            "interaction_area": {
+              "status": false,
+              "text": "324",
+              "type": 1
+            },
+            "liked_count": 324,
+            "desc": "根据最新消息，OpenAI计划最早于2026年下半年提交IPO申请，目标2027年上市。 初步讨论中的融资规模至少",
+            "update_time": 1761989983000,
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "shared_count": 343
+          }
+        },
+        {
+          "mix_track_id": "NOTE__68eb648c000000000303b6cc__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "shared_count": 468,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "OpenAI就职半年感受",
+            "click_score": 0.0354585163295269,
+            "result_from": "",
+            "collected_count": 1258,
+            "comments_count": 132,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "images_list": [
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031nhi5k8v52004a4gma0gpmoce6dek18",
+                "height": 1600,
+                "width": 1200,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031nhi5k8v52004a4gma0gpmoce6dek18?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f063e5ae3846d4140e9b485904493251&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031nhi5k8v52004a4gma0gpmoce6dek18",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031nhi5k8v52004a4gma0gpmoce6dek18?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=f063e5ae3846d4140e9b485904493251&t=6a4f34b8&origin=0"
+              }
+            ],
+            "type": "normal",
+            "note_attributes": [],
+            "user": {
+              "red_id": "oaijustin",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/64e2dc70af5ad81eb16afcd8.jpg?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "show_red_official_verify_icon": false,
+              "userid": "5ad0810ce8ac2b6698ecdb0c",
+              "track_duration": 0,
+              "followed": false,
+              "nickname": "Justin",
+              "red_official_verify_type": 0
+            },
+            "id": "68eb648c000000000303b6cc",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAHaSnujsS/o15jCnVCjVRo9FjNOVQGNzCz0hOtCPIBAYPZT+6PTpVkzc4rebxo3UkjOo7bXMoP+b7e7NhF4gHfE80vf+CgUKm"
+              },
+              {
+                "text_en": "2025-10-12",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "2025-10-12"
+              }
+            ],
+            "timestamp": 1760257164,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBhYvBHzjNcbPlhPexk6UZKHELztxgCVmZwhII9guxMuM=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5ad0810ce8ac2b6698ecdb0c\",\"author_name\":\"Justin\"}",
+            "liked_count": 2773,
+            "update_time": 1771870237000,
+            "desc": "🧠 从Meta到OpenAI：半年过去，我的世界观彻底变了 大家好～我是前Meta的高级机器学习工程师👩‍💻，感谢",
+            "interaction_area": {
+              "type": 1,
+              "text": "2773",
+              "status": false
+            },
+            "last_update_time": 1760270126,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__69eae1a4000000001f031004__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.043700359761714935,
+            "title": "OpenAI现在的coding门槛已经next level",
+            "result_from": "",
+            "collected_count": 12,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 5,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k031vb1v1072s005poe2s5ne03pcobn3eg",
+                "height": 1448,
+                "width": 1086,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031vb1v1072s005poe2s5ne03pcobn3eg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=f6595519e0d55a8081a2beca3cd94888&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k031vb1v1072s005poe2s5ne03pcobn3eg",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k031vb1v1072s005poe2s5ne03pcobn3eg?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=f6595519e0d55a8081a2beca3cd94888&t=6a4f34b8&origin=0"
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31vb1v4p6is405poe2s5ne03prd8rsb8",
+                "height": 1660,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31vb1v4p6is405poe2s5ne03prd8rsb8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=3ddb0e90e8c4f73bd73419b88eb41a1b&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31vb1v4p6is405poe2s5ne03prd8rsb8",
+                "url": ""
+              },
+              {
+                "fileid": "spectrum/1040g34o31vb1v4p6is4g5poe2s5ne03p79epn1g",
+                "height": 1660,
+                "url": "",
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31vb1v4p6is4g5poe2s5ne03p79epn1g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=16646bacef44354cb7d329a9d623f79f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31vb1v4p6is4g5poe2s5ne03p79epn1g",
+                "need_load_original_image": false
+              },
+              {
+                "fileid": "spectrum/1040g34o31vb1v4p6is505poe2s5ne03pv8t01c8",
+                "height": 1660,
+                "need_load_original_image": false,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31vb1v4p6is505poe2s5ne03pv8t01c8?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=99a58aeb356b04c5740321165ce2ee6f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31vb1v4p6is505poe2s5ne03pv8t01c8",
+                "url": ""
+              },
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o31vb1v4p6is5g5poe2s5ne03pg3tbubo",
+                "height": 1660,
+                "width": 1242,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31vb1v4p6is5g5poe2s5ne03pg3tbubo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=37b4293b37debe3b4b2ff1ecbedba87a&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31vb1v4p6is5g5poe2s5ne03pg3tbubo",
+                "url": ""
+              }
+            ],
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RATPnmH0Mwvw0PkE85DhObiVRAriNdY5bjg4E408n5FdjUGnkHIZE2gH0P7o1r1HFWptrvkr8+NF2LZxCQtfvm6mAsTt6gphMJ"
+              },
+              {
+                "text_en": "04-24",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "04-24"
+              }
+            ],
+            "id": "69eae1a4000000001f031004",
+            "user": {
+              "red_id": "95853807418",
+              "red_official_verified": false,
+              "userid": "670e170b000000001d030079",
+              "nickname": "DBCareer in Tech",
+              "followed": false,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "track_duration": 0,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pa68u17jc6g5poe2s5ne03pdski090?imageView2/2/w/80/format/jpg"
+            },
+            "timestamp": 1777000868,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "9"
+            },
+            "debug_info_str": "",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"670e170b000000001d030079\",\"author_name\":\"DBCareer in Tech\"}",
+            "liked_count": 9,
+            "update_time": 1778288201000,
+            "desc": "最近把OpenAI的面试风向扒了一遍，结论很直接： 还在刷题靠背模版的，基本就是陪跑选手。 现在考察的是“你会不会做工程",
+            "xsec_token": "YBcmt1bngjG5JoMATapGNdxAOQKQVEMM0U166muvdYHEw=",
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "shared_count": 5
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a3dc19a000000002100848f__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "title": "受SpaceX影响，OpenAI考虑将IPO推至2027年",
+            "click_score": 0.034955449402332306,
+            "result_from": "",
+            "collected_count": 15,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 34,
+            "niced": false,
+            "cover_image_index": 0,
+            "note_attributes": [],
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g34o321s020ur6s105n8c4l65lvnquatl258",
+                "height": 640,
+                "trace_id": "spectrum/1040g34o321s020ur6s105n8c4l65lvnquatl258",
+                "width": 960,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o321s020ur6s105n8c4l65lvnquatl258?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=4bc35729c0df9860a9ecd8a8734f570b&t=6a4f34b8&origin=0",
+                "need_load_original_image": false,
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o321s020ur6s105n8c4l65lvnquatl258?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=4bc35729c0df9860a9ecd8a8734f570b&t=6a4f34b8&origin=0"
+              }
+            ],
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "type": "normal",
+            "id": "6a3dc19a000000002100848f",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318r8h7bqjk0g5ndfjtpg9f29quaduc0?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "red_id": "bukanche",
+              "nickname": "不看车",
+              "red_official_verify_type": 0,
+              "followed": false,
+              "show_red_official_verify_icon": false,
+              "userid": "5d0c254c000000001602fefa",
+              "track_duration": 0
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAmAFmBIn2iNsep0raBv3benboOgIwr5JoAOLa9VdjWLtdiWeIdBU1qfa+9sW1BmHh96tDzyh4Lae5vOvFgVNTz9tnmBYjHllx"
+              },
+              {
+                "text_en": "06-26",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "06-26"
+              }
+            ],
+            "timestamp": 1782432154,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "status": false,
+              "text": "85",
+              "type": 1
+            },
+            "xsec_token": "YBxlzFeLlIt2TpdWY9462073fQiL8dlBs5iC4MUlXEua4=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5d0c254c000000001602fefa\",\"author_name\":\"不看车\"}",
+            "liked_count": 85,
+            "update_time": 1782432190000,
+            "desc": "6月26日，纽约时报报道称，OpenAI正倾向于将原计划今年晚些时候的IPO推迟至2027年。这一转变主要受马斯克旗下S",
+            "debug_info_str": "",
+            "last_update_time": 0,
+            "shared_count": 164,
+            "has_music": false
+          }
+        },
+        {
+          "mix_track_id": "NOTE__69eee5d400000000370356c0__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.03566216677427292,
+            "title": "OpenAI入局手机市场，声称将重新定义手机！",
+            "result_from": "",
+            "collected_count": 127,
+            "collected": false,
+            "comments_count": 192,
+            "nice_count": 0,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "note_attributes": [],
+            "type": "normal",
+            "images_list": [
+              {
+                "fileid": "notes_pre_post/1040g3k831veqrqju2a1g5ovjdbm43jo7e38qf50",
+                "height": 2560,
+                "need_load_original_image": false,
+                "width": 1920,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831veqrqju2a1g5ovjdbm43jo7e38qf50?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=1746591806df77451bc64593a013264b&t=6a4f34b8&origin=0",
+                "trace_id": "notes_pre_post/1040g3k831veqrqju2a1g5ovjdbm43jo7e38qf50",
+                "url": "https://sns-na-i27.xhscdn.com/notes_pre_post/1040g3k831veqrqju2a1g5ovjdbm43jo7e38qf50?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=1746591806df77451bc64593a013264b&t=6a4f34b8&origin=0"
+              }
+            ],
+            "id": "69eee5d400000000370356c0",
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30r1q7k9qhc605ovjdbm43jo751d8hno?imageView2/2/w/80/format/jpg",
+              "userid": "63f36aec000000001001cf07",
+              "track_duration": 0,
+              "red_official_verify_type": 0,
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_id": "duomicn",
+              "nickname": "多觅生活",
+              "red_official_verified": false
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAX0yHcTZRUdlGc5mKVw3N0IJLDDjz/E5O0lVNDgRBNV58DBeHb5Uxqokowc5kLZQXiaZXetahnoJROpBtxmC/Dhl4rLLb8Amc"
+              },
+              {
+                "text_en": "05-05",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "05-05"
+              }
+            ],
+            "timestamp": 1777264084,
+            "extract_text_enabled": 0,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "400"
+            },
+            "debug_info_str": "",
+            "xsec_token": "YBwCEp9pDSqQbPogesGd24n9edVzi_jdixbHkongx-ziY=",
+            "liked_count": 400,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"63f36aec000000001001cf07\",\"author_name\":\"多觅生活\"}",
+            "desc": "炸裂！OpenAI要造手机了🔥2028年量产，彻底颠覆手机形态 郭明錤最新爆料｜数码圈大地震来了 OpenAI联手联发",
+            "update_time": 1777983882000,
+            "shared_count": 432,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "last_update_time": 1777983837
+          }
+        },
+        {
+          "mix_track_id": "NOTE__68e4e3160000000007032749__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "note": {
+            "update_time": 1780002968000,
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAaPtPYGreBfr8x3GMO9VykTgml06NaMNVtGIef4o/bKlH6gkJW9AMHQSC++K18YwEHfsqMCm+MQi9tBgzttStvOLSx5X4Lzz7"
+              },
+              {
+                "text_en": "2025-10-07",
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "style": 0,
+                "type": "publish_time",
+                "location": 5,
+                "text": "2025-10-07"
+              }
+            ],
+            "id": "68e4e3160000000007032749",
+            "last_update_time": 0,
+            "extract_text_enabled": 0,
+            "cover_image_index": 0,
+            "has_music": false,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "note_collection",
+                    "cooperate_binds",
+                    "rec_next_infos",
+                    "video_marks",
+                    "product_review",
+                    "related_search",
+                    "video_goods_cards",
+                    "cooperate_comment_component",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "video_recommend_tag",
+                    "buyable_goods_card_v2",
+                    "cooperate_search_component",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "related_recommend",
+                    "next_note_guide",
+                    "widgets_ndb",
+                    "pgy_bbc_exp",
+                    "brand_max_trailer",
+                    "super_activity",
+                    "note_nice_guide",
+                    "pin_search_highlights",
+                    "widgets_enhance",
+                    "packed_goods",
+                    "packed_buyable_goods",
+                    "widgets_ncb",
+                    "note_nice_compound",
+                    "live_shooting_flag",
+                    "widgets_nbb",
+                    "poi_declare",
+                    "async_group"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "guide_post",
+                    "video_foot_bar",
+                    "follow_guide",
+                    "share_to_msg",
+                    "note_share_prompt_v1",
+                    "note_share_prompt_v2",
+                    "group_share",
+                    "share_guide_bubble",
+                    "goods_enhance_component",
+                    "guide_navigator",
+                    "sync_group"
+                  ]
+                }
+              ]
+            },
+            "type": "video",
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "collected_count": 7178,
+            "niced": false,
+            "user": {
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31tjob8tm7q005pmmfsv7c94vddke928?imageView2/2/w/80/format/jpg",
+              "red_official_verified": false,
+              "userid": "66d67f3e000000001d02249f",
+              "nickname": "朋克科技站",
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "red_id": "26270147114",
+              "show_red_official_verify_icon": false,
+              "followed": false
+            },
+            "shared_count": 3974,
+            "comments_count": 303,
+            "video_duration": "2:21",
+            "liked": false,
+            "widgets_context": "{\"video\":true,\"origin_video_key\":\"spectrum/1040g2f031nb6s6b34s0g5pmmfsv7c94vbh5lf5o\",\"flags\":{\"sound_track\":true},\"author_id\":\"66d67f3e000000001d02249f\",\"author_name\":\"朋克科技站\",\"video_duration\":141}",
+            "debug_info_str": "",
+            "nice_count": 0,
+            "note_attributes": [],
+            "video_info_v2": {
+              "capa": {
+                "is_user_select": false,
+                "is_upload": false,
+                "frame_ts": 0,
+                "duration": 141
+              },
+              "consumer": {
+                "can_super_resolution": false
+              },
+              "image": {
+                "thumbnail": "https://sns-na-i27.xhscdn.com/frame/110/0/01e8e4e317db773f00100000000199be175b9d_0.webp?imageView2/2/w/5000/h/5000/format/webp/q/90&ap=5&sc=SRH_ORG&sign=b84d7e7f6a91e441f1db08cccc8f9f4a&t=6a4f34b8&origin=0",
+                "thumbnail_dim": "https://sns-na-i27.xhscdn.com/frame/110/0/01e8e4e317db773f00100000000199be175b9d_0.webp?imageView2/2/w/720/h/720/format/webp&ap=5&sc=SRH_SPRT&sign=b84d7e7f6a91e441f1db08cccc8f9f4a&t=6a4f34b8&origin=0"
+              },
+              "media": {
+                "user_level": 0,
+                "audio_info": {
+                  "opaque1": {
+                    "language": "[\"en-US\"]"
+                  },
+                  "stream_types": [
+                    103,
+                    102,
+                    101,
+                    2002
+                  ]
+                },
+                "audio_stream": {
+                  "AAC": [
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/320/110/103/01e8e4e317db773f400370019eb7be0745_103.m4a?sign=1ee11cfdc74ec9de463fb0176b2e7e7e&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/320/110/103/01e8e4e317db773f400370019eb7be0745_103.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/320/110/103/01e8e4e317db773f400370019eb7be0745_103.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "language": "zh-CN"
+                      },
+                      "weight": 59,
+                      "audio_duration": 141824,
+                      "avg_bitrate": 193638,
+                      "default_stream": 0,
+                      "size": 3432818,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 193638,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 103
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/320/110/102/01e8e4e317db773f400370019eb7be08a1_102.m4a?sign=1c24fabd21e872cba531f157f83a942f&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/320/110/102/01e8e4e317db773f400370019eb7be08a1_102.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/320/110/102/01e8e4e317db773f400370019eb7be08a1_102.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "language": "zh-CN"
+                      },
+                      "weight": 60,
+                      "audio_duration": 141824,
+                      "avg_bitrate": 129638,
+                      "default_stream": 0,
+                      "size": 2298238,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 129638,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 102
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/320/110/101/01e8e4e317db773f400370019eb7be0690_101.m4a?sign=66d5745473aa411e0a8a085aee484a43&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/320/110/101/01e8e4e317db773f400370019eb7be0690_101.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/320/110/101/01e8e4e317db773f400370019eb7be0690_101.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "use_pcdn": "1",
+                        "language": "zh-CN"
+                      },
+                      "weight": 69,
+                      "audio_duration": 141824,
+                      "avg_bitrate": 97653,
+                      "default_stream": 1,
+                      "size": 1731205,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 97653,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 101
+                    },
+                    {
+                      "audio_channels": 2,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/2002/01e8e4e317db773f010370019e7071c9cb_2002.m4a?sign=b4747610a274622f0f9e6d975a940649&t=6a53d1f8",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/2002/01e8e4e317db773f010370019e7071c9cb_2002.m4a",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/2002/01e8e4e317db773f010370019e7071c9cb_2002.m4a"
+                      ],
+                      "audio_bit_depth": 0,
+                      "opaque1": {
+                        "language": "en-US"
+                      },
+                      "weight": 0,
+                      "audio_duration": 141802,
+                      "avg_bitrate": 129642,
+                      "default_stream": 0,
+                      "size": 2297968,
+                      "audio_samplerate": 44100,
+                      "audio_codec": "aac",
+                      "audio_bitrate": 129642,
+                      "audio_profile": "LC",
+                      "format": "FMP4",
+                      "stream_type": 2002
+                    }
+                  ]
+                },
+                "video": {
+                  "height": 1920,
+                  "biz_id": "281726640690505545",
+                  "stream_types": [
+                    258,
+                    3041,
+                    3042
+                  ],
+                  "bound": [
+                    {
+                      "y": 0,
+                      "w": 0,
+                      "x": 0,
+                      "h": 0
+                    }
+                  ],
+                  "md5": "09c42d3ec81da51aded2d137bff1518e",
+                  "width": 1080,
+                  "duration": 142,
+                  "opaque1": {
+                    "amend_4k": "1",
+                    "videoLanguage": "[\"zh-CN\",\"en-US\"]",
+                    "insertSubtitleLanguages": "[\"zh-CN\"]",
+                    "hasHumanVoice": "true",
+                    "amend_2k": "26",
+                    "amend": "18",
+                    "supportAbr": "1",
+                    "default_screencast_stream": "http://sns-video-zl.xhscdn.com/stream/1/110/258/01e8e4e317db773f0103700199be17995a_258.mp4?sign=a316f0256c171cf07c4d0d15e00be7cf&t=6a53d1f8",
+                    "loudnorm": "{\"lra\":1.9,\"htp\":0.4,\"hldn\":-11.78,\"ldn\":-12.15,\"thr\":-22.35}",
+                    "hd_screencast_stream": "http://sns-video-zl.xhscdn.com/stream/1/110/179/01e8e4e317db773f0103700199be5c7286_179.mp4?sign=10b0f761287e4e59cc143be1b963b88e&t=6a53d1f8",
+                    "bottomAvgLuma": "56",
+                    "backgroundLanguage": "[\"zh-CN\"]",
+                    "audioLevInfo": "{\"audio_quality_level\":\"G+\",\"mos_overall\":3.7241,\"version\":\"3.0\"}",
+                    "isSupportSubtitle": "true",
+                    "topAvgLuma": "47",
+                    "amend_mobile": "40",
+                    "audioClsInfo": "{\"music_ratio\":0.9327926591481477,\"freesound_ratio\":0.04767277822515671,\"speech_ratio\":0.9873060579174467}",
+                    "weakNetUserFlag": "1",
+                    "domestic": "0",
+                    "rightAvgLuma": "61"
+                  },
+                  "drm_type": 0,
+                  "biz_name": 110,
+                  "hdr_type": 0
+                },
+                "stream": {
+                  "h265": [
+                    {
+                      "audio_bitrate": 0,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/320/110/3041/01e8e4e317db773f400370019eb7bdf549_3041.m4s?sign=7943f57dcf9da0e5067bfe5e605682bb&t=6a53d1f8",
+                      "stream_type": 3041,
+                      "weight": 49,
+                      "volume": 0,
+                      "video_duration": 141800,
+                      "duration": 141800,
+                      "vmaf": -1,
+                      "psnr": 45.36800003051758,
+                      "audio_channels": 0,
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/320/110/3041/01e8e4e317db773f400370019eb7bdf549_3041.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/320/110/3041/01e8e4e317db773f400370019eb7bdf549_3041.m4s"
+                      ],
+                      "default_stream": 1,
+                      "video_codec": "hevc",
+                      "video_bitrate": 422863,
+                      "fps": 30,
+                      "opaque1": {
+                        "quality_grade_fallback": "720P",
+                        "roiWeight": "80.277055",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "720p HD",
+                        "pcdn_302_flag": "false",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"86.62\"}",
+                        "quality_grade_name_v2": "720P",
+                        "use_pcdn": "1",
+                        "stream_index": "9999",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_720P",
+                        "quality_index": "130",
+                        "quality_grade_name": "720p HD"
+                      },
+                      "size": 7495247,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "audio_duration": 0,
+                      "stream_desc": "R265_FMP4_720P_3041_IOS",
+                      "width": 720,
+                      "height": 1280,
+                      "quality_type": "HD",
+                      "avg_bitrate": 422863,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    },
+                    {
+                      "audio_bitrate": 0,
+                      "stream_type": 3042,
+                      "weight": 50,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/320/110/3042/01e8e4e317db773f400370019eb7be3fa4_3042.m4s?sign=cb1e95704774f2d49505accbe7e6d9f5&t=6a53d1f8",
+                      "video_duration": 141800,
+                      "volume": 0,
+                      "duration": 141800,
+                      "vmaf": -1,
+                      "psnr": 44.99100112915039,
+                      "video_codec": "hevc",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/320/110/3042/01e8e4e317db773f400370019eb7be3fa4_3042.m4s",
+                        "http://sns-bak-v10.xhscdn.com/stream/320/110/3042/01e8e4e317db773f400370019eb7be3fa4_3042.m4s"
+                      ],
+                      "default_stream": 0,
+                      "audio_channels": 0,
+                      "video_bitrate": 517202,
+                      "fps": 30,
+                      "opaque1": {
+                        "quality_grade_fallback": "1080P",
+                        "roiWeight": "82.57197",
+                        "prefer_audio": "101",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback_with_desc": "1080p HD",
+                        "pcdn_302_flag": "false",
+                        "quality_grade_name_v2": "1080P",
+                        "roi_info": "{\"alpha\":\"1.0\",\"gamma\":\"0.0\",\"lambda\":\"1.4999999999999999E-5\",\"mvmaf\":\"90.33\"}",
+                        "stream_index": "9998",
+                        "use_pcdn": "1",
+                        "pcdn_supplier": "",
+                        "quality_grade": "HD_1080P",
+                        "quality_index": "110",
+                        "quality_grade_name": "1080p HD"
+                      },
+                      "size": 9167406,
+                      "rotate": 0,
+                      "format": "fmp4",
+                      "sr": 0,
+                      "stream_desc": "R265_FMP4_1080P_3042_ios",
+                      "audio_duration": 0,
+                      "width": 1080,
+                      "quality_type": "FHD",
+                      "height": 1920,
+                      "avg_bitrate": 517202,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "h266": [],
+                  "h264": [
+                    {
+                      "audio_bitrate": 56055,
+                      "master_url": "http://sns-video-zl.xhscdn.com/stream/1/110/258/01e8e4e317db773f0103700199be17995a_258.mp4?sign=a316f0256c171cf07c4d0d15e00be7cf&t=6a53d1f8",
+                      "weight": 48,
+                      "stream_type": 258,
+                      "volume": 0,
+                      "video_duration": 141800,
+                      "duration": 141803,
+                      "vmaf": -1,
+                      "psnr": 0,
+                      "video_codec": "h264",
+                      "backup_urls": [
+                        "http://sns-bak-v8.xhscdn.com/stream/1/110/258/01e8e4e317db773f0103700199be17995a_258.mp4",
+                        "http://sns-bak-v10.xhscdn.com/stream/1/110/258/01e8e4e317db773f0103700199be17995a_258.mp4"
+                      ],
+                      "default_stream": 0,
+                      "audio_channels": 2,
+                      "video_bitrate": 666551,
+                      "opaque1": {
+                        "pcdn_302_flag": "false",
+                        "stream_index": "10000",
+                        "use_pcdn": "0",
+                        "didLoudnorm": "false",
+                        "quality_grade_fallback": "720P",
+                        "pcdn_supplier": "",
+                        "quality_grade_fallback_with_desc": "720p HD"
+                      },
+                      "fps": 30,
+                      "size": 12925416,
+                      "audio_codec": "aac",
+                      "rotate": 0,
+                      "format": "mp4",
+                      "sr": 0,
+                      "height": 1280,
+                      "stream_desc": "X264_MP4",
+                      "width": 720,
+                      "audio_duration": 141802,
+                      "quality_type": "HD",
+                      "avg_bitrate": 729204,
+                      "hdr_type": 0,
+                      "ssim": 0
+                    }
+                  ],
+                  "av1": []
+                },
+                "video_id": 137611452643768130
+              }
+            },
+            "result_from": "",
+            "collected": false,
+            "liked_count": 10534,
+            "click_score": 0.06819556653499603,
+            "xsec_token": "YBTbhekMEhS83CGE7JOlRb14NA6M6K9ctmH5-_LeWoyco=",
+            "video_preview_type": "full_vertical_screen",
+            "desc": "OpenAI 又杀疯了！终结App Store,一句话接管所有工具、设计、开发和交易，四大炸点直接看完!#OpenAI",
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "10534"
+            },
+            "images_list": [
+              {
+                "fileid": "spectrum/1040g34o31nb6sdmq50105pmmfsv7c94vu7fnpro",
+                "height": 1685,
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31nb6sdmq50105pmmfsv7c94vu7fnpro?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=3b6126fc7ab2b3362b42dc2d7378576f&t=6a4f34b8&origin=0",
+                "width": 1263,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31nb6sdmq50105pmmfsv7c94vu7fnpro?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=3b6126fc7ab2b3362b42dc2d7378576f&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o31nb6sdmq50105pmmfsv7c94vu7fnpro",
+                "need_load_original_image": false
+              }
+            ],
+            "geo_info": {
+              "distance": ""
+            },
+            "timestamp": 1759830806
+          },
+          "model_type": "note"
+        },
+        {
+          "mix_track_id": "NOTE__6a479300000000001700b6c4__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "has_music": false,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.027581389993429184,
+            "title": "OpenAI向特朗普白送5%股份，究竟谁来买单？",
+            "result_from": "",
+            "collected_count": 3,
+            "collected": false,
+            "nice_count": 0,
+            "comments_count": 1,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "title": "",
+              "type": ""
+            },
+            "note_attributes": [],
+            "images_list": [
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o3225in4ab6s205ndfmkd08btclp64g68",
+                "height": 1806,
+                "width": 1206,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o3225in4ab6s205ndfmkd08btclp64g68?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=2b519455f8123213d1861314a77096ef&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o3225in4ab6s205ndfmkd08btclp64g68",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o3225in4ab6s205ndfmkd08btclp64g68?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=2b519455f8123213d1861314a77096ef&t=6a4f34b8&origin=0"
+              },
+              {
+                "fileid": "spectrum/1040g34o3225in4ab6s2g5ndfmkd08btc6quuu0g",
+                "height": 1710,
+                "url": "",
+                "width": 1206,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o3225in4ab6s2g5ndfmkd08btc6quuu0g?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=c59f3bea43535b7cd3f3ddacce34f796&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o3225in4ab6s2g5ndfmkd08btc6quuu0g",
+                "need_load_original_image": false
+              }
+            ],
+            "type": "normal",
+            "user": {
+              "userid": "5dafb51a0000000001002fac",
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qc32j88g0005ndfmkd08btch5q3n2g?imageView2/2/w/80/format/jpg",
+              "track_duration": 0,
+              "show_red_official_verify_icon": false,
+              "red_official_verified": false,
+              "red_official_verify_type": 0,
+              "followed": false,
+              "red_id": "457055217",
+              "nickname": "硅基时代的洞察手记"
+            },
+            "id": "6a479300000000001700b6c4",
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "style": 0,
+                "icon": "",
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RA8Xp8KzqmembglOGEJgapff6fd+qkgZ+PVFqEvlWp5x9OloUQPj7lt7GRKGlAqVyma4b1gbq4gWoaANv95ZlhNE8LqUoNLkzH"
+              },
+              {
+                "text_en": "5 days ago",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "5 day(s) ago"
+              }
+            ],
+            "timestamp": 1783132220,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBk4NTsuRW7NU_4V0w3HOuZpLRx5pNcKDIO0vFHloKJMo=",
+            "update_time": 1783132220000,
+            "liked_count": 5,
+            "widgets_context": "{\"flags\":{},\"author_id\":\"5dafb51a0000000001002fac\",\"author_name\":\"硅基时代的洞察手记\"}",
+            "desc": "Sam Altman主动递上5%股份， 此时，OpenAI估值8520亿。 这家宣称要用AI重塑世界的公司， 正在向权力",
+            "interaction_area": {
+              "status": false,
+              "text": "5",
+              "type": 1
+            },
+            "last_update_time": 0,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "shared_count": 4
+          }
+        },
+        {
+          "mix_track_id": "NOTE__6a01762d000000003803493f__fa37f22a637b4795__OpenAI",
+          "new_help_style": false,
+          "model_type": "note",
+          "note": {
+            "last_update_time": 0,
+            "geo_info": {
+              "distance": ""
+            },
+            "liked": false,
+            "click_score": 0.037254270166158676,
+            "title": "600多人套现66亿美元，OpenAI这波太猛了",
+            "result_from": "",
+            "collected_count": 139,
+            "comments_count": 80,
+            "nice_count": 0,
+            "collected": false,
+            "niced": false,
+            "cover_image_index": 0,
+            "tag_info": {
+              "type": "",
+              "title": ""
+            },
+            "type": "normal",
+            "note_attributes": [],
+            "images_list": [
+              {
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g0k032013or4nl4005oh8gs5413k8lp7djjo",
+                "height": 1600,
+                "width": 1200,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k032013or4nl4005oh8gs5413k8lp7djjo?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=019ed3088ac8876ae99c4affe362915e&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g0k032013or4nl4005oh8gs5413k8lp7djjo",
+                "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g0k032013or4nl4005oh8gs5413k8lp7djjo?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=019ed3088ac8876ae99c4affe362915e&t=6a4f34b8&origin=0"
+              },
+              {
+                "height": 1020,
+                "need_load_original_image": false,
+                "fileid": "spectrum/1040g34o32013p0g6l41g5oh8gs5413k84pgd6bg",
+                "width": 1336,
+                "original": "",
+                "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o32013p0g6l41g5oh8gs5413k84pgd6bg?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=621264d124aaf46030da0e7f031465bf&t=6a4f34b8&origin=0",
+                "trace_id": "spectrum/1040g34o32013p0g6l41g5oh8gs5413k84pgd6bg",
+                "url": ""
+              }
+            ],
+            "id": "6a01762d000000003803493f",
+            "user": {
+              "red_id": "QbitAI",
+              "red_official_verified": false,
+              "userid": "6228870a0000000010008e88",
+              "nickname": "量子位",
+              "show_red_official_verify_icon": false,
+              "followed": false,
+              "red_official_verify_type": 0,
+              "track_duration": 0,
+              "images": "https://sns-avatar-qc.xhscdn.com/avatar/622887c64f1c23567e524733.jpg?imageView2/2/w/80/format/jpg"
+            },
+            "corner_tag_info": [
+              {
+                "text_en": "",
+                "icon": "",
+                "style": 0,
+                "type": "ubt_sig_token",
+                "location": -1,
+                "text": "RAzGXemQVzxrfEXKSy+ESDX5d6+jSOiIg5l6jdrGSNHFvcAmRPcuEa8WGtZ3tb3tLfJFrxn56rHYVSQtf5FRoAlP7GWGWeepZ3"
+              },
+              {
+                "text_en": "05-11",
+                "style": 0,
+                "icon": "http://picasso-static.xiaohongshu.com/fe-platform/e9b67af62f67d9d6cfac936f96ad10a85fdb868e.png",
+                "type": "publish_time",
+                "location": 5,
+                "text": "05-11"
+              }
+            ],
+            "timestamp": 1778480685,
+            "extract_text_enabled": 0,
+            "debug_info_str": "",
+            "xsec_token": "YBdKNgXEDAnw4uX9QsMEv7--NI_a0tVsp_uTWlawzyB1g=",
+            "widgets_context": "{\"flags\":{},\"author_id\":\"6228870a0000000010008e88\",\"author_name\":\"量子位\"}",
+            "update_time": 1779272105000,
+            "interaction_area": {
+              "type": 1,
+              "status": false,
+              "text": "310"
+            },
+            "desc": "600多名OpenAI前、现任员工，一次性卖出了价值66亿美元股份，人均套现超7000万人民币？？？ 加入OpenAI",
+            "liked_count": 310,
+            "shared_count": 476,
+            "advanced_widgets_groups": {
+              "groups": [
+                {
+                  "mode": 1,
+                  "fetch_types": [
+                    "guos_test",
+                    "note_next_step",
+                    "second_jump_bar",
+                    "cooperate_binds",
+                    "note_collection",
+                    "rec_next_infos",
+                    "image_stickers",
+                    "image_filters",
+                    "product_review",
+                    "related_search",
+                    "cooperate_comment_component",
+                    "image_goods_cards",
+                    "ads_goods_cards",
+                    "ads_comment_component",
+                    "goods_card_v2",
+                    "image_template",
+                    "buyable_goods_card_v2",
+                    "ads_engage_bar",
+                    "challenge_card",
+                    "cooperate_engage_bar",
+                    "guide_post",
+                    "pgy_comment_component",
+                    "pgy_engage_bar",
+                    "bar_below_image",
+                    "aigc_collection",
+                    "co_produce",
+                    "widgets_ndb",
+                    "next_note_guide",
+                    "pgy_bbc_exp",
+                    "async_group",
+                    "super_activity",
+                    "widgets_enhance",
+                    "music_player",
+                    "soundtrack_player"
+                  ]
+                },
+                {
+                  "mode": 0,
+                  "fetch_types": [
+                    "guos_test",
+                    "vote_stickers",
+                    "bullet_comment_lead",
+                    "note_search_box",
+                    "interact_pk",
+                    "interact_vote",
+                    "guide_heuristic",
+                    "share_to_msg",
+                    "follow_guide",
+                    "note_share_prompt_v1",
+                    "sync_group",
+                    "group_share",
+                    "share_guide_bubble",
+                    "widgets_share",
+                    "guide_navigator"
+                  ]
+                }
+              ]
+            },
+            "has_music": false
+          }
+        }
+      ],
+      "search_dqa_new_page_exp": 1,
+      "can_cut": false,
+      "strategy_info": {
+        "query_average_impression_count": 19,
+        "query_can_guide_to_feed": true
+      },
+      "cur_cut_number": 0,
+      "request_dqa": 0,
+      "query_type": 0,
+      "taxonomy1": "c00000000000000000000558",
+      "is_broad_query": true,
+      "video_intent_grade_v3": 1,
+      "show_single_col": false,
+      "query_debug_info": {
+        "is_forbidden": false
+      },
+      "query_intent": {
+        "search_ask_intent": false,
+        "goodsIntent": 0,
+        "low_supply_intent": false
+      },
+      "service_status": "{\"filter\":\"not_required\",\"note\":\"success\",\"onebox\":\"not_required\",\"cost\":{\"all\":582,\"zone\":\"rcsh1\"}}",
+      "onebox": {
+        "search_agent": {
+          "card_type": "DQA_0",
+          "elements": [
+            {
+              "markdown": {
+                "text": "***OpenAI is a leading artificial intelligence research and development company headquartered in San Francisco, renowned for creating advanced models like ChatGPT, DALL·E, and Whisper . As of 2026, the company continues to push the boundaries of AI with significant updates such as the GPT-Image-2 model and the GPT-5.4-Cyber variant, while also expanding its focus on cybersecurity and infrastructure .***\n\n#### Recent Technological Advancements\nOpenAI has recently released several groundbreaking updates to its model portfolio, enhancing both performance and accessibility:\n- **GPT-Image-2**: Launched in April 2026, this model is described as the first \"thinking\" image model capable of logical reasoning and real-time internet searches . It excels in text rendering for non-Latin scripts like Chinese and Japanese, and can generate complex UI layouts and consistent character series ."
+              },
+              "element_type": "markdown"
+            },
+            {
+              "image": {
+                "image_list": [
+                  {
+                    "height": 1672,
+                    "note_id": "69e2379f0000000021006dfc",
+                    "file_id": "spectrum/1040g34o31v2je70ahu105nue0v5g8ma9ugbjv20",
+                    "width": 941,
+                    "url_size_large": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31v2je70ahu105nue0v5g8ma9ugbjv20?imageView2/2/w/1440/format/webp&ap=5&sc=SRH_DTL&sign=7f47a57431752a79c7b787ffc5ea720f&t=6a4f34b8&origin=0",
+                    "user_id": "5fce07cb0000000001005949",
+                    "url": "https://sns-na-i27.xhscdn.com/spectrum/1040g34o31v2je70ahu105nue0v5g8ma9ugbjv20?imageView2/2/w/576/format/webp/q/87%7CimageMogr2/strip&redImage/frame/0&ap=5&sc=SRH_PRV&sign=7f47a57431752a79c7b787ffc5ea720f&t=6a4f34b8&origin=0"
+                  }
+                ]
+              },
+              "element_type": "image"
+            },
+            {
+              "markdown": {
+                "text": "\n- **GPT-5.4-Cyber**: This specialized model is designed for defensive cybersecurity tasks, such as binary reverse analysis, and is part of a \"Trusted Access for Cyber\" program that restricts access to verified security researchers ."
+              },
+              "element_type": "markdown"
+            },
+            {
+              "markdown": {
+                "text": "\n- **Model Efficiency**: The company has introduced new embedding models like `text-embedding-3-small` and `text-embedding-3-large`, which offer higher precision and lower costs . Additionally, the GPT-3.5-Turbo-0125 model has seen a significant price reduction for input and output .\n\n#### Strategic Focus and Industry Impact\nBeyond product releases, OpenAI is actively shaping the AI industry's infrastructure and safety standards:\n- **Infrastructure Partnerships**: OpenAI has formed a major partnership with AMD, which has driven significant stock movements and benefited various supply chain companies involved in chip packaging and PCB manufacturing .\n- **Cybersecurity Framework**: The company is moving towards a \"layered open capability\" approach, where access to powerful models is granted based on identity verification and use cases, aiming to reduce abuse risks .\n- **Market Challenges**: Despite its dominance, OpenAI faces challenges such as missing internal growth targets for ChatGPT's user base and revenue, which has impacted investor sentiment .\n\n#### Brand and Ecosystem\nOpenAI positions itself as a bridge between technology and humanity, emphasizing transparency and ethical AI development . The company provides robust tools for developers, including the OpenAI Platform for prompt evaluation and the API for building production-ready agents . Its brand aesthetic is characterized by a minimalist, geometric style that reflects its commitment to rationality and professionalism ."
+              },
+              "element_type": "markdown"
+            }
+          ],
+          "id": "acb4cc71cefb1760c8689167fbdd9f8f",
+          "dqa_footer": {
+            "source_avatars": [
+              "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g68vh521q0g49ndsp72gq6j21vd1t0?imageView2/2/w/80/format/jpg",
+              "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30n5agsveli005p4om2bn5154hr2bah0?imageView2/2/w/80/format/jpg"
+            ],
+            "question": {
+              "question_title": "Ask",
+              "question_again": "xhsdiscover://search_agent_page?id=acb4cc71cefb1760c8689167fbdd9f8f&search_id=fa37f22a637b4795&query=OpenAI&source=simple&business_type=DQA&version=906&result_version=2"
+            },
+            "source_title": "ai summarized 47 notes"
+          },
+          "link": "xhsdiscover://search_agent_page?id=acb4cc71cefb1760c8689167fbdd9f8f&search_id=fa37f22a637b4795&query=OpenAI&source=simple&business_type=DQA&version=906&result_version=2",
+          "mix_track_id": "DQA_ONEBOX_CARD__acb4cc71cefb1760c8689167fbdd9f8f__fa37f22a637b4795__OpenAI",
+          "base_deeplink": {
+            "underline": "xhsdiscover://search/result?background_transparent_v2=true&halfShadowCorner=12&needNewRootNavigation=true&business_type=DQA&answer_id=acb4cc71cefb1760c8689167fbdd9f8f&result_version=2&halfShadowHeight=0.75&enable_half_screen=true&half_screen_height_ratio=0.7&half_screen_mask=true&add_to_history=true&source=dqa",
+            "recommend": "xhsdiscover://rn/search-page/source-panel?sourceType=0&halfShadowHeight=0.75&background_transparent_v2=true&halfShadowCorner=12&size=10&page_from=0&needNewRootNavigation=true",
+            "quote": "xhsdiscover://rn/search-page/text-source-panel?halfShadowHeight=0.5&background_transparent_v2=true&halfShadowCorner=12&sourceType=1&subTitle=&version=906&result_version=2&message_id=&query=OpenAI&needNewRootNavigation=true",
+            "underline_v2": "xhsdiscover://search/result?background_transparent_v2=true&halfShadowCorner=12&needNewRootNavigation=true&business_type=DQA&answer_id=acb4cc71cefb1760c8689167fbdd9f8f&result_version=2&halfShadowHeight=0.75&enable_half_screen=true&half_screen_height_ratio=0.7&half_screen_mask=true&add_to_history=true&source=dqa"
+          }
+        },
+        "under_filter": false,
+        "model_type": "search_agent"
+      },
+      "search_pull_down_opt_exp": 1,
+      "dqa_authorized_user_by_shared": false
+    },
+    "code": 0,
+    "msg": "成功",
+    "search_id": "fa37f22a637b4795",
+    "search_session_id": "cf89ab3641bc4a28a6fd7095ad21c172",
+    "page": 1,
+    "next_page": 2,
+    "debug_id": "1e8082d1",
+    "debug_info": "gAAAAABqTzS5BbwU66_OYEdFU1y-siuwnHK3MmvOMI4R_Gb0qoqM9Eqn3AGIi0YlUcwK94z9prr6wkt2k6vlxzWsERcQwtAKKS5C7oYYL3NE4OYVX9SvHLCRyw84U2YVKdWCCZTugQPtXguzzdhweqAZUgWRfbXh-0514rMVpaw_r5PBksfPQkKHIGkW3Tg8LMB3r2ex5_wuHJidphDSchUv8VhNkARAEzMC3VMLuoH-JcMtzoXKT2PXkk3g_DYEyik43gmZxef-OwD13qTDiSUxUTnpeNhL_Ks9OePuXJOT6cn5_FhN607kJ73f7QpLBs-J4JLtFSr68tEEnyWEb3Dg7Uoa51puSaNAkV5UlgX6wbKoRvOf--OpMeU0aO_WgGPfIJIXX_FGDQSd-_pdFJaMOyMJYliVaFTsPVkDeW6NMkhdxj8P6c8="
+  }
+}

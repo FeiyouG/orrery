@@ -1,0 +1,138 @@
+{
+  "runId": "01KX2QQ0FVGMC3EPTQNYAF30J6",
+  "provider": "google-trends.use.x402atlas.com",
+  "endpoint": "/trend",
+  "status": "COMPLETED",
+  "output": {
+    "keyword": "OpenAI",
+    "queried_at": "2026-07-09T06:05:57.279Z",
+    "series": [
+      {
+        "date": "2004-01-01",
+        "value": 0
+      },
+      {
+        "date": "2005-01-01",
+        "value": 0
+      },
+      {
+        "date": "2006-01-01",
+        "value": 0
+      },
+      {
+        "date": "2007-01-01",
+        "value": 0
+      },
+      {
+        "date": "2008-01-01",
+        "value": 0
+      },
+      {
+        "date": "2009-01-01",
+        "value": 0
+      },
+      {
+        "date": "2010-01-01",
+        "value": 0
+      },
+      {
+        "date": "2011-01-01",
+        "value": 0
+      },
+      {
+        "date": "2012-01-01",
+        "value": 0
+      },
+      {
+        "date": "2013-01-01",
+        "value": 0
+      },
+      {
+        "date": "2014-01-01",
+        "value": 0
+      },
+      {
+        "date": "2015-01-01",
+        "value": 0
+      },
+      {
+        "date": "2016-01-01",
+        "value": 0
+      },
+      {
+        "date": "2017-01-01",
+        "value": 0
+      },
+      {
+        "date": "2018-01-01",
+        "value": 0
+      },
+      {
+        "date": "2019-01-01",
+        "value": 0
+      },
+      {
+        "date": "2020-01-01",
+        "value": 0
+      },
+      {
+        "date": "2021-01-01",
+        "value": 0
+      },
+      {
+        "date": "2022-01-01",
+        "value": 3
+      },
+      {
+        "date": "2023-01-01",
+        "value": 25
+      },
+      {
+        "date": "2024-01-01",
+        "value": 17
+      },
+      {
+        "date": "2025-01-01",
+        "value": 53
+      },
+      {
+        "date": "2026-01-01",
+        "value": 100
+      }
+    ],
+    "_atlas": {
+      "docs": "https://google-trends.use.x402atlas.com/llms.txt"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.011,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 10000
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 11000,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T06:05:50.894Z",
+  "completedAt": "2026-07-09T06:05:58.142Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX2QQ0FVGMC3EPTQNYAF30J6 -H 'Authorization: Bearer <API_KEY>'"
+  }
+}
