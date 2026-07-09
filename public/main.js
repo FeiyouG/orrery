@@ -1119,9 +1119,18 @@ function focusPlanet(p) {
   const viewDir = pos.clone().sub(camPos).normalize();
   const screenRight = viewDir.clone().cross(camera.up).normalize();
   const camDist = camPos.distanceTo(pos);
-  const panelW = document.getElementById("panel").offsetWidth || 380;
-  const shift = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * camDist * camera.aspect * (panelW / innerWidth);
-  const target = pos.clone().addScaledVector(screenRight, shift);
+  const halfTan = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  const target = pos.clone();
+  if (innerWidth <= 900) {
+    // phone: panel is a bottom sheet — lift the planet into the top 2/3
+    const panelH = Math.min(innerHeight * 0.34, 340);
+    const screenUp = screenRight.clone().cross(viewDir).normalize();
+    target.addScaledVector(screenUp, -halfTan * camDist * (panelH / innerHeight));
+  } else {
+    // desktop: panel docks right — nudge the planet left of it
+    const panelW = document.getElementById("panel").offsetWidth || 380;
+    target.addScaledVector(screenRight, halfTan * camDist * camera.aspect * (panelW / innerWidth));
+  }
   flyTo(camPos, target, 1.7);
   openPanel(p);
 }
@@ -1148,14 +1157,32 @@ addEventListener("pointerdown", () => (downAt = performance.now()));
 addEventListener("pointerup", (e) => {
   if (downAt < 0 || performance.now() - downAt > 240) return;
   downAt = -1;
+  // read coords from the event itself: touch taps never fire pointermove,
+  // so the hover-tracked pointer vector is stale/unset on phones
+  pointer.x = (e.clientX / innerWidth) * 2 - 1;
+  pointer.y = -(e.clientY / innerHeight) * 2 + 1;
   if (Math.abs(pointer.x) > 1 || Math.abs(pointer.y) > 1) return;
   if (tourState.running) return;
   if (e.target.closest("#panel") || e.target.closest("#legend") || e.target.closest("#codex-wrap") || e.target.closest("#tour-ctrl") || e.target.closest("#tour-menu") || e.target.closest("#subject-modal") || e.target.closest("#company-name")) return;
   raycaster.setFromCamera(pointer, camera);
   const hits = raycaster.intersectObjects([...planets.map((p) => p.mesh), sun].filter(Boolean));
-  if (!hits.length) return;
-  if (hits[0].object === sun) focusSun();
-  else focusPlanet(planets[hits[0].object.userData.planetIdx]);
+  if (hits.length) {
+    if (hits[0].object === sun) focusSun();
+    else focusPlanet(planets[hits[0].object.userData.planetIdx]);
+    return;
+  }
+  // fat-finger fallback: snap to the nearest planet within ~30px (touch slop)
+  const slop = e.pointerType === "touch" ? 40 : 26;
+  let best = null;
+  for (const p of planets) {
+    const sp = planetWorldPos(p).project(camera);
+    if (sp.z > 1) continue; // behind the camera
+    const dx = ((sp.x - pointer.x) * innerWidth) / 2;
+    const dy = ((sp.y - pointer.y) * innerHeight) / 2;
+    const d = Math.hypot(dx, dy);
+    if (d < slop && (!best || d < best.d)) best = { p, d };
+  }
+  if (best) focusPlanet(best.p);
 });
 
 addEventListener("keydown", (e) => {

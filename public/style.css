@@ -82,9 +82,10 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
   border: 1px solid var(--line); border-radius: 3px; padding: 2px 6px; }
 .subject-item .s-worlds { margin-left: auto; font-size: 10px; color: var(--dim); white-space: nowrap; }
 .subject-item .s-refresh {
-  font-size: 14px; color: var(--dim); padding: 0 2px; border-radius: 3px;
-  transition: color 0.15s, transform 0.3s; }
-.subject-item .s-refresh:hover { color: var(--cyan); transform: rotate(180deg); }
+  font-size: 18px; line-height: 1; color: var(--dim); padding: 6px 8px; border-radius: 4px;
+  border: 1px solid transparent;
+  transition: color 0.15s, transform 0.3s, border-color 0.15s; }
+.subject-item .s-refresh:hover { color: var(--cyan); border-color: var(--line); transform: rotate(180deg); }
 .subject-item.current { border-color: rgba(127, 247, 255, 0.4); }
 .subject-item.current::after { content: "● ACTIVE"; font-size: 9px; color: #6effa0; letter-spacing: 0.15em; margin-left: 8px; }
 #subject-status {
@@ -171,11 +172,18 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
 /* ---------- info panel ---------- */
 #panel { position: fixed; right: 24px; top: 185px; bottom: 60px; width: 340px; z-index: 20;
   background: var(--panel-bg); border: 1px solid var(--line); border-radius: 12px;
-  backdrop-filter: blur(14px); padding: 22px; overflow-y: auto;
+  backdrop-filter: blur(14px); padding: 0 22px 22px; overflow-y: auto;
   transform: translateX(120%); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.25, 1);
   box-shadow: 0 0 60px rgba(50, 130, 255, 0.12), inset 0 0 40px rgba(127, 247, 255, 0.03); }
 #panel.open { transform: translateX(0); }
-#panel-close { position: absolute; top: 12px; right: 14px; background: none; border: none;
+#panel-head {
+  position: sticky; top: 0; z-index: 3;
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0 -22px 12px; padding: 18px 14px 10px 22px;
+  background: rgba(8, 14, 32, 0.97);
+  box-shadow: 0 8px 14px rgba(8, 14, 32, 0.6);
+  border-radius: 12px 12px 0 0; }
+#panel-close { background: none; border: none; padding: 4px 8px;
   color: var(--dim); cursor: pointer; font-size: 14px; }
 #panel-close:hover { color: #fff; }
 .panel-eyebrow { font-size: 9px; letter-spacing: 0.4em; color: var(--cyan); opacity: 0.7; }
@@ -262,6 +270,36 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
 
 @media (max-width: 900px) {
   #legend { display: none; }
-  #panel { left: 12px; right: 12px; width: auto; top: auto; height: 46vh; }
   #company-desc { display: none; }
+
+  /* header: title on top, big tour buttons under it; gauges hidden */
+  #hud-top { flex-direction: column; align-items: flex-start; gap: 12px; padding: 14px 16px; }
+  #company-name { font-size: 26px; }
+  .gauge { display: none; }
+  .hud-gauges { min-width: 0; width: 100%; }
+  #tour-ctrl { justify-content: flex-start; width: 100%; }
+  #tour-ctrl button { font-size: 13px; padding: 12px 18px; flex: 0 1 auto; }
+  #tour-ctrl button:first-child { flex: 1 1 auto; }
+  #tour-menu { max-height: 40vh; }
+
+  /* scan panel: floating bottom sheet — planet stays visible above */
+  #panel {
+    left: 10px; right: 10px; top: auto; bottom: 10px; width: auto; max-height: 34vh;
+    border-radius: 14px; padding: 0 18px 20px;
+    transform: translateY(130%);
+  }
+  #panel.open { transform: translateY(0); }
+  #panel-head { margin: 0 -18px 10px; padding: 14px 12px 8px 18px; border-radius: 14px 14px 0 0; }
+
+  /* footer: tiny clock only, hints hidden */
+  #hud-bottom { padding: 8px 12px; font-size: 8px; justify-content: flex-end; }
+  #hud-bottom span:first-child { display: none; }
+  #codex-wrap { left: 12px; bottom: 28px; }
+  #codex { max-height: 52vh; overflow-y: auto; }
+
+  /* modal comfort */
+  #subject-modal { padding-top: 8vh; }
+  #subject-box { padding: 18px; }
+  .subject-item { padding: 12px; }
+  .subject-item .s-refresh { font-size: 20px; padding: 8px 10px; }
 }
