@@ -1152,6 +1152,12 @@ addEventListener("pointermove", (e) => {
   pointer.y = -(e.clientY / innerHeight) * 2 + 1;
 });
 
+// iOS Safari ignores user-scalable=no: block page pinch-zoom explicitly so
+// pinch always zooms the orbit, never the layout
+for (const ev of ["gesturestart", "gesturechange", "gestureend"]) {
+  document.addEventListener(ev, (e) => e.preventDefault(), { passive: false });
+}
+
 let downAt = -1;
 addEventListener("pointerdown", () => (downAt = performance.now()));
 addEventListener("pointerup", (e) => {
@@ -1394,12 +1400,35 @@ async function openSubjectModal() {
   universes.forEach((s) => {
     const b = document.createElement("button");
     b.className = "subject-item" + (s.slug === activeSlug ? " current" : "");
+    const meta = [s.sources ? `${s.sources} worlds` : "", s.updatedAt ? timeAgo(s.updatedAt) : ""]
+      .filter(Boolean).join(" · ");
     b.innerHTML =
-      `<span>${s.name}</span>` +
+      `<span class="s-main"><span class="s-name">${s.name}</span>` +
       (s.subjectType ? `<span class="s-type">${s.subjectType.toUpperCase()}</span>` : "") +
       (s.tier === "yours" ? `<span class="s-type s-yours">YOURS</span>` : "") +
-      `<span class="s-worlds">${s.sources ? `${s.sources} worlds` : ""}${s.updatedAt ? ` · ${timeAgo(s.updatedAt)}` : ""}</span>`;
+      `</span>` +
+      `<span class="s-meta">${meta}</span>`;
     b.onclick = () => activateUniverse(s.slug);
+    // delete (your universes only — shipped demos are static files)
+    if (s.tier === "yours") {
+      const del = document.createElement("span");
+      del.className = "s-del";
+      del.textContent = "✕";
+      del.title = "delete this universe from your browser";
+      del.onclick = async (e) => {
+        e.stopPropagation();
+        if (!del.classList.contains("arm")) {
+          // two-tap confirm — it also wipes the paid endpoint cache
+          del.classList.add("arm");
+          del.textContent = "sure?";
+          setTimeout(() => { del.classList.remove("arm"); del.textContent = "✕"; }, 2600);
+          return;
+        }
+        await deleteUniverse(s.slug);
+        openSubjectModal();
+      };
+      b.appendChild(del);
+    }
     // fresh re-scan: re-pays every endpoint, updates the universe in place
     const re = document.createElement("span");
     re.className = "s-refresh";
@@ -1420,6 +1449,19 @@ function closeSubjectModal() { if (!switching) subjModal.hidden = true; }
 function activateUniverse(slug) {
   localStorage.setItem("activeUniverse", slug);
   location.reload();
+}
+
+async function deleteUniverse(slug) {
+  // remove the universe AND its raw endpoint cache from this browser
+  const db = await idbOpen();
+  await new Promise((res, rej) => {
+    const tx = db.transaction(["universes", "runs"], "readwrite");
+    tx.objectStore("universes").delete(slug);
+    tx.objectStore("runs").delete(IDBKeyRange.bound(`${slug}:`, `${slug}:\uffff`));
+    tx.oncomplete = res;
+    tx.onerror = () => rej(tx.error);
+  });
+  if (localStorage.getItem("activeUniverse") === slug) localStorage.removeItem("activeUniverse");
 }
 
 function scanLine(text, cls = "") {
