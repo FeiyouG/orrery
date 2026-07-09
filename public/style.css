@@ -151,12 +151,12 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
 .tour-row > label { font-size: 10px; letter-spacing: 0.14em; color: var(--dim); }
 .tour-row input[type="range"] { width: 100%; accent-color: var(--cyan); }
 #tour-speed-val { color: var(--cyan); }
-.tour-check, #tour-stops label {
+#tour-stops label {
   display: flex; align-items: center; gap: 7px; font-size: 11px; color: #dbeafe;
   cursor: pointer; letter-spacing: 0.08em;
 }
 #tour-stops { display: flex; flex-direction: column; gap: 4px; }
-#tour-stops input, .tour-check input { accent-color: var(--cyan); }
+#tour-stops input { accent-color: var(--cyan); }
 
 @media (max-width: 900px) {
   #legend { display: none; }

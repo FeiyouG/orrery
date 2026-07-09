@@ -1090,7 +1090,7 @@ addEventListener("keydown", (e) => {
 document.getElementById("panel-close").onclick = unfocus;
 
 // -------------------------------------------------------- cinematic tour
-const tourState = { running: false, abort: false, rec: null, chunks: [], stream: null };
+const tourState = { running: false, abort: false };
 const FAR_POS = new THREE.Vector3(45, 280, 760);
 const OVERVIEW_POS = new THREE.Vector3(0, 120, 260);
 const ORIGIN = new THREE.Vector3(0, 0, 0);
@@ -1102,46 +1102,6 @@ function tourWait(ms) {
       if (tourState.abort || performance.now() - t0 >= ms) return res();
       requestAnimationFrame(chk);
     })();
-  });
-}
-
-async function startRecorder() {
-  let stream;
-  try {
-    // whole-tab capture (includes HUD + panels); user picks "This Tab"
-    stream = await navigator.mediaDevices.getDisplayMedia({
-      video: { frameRate: 60 },
-      audio: false,
-      preferCurrentTab: true,
-      selfBrowserSurface: "include",
-    });
-  } catch {
-    stream = renderer.domElement.captureStream(60); // fallback: WebGL canvas only
-  }
-  const mime = MediaRecorder.isTypeSupported("video/webm;codecs=vp9") ? "video/webm;codecs=vp9" : "video/webm";
-  tourState.chunks = [];
-  tourState.stream = stream;
-  tourState.rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 14_000_000 });
-  tourState.rec.ondataavailable = (e) => { if (e.data.size) tourState.chunks.push(e.data); };
-  tourState.rec.start(250);
-}
-
-function stopRecorder() {
-  return new Promise((res) => {
-    const { rec, stream } = tourState;
-    if (!rec || rec.state === "inactive") return res();
-    rec.onstop = () => {
-      stream.getTracks().forEach((t) => t.stop());
-      const blob = new Blob(tourState.chunks, { type: "video/webm" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = `${(DATA?.company?.name || "brand").toLowerCase().replace(/\s+/g, "-")}-tour.webm`;
-      a.click();
-      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
-      tourState.rec = null;
-      res();
-    };
-    rec.stop();
   });
 }
 
@@ -1159,11 +1119,6 @@ async function runTour() {
   btn.classList.add("running");
   document.getElementById("tour-menu").hidden = true;
   document.getElementById("codex").classList.remove("open");
-
-  if (document.getElementById("tour-record").checked) {
-    await startRecorder();
-    await tourWait(500); // let the share-UI overlay clear
-  }
 
   const s = 1 / speed;
   flightScale = s;
@@ -1191,8 +1146,6 @@ async function runTour() {
   // 3. pull back to overview, then retreat to the far shot
   if (!tourState.abort) { clearFocus(); flyTo(OVERVIEW_POS, ORIGIN, 2.2); await tourWait(2200 * s + 1200 * s); }
   if (!tourState.abort) { flyTo(FAR_POS, ORIGIN, 7); await tourWait(7000 * s + 300); }
-
-  await stopRecorder();
 
   flightScale = 1;
   controls.enabled = true;
