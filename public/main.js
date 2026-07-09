@@ -420,11 +420,19 @@ const pointer = new THREE.Vector2(-2, -2);
 const tmpV = new THREE.Vector3();
 
 let tween = null;
+let flightScale = 1; // tour speed multiplier (1/speed)
 function flyTo(pos, target, dur = 1.6) {
+  // orbit around the sun instead of cutting straight through it:
+  // interpolate direction (slerp about origin) and radius separately
+  const p0 = camera.position.clone(), p1 = pos.clone();
+  const d0 = p0.clone().normalize(), d1 = p1.clone().normalize();
   tween = {
-    p0: camera.position.clone(), p1: pos.clone(),
+    p0, p1, d0,
+    r0: p0.length(), r1: p1.length(),
+    q: new THREE.Quaternion().setFromUnitVectors(d0, d1),
+    qt: new THREE.Quaternion(),
     t0: controls.target.clone(), t1: target.clone(),
-    start: performance.now(), dur: dur * 1000,
+    start: performance.now(), dur: dur * 1000 * flightScale,
   };
 }
 
@@ -698,6 +706,8 @@ function buildPlanet(source, orbitIdx, total, ringed) {
     spin: 0.1 + (source.activity ?? 0.3) * 0.5,
     ships: [],
     labelEl: div,
+    label: lbl,
+    lblFs: 0,
   };
   const shipCount = Math.round((source.activity ?? 0) * 3 + (source.engagementRate ? 2 : 0));
   for (let i = 0; i < shipCount; i++) spawnShip(p, true);
@@ -869,6 +879,17 @@ function buildHud(data) {
   const codexBtn = document.getElementById("codex-btn");
   const codex = document.getElementById("codex");
   codexBtn.onclick = () => codex.classList.toggle("open");
+
+  // tour stop checkboxes
+  const stopsEl = document.getElementById("tour-stops");
+  stopsEl.innerHTML = "";
+  const mkStop = (id, label, color) => {
+    const l = document.createElement("label");
+    l.innerHTML = `<input type="checkbox" checked data-stop="${id}"> <span style="color:${color}">●</span> ${label}`;
+    stopsEl.appendChild(l);
+  };
+  mkStop("core", `${c.name.toUpperCase()} CORE`, "#ffd25e");
+  planets.forEach((p, i) => mkStop(i, p.source.name.toUpperCase(), p.source.color));
 }
 
 function openPanel(p) {
@@ -1008,24 +1029,36 @@ function focusPlanet(p) {
   document.getElementById(`legend-${planets.indexOf(p)}`)?.classList.add("active");
   planets.forEach((q) => q.moons.forEach((m) => (m.label.visible = q === p)));
   const pos = planetWorldPos(p);
-  const dir = pos.clone().normalize();
+  const dir = pos.clone().normalize(); // sun -> planet
   const tangent = new THREE.Vector3(-dir.z, 0, dir.x);
+  // approach from whichever side the camera already is (shorter, no flip)
+  if (tangent.dot(tmpV.copy(camera.position).sub(pos)) < 0) tangent.negate();
+  // tilt the viewpoint sunward (~46 deg) so most of the disc is day side
+  const A = 0.8;
+  const off = tangent.multiplyScalar(Math.cos(A)).addScaledVector(dir, -Math.sin(A)).normalize();
   const camPos = pos.clone()
-    .addScaledVector(tangent, p.size * 9.5)
-    .addScaledVector(dir, p.size * 1.8)
-    .add(new THREE.Vector3(0, p.size * 3.6, 0));
+    .addScaledVector(off, p.size * 9.0)
+    .add(new THREE.Vector3(0, p.size * 2.6, 0));
+  // center the planet in the part of the screen the scan panel doesn't cover
   const viewDir = pos.clone().sub(camPos).normalize();
   const screenRight = viewDir.clone().cross(camera.up).normalize();
-  const target = pos.clone().addScaledVector(screenRight, p.size * 1.4);
+  const camDist = camPos.distanceTo(pos);
+  const panelW = document.getElementById("panel").offsetWidth || 380;
+  const shift = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * camDist * camera.aspect * (panelW / innerWidth);
+  const target = pos.clone().addScaledVector(screenRight, shift);
   flyTo(camPos, target, 1.7);
   openPanel(p);
 }
 
-function unfocus() {
+function clearFocus() {
   focused = null;
   closePanel();
   document.querySelectorAll(".legend-item").forEach((e) => e.classList.remove("active"));
   planets.forEach((q) => q.moons.forEach((m) => (m.label.visible = false)));
+}
+
+function unfocus() {
+  clearFocus();
   flyTo(new THREE.Vector3(0, 120, 260), new THREE.Vector3(0, 0, 0), 1.6);
 }
 
@@ -1040,7 +1073,8 @@ addEventListener("pointerup", (e) => {
   if (downAt < 0 || performance.now() - downAt > 240) return;
   downAt = -1;
   if (Math.abs(pointer.x) > 1 || Math.abs(pointer.y) > 1) return;
-  if (e.target.closest("#panel") || e.target.closest("#legend") || e.target.closest("#codex-wrap")) return;
+  if (tourState.running) return;
+  if (e.target.closest("#panel") || e.target.closest("#legend") || e.target.closest("#codex-wrap") || e.target.closest("#tour-ctrl") || e.target.closest("#tour-menu")) return;
   raycaster.setFromCamera(pointer, camera);
   const hits = raycaster.intersectObjects([...planets.map((p) => p.mesh), sun].filter(Boolean));
   if (!hits.length) return;
@@ -1048,8 +1082,142 @@ addEventListener("pointerup", (e) => {
   else focusPlanet(planets[hits[0].object.userData.planetIdx]);
 });
 
-addEventListener("keydown", (e) => { if (e.key === "Escape") unfocus(); });
+addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  if (tourState.running) { tourState.abort = true; return; }
+  unfocus();
+});
 document.getElementById("panel-close").onclick = unfocus;
+
+// -------------------------------------------------------- cinematic tour
+const tourState = { running: false, abort: false, rec: null, chunks: [], stream: null };
+const FAR_POS = new THREE.Vector3(45, 280, 760);
+const OVERVIEW_POS = new THREE.Vector3(0, 120, 260);
+const ORIGIN = new THREE.Vector3(0, 0, 0);
+
+function tourWait(ms) {
+  return new Promise((res) => {
+    const t0 = performance.now();
+    (function chk() {
+      if (tourState.abort || performance.now() - t0 >= ms) return res();
+      requestAnimationFrame(chk);
+    })();
+  });
+}
+
+async function startRecorder() {
+  let stream;
+  try {
+    // whole-tab capture (includes HUD + panels); user picks "This Tab"
+    stream = await navigator.mediaDevices.getDisplayMedia({
+      video: { frameRate: 60 },
+      audio: false,
+      preferCurrentTab: true,
+      selfBrowserSurface: "include",
+    });
+  } catch {
+    stream = renderer.domElement.captureStream(60); // fallback: WebGL canvas only
+  }
+  const mime = MediaRecorder.isTypeSupported("video/webm;codecs=vp9") ? "video/webm;codecs=vp9" : "video/webm";
+  tourState.chunks = [];
+  tourState.stream = stream;
+  tourState.rec = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 14_000_000 });
+  tourState.rec.ondataavailable = (e) => { if (e.data.size) tourState.chunks.push(e.data); };
+  tourState.rec.start(250);
+}
+
+function stopRecorder() {
+  return new Promise((res) => {
+    const { rec, stream } = tourState;
+    if (!rec || rec.state === "inactive") return res();
+    rec.onstop = () => {
+      stream.getTracks().forEach((t) => t.stop());
+      const blob = new Blob(tourState.chunks, { type: "video/webm" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `${(DATA?.company?.name || "brand").toLowerCase().replace(/\s+/g, "-")}-tour.webm`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      tourState.rec = null;
+      res();
+    };
+    rec.stop();
+  });
+}
+
+async function runTour() {
+  const btn = document.getElementById("tour-play");
+  if (tourState.running) { tourState.abort = true; return; }
+
+  const speed = Number(document.getElementById("tour-speed").value) || 1;
+  const stops = [...document.querySelectorAll("#tour-stops input:checked")].map((el) => el.dataset.stop);
+  if (!stops.length) return;
+
+  tourState.running = true;
+  tourState.abort = false;
+  btn.textContent = "■ STOP TOUR";
+  btn.classList.add("running");
+  document.getElementById("tour-menu").hidden = true;
+  document.getElementById("codex").classList.remove("open");
+
+  if (document.getElementById("tour-record").checked) {
+    await startRecorder();
+    await tourWait(500); // let the share-UI overlay clear
+  }
+
+  const s = 1 / speed;
+  flightScale = s;
+  controls.enabled = false;
+  const homePos = camera.position.clone(), homeTgt = controls.target.clone();
+
+  // 1. open far out, drift in to the full system
+  clearFocus();
+  tween = null;
+  camera.position.copy(FAR_POS);
+  controls.target.copy(ORIGIN);
+  await tourWait(800 * s);
+  if (!tourState.abort) { flyTo(OVERVIEW_POS, ORIGIN, 7); await tourWait(7000 * s + 300); }
+  if (!tourState.abort) await tourWait(2600 * s); // hold the overview
+
+  // 2. visit each selected stop, dwell on its scan panel
+  for (const stop of stops) {
+    if (tourState.abort) break;
+    if (stop === "core") focusSun();
+    else focusPlanet(planets[Number(stop)]);
+    await tourWait(1700 * s + 300); // flight
+    if (!tourState.abort) await tourWait(5200 * s); // read the panel
+  }
+
+  // 3. pull back to overview, then retreat to the far shot
+  if (!tourState.abort) { clearFocus(); flyTo(OVERVIEW_POS, ORIGIN, 2.2); await tourWait(2200 * s + 1200 * s); }
+  if (!tourState.abort) { flyTo(FAR_POS, ORIGIN, 7); await tourWait(7000 * s + 300); }
+
+  await stopRecorder();
+
+  flightScale = 1;
+  controls.enabled = true;
+  if (tourState.abort) {
+    clearFocus();
+    tween = null;
+    camera.position.copy(homePos);
+    controls.target.copy(homeTgt);
+  } else {
+    flyTo(OVERVIEW_POS, ORIGIN, 2);
+  }
+  tourState.running = false;
+  tourState.abort = false;
+  btn.textContent = "▶ CINEMATIC TOUR";
+  btn.classList.remove("running");
+}
+
+document.getElementById("tour-play").onclick = runTour;
+document.getElementById("tour-cfg-btn").onclick = () => {
+  const m = document.getElementById("tour-menu");
+  m.hidden = !m.hidden;
+};
+document.getElementById("tour-speed").oninput = (e) => {
+  document.getElementById("tour-speed-val").textContent = `${Number(e.target.value).toFixed(2).replace(/\.?0+$/, "")}×`;
+};
 
 addEventListener("resize", () => {
   camera.aspect = innerWidth / innerHeight;
@@ -1105,7 +1273,11 @@ function animate() {
   if (tween) {
     const k = Math.min(1, (performance.now() - tween.start) / tween.dur);
     const e = easeInOut(k);
-    camera.position.lerpVectors(tween.p0, tween.p1, e);
+    tween.qt.identity().slerp(tween.q, e);
+    camera.position
+      .copy(tween.d0)
+      .applyQuaternion(tween.qt)
+      .multiplyScalar(tween.r0 + (tween.r1 - tween.r0) * e);
     controls.target.lerpVectors(tween.t0, tween.t1, e);
     if (k >= 1) tween = null;
   }
@@ -1116,6 +1288,9 @@ function animate() {
     sun.scale.setScalar(sunBaseScale * pulse);
   }
 
+  // label LOD: px height of half the fov at 1 unit distance
+  const pxPerUnit = innerHeight / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
+
   for (const p of planets) {
     p.angle += p.speed * dt;
     const pos = planetWorldPos(p);
@@ -1123,6 +1298,18 @@ function animate() {
     p.group.position.copy(pos);
     p.mesh.rotation.y += p.spin * dt;
     if (p.cloudMesh) p.cloudMesh.rotation.y += p.spin * dt * 1.35;
+
+    // planet-name label: hide when tiny on screen, scale font with apparent size
+    const pxR = (p.size / Math.max(camera.position.distanceTo(pos), 1e-3)) * pxPerUnit;
+    p.label.visible = focused === p || (p.label.visible ? pxR >= 5.4 : pxR >= 6.4);
+    if (p.label.visible) {
+      const fs = clamp(11 * (0.68 + pxR / 55), 8, 14.5);
+      if (Math.abs(fs - p.lblFs) > 0.25) {
+        p.lblFs = fs;
+        p.labelEl.style.fontSize = `${fs.toFixed(1)}px`;
+        p.labelEl.style.opacity = String(clamp(0.45 + pxR / 20, 0.45, 1));
+      }
+    }
 
     for (const m of p.moons) {
       m.angle += m.speed * dt;
@@ -1145,10 +1332,18 @@ function animate() {
 
     updateShips(p, pos, dt);
 
-    if (focused === p && !tween) {
+    if (focused === p) {
       const delta = pos.clone().sub(prev);
-      camera.position.add(delta);
-      controls.target.add(delta);
+      if (tween) {
+        // planet keeps orbiting mid-flight: drag the destination along with it
+        tween.p1.add(delta);
+        tween.t1.add(delta);
+        tween.r1 = tween.p1.length();
+        tween.q.setFromUnitVectors(tween.d0, tmpV.copy(tween.p1).normalize());
+      } else {
+        camera.position.add(delta);
+        controls.target.add(delta);
+      }
     }
 
     const targetEm = hovered === p ? 0.35 : (p.mesh.material.emissiveMap ? (p.k.type === "lava" ? 1.5 : 1.15) : 0);

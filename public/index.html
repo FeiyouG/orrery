@@ -40,6 +40,23 @@
         <div class="gauge-bar sentiment"><div id="gauge-sent" class="gauge-marker"></div></div>
       </div>
       <div class="gauge stats" id="hud-stats"></div>
+      <div id="tour-ctrl">
+        <button id="tour-play">▶ CINEMATIC TOUR</button>
+        <button id="tour-cfg-btn" aria-label="tour settings">⚙</button>
+      </div>
+      <div id="tour-menu" hidden>
+        <div class="tour-row">
+          <label>SPEED <span id="tour-speed-val">1.0×</span></label>
+          <input type="range" id="tour-speed" min="0.5" max="2.5" step="0.25" value="1" />
+        </div>
+        <div class="tour-row">
+          <label class="tour-check"><input type="checkbox" id="tour-record" /> RECORD → .webm</label>
+        </div>
+        <div class="tour-row">
+          <label>STOPS</label>
+          <div id="tour-stops"></div>
+        </div>
+      </div>
     </div>
   </header>
 
