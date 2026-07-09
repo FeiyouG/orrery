@@ -13,7 +13,7 @@ import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildUniverse, slugify, DEFAULT_API_BASE } from "../public/pipeline.js";
+import { buildUniverse, slugify, DEFAULT_API_BASE, API_BASES } from "../public/pipeline.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -23,7 +23,7 @@ const PUB_DATA = path.join(ROOT, "public", "data");
 const SUBJECT = process.env.SUBJECT || process.env.COMPANY_NAME;
 const SUBJECT_TYPE = (process.env.SUBJECT_TYPE || "auto").toLowerCase();
 const KEY = process.env.MONID_API_KEY;
-const BASE = DEFAULT_API_BASE; // production only
+const BASE = API_BASES[process.env.STAGE] || DEFAULT_API_BASE;
 const FRESH = process.argv.includes("--fresh");
 const BAKE = process.argv.includes("--bake");
 

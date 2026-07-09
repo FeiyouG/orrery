@@ -10,7 +10,11 @@
  * are fetched live (and charged). `fresh: true` bypasses the cache.
  */
 
-export const DEFAULT_API_BASE = "https://api.monid.ai";
+export const API_BASES = {
+  prod: "https://api.monid.ai",
+  dev: "https://api.dev.monid.ai",
+};
+export const DEFAULT_API_BASE = API_BASES.prod;
 
 export const slugify = (s) =>
   String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

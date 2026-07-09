@@ -22,10 +22,20 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { CSS2DRenderer, CSS2DObject } from "three/addons/renderers/CSS2DRenderer.js";
-import { buildUniverse, slugify, whoami, DEFAULT_API_BASE } from "./pipeline.js";
-import { beginConnect, completeConnect, connected, disconnect, accessToken, userInfo } from "./oauth.js";
+import { buildUniverse, slugify, whoami, DEFAULT_API_BASE, API_BASES } from "./pipeline.js";
+import { beginConnect, completeConnect, connected, disconnect, accessToken, userInfo, configureOAuth } from "./oauth.js";
 
-const API_BASE = DEFAULT_API_BASE; // production only
+// Stage defaults to production. The local dev server may expose ./env.json
+// with a different stage; the file 404s on static hosting, so deployed
+// sites always run against prod.
+let API_BASE = DEFAULT_API_BASE;
+try {
+  const cfg = await fetch("./env.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  if (cfg?.STAGE && API_BASES[cfg.STAGE]) {
+    API_BASE = API_BASES[cfg.STAGE];
+    configureOAuth({ stage: cfg.STAGE });
+  }
+} catch { /* static hosting */ }
 const WALLET_URL = "https://app.monid.ai/wallet";
 
 // low-power mode: half pixel ratio + 30fps cap (persisted)
@@ -1330,6 +1340,15 @@ async function listUniverses() {
   return [...bySlug.values()].sort((a, b) => String(b.updatedAt).localeCompare(String(a.updatedAt)));
 }
 
+function timeAgo(iso) {
+  if (!iso) return "";
+  const s = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (!isFinite(s) || s < 0) return "";
+  if (s < 3600) return `${Math.max(1, Math.round(s / 60))}m ago`;
+  if (s < 86400) return `${Math.round(s / 3600)}h ago`;
+  return `${Math.round(s / 86400)}d ago`;
+}
+
 async function openSubjectModal() {
   subjModal.hidden = false;
   subjStatus.hidden = true;
@@ -1352,8 +1371,18 @@ async function openSubjectModal() {
       `<span>${s.name}</span>` +
       (s.subjectType ? `<span class="s-type">${s.subjectType.toUpperCase()}</span>` : "") +
       (s.tier === "yours" ? `<span class="s-type s-yours">YOURS</span>` : "") +
-      (s.sources ? `<span class="s-worlds">${s.sources} worlds</span>` : "");
+      `<span class="s-worlds">${s.sources ? `${s.sources} worlds` : ""}${s.updatedAt ? ` · ${timeAgo(s.updatedAt)}` : ""}</span>`;
     b.onclick = () => activateUniverse(s.slug);
+    // fresh re-scan: re-pays every endpoint, updates the universe in place
+    const re = document.createElement("span");
+    re.className = "s-refresh";
+    re.textContent = "↻";
+    re.title = "re-scan now — refetches everything (re-pays all endpoints)";
+    re.onclick = (e) => {
+      e.stopPropagation();
+      scanSubject(s.name, { fresh: true });
+    };
+    b.appendChild(re);
     subjList.appendChild(b);
   });
   if (!universes.length) subjList.innerHTML = `<div class="subject-hint">no universes yet — type one above</div>`;
@@ -1375,7 +1404,7 @@ function scanLine(text, cls = "") {
   return el;
 }
 
-async function scanSubject(subject) {
+async function scanSubject(subject, { fresh = false } = {}) {
   if (switching) return;
   let auth;
   try {
@@ -1398,7 +1427,7 @@ async function scanSubject(subject) {
   subjStatus.hidden = false;
   subjStatus.classList.remove("error");
   subjStatus.innerHTML = "";
-  const header = scanLine(`◈ SCANNING "${subject.toUpperCase()}" UNIVERSE…`);
+  const header = scanLine(`◈ ${fresh ? "RE-SCANNING" : "SCANNING"} "${subject.toUpperCase()}" UNIVERSE${fresh ? " (FRESH DATA)" : ""}…`);
   header.classList.add("ok");
 
   const slug = slugify(subject);
@@ -1418,7 +1447,7 @@ async function scanSubject(subject) {
 
   try {
     const { snapshot, subjectType, balance } = await buildUniverse({
-      subject, apiKey: auth.apiKey, workspaceId: auth.workspaceId, apiBase: API_BASE, cache, onProgress,
+      subject, apiKey: auth.apiKey, workspaceId: auth.workspaceId, apiBase: API_BASE, cache, fresh, onProgress,
     });
     if (!snapshot.sources.length) throw new Error("no data found for this subject");
     await idbSet("universes", slug, {

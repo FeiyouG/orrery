@@ -80,7 +80,11 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
 .subject-item .s-type {
   font-size: 9px; letter-spacing: 0.18em; color: var(--dim);
   border: 1px solid var(--line); border-radius: 3px; padding: 2px 6px; }
-.subject-item .s-worlds { margin-left: auto; font-size: 10px; color: var(--dim); }
+.subject-item .s-worlds { margin-left: auto; font-size: 10px; color: var(--dim); white-space: nowrap; }
+.subject-item .s-refresh {
+  font-size: 14px; color: var(--dim); padding: 0 2px; border-radius: 3px;
+  transition: color 0.15s, transform 0.3s; }
+.subject-item .s-refresh:hover { color: var(--cyan); transform: rotate(180deg); }
 .subject-item.current { border-color: rgba(127, 247, 255, 0.4); }
 .subject-item.current::after { content: "● ACTIVE"; font-size: 9px; color: #6effa0; letter-spacing: 0.15em; margin-left: 8px; }
 #subject-status {

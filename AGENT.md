@@ -101,7 +101,9 @@ Conventions that will bite you if ignored:
   the VISUAL CODEX panel in `index.html` and to README "What the visuals mean".
 - Sizes/orbits are tuned together (`orbitR = 27 + i * 9.5 + size * 1.8`);
   changing one usually requires rechecking sun scale, belt radius, FAR_POS.
-- Never commit non-prod Monid URLs (`api.dev.*`, `clerk.app.dev.*`).
+- Monid environment is selected by the hidden `STAGE` env var (`dev`|`prod`,
+  default prod; stage maps live in pipeline.js/oauth.js). Deliberately
+  undocumented in README/.env.example — keep it that way.
 
 ## Verify changes
 

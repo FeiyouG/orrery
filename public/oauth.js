@@ -7,11 +7,12 @@
  * browser only.
  */
 
-export const OAUTH_CLIENT_ID = "mFx1imRrM8bKuVPU";
-export const DEFAULT_ISSUER = "https://clerk.app.monid.ai";
-
-let issuer = DEFAULT_ISSUER;
-export function configureOAuth({ issuer: iss } = {}) { if (iss) issuer = iss; }
+const STAGES = {
+  prod: { issuer: "https://clerk.app.monid.ai", clientId: "mFx1imRrM8bKuVPU" },
+  dev: { issuer: "https://clerk.app.dev.monid.ai", clientId: "voW4BGmqEZ8ir6Gr" },
+};
+let stage = STAGES.prod;
+export function configureOAuth({ stage: s } = {}) { if (STAGES[s]) stage = STAGES[s]; }
 
 const TOK = "monidTokens";
 const PKCE = "monidPkce";
@@ -27,9 +28,9 @@ export async function beginConnect(carry = {}) {
   const verifier = b64url(crypto.getRandomValues(new Uint8Array(48)));
   const state = b64url(crypto.getRandomValues(new Uint8Array(16)));
   sessionStorage.setItem(PKCE, JSON.stringify({ verifier, state, carry }));
-  const u = new URL(issuer + "/oauth/authorize");
+  const u = new URL(stage.issuer + "/oauth/authorize");
   u.search = new URLSearchParams({
-    client_id: OAUTH_CLIENT_ID,
+    client_id: stage.clientId,
     redirect_uri: redirectUri(),
     response_type: "code",
     scope: "openid profile email offline_access user:org:read",
@@ -47,6 +48,12 @@ export async function beginConnect(carry = {}) {
  */
 export async function completeConnect() {
   const params = new URLSearchParams(location.search);
+  // the authorize endpoint can bounce back with an error instead of a code
+  if (params.get("error")) {
+    sessionStorage.removeItem(PKCE);
+    history.replaceState(null, "", location.pathname);
+    throw new Error(params.get("error_description") || params.get("error"));
+  }
   const code = params.get("code");
   if (!code) return null;
   const state = params.get("state");
@@ -65,10 +72,10 @@ export async function completeConnect() {
 }
 
 async function tokenRequest(params) {
-  const res = await fetch(issuer + "/oauth/token", {
+  const res = await fetch(stage.issuer + "/oauth/token", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({ client_id: OAUTH_CLIENT_ID, ...params }),
+    body: new URLSearchParams({ client_id: stage.clientId, ...params }),
   });
   const body = await res.json().catch(() => null);
   if (!res.ok) throw new Error(body?.error_description || body?.error || `token exchange failed (HTTP ${res.status})`);
@@ -105,6 +112,6 @@ export async function accessToken() {
 export async function userInfo() {
   const tok = await accessToken();
   if (!tok) return null;
-  const res = await fetch(issuer + "/oauth/userinfo", { headers: { Authorization: `Bearer ${tok}` } });
+  const res = await fetch(stage.issuer + "/oauth/userinfo", { headers: { Authorization: `Bearer ${tok}` } });
   return res.ok ? res.json() : null;
 }
