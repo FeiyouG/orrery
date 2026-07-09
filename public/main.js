@@ -904,8 +904,13 @@ function buildHud(data) {
     `${isTopic ? "TOPIC" : "BRAND"} UNIVERSE // LIVE TELEMETRY`;
   document.getElementById("company-name-text").textContent = c.name;
   document.getElementById("company-desc").textContent = c.description || "";
-  document.getElementById("gauge-pop").style.width = `${Math.round((c.popularity ?? 0) * 100)}%`;
-  document.getElementById("gauge-sent").style.left = `${50 + (c.sentiment ?? 0) * 48}%`;
+  const pop100 = Math.round((c.popularity ?? 0) * 100);
+  const sent = c.sentiment ?? 0;
+  document.getElementById("gauge-pop").style.width = `${pop100}%`;
+  document.getElementById("gauge-pop-val").textContent = `${pop100}/100`;
+  document.getElementById("gauge-sent").style.left = `${50 + sent * 48}%`;
+  document.getElementById("gauge-sent-val").textContent =
+    `${sent > 0.15 ? "POSITIVE" : sent < -0.15 ? "NEGATIVE" : "NEUTRAL"} ${sent >= 0 ? "+" : ""}${sent.toFixed(2)}`;
   const trendTxt = c.trend
     ? ` · SEARCH INTEREST <b>${c.trend.interest}</b>/100 ${c.trend.delta > 0.05 ? "▲" : c.trend.delta < -0.05 ? "▼" : "◆"}`
     : "";
@@ -1405,7 +1410,7 @@ async function openSubjectModal() {
     b.innerHTML =
       `<span class="s-main"><span class="s-name">${s.name}</span>` +
       (s.subjectType ? `<span class="s-type">${s.subjectType.toUpperCase()}</span>` : "") +
-      (s.tier === "yours" ? `<span class="s-type s-yours">YOURS</span>` : "") +
+      (s.tier === "demo" ? `<span class="s-type s-demo">DEMO</span>` : "") +
       `</span>` +
       `<span class="s-meta">${meta}</span>`;
     b.onclick = () => activateUniverse(s.slug);

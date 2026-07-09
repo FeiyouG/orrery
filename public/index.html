@@ -31,15 +31,17 @@
       <p id="company-desc"></p>
     </div>
     <div class="hud-gauges">
-      <div class="gauge">
-        <span class="gauge-label">STELLAR LUMINOSITY <i>(popularity)</i></span>
-        <div class="gauge-bar"><div id="gauge-pop" class="gauge-fill"></div></div>
+      <div id="gauges">
+        <div class="gauge">
+          <span class="gauge-label">OVERALL POPULARITY <i>· stellar luminosity</i><b id="gauge-pop-val">—</b></span>
+          <div class="gauge-bar"><div id="gauge-pop" class="gauge-fill"></div></div>
+        </div>
+        <div class="gauge">
+          <span class="gauge-label">OVERALL SENTIMENT <i>· galactic mood</i><b id="gauge-sent-val">—</b></span>
+          <div class="gauge-bar sentiment"><div id="gauge-sent" class="gauge-marker"></div></div>
+        </div>
+        <div class="gauge stats" id="hud-stats"></div>
       </div>
-      <div class="gauge">
-        <span class="gauge-label">GALACTIC MOOD <i>(sentiment)</i></span>
-        <div class="gauge-bar sentiment"><div id="gauge-sent" class="gauge-marker"></div></div>
-      </div>
-      <div class="gauge stats" id="hud-stats"></div>
       <div id="tour-ctrl">
         <button id="tour-play">▶ CINEMATIC TOUR</button>
         <button id="tour-cfg-btn" aria-label="tour settings">⚙</button>
