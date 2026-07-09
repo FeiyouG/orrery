@@ -1515,7 +1515,8 @@ async function scanSubject(subject, { fresh = false } = {}) {
     else if (ev.phase === "done") {
       if (ev.cost) spent += Number(ev.cost) || 0;
       scanLine(`  ${ev.label} · ${(ev.ms / 1000).toFixed(1)}s${ev.cost ? ` · $${ev.cost}` : ""}`, ev.ok ? "ok" : "err");
-    } else if (ev.phase === "error") scanLine(`  ${ev.label} · ${ev.error}`, "err");
+    } else if (ev.phase === "retry") scanLine(`  ${ev.label} · transient ${ev.httpStatus} · retrying…`);
+    else if (ev.phase === "error") scanLine(`  ${ev.label} · ${ev.error}`, "err");
     else if (ev.phase === "normalized") scanLine(`◈ ${ev.sources} WORLDS DETECTED · ${ev.subjectType.toUpperCase()} MODE`, "ok");
   };
 

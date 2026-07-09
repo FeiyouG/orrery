@@ -104,7 +104,7 @@ export async function buildUniverse({
 
   const SUBJECT = String(subject).trim();
   const SUBJECT_TYPE = String(requestedType || "auto").toLowerCase();
-  const extractKeywords = makeKeywordExtractor(SUBJECT);
+  let extractKeywords = makeKeywordExtractor(SUBJECT);
 
   const api = async (pathname, opts = {}) => {
     const res = await fetch(apiBase + pathname, {
@@ -125,50 +125,60 @@ export async function buildUniverse({
     if (!fresh && cache) {
       const run = await cache.get(label);
       if (run) {
-        const ok = run?.status === "COMPLETED" && (run?.providerResponse?.httpStatus ?? 200) < 400;
-        onProgress({ label, phase: "cached", ok });
-        return ok ? run.output : null;
+        const http = run?.providerResponse?.httpStatus ?? (run?.status === "COMPLETED" ? 200 : null);
+        const ok = run?.status === "COMPLETED" && http < 400;
+        // deterministic results only: transient failures (5xx/timeouts) in
+        // the cache are treated as misses so they self-heal on the next scan
+        if (ok || (http >= 400 && http < 500)) {
+          onProgress({ label, phase: "cached", ok });
+          return ok ? run.output : null;
+        }
       }
       onProgress({ label, phase: "miss" });
     }
     // workspace resolved lazily so fully-cached rebuilds never touch the API
     if (!workspaceId) ({ workspaceId } = await whoami({ apiKey, apiBase }));
-    const t0 = Date.now();
-    try {
-      const { status, body } = await api("/v1/run", {
-        method: "POST",
-        body: JSON.stringify({ provider, endpoint, input }),
-      });
-      let run = body;
-      if (status === 202) {
-        const runId = body.runId;
-        while (Date.now() - t0 < timeoutMs) {
-          await sleep(4000);
-          const r = await api(`/v1/runs/${runId}`);
-          run = r.body;
-          if (run?.status === "COMPLETED" || run?.status === "FAILED") break;
+
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      const t0 = Date.now();
+      try {
+        const { status, body } = await api("/v1/run", {
+          method: "POST",
+          body: JSON.stringify({ provider, endpoint, input }),
+        });
+        let run = body;
+        if (status === 202) {
+          const runId = body.runId;
+          while (Date.now() - t0 < timeoutMs) {
+            await sleep(4000);
+            const r = await api(`/v1/runs/${runId}`);
+            run = r.body;
+            if (run?.status === "COMPLETED" || run?.status === "FAILED") break;
+          }
+        } else if (status === 402) {
+          const err = new Error("Monid balance empty — top up your wallet to keep scanning");
+          err.payment = true;
+          throw err;
+        } else if (status >= 400) {
+          throw new Error(`HTTP ${status}: ${body?.message}`);
         }
-      } else if (status === 402) {
-        const err = new Error("Monid balance empty — top up your wallet to keep scanning");
-        err.payment = true;
-        throw err;
-      } else if (status >= 400) {
-        throw new Error(`HTTP ${status}: ${body?.message}`);
+        const httpStatus = run?.providerResponse?.httpStatus ?? 200;
+        const ok = run?.status === "COMPLETED" && httpStatus < 400;
+        if (!ok && httpStatus >= 500 && attempt === 1) {
+          onProgress({ label, phase: "retry", httpStatus });
+          continue; // one retry on transient provider errors
+        }
+        // cache successes and deterministic 4xx failures — never 5xx
+        if (cache && (ok || (httpStatus >= 400 && httpStatus < 500))) await cache.set(label, run);
+        onProgress({ label, phase: "done", ok, httpStatus, ms: Date.now() - t0, cost: run?.cost?.value ?? null });
+        return ok ? run.output : null;
+      } catch (e) {
+        if (e.payment) throw e; // out of balance: abort the whole scan
+        onProgress({ label, phase: "error", ok: false, error: e.message });
+        return null;
       }
-      const httpStatus = run?.providerResponse?.httpStatus ?? 200;
-      const ok = run?.status === "COMPLETED" && httpStatus < 400;
-      if (cache) await cache.set(label, run);
-      onProgress({ label, phase: "done", ok, httpStatus, ms: Date.now() - t0, cost: run?.cost?.value ?? null });
-      return ok ? run.output : null;
-    } catch (e) {
-      if (e.payment) throw e; // out of balance: abort the whole scan
-      // cache hard failures so cache-first rebuilds don't retry (and re-pay)
-      if (cache && !/whoami|API key/i.test(e.message)) {
-        await cache.set(label, { status: "FAILED", error: e.message });
-      }
-      onProgress({ label, phase: "error", ok: false, error: e.message });
-      return null;
     }
+    return null;
   }
 
   // ---- Step 1: PDL company enrichment (gives us website + social urls).
@@ -199,7 +209,7 @@ export async function buildUniverse({
   // sources (profiles, timelines, enrichment) only run in company mode.
   const q = (queryParams) => ({ queryParams });
   const [akta, twProfile, twPosts, li, ig, tk, rd, hn, xhs, news, gh,
-         yt, gt, gtq, aktaRev, twSearch] = await Promise.all([
+         yt, gt, gtq, aktaRev, twSearch, qplan] = await Promise.all([
     isCompany && website
       ? runEndpoint("akta", "akta", "/v1/company/enrichment", q({
           company: website,
@@ -227,7 +237,39 @@ export async function buildUniverse({
     !isCompany
       ? runEndpoint("twitter_search", "tikhub", "/api/v1/twitter/web/fetch_search_timeline", q({ keyword: SUBJECT, search_type: "Top" }))
       : null,
+    // query planner: a small web-grounded LLM disambiguates the subject and
+    // names the phrases people actually use — drives relevance filtering.
+    // Best-effort: a planner failure must never sink the scan.
+    runEndpoint("queryplan", "blockrun.ai", "/api/v1/exa/answer", {
+      body: {
+        query: `Subject: "${SUBJECT}". Reply ONLY with strict JSON, no prose, no markdown: ` +
+          `{"summary":"<one sentence: what this subject is>",` +
+          `"aliases":["<2-5 short phrases people actually type online when discussing exactly this subject, most common first, include the subject itself>"]}`,
+      },
+    }).catch(() => null),
   ]);
+
+  // ---------------------------------------------- relevance (query plan)
+  let plan = null;
+  try {
+    const txt = qplan?.answer ?? "";
+    plan = JSON.parse((txt.match(/\{[\s\S]*\}/) || [null])[0]);
+  } catch { /* planner is best-effort */ }
+  const aliases = [...new Set([SUBJECT, ...(plan?.aliases ?? []).filter((a) => typeof a === "string")])];
+  extractKeywords = makeKeywordExtractor(aliases.join(" "));
+  const normTxt = (s) => String(s).toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, "");
+  const aliasNorms = aliases.map(normTxt).filter((a) => a.length >= 3);
+  /** Keep only items that actually mention the subject (by any alias). */
+  const keepRelevant = (arr, textOf) => {
+    if (!aliasNorms.length || arr.length < 4) return arr;
+    const kept = arr.filter((x) => {
+      const t = normTxt(textOf(x) || "");
+      return aliasNorms.some((a) => t.includes(a));
+    });
+    // if filtering nukes nearly everything the aliases are probably off —
+    // better noisy than empty
+    return kept.length >= 3 ? kept : arr;
+  };
 
   // ------------------------------------------------------------- normalize
   const sources = [];
@@ -247,7 +289,10 @@ export async function buildUniverse({
   // Twitter / X — company: own timeline + profile; topic: keyword search
   const twFeed = twPosts ?? twSearch;
   if (twProfile || twFeed) {
-    const tweets = (twFeed?.data?.timeline ?? twFeed?.timeline ?? []).filter(Boolean);
+    const tweets = keepRelevant(
+      (twFeed?.data?.timeline ?? twFeed?.timeline ?? []).filter(Boolean),
+      (t) => `${t.text || t.full_text || ""}`
+    );
     const texts = tweets.map((t) => t.text || t.full_text || "");
     const eng = tweets.reduce((a, t) => a + (t.favorites || t.favorite_count || 0) + (t.retweets || t.retweet_count || 0) + (t.replies || 0), 0);
     addSource(
@@ -298,7 +343,7 @@ export async function buildUniverse({
 
   // Instagram
   if (ig) {
-    const items = ig.data?.items ?? ig.items ?? [];
+    const items = keepRelevant(ig.data?.items ?? ig.items ?? [], (p) => p.caption?.text);
     const user = items[0]?.user ?? ig.data?.user ?? {};
     const texts = items.map((p) => p.caption?.text || "");
     const eng = items.reduce((a, p) => a + (p.like_count || 0) + (p.comment_count || 0), 0);
@@ -323,7 +368,10 @@ export async function buildUniverse({
 
   // TikTok — keyword search: what the world posts about the subject
   if (tk) {
-    const vids = (tk.data ?? []).map((i) => i?.aweme_info).filter((v) => v && v.desc != null);
+    const vids = keepRelevant(
+      (tk.data ?? []).map((i) => i?.aweme_info).filter((v) => v && v.desc != null),
+      (v) => v.desc
+    );
     const texts = vids.map((v) => v.desc || "");
     const plays = vids.reduce((a, v) => a + (v.statistics?.play_count || 0), 0);
     const eng = vids.reduce((a, v) => a + (v.statistics?.digg_count || 0) + (v.statistics?.comment_count || 0) + (v.statistics?.share_count || 0), 0);
@@ -362,17 +410,18 @@ export async function buildUniverse({
         subreddit: p.subreddit?.name || "",
         link: /^https?:/.test(p.url || "") ? p.url : p.permalink ? `https://www.reddit.com${p.permalink}` : null,
       }));
-    const texts = arr.map((p) => `${p.title || ""} ${p.text || ""}`);
-    const eng = arr.reduce((a, p) => a + (p.score || 0) + (p.num_comments || 0), 0);
+    const relArr = keepRelevant(arr, (p) => `${p.title || ""} ${p.text || ""}`);
+    const texts = relArr.map((p) => `${p.title || ""} ${p.text || ""}`);
+    const eng = relArr.reduce((a, p) => a + (p.score || 0) + (p.num_comments || 0), 0);
     addSource(
       {
         id: "reddit",
         name: "Reddit",
         color: "#fb923c",
-        metrics: { posts: arr.length || null, engagement: eng || null },
+        metrics: { posts: relArr.length || null, engagement: eng || null },
         magnitude: log10(eng),
-        activity: Math.min(1, arr.length / 20),
-        items: arr.slice(0, 6).map((p) => ({ title: (p.title || "").slice(0, 120), engagement: p.score || 0, url: p.link })),
+        activity: Math.min(1, relArr.length / 20),
+        items: relArr.slice(0, 6).map((p) => ({ title: (p.title || "").slice(0, 120), engagement: p.score || 0, url: p.link })),
         url: `https://reddit.com/search/?q=${encodeURIComponent(SUBJECT)}`,
       },
       texts
@@ -381,7 +430,10 @@ export async function buildUniverse({
 
   // Hacker News
   if (hn) {
-    const items = hn.items ?? hn.results ?? hn.stories ?? (Array.isArray(hn) ? hn : []);
+    const items = keepRelevant(
+      hn.items ?? hn.results ?? hn.stories ?? (Array.isArray(hn) ? hn : []),
+      (s) => s.title
+    );
     const texts = items.map((s) => s.title || "");
     const eng = items.reduce((a, s) => a + (s.points || s.score || 0) + (s.comments || s.num_comments || 0), 0);
     addSource(
@@ -405,9 +457,12 @@ export async function buildUniverse({
 
   // Xiaohongshu
   if (xhs) {
-    const notes = (xhs.data?.items ?? xhs.items ?? [])
-      .map((i) => i.note ?? i.note_card ?? i)
-      .filter((n) => n && (n.title || n.desc || n.display_title));
+    const notes = keepRelevant(
+      (xhs.data?.items ?? xhs.items ?? [])
+        .map((i) => i.note ?? i.note_card ?? i)
+        .filter((n) => n && (n.title || n.desc || n.display_title)),
+      (n) => `${n.title || n.display_title || ""} ${n.desc || ""}`
+    );
     const texts = notes.map((n) => `${n.title || n.display_title || ""} ${n.desc || ""}`);
     const eng = notes.reduce((a, n) => a + Number(n.likes || n.liked_count || n.interact_info?.liked_count || 0), 0);
     addSource(
@@ -431,7 +486,10 @@ export async function buildUniverse({
 
   // News / Web
   if (news) {
-    const arts = news.data ?? news.results ?? news.articles ?? news.items ?? (Array.isArray(news) ? news : []);
+    const arts = keepRelevant(
+      news.data ?? news.results ?? news.articles ?? news.items ?? (Array.isArray(news) ? news : []),
+      (a) => `${a.title || ""} ${a.summary || a.snippet || a.description || ""}`
+    );
     const texts = arts.map((a) => `${a.title || ""} ${a.summary || a.snippet || a.description || ""}`);
     addSource(
       {
@@ -450,7 +508,10 @@ export async function buildUniverse({
 
   // GitHub
   if (gh) {
-    const repos = gh.items ?? gh.repos ?? gh.results ?? (Array.isArray(gh) ? gh : []);
+    const repos = keepRelevant(
+      gh.items ?? gh.repos ?? gh.results ?? (Array.isArray(gh) ? gh : []),
+      (r) => `${r.full_name || r.name || ""} ${r.description || ""}`
+    );
     const stars = repos.reduce((a, r) => a + (r.stars || r.stargazers_count || 0), 0);
     addSource(
       {
@@ -473,7 +534,10 @@ export async function buildUniverse({
 
   // YouTube
   if (yt) {
-    const vids = (yt.videos ?? []).filter((v) => v && !v.is_live_content);
+    const vids = keepRelevant(
+      (yt.videos ?? []).filter((v) => v && !v.is_live_content),
+      (v) => `${v.title || ""} ${v.description || ""}`
+    );
     const views = vids.reduce((a, v) => a + (Number(v.number_of_views) || 0), 0);
     addSource(
       {
@@ -554,14 +618,17 @@ export async function buildUniverse({
   const out = {
     generatedAt: new Date().toISOString(),
     company: {
-      name: pdl?.display_name || pdl?.name || SUBJECT,
+      // PDL echoes invented records for topics — only trust it in company mode
+      name: (isCompany && (pdl?.display_name || pdl?.name)) || SUBJECT,
       subjectType,
-      website,
-      description: pdl?.summary || twProfile?.desc || "",
-      industry: pdl?.industry || null,
-      founded: pdl?.founded || null,
-      employees: pdl?.employee_count || null,
-      headquarters: pdl?.location?.name || null,
+      website: isCompany ? website : null,
+      description: isCompany
+        ? pdl?.summary || twProfile?.desc || plan?.summary || ""
+        : plan?.summary || "",
+      industry: isCompany ? pdl?.industry || null : null,
+      founded: isCompany ? pdl?.founded || null : null,
+      employees: isCompany ? pdl?.employee_count || null : null,
+      headquarters: isCompany ? pdl?.location?.name || null : null,
       tags: (isCompany ? pdl?.tags || [] : relatedTerms).slice(0, 10),
       totalFollowers,
       popularity,

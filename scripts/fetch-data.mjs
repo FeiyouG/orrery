@@ -51,6 +51,7 @@ function onProgress(ev) {
   if (ev.phase === "cached") console.log(`${ev.ok ? "ok " : "ERR"} ${ev.label.padEnd(14)} (cached)`);
   else if (ev.phase === "miss") console.log(`    ${ev.label.padEnd(14)} cache miss — fetching live, this will be charged`);
   else if (ev.phase === "done") console.log(`${ev.ok ? "ok " : "ERR"} ${ev.label.padEnd(14)} http=${ev.httpStatus} ${(ev.ms / 1000).toFixed(1)}s${ev.cost ? ` $${ev.cost}` : ""}`);
+  else if (ev.phase === "retry") console.log(`    ${ev.label.padEnd(14)} transient ${ev.httpStatus} — retrying once`);
   else if (ev.phase === "error") console.log(`ERR ${ev.label.padEnd(14)} ${ev.error}`);
   else if (ev.phase === "normalized") console.log(`\nsubject type: ${ev.subjectType} — ${ev.sources} sources, popularity=${ev.popularity.toFixed(2)}, sentiment=${ev.sentiment.toFixed(2)}`);
 }

@@ -1,4 +1,5 @@
 {
   "status": "FAILED",
+  "providerResponse": { "httpStatus": 404 },
   "error": "HTTP 404: PDL has no record for this topic"
 }
