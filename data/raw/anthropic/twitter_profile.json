@@ -1,0 +1,75 @@
+{
+  "runId": "01KX3RGQ341S8T603R0YY5NB0N",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/twitter/web/fetch_user_profile",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "screen_name": "Anthropic"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "44955dba-0b7d-49fe-be82-cc9c80a1e5ed",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:39:10",
+      "time_stamp": 1783611550,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Twitter-Web-API/fetch_user_profile_api_v1_twitter_web_fetch_user_profile_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/44955dba-0b7d-49fe-be82-cc9c80a1e5ed?sign=ae628baf5c08aeb0187f677753af2376126f9edbf41d9f19072b1c2cfb86fe9c",
+      "router": "/api/v1/twitter/web/fetch_user_profile",
+      "params": {
+        "screen_name": "Anthropic"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:39:08.188Z",
+  "startedAt": "2026-07-09T15:39:09.412Z",
+  "completedAt": "2026-07-09T15:39:11.161Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RGQ341S8T603R0YY5NB0N -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "status": "active",
+    "profile": "Anthropic",
+    "rest_id": "1819261",
+    "blue_verified": false,
+    "verification_type": null,
+    "affiliates": [],
+    "business_account": [],
+    "avatar": "https://pbs.twimg.com/profile_images/998266723257073665/zF1hT7tU_normal.jpg",
+    "header_image": "https://pbs.twimg.com/profile_banners/1819261/1401049710",
+    "desc": "Emphatically not an AI company. Ohioan, Liberal, book-worm, news-hound, CLE sports s̶u̶f̶f̶e̶r̶e̶r̶ enjoyer, Anglophile, many RTs. He/him. anthropic42 @ bsky/🧵",
+    "name": "Paul Jankura",
+    "website": "http://electricthrift.com/",
+    "protected": false,
+    "location": "Cuyahoga Falls, Ohio",
+    "friends": 4533,
+    "sub_count": 4649,
+    "statuses_count": 753055,
+    "media_count": 1447,
+    "pinned_tweet_ids_str": [
+      "1059601594650628096"
+    ],
+    "created_at": "Thu Mar 22 00:48:14 +0000 2007",
+    "id": "1819261"
+  }
+}

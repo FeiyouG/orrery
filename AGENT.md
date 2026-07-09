@@ -8,7 +8,8 @@ data from Monid and writes a normalized snapshot the frontend renders.
 
 ```
 .
-├── server.mjs              # Express :4321 — serves public/, /api/data, /vendor/three
+├── server.mjs              # Express :4321 — public/, /api/data, /api/subjects,
+│                           #   POST /api/subject (spawns pipeline), /vendor/three
 ├── scripts/
 │   └── fetch-data.mjs      # Monid pipeline: ~18 endpoints -> data/company.json
 ├── public/
@@ -81,6 +82,7 @@ scripts/fetch-data.mjs ──> data/company.json ──> server.mjs /api/data �
 | `focusPlanet` | sun-lit framing (~46° sunward), centers planet in the viewport area left of the scan panel; tween endpoints track orbital motion mid-flight |
 | `focusSun` / `openCompanyPanel` | sun click -> PDL + Akta intel panel |
 | `runTour` | cinematic tour: far shot -> overview -> sun -> selected planets -> retreat |
+| `openSubjectModal` / `switchSubject` | click subject name (top left) -> modal lists cached subjects (`GET /api/subjects`, from `_meta.json` files) or accepts a new one; `POST /api/subject` runs the pipeline server-side, then the page reloads |
 | label LOD in `animate` | planet labels hide < ~6px apparent radius (hysteresis) and scale font with screen size |
 
 Conventions that will bite you if ignored:

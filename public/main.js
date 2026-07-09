@@ -861,7 +861,7 @@ function buildHud(data) {
   const isTopic = c.subjectType === "topic";
   document.querySelector(".hud-eyebrow").textContent =
     `${isTopic ? "TOPIC" : "BRAND"} UNIVERSE // LIVE TELEMETRY`;
-  document.getElementById("company-name").textContent = c.name;
+  document.getElementById("company-name-text").textContent = c.name;
   document.getElementById("company-desc").textContent = c.description || "";
   document.getElementById("gauge-pop").style.width = `${Math.round((c.popularity ?? 0) * 100)}%`;
   document.getElementById("gauge-sent").style.left = `${50 + (c.sentiment ?? 0) * 48}%`;
@@ -1091,7 +1091,7 @@ addEventListener("pointerup", (e) => {
   downAt = -1;
   if (Math.abs(pointer.x) > 1 || Math.abs(pointer.y) > 1) return;
   if (tourState.running) return;
-  if (e.target.closest("#panel") || e.target.closest("#legend") || e.target.closest("#codex-wrap") || e.target.closest("#tour-ctrl") || e.target.closest("#tour-menu")) return;
+  if (e.target.closest("#panel") || e.target.closest("#legend") || e.target.closest("#codex-wrap") || e.target.closest("#tour-ctrl") || e.target.closest("#tour-menu") || e.target.closest("#subject-modal") || e.target.closest("#company-name")) return;
   raycaster.setFromCamera(pointer, camera);
   const hits = raycaster.intersectObjects([...planets.map((p) => p.mesh), sun].filter(Boolean));
   if (!hits.length) return;
@@ -1101,6 +1101,8 @@ addEventListener("pointerup", (e) => {
 
 addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
+  const modal = document.getElementById("subject-modal");
+  if (!modal.hidden) { closeSubjectModal(); return; }
   if (tourState.running) { tourState.abort = true; return; }
   unfocus();
 });
@@ -1179,6 +1181,82 @@ async function runTour() {
   btn.textContent = "▶ CINEMATIC TOUR";
   btn.classList.remove("running");
 }
+
+// ------------------------------------------------------- subject switcher
+const subjModal = document.getElementById("subject-modal");
+const subjList = document.getElementById("subject-list");
+const subjInput = document.getElementById("subject-input");
+const subjStatus = document.getElementById("subject-status");
+let switching = false;
+
+function openSubjectModal() {
+  subjModal.hidden = false;
+  subjStatus.hidden = true;
+  subjStatus.classList.remove("error");
+  subjInput.value = "";
+  subjInput.disabled = false;
+  subjInput.focus();
+  subjList.innerHTML = `<div class="subject-hint">loading cached universes…</div>`;
+  fetch("/api/subjects")
+    .then((r) => r.json())
+    .then(({ subjects, current }) => {
+      subjList.innerHTML = "";
+      subjects.forEach((s) => {
+        const b = document.createElement("button");
+        b.className = "subject-item" + (s.name === current ? " current" : "");
+        b.innerHTML =
+          `<span>${s.name}</span>` +
+          (s.subjectType ? `<span class="s-type">${s.subjectType.toUpperCase()}</span>` : "") +
+          (s.sources ? `<span class="s-worlds">${s.sources} worlds</span>` : "");
+        b.onclick = () => switchSubject(s.name);
+        subjList.appendChild(b);
+      });
+      if (!subjects.length) subjList.innerHTML = `<div class="subject-hint">no cached universes yet — type one above</div>`;
+    })
+    .catch(() => { subjList.innerHTML = `<div class="subject-hint">could not list cached universes</div>`; });
+}
+
+function closeSubjectModal() { if (!switching) subjModal.hidden = true; }
+
+async function switchSubject(subject) {
+  if (switching) return;
+  switching = true;
+  subjInput.disabled = true;
+  subjStatus.hidden = false;
+  subjStatus.classList.remove("error");
+  const t0 = Date.now();
+  subjStatus.textContent = `◈ SCANNING "${subject.toUpperCase()}" UNIVERSE…`;
+  const tick = setInterval(() => {
+    subjStatus.textContent = `◈ SCANNING "${subject.toUpperCase()}" UNIVERSE · ${Math.round((Date.now() - t0) / 1000)}s`;
+  }, 1000);
+  try {
+    const r = await fetch("/api/subject", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ subject }),
+    });
+    const out = await r.json();
+    if (!out.ok) {
+      throw new Error(out.error || String(out.log || "scan failed").split("\n").filter(Boolean).slice(-3).join(" · "));
+    }
+    subjStatus.textContent = `◈ UNIVERSE READY — ENTERING…`;
+    location.reload();
+  } catch (err) {
+    clearInterval(tick);
+    switching = false;
+    subjInput.disabled = false;
+    subjStatus.classList.add("error");
+    subjStatus.textContent = `SCAN FAILED — ${err.message}`;
+  }
+}
+
+document.getElementById("company-name").onclick = openSubjectModal;
+document.getElementById("subject-close").onclick = closeSubjectModal;
+subjModal.addEventListener("pointerdown", (e) => { if (e.target === subjModal) closeSubjectModal(); });
+subjInput.addEventListener("keydown", (e) => {
+  e.stopPropagation();
+  if (e.key === "Enter" && subjInput.value.trim()) switchSubject(subjInput.value.trim());
+});
 
 document.getElementById("tour-play").onclick = runTour;
 document.getElementById("tour-cfg-btn").onclick = () => {

@@ -27,7 +27,7 @@
   <header id="hud-top">
     <div class="hud-title">
       <span class="hud-eyebrow">BRAND UNIVERSE // LIVE TELEMETRY</span>
-      <h1 id="company-name">—</h1>
+      <h1 id="company-name" title="switch universe"><span id="company-name-text">—</span><span class="switch-caret">▾</span></h1>
       <p id="company-desc"></p>
     </div>
     <div class="hud-gauges">
@@ -96,6 +96,19 @@
         <li><b>SATELLITES</b> — hyper-active platform</li>
         <li><b>SHIPS</b> — live traffic inbound</li>
       </ul>
+    </div>
+  </div>
+
+  <div id="subject-modal" hidden>
+    <div id="subject-box">
+      <button id="subject-close" aria-label="close">✕</button>
+      <span class="panel-eyebrow">NAVIGATION</span>
+      <h2>SWITCH UNIVERSE</h2>
+      <input id="subject-input" type="text" spellcheck="false" autocomplete="off"
+             placeholder='company or topic — "OpenAI", "GPT-5.6"…  ⏎ to scan' />
+      <p class="subject-hint">new subjects scan live data via monid (a few cents ~ $1) · cached ones load free</p>
+      <div id="subject-list"></div>
+      <div id="subject-status" hidden></div>
     </div>
   </div>
 

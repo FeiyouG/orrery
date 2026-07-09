@@ -558,6 +558,13 @@ async function main() {
   };
 
   fs.writeFileSync(path.join(DATA_DIR, "company.json"), JSON.stringify(out, null, 2));
+  // per-subject metadata so the webapp can list cached subjects nicely
+  fs.writeFileSync(path.join(RAW_DIR, "_meta.json"), JSON.stringify({
+    subject: out.company.name,
+    subjectType,
+    sources: sources.length,
+    updatedAt: new Date().toISOString(),
+  }, null, 2));
   console.log(`\nWrote data/company.json — ${sources.length} sources, popularity=${popularity.toFixed(2)}, sentiment=${overallSentiment.toFixed(2)}`);
 
   const { body: bal } = await api("/v1/wallet/balance");

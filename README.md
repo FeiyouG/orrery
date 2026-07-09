@@ -54,6 +54,7 @@ To stop the server: `kill $(lsof -ti :4321)`.
 
 | Action | How |
 |---|---|
+| Switch universe | click the subject name (top left) — pick a cached subject or type a new one and hit ⏎ |
 | Look around | drag to rotate · scroll to zoom · right-drag to pan |
 | Scan a planet | click it (or use the legend, left side) — opens the planetary scan panel with metrics, keywords, and top posts |
 | Scan the company core | click the sun — valuation, revenue, users, market position (PDL + Akta intel) |
@@ -104,7 +105,7 @@ SUBJECT="GPT-5.6" npm run fetch     # topic mode
 
 The mode is auto-detected (PDL company lookup). **Company mode** adds account-based planets — the company's own X timeline, LinkedIn profile, Instagram/TikTok accounts, workplace reviews, and Akta intel (valuation, revenue, market position) on the sun. **Topic mode** builds every planet from keyword search across X, Reddit, Hacker News, YouTube, news, GitHub, Xiaohongshu, and Google Trends. Force a mode with `SUBJECT_TYPE=company|topic` if the auto-detection guesses wrong.
 
-Once a subject has been fetched, switching between them is free:
+Once a subject has been fetched, switching between them is free — either click the subject name in the webapp, or:
 
 ```bash
 SUBJECT="OpenAI" npm run fetch && npm start

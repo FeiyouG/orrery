@@ -1,0 +1,3929 @@
+{
+  "runId": "01KX3RGQ26GTK0K6074VEFZG4F",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/reddit/app/fetch_dynamic_search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "query": "Anthropic",
+      "need_format": true,
+      "sort": "HOT",
+      "time_range": "month"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200,
+    "metadata": {
+      "code": 200,
+      "request_id": "abfb511b-7f28-49bb-8d1d-bb557dbadee6",
+      "message": "Request successful. This request will incur a charge.",
+      "message_zh": "请求成功，本次请求将被计费。",
+      "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+      "time": "2026-07-09 08:39:10",
+      "time_stamp": 1783611550,
+      "time_zone": "America/Los_Angeles",
+      "docs": "https://api.tikhub.io/#/Reddit-APP-API/fetch_dynamic_search_api_v1_reddit_app_fetch_dynamic_search_get",
+      "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+      "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+      "cache_url": "https://cache.tikhub.io/api/v1/cache/public/abfb511b-7f28-49bb-8d1d-bb557dbadee6?sign=1b97d771801b33474f01f64f3d77dd08a9735cadf02964e41db6701918c6972b",
+      "router": "/api/v1/reddit/app/fetch_dynamic_search",
+      "params": {
+        "query": "Anthropic",
+        "need_format": "true",
+        "sort": "HOT",
+        "time_range": "month"
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.0015,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0.0015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:39:08.260Z",
+  "startedAt": "2026-07-09T15:39:09.695Z",
+  "completedAt": "2026-07-09T15:39:10.939Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RGQ26GTK0K6074VEFZG4F -H 'Authorization: Bearer <API_KEY>'"
+  },
+  "output": {
+    "search": {
+      "dynamic": {
+        "components": {
+          "appliedState": {
+            "pane": "posts",
+            "filters": [
+              {
+                "key": "component",
+                "value": "SearchAppliedState"
+              },
+              {
+                "key": "experience_selection",
+                "value": "post"
+              },
+              {
+                "key": "safe_search",
+                "value": "unset"
+              },
+              {
+                "key": "sort",
+                "value": "HOT"
+              },
+              {
+                "key": "structure_type",
+                "value": "search"
+              },
+              {
+                "key": "time_range",
+                "value": "month"
+              }
+            ]
+          },
+          "main": {
+            "edges": [
+              {
+                "node": {
+                  "presentation": {
+                    "isDefaultPresentation": false
+                  },
+                  "children": [
+                    {
+                      "post": {
+                        "id": "t3_1urn3o7",
+                        "createdAt": "2026-07-09T11:07:18.909000+0000",
+                        "postTitle": "Anthropic Caught Secretly Spying on Users",
+                        "url": "https://tech.yahoo.com/ai/claude/articles/anthropic-caught-secretly-spying-users-204222066.html?.tsrc=daily_mail&segment_id=DY_VTO_50_Supernova&ncid=crm_19908-1475736-20260709-0--A&bt_ee=KVqQ1lUc9%2BKdD15piHUKPcQXb6uZ1AVsXb7kAUntnIm%2Bt6D5qlSjvxCiIyN11meQ&bt_ts=1783594599282",
+                        "domain": "tech.yahoo.com",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "awardings": [
+                          {
+                            "award": {
+                              "id": "award_free_mindblown",
+                              "name": "Mindblown",
+                              "tags": [
+                                "award:sort:30",
+                                "award:legacy",
+                                "award:unlimited_free",
+                                "award:quick_give"
+                              ],
+                              "static_icon_16": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_16.png",
+                                "dimensions": {
+                                  "width": 16,
+                                  "height": 16
+                                }
+                              },
+                              "static_icon_24": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_24.png",
+                                "dimensions": {
+                                  "width": 24,
+                                  "height": 24
+                                }
+                              },
+                              "static_icon_32": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_32.png",
+                                "dimensions": {
+                                  "width": 32,
+                                  "height": 32
+                                }
+                              },
+                              "static_icon_48": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_48.png",
+                                "dimensions": {
+                                  "width": 48,
+                                  "height": 48
+                                }
+                              },
+                              "static_icon_64": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_64.png",
+                                "dimensions": {
+                                  "width": 64,
+                                  "height": 64
+                                }
+                              }
+                            },
+                            "total": 1
+                          }
+                        ],
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 1267,
+                        "commentCount": 82,
+                        "flair": {
+                          "type": "text",
+                          "text": "Privacy",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "73e6711c-a816-11e9-a993-0e21b1dd13b2",
+                            "isEditable": false
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_6exjhc2x",
+                          "name": "IKeepItLayingAround",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=140&height=93&auto=webp&s=0cd882417b9e8daa30ca94726899350ddd238833",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 93
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI",
+                          "still": {
+                            "source": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?auto=webp&s=62dbcee73310c466fc0cf57f3e45e1c1d00661c8",
+                              "dimensions": {
+                                "width": 1200,
+                                "height": 800
+                              }
+                            },
+                            "small": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=108&auto=webp&s=1c3380250b1d2285c23fa7ea248823b8ede71f0d",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 72
+                              }
+                            },
+                            "medium": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=216&auto=webp&s=43465797642f3aa0936d55352bb8230eeba424d9",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 144
+                              }
+                            },
+                            "large": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=320&auto=webp&s=2f0ccfaa38ff817b93f25116cea1846ff5529879",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 213
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=640&auto=webp&s=e1050afa1616486650639f96b31d1cacaf62cda8",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 426
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=960&auto=webp&s=6cdf8787d7da93b3352f47fa440dd233ab78a1c7",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 640
+                              }
+                            },
+                            "xxxlarge": {
+                              "url": "https://external-preview.redd.it/bP8OzeBs5-9lcr--MoCkYCR83MuGXbZBSKmki6yDQkI.jpeg?width=1080&auto=webp&s=a59355cac3ced94dec53f2a036098d8f1d69de72",
+                              "dimensions": {
+                                "width": 1080,
+                                "height": 720
+                              }
+                            }
+                          }
+                        },
+                        "permalink": "/r/technology/comments/1urn3o7/anthropic_caught_secretly_spying_on_users/",
+                        "isSelfPost": false,
+                        "postHint": "LINK",
+                        "subreddit": {
+                          "id": "t5_2qh16",
+                          "name": "technology",
+                          "prefixedName": "r/technology",
+                          "isQuarantined": false,
+                          "title": "/r/Technology ",
+                          "type": "PUBLIC",
+                          "subscribersCount": 20404984,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://b.thumbs.redditmedia.com/J_fCwTYJkoM-way-eaOHv8AOHoF_jNXNqOvPrQ7bINY.png",
+                            "legacyIcon": {
+                              "url": "https://b.thumbs.redditmedia.com/J_fCwTYJkoM-way-eaOHv8AOHoF_jNXNqOvPrQ7bINY.png"
+                            },
+                            "legacyPrimaryColor": "#0DD3BB"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1urn3o7?app_name=android&token=AQAA7gZQaiLX9FywFPYNexusex3zkEWd43rizpzHnikYUnVIZdUP&url=https%3A%2F%2Ftech.yahoo.com%2Fai%2Fclaude%2Farticles%2Fanthropic-caught-secretly-spying-users-204222066.html%3F.tsrc%3Ddaily_mail%26segment_id%3DDY_VTO_50_Supernova%26ncid%3Dcrm_19908-1475736-20260709-0--A%26bt_ee%3DKVqQ1lUc9%252BKdD15piHUKPcQXb6uZ1AVsXb7kAUntnIm%252Bt6D5qlSjvxCiIyN11meQ%26bt_ts%3D1783594599282",
+                          "expiresAt": "2026-07-09T20:39:10.400491+0000"
+                        },
+                        "upvoteRatio": 0.9572773352643013,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2qh16",
+                          "name": "technology",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "community",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urn3o7",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic Caught Secretly Spying on Users",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_6exjhc2x",
+                                "name": "IKeepItLayingAround"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1urn3o7",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "post",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urn3o7",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic Caught Secretly Spying on Users",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_6exjhc2x",
+                                "name": "IKeepItLayingAround"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_2ngjnr",
+                          "name": "u_IKeepItLayingAround",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "profile",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urn3o7",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic Caught Secretly Spying on Users",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_6exjhc2x",
+                                "name": "IKeepItLayingAround"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1urn3o7",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 0,
+                                "type": "thumbnail",
+                                "relativePosition": 0
+                              },
+                              "post": {
+                                "id": "t3_1urn3o7",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic Caught Secretly Spying on Users",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_6exjhc2x",
+                                "name": "IKeepItLayingAround"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 0,
+                            "relativePosition": 0
+                          },
+                          "post": {
+                            "id": "t3_1urn3o7",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Anthropic Caught Secretly Spying on Users",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_2qh16",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "technology"
+                          },
+                          "profile": {
+                            "id": "t2_6exjhc2x",
+                            "name": "IKeepItLayingAround"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uqp70p",
+                        "createdAt": "2026-07-08T10:52:10.558000+0000",
+                        "postTitle": "Anthropic in 2028 be like...",
+                        "url": "https://i.redd.it/mhsldcylkzbh1.png",
+                        "domain": "i.redd.it",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 930,
+                        "commentCount": 57,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Humor",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Humor\"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "76ee0d34-2800-11ee-982f-0e74c0a9e424",
+                            "isEditable": false,
+                            "backgroundColor": "#FFFF00"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_bstezzarv",
+                          "name": "Ryoiki-Tokuiten",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_8g55tk/styles/profileIcon_hoe2n1fgrc1b1.jpg?frame=1&auto=webp&crop=256%3A256%2Csmart&s=e5f997ddc3e1e920b7bfdd823c1ad1a548d79a21",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_8g55tk/styles/profileIcon_hoe2n1fgrc1b1.jpg?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=726f1b1057925d402f6bf027e995be84065639b0",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=140&height=93&auto=webp&s=e080a7391cc57fd8017ec76f3e8afada97fc9c39",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 93
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "mhsldcylkzbh1",
+                          "still": {
+                            "source": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?auto=webp&s=bf4cfb06970e8075593db84a9c7835bd80cb4b0a",
+                              "dimensions": {
+                                "width": 1536,
+                                "height": 1024
+                              }
+                            },
+                            "small": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=108&auto=webp&s=12b460951cb4c229eb82e0c8cfd9a07e863cef3c",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 72
+                              }
+                            },
+                            "medium": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=216&auto=webp&s=8c4f4a53501d399b88789ea23651d8da99f2df52",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 144
+                              }
+                            },
+                            "large": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=320&auto=webp&s=61efb6400cefc1d423596b5cc9259ce01d731166",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 213
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=640&auto=webp&s=4bc95bad74f8870ce1eb2479568aae5aaa54786b",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 426
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=960&auto=webp&s=aaa38ecfb32e76c4ef0522fa7751d795890de18e",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 640
+                              }
+                            },
+                            "xxxlarge": {
+                              "url": "https://preview.redd.it/mhsldcylkzbh1.png?width=1080&auto=webp&s=be025e8039de5447e6a313f42903d8d1be56d367",
+                              "dimensions": {
+                                "width": 1080,
+                                "height": 720
+                              }
+                            },
+                            "altText": "Introducing Claude 6.e Solved 34 Erdos Problems Solved Millennium Prize Problem Found 2 vulnerabilities in Human Genome Can one-shot anime episode in a HTML file"
+                          },
+                          "typeHint": "IMAGE"
+                        },
+                        "permalink": "/r/ClaudeAI/comments/1uqp70p/anthropic_in_2028_be_like/",
+                        "isSelfPost": false,
+                        "postHint": "IMAGE",
+                        "subreddit": {
+                          "id": "t5_7t8hvt",
+                          "name": "ClaudeAI",
+                          "prefixedName": "r/ClaudeAI",
+                          "isQuarantined": false,
+                          "title": "ClaudeAI",
+                          "type": "PUBLIC",
+                          "subscribersCount": 1002538,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_7t8hvt/styles/communityIcon_97yk0vsmp4cf1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=57d5325851f1b7729a34f4f35ff1a4e16e8a7810",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_7t8hvt/styles/bannerBackgroundImage_epxm3paca1ch1.png?frame=1&auto=webp&s=89948e01faa29c61628001af96a265ad09899203"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "[Check Claude service status.](http://status.claude.com)",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"Check Claude service status.\",\"u\":\"http://status.claude.com\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "hp",
+                              "url": "https://emoji.redditmedia.com/jud91dthlhcf1_t5_7t8hvt/hp"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://i.redd.it/mhsldcylkzbh1.png",
+                          "expiresAt": "2026-07-09T20:39:10.400577+0000"
+                        },
+                        "upvoteRatio": 0.9287696577243293,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_7t8hvt",
+                          "name": "ClaudeAI",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "community",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp70p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic in 2028 be like...",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_7t8hvt",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeAI"
+                              },
+                              "profile": {
+                                "id": "t2_bstezzarv",
+                                "name": "Ryoiki-Tokuiten"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uqp70p",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "post",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp70p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic in 2028 be like...",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_7t8hvt",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeAI"
+                              },
+                              "profile": {
+                                "id": "t2_bstezzarv",
+                                "name": "Ryoiki-Tokuiten"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_8g55tk",
+                          "name": "u_Ryoiki-Tokuiten",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "profile",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp70p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic in 2028 be like...",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_7t8hvt",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeAI"
+                              },
+                              "profile": {
+                                "id": "t2_bstezzarv",
+                                "name": "Ryoiki-Tokuiten"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uqp70p",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 1,
+                                "type": "thumbnail",
+                                "relativePosition": 1
+                              },
+                              "post": {
+                                "id": "t3_1uqp70p",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic in 2028 be like...",
+                                "type": "IMAGE"
+                              },
+                              "subreddit": {
+                                "id": "t5_7t8hvt",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeAI"
+                              },
+                              "profile": {
+                                "id": "t2_bstezzarv",
+                                "name": "Ryoiki-Tokuiten"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 1,
+                            "relativePosition": 1
+                          },
+                          "post": {
+                            "id": "t3_1uqp70p",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Anthropic in 2028 be like...",
+                            "type": "IMAGE"
+                          },
+                          "subreddit": {
+                            "id": "t5_7t8hvt",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ClaudeAI"
+                          },
+                          "profile": {
+                            "id": "t2_bstezzarv",
+                            "name": "Ryoiki-Tokuiten"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1urcybu",
+                        "createdAt": "2026-07-09T02:09:40.760000+0000",
+                        "postTitle": "Anthropic, please reset the usage limit!",
+                        "url": "https://www.reddit.com/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                        "content": {
+                          "markdown": "![img](o12jhmix34ch1)\n\nOpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription.",
+                          "richtext": "{\"document\":[{\"e\":\"img\",\"id\":\"o12jhmix34ch1\"},{\"c\":[{\"e\":\"text\",\"t\":\"OpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription.\"}],\"e\":\"par\"}]}",
+                          "html": "OpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription.",
+                          "richtextMedia": [
+                            {
+                              "id": "o12jhmix34ch1",
+                              "mimetype": "image/png",
+                              "width": 764,
+                              "height": 464,
+                              "status": "VALID",
+                              "url": "https://i.redd.it/o12jhmix34ch1.png"
+                            }
+                          ],
+                          "preview": "OpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription."
+                        },
+                        "domain": "self.Anthropic",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "awardings": [
+                          {
+                            "award": {
+                              "id": "award_free_regret_2",
+                              "name": "Regret",
+                              "tags": [
+                                "award:quick_give",
+                                "award:unlimited_free",
+                                "award:legacy",
+                                "award:sort:40"
+                              ],
+                              "static_icon_16": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_16.png",
+                                "dimensions": {
+                                  "width": 16,
+                                  "height": 16
+                                }
+                              },
+                              "static_icon_24": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_24.png",
+                                "dimensions": {
+                                  "width": 24,
+                                  "height": 24
+                                }
+                              },
+                              "static_icon_32": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_32.png",
+                                "dimensions": {
+                                  "width": 32,
+                                  "height": 32
+                                }
+                              },
+                              "static_icon_48": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_48.png",
+                                "dimensions": {
+                                  "width": 48,
+                                  "height": 48
+                                }
+                              },
+                              "static_icon_64": {
+                                "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_64.png",
+                                "dimensions": {
+                                  "width": 64,
+                                  "height": 64
+                                }
+                              }
+                            },
+                            "total": 1
+                          }
+                        ],
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 72,
+                        "commentCount": 23,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Other",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Other\"}]",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "bdfb5ff6-841a-11f0-ad86-660b74e6bdec",
+                            "isEditable": false,
+                            "backgroundColor": "#878A8C"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_1jea1z7",
+                          "name": "redditslutt666",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_6likv/styles/profileIcon_snoo752c9d78-97cd-4607-87df-8eae223bba4f-headshot-f.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=4bc5d246d7a7039d14cb3ee41ba8f4bfd7c8a7e4",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_6likv/styles/profileIcon_snoo752c9d78-97cd-4607-87df-8eae223bba4f-headshot-f.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=1e9b684481a8b67cb18cbc4ef040ef36db7a428b",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/752c9d78-97cd-4607-87df-8eae223bba4f.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://preview.redd.it/o12jhmix34ch1.png?width=140&height=85&auto=webp&s=7e6eab3935a573bc4ed076e42eaac203b4f0a1ee",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 85
+                          }
+                        },
+                        "suggestedCommentSort": "CONFIDENCE",
+                        "permalink": "/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_7v9ahi",
+                          "name": "Anthropic",
+                          "prefixedName": "r/Anthropic",
+                          "isQuarantined": false,
+                          "title": "Anthropic",
+                          "type": "PUBLIC",
+                          "subscribersCount": 178636,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=f7bedf52091987f4d8beea7583ed70dd2c71669c",
+                            "legacyIcon": {
+                              "url": "https://b.thumbs.redditmedia.com/kKQnSuXXTR57lsslC4sE0VzZ_zIOuwOx2h6Eeb68f_U.png"
+                            },
+                            "primaryColor": "#191919",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_7v9ahi/styles/bannerBackgroundImage_hzx2rxrmur7d1.jpg?frame=1&auto=webp&format=pjpg&s=ca73c89aa68c508901fc230256fa6808e641bf96"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "[Talk to Claude](https://claude.ai/chats)",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"Talk to Claude\",\"u\":\"https://claude.ai/chats\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "favicon",
+                              "url": "https://emoji.redditmedia.com/xj1etmuw4g8d1_t5_7v9ahi/favicon"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                          "expiresAt": "2026-07-09T20:39:10.400519+0000"
+                        },
+                        "upvoteRatio": 0.8050847457627118,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_7v9ahi",
+                          "name": "Anthropic",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "community",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1urcybu",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "post",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_6likv",
+                          "name": "u_redditslutt666",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "profile",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1urcybu",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 2,
+                                "type": "thumbnail",
+                                "relativePosition": 2
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 2,
+                            "relativePosition": 2
+                          },
+                          "post": {
+                            "id": "t3_1urcybu",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Anthropic, please reset the usage limit!",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_7v9ahi",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "Anthropic"
+                          },
+                          "profile": {
+                            "id": "t2_1jea1z7",
+                            "name": "redditslutt666"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1uq14ri",
+                        "createdAt": "2026-07-07T17:03:38.986000+0000",
+                        "postTitle": "CNBC - Anthropic costs surge as Chinese and open weight models gain ground against OpenAI, Anthropic",
+                        "url": "https://www.cnbc.com/amp/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html",
+                        "content": {
+                          "markdown": "As we have been talking about here, Chinese alternatives are going to dominate frontier models in due time, as they are most cost effective, and the productivity increase is going to be similar, for less (assuming there is tangible increase at all).\n\n> The share of tokens used by U.S. companies on Chinese AI models via OpenRouter — a platform that enables developers to access a range of AI models — has sat above 30% each week since Feb. 8, with that figure rising as high at 46%. \n\n> \"Price is doing the work here,\" Arora said. \"When a task doesn't need the best model, teams are beginning to route it to the cheapest one that's good enough, and the recent wave of models coming out of China is winning that trade.\" \n\nUnsurprisingly, it will come down to price, which means if Anthropic and OpenAI need to compete with themselves as well as open weight and Chinese models, their gravestone has long been engraved, and all they need to do is get in the coffin.",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"As we have been talking about here, Chinese alternatives are going to dominate frontier models in due time, as they are most cost effective, and the productivity increase is going to be similar, for less (assuming there is tangible increase at all).\"}],\"e\":\"par\"},{\"c\":[{\"c\":[{\"e\":\"text\",\"t\":\"The share of tokens used by U.S. companies on Chinese AI models via OpenRouter \\u2014 a platform that enables developers to access a range of AI models \\u2014 has sat above 30% each week since Feb. 8, with that figure rising as high at 46%.\"}],\"e\":\"par\"}],\"e\":\"blockquote\"},{\"c\":[{\"c\":[{\"e\":\"text\",\"t\":\"\\\"Price is doing the work here,\\\" Arora said. \\\"When a task doesn't need the best model, teams are beginning to route it to the cheapest one that's good enough, and the recent wave of models coming out of China is winning that trade.\\\"\"}],\"e\":\"par\"}],\"e\":\"blockquote\"},{\"c\":[{\"e\":\"text\",\"t\":\"Unsurprisingly, it will come down to price, which means if Anthropic and OpenAI need to compete with themselves as well as open weight and Chinese models, their gravestone has long been engraved, and all they need to do is get in the coffin.\"}],\"e\":\"par\"}]}",
+                          "html": "As we have been talking about here, Chinese alternatives are going to dominate frontier models in due time, as they are most cost effective, and the productivity increase is going to be similar, for less (assuming there is tangible increase at all).\nThe share of tokens used by U.S. companies on Chinese AI models via OpenRouter — a platform that enables developers to access a range of AI models — has sat above 30% each week since Feb. 8, with that figure rising as high at 46%. \n\"Price is doing the work here,\" Arora said. \"When a task doesn't need the best model, teams are beginning to route it to the cheapest one that's good enough, and the recent wave of models coming out of China is winning that trade.\" \nUnsurprisingly, it will come down to price, which means if Anthropic and OpenAI need to compete with themselves as well as open weight and Chinese models, their gravestone has long been engraved, and all they need to do is get in the coffin.",
+                          "preview": "As we have been talking about here, Chinese alternatives are going to dominate frontier models in due time, as they are most cost effective, and the productivity increase is going to be similar, for less (assuming there is tangible increase at all). The share of tokens used by U.S. companies on Chin"
+                        },
+                        "domain": "cnbc.com",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 287,
+                        "commentCount": 52,
+                        "authorInfo": {
+                          "id": "t2_lzibr",
+                          "name": "ksjdragon",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_cnivm/styles/profileIcon_l2ornlzu895d1.jpg?frame=1&auto=webp&crop=256%3A256%2Csmart&s=b4f217f36f03b74bd7d1d3dc2ac79e0ac0c45f83",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_cnivm/styles/profileIcon_l2ornlzu895d1.jpg?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=8e35b9c2500500f61b553ad5bfe8726069182262",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=140&height=93&auto=webp&s=f06c5fdbddc063482d6add3f0f1883e660867ed8",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 93
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM",
+                          "still": {
+                            "source": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?auto=webp&s=b263d675ab44a17e309eb0970678e3e12717b352",
+                              "dimensions": {
+                                "width": 2000,
+                                "height": 1333
+                              }
+                            },
+                            "small": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=108&auto=webp&s=a116c5632851a7d2383349730acb1f8f6c39d228",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 71
+                              }
+                            },
+                            "medium": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=216&auto=webp&s=53525b991a5da027603fbc72d3fe1ad900e574fb",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 143
+                              }
+                            },
+                            "large": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=320&auto=webp&s=7635b7e86c907c3a7e05f9aac968810ed767914f",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 213
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=640&auto=webp&s=5cef7e12de8bcd1d6eb9eaa0a72260dee7bb4163",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 426
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=960&auto=webp&s=f8457fcfe4c0eb411e3e385ffe45503df5291403",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 639
+                              }
+                            },
+                            "xxxlarge": {
+                              "url": "https://external-preview.redd.it/MmgUdmXz4lDU5G-EYXjQ07ruKGJ-cMQH7vxIjtBB7dM.jpeg?width=1080&auto=webp&s=3a640eda9a828aec1cbd2a47002c416c63f6f7d3",
+                              "dimensions": {
+                                "width": 1080,
+                                "height": 719
+                              }
+                            }
+                          }
+                        },
+                        "permalink": "/r/BetterOffline/comments/1uq14ri/cnbc_anthropic_costs_surge_as_chinese_and_open/",
+                        "isSelfPost": false,
+                        "postHint": "LINK",
+                        "subreddit": {
+                          "id": "t5_av67rm",
+                          "name": "BetterOffline",
+                          "prefixedName": "r/BetterOffline",
+                          "isQuarantined": false,
+                          "title": "BetterOffline",
+                          "type": "PUBLIC",
+                          "subscribersCount": 46593,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_av67rm/styles/communityIcon_r1ze4j1iethf1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=fc0e72949a264ba792811525db8e46cd836349f8",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_av67rm/styles/bannerBackgroundImage_lcezmjtc1z1d1.jpg?frame=1&auto=webp&format=pjpg&s=c421dce2c4f3cda52bf113ad7cfb1394c691064f"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1uq14ri?app_name=android&token=AQAA7gZQaidOMOlRmIwJfDsGZhLwzG3nMqPN1YRl8xKpaJOpYT5i&url=https%3A%2F%2Fwww.cnbc.com%2Famp%2F2026%2F07%2F07%2Fchinese-ai-models-costs-us-openai-anthropic.html",
+                          "expiresAt": "2026-07-09T20:39:10.400491+0000"
+                        },
+                        "upvoteRatio": 0.993127147766323,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_av67rm",
+                          "name": "BetterOffline",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "community",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uq14ri",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "CNBC - Anthropic costs surge as Chinese and open weight models gain ground against OpenAI, Anthropic",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_av67rm",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "BetterOffline"
+                              },
+                              "profile": {
+                                "id": "t2_lzibr",
+                                "name": "ksjdragon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1uq14ri",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "post",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uq14ri",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "CNBC - Anthropic costs surge as Chinese and open weight models gain ground against OpenAI, Anthropic",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_av67rm",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "BetterOffline"
+                              },
+                              "profile": {
+                                "id": "t2_lzibr",
+                                "name": "ksjdragon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_cnivm",
+                          "name": "u_ksjdragon",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "profile",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uq14ri",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "CNBC - Anthropic costs surge as Chinese and open weight models gain ground against OpenAI, Anthropic",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_av67rm",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "BetterOffline"
+                              },
+                              "profile": {
+                                "id": "t2_lzibr",
+                                "name": "ksjdragon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1uq14ri",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 3,
+                                "type": "thumbnail",
+                                "relativePosition": 3
+                              },
+                              "post": {
+                                "id": "t3_1uq14ri",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "CNBC - Anthropic costs surge as Chinese and open weight models gain ground against OpenAI, Anthropic",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_av67rm",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "BetterOffline"
+                              },
+                              "profile": {
+                                "id": "t2_lzibr",
+                                "name": "ksjdragon"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 3,
+                            "relativePosition": 3
+                          },
+                          "post": {
+                            "id": "t3_1uq14ri",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "CNBC - Anthropic costs surge as Chinese and open weight models gain ground against OpenAI, Anthropic",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_av67rm",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "BetterOffline"
+                          },
+                          "profile": {
+                            "id": "t2_lzibr",
+                            "name": "ksjdragon"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1urcytg",
+                        "createdAt": "2026-07-09T02:10:20.011000+0000",
+                        "postTitle": "Anthropic, please reset the usage limit!",
+                        "url": "https://www.reddit.com/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                        "domain": "reddit.com",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 4,
+                        "commentCount": 0,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Discussion",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Discussion\"}]",
+                          "textColor": "LIGHT",
+                          "template": {
+                            "id": "594f63e4-990b-11f0-bb51-2e3f52d6bff1",
+                            "isEditable": false,
+                            "backgroundColor": "#718096"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_1jea1z7",
+                          "name": "redditslutt666",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_6likv/styles/profileIcon_snoo752c9d78-97cd-4607-87df-8eae223bba4f-headshot-f.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=4bc5d246d7a7039d14cb3ee41ba8f4bfd7c8a7e4",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_6likv/styles/profileIcon_snoo752c9d78-97cd-4607-87df-8eae223bba4f-headshot-f.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=1e9b684481a8b67cb18cbc4ef040ef36db7a428b",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/752c9d78-97cd-4607-87df-8eae223bba4f.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://preview.redd.it/o12jhmix34ch1.png?width=140&height=85&auto=webp&s=7e6eab3935a573bc4ed076e42eaac203b4f0a1ee",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 85
+                          }
+                        },
+                        "permalink": "/r/ClaudeCode/comments/1urcytg/anthropic_please_reset_the_usage_limit/",
+                        "isSelfPost": false,
+                        "subreddit": {
+                          "id": "t5_dp6k3k",
+                          "name": "ClaudeCode",
+                          "prefixedName": "r/ClaudeCode",
+                          "isQuarantined": false,
+                          "title": "ClaudeCode",
+                          "type": "PUBLIC",
+                          "subscribersCount": 346533,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_dp6k3k/styles/communityIcon_g3ehwz8f4sbf1.jpg?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=f2d1a7b5dfb0a41df9b2a117d5ddc539188db307",
+                            "primaryColor": "#CD7E5C",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_dp6k3k/styles/bannerBackgroundImage_b4p0taca3sbf1.png?frame=1&auto=webp&s=8aa4d70595128639035d7599454875897db09c4a",
+                            "legacyPrimaryColor": "#FF4500"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "**weekly limit reached.**",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"f\":[[1,0,21]],\"t\":\"weekly limit reached.\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "claude",
+                              "url": "https://emoji.redditmedia.com/d9f9cte1i8sf1_t5_dp6k3k/claude"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                          "expiresAt": "2026-07-09T20:39:10.400461+0000"
+                        },
+                        "upvoteRatio": 0.7,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false,
+                        "crosspostRoot": {
+                          "post": {
+                            "id": "t3_1urcybu",
+                            "createdAt": "2026-07-09T02:09:40.760000+0000",
+                            "postTitle": "Anthropic, please reset the usage limit!",
+                            "url": "https://www.reddit.com/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                            "content": {
+                              "markdown": "![img](o12jhmix34ch1)\n\nOpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription.",
+                              "richtext": "{\"document\":[{\"e\":\"img\",\"id\":\"o12jhmix34ch1\"},{\"c\":[{\"e\":\"text\",\"t\":\"OpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription.\"}],\"e\":\"par\"}]}",
+                              "html": "OpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription.",
+                              "richtextMedia": [
+                                {
+                                  "id": "o12jhmix34ch1",
+                                  "mimetype": "image/png",
+                                  "width": 764,
+                                  "height": 464,
+                                  "status": "VALID",
+                                  "url": "https://i.redd.it/o12jhmix34ch1.png"
+                                }
+                              ],
+                              "preview": "OpenAI will be releasing GPT-5.6 SOL this week. You might as well reset and make Fable 5 part of the paid subscription."
+                            },
+                            "domain": "self.Anthropic",
+                            "isSpoiler": false,
+                            "isNsfw": false,
+                            "isCommercialCommunication": false,
+                            "isLocked": false,
+                            "isSaved": false,
+                            "isReactAllowed": false,
+                            "isHidden": false,
+                            "isGildable": true,
+                            "isCrosspostable": true,
+                            "isScoreHidden": false,
+                            "isArchived": false,
+                            "isStickied": false,
+                            "isPollIncluded": false,
+                            "isFollowed": false,
+                            "awardings": [
+                              {
+                                "award": {
+                                  "id": "award_free_regret_2",
+                                  "name": "Regret",
+                                  "tags": [
+                                    "award:quick_give",
+                                    "award:unlimited_free",
+                                    "award:legacy",
+                                    "award:sort:40"
+                                  ],
+                                  "static_icon_16": {
+                                    "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_16.png",
+                                    "dimensions": {
+                                      "width": 16,
+                                      "height": 16
+                                    }
+                                  },
+                                  "static_icon_24": {
+                                    "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_24.png",
+                                    "dimensions": {
+                                      "width": 24,
+                                      "height": 24
+                                    }
+                                  },
+                                  "static_icon_32": {
+                                    "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_32.png",
+                                    "dimensions": {
+                                      "width": 32,
+                                      "height": 32
+                                    }
+                                  },
+                                  "static_icon_48": {
+                                    "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_48.png",
+                                    "dimensions": {
+                                      "width": 48,
+                                      "height": 48
+                                    }
+                                  },
+                                  "static_icon_64": {
+                                    "url": "https://i.redd.it/snoovatar/snoo_assets/marketing/regret_64.png",
+                                    "dimensions": {
+                                      "width": 64,
+                                      "height": 64
+                                    }
+                                  }
+                                },
+                                "total": 1
+                              }
+                            ],
+                            "isContestMode": false,
+                            "voteState": "NONE",
+                            "score": 72,
+                            "commentCount": 23,
+                            "flair": {
+                              "type": "richtext",
+                              "text": "Other",
+                              "richtext": "[{\"e\":\"text\",\"t\":\"Other\"}]",
+                              "textColor": "DARK",
+                              "template": {
+                                "id": "bdfb5ff6-841a-11f0-ad86-660b74e6bdec",
+                                "isEditable": false,
+                                "backgroundColor": "#878A8C"
+                              }
+                            },
+                            "authorInfo": {
+                              "id": "t2_1jea1z7",
+                              "name": "redditslutt666",
+                              "isBlocked": false,
+                              "isCakeDayNow": false,
+                              "newIcon": {
+                                "url": "https://styles.redditmedia.com/t5_6likv/styles/profileIcon_snoo752c9d78-97cd-4607-87df-8eae223bba4f-headshot-f.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=4bc5d246d7a7039d14cb3ee41ba8f4bfd7c8a7e4",
+                                "dimensions": {
+                                  "width": 256,
+                                  "height": 256
+                                }
+                              },
+                              "iconSmall": {
+                                "url": "https://styles.redditmedia.com/t5_6likv/styles/profileIcon_snoo752c9d78-97cd-4607-87df-8eae223bba4f-headshot-f.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=1e9b684481a8b67cb18cbc4ef040ef36db7a428b",
+                                "dimensions": {
+                                  "width": 50,
+                                  "height": 50
+                                }
+                              },
+                              "snoovatarIcon": {
+                                "url": "https://i.redd.it/snoovatar/avatars/752c9d78-97cd-4607-87df-8eae223bba4f.png",
+                                "dimensions": {
+                                  "width": 380,
+                                  "height": 600
+                                }
+                              },
+                              "profile": {
+                                "isNsfw": false
+                              },
+                              "accountType": "USER"
+                            },
+                            "isThumbnailEnabled": true,
+                            "thumbnail": {
+                              "url": "https://preview.redd.it/o12jhmix34ch1.png?width=140&height=85&auto=webp&s=7e6eab3935a573bc4ed076e42eaac203b4f0a1ee",
+                              "dimensions": {
+                                "width": 140,
+                                "height": 85
+                              }
+                            },
+                            "suggestedCommentSort": "CONFIDENCE",
+                            "permalink": "/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                            "isSelfPost": true,
+                            "subreddit": {
+                              "id": "t5_7v9ahi",
+                              "name": "Anthropic",
+                              "prefixedName": "r/Anthropic",
+                              "isQuarantined": false,
+                              "title": "Anthropic",
+                              "type": "PUBLIC",
+                              "subscribersCount": 178636,
+                              "isNsfw": false,
+                              "isSubscribed": false,
+                              "isThumbnailsEnabled": true,
+                              "styles": {
+                                "icon": "https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=f7bedf52091987f4d8beea7583ed70dd2c71669c",
+                                "legacyIcon": {
+                                  "url": "https://b.thumbs.redditmedia.com/kKQnSuXXTR57lsslC4sE0VzZ_zIOuwOx2h6Eeb68f_U.png"
+                                },
+                                "primaryColor": "#191919",
+                                "bannerBackgroundImage": "https://styles.redditmedia.com/t5_7v9ahi/styles/bannerBackgroundImage_hzx2rxrmur7d1.jpg?frame=1&auto=webp&format=pjpg&s=ca73c89aa68c508901fc230256fa6808e641bf96"
+                              },
+                              "communityStatus": {
+                                "description": {
+                                  "markdown": "[Talk to Claude](https://claude.ai/chats)",
+                                  "richtext": "{\"document\":[{\"c\":[{\"e\":\"link\",\"t\":\"Talk to Claude\",\"u\":\"https://claude.ai/chats\"}],\"e\":\"par\"}]}"
+                                },
+                                "emoji": {
+                                  "name": "favicon",
+                                  "url": "https://emoji.redditmedia.com/xj1etmuw4g8d1_t5_7v9ahi/favicon"
+                                }
+                              },
+                              "isTitleSafe": true,
+                              "isUserBanned": false,
+                              "whitelistStatus": "ALL_ADS"
+                            },
+                            "outboundLink": {
+                              "url": "https://www.reddit.com/r/Anthropic/comments/1urcybu/anthropic_please_reset_the_usage_limit/",
+                              "expiresAt": "2026-07-09T20:39:10.400732+0000"
+                            },
+                            "upvoteRatio": 0.8050847457627118,
+                            "crowdControlLevel": "OFF",
+                            "isCrowdControlFilterEnabled": false,
+                            "languageCode": "en",
+                            "isTranslatable": true,
+                            "isTranslated": false
+                          }
+                        }
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_dp6k3k",
+                          "name": "ClaudeCode",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "community",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcytg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "CROSSPOST"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1urcytg",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "post",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcytg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "CROSSPOST"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_6likv",
+                          "name": "u_redditslutt666",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "profile",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcytg",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "CROSSPOST"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "rootCommunity": {
+                          "id": "t5_7v9ahi",
+                          "name": "Anthropic",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "community",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "rootDefault": {
+                          "id": "t3_1urcybu",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "post",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "rootProfile": {
+                          "id": "t5_6likv",
+                          "name": "u_redditslutt666",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "profile",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "rootThumbnail": {
+                          "id": "t3_1urcybu",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 4,
+                                "type": "thumbnail",
+                                "relativePosition": 4
+                              },
+                              "post": {
+                                "id": "t3_1urcybu",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic, please reset the usage limit!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_7v9ahi",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "Anthropic"
+                              },
+                              "profile": {
+                                "id": "t2_1jea1z7",
+                                "name": "redditslutt666"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 4,
+                            "relativePosition": 4
+                          },
+                          "post": {
+                            "id": "t3_1urcytg",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Anthropic, please reset the usage limit!",
+                            "type": "CROSSPOST"
+                          },
+                          "subreddit": {
+                            "id": "t5_dp6k3k",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ClaudeCode"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1urovx8",
+                        "createdAt": "2026-07-09T12:29:57.106000+0000",
+                        "postTitle": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+                        "url": "https://arstechnica.com/tech-policy/2026/07/anthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users",
+                        "domain": "arstechnica.com",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 159,
+                        "commentCount": 51,
+                        "flair": {
+                          "type": "text",
+                          "text": "Artificial Intelligence",
+                          "textColor": "DARK",
+                          "template": {
+                            "id": "4264611c-a816-11e9-ae36-0e68c8f218d4",
+                            "isEditable": false
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_qjfqxo3z",
+                          "name": "Just-Grocery-2229",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://preview.redd.it/snoovatar/avatars/737424f6-610f-4dbf-a114-4942c072439a-headshot.png?auto=webp&s=2f9575424557b377205263b556bf2ece7e17b7bf",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://preview.redd.it/snoovatar/avatars/737424f6-610f-4dbf-a114-4942c072439a-headshot.png?width=50&height=50&auto=webp&s=c76969541a35a173f4ea055e3ae9bcbb3a01a142",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/737424f6-610f-4dbf-a114-4942c072439a.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": false
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": true,
+                        "thumbnail": {
+                          "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?width=140&height=88&auto=webp&s=1ffc97b6113b991b4beb7bfd020cb65e6f52622c",
+                          "dimensions": {
+                            "width": 140,
+                            "height": 88
+                          }
+                        },
+                        "media": {
+                          "previewMediaId": "pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4",
+                          "still": {
+                            "source": {
+                              "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?auto=webp&s=5624081e03d5fdd35fc6596338bdb12ec4b08f1f",
+                              "dimensions": {
+                                "width": 1024,
+                                "height": 648
+                              }
+                            },
+                            "small": {
+                              "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?width=108&auto=webp&s=c93603b3292fc4aa971ca4d6812fc537e7331fad",
+                              "dimensions": {
+                                "width": 108,
+                                "height": 68
+                              }
+                            },
+                            "medium": {
+                              "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?width=216&auto=webp&s=b83bc3b875f724425efa0e5a7c6c1ee1e84a8fbf",
+                              "dimensions": {
+                                "width": 216,
+                                "height": 136
+                              }
+                            },
+                            "large": {
+                              "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?width=320&auto=webp&s=f73150900e2778e91d31410621e8a8ee7f135de7",
+                              "dimensions": {
+                                "width": 320,
+                                "height": 202
+                              }
+                            },
+                            "xlarge": {
+                              "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?width=640&auto=webp&s=448a9f3c63b416b5e518656d4b9522b24cbd0ea5",
+                              "dimensions": {
+                                "width": 640,
+                                "height": 405
+                              }
+                            },
+                            "xxlarge": {
+                              "url": "https://external-preview.redd.it/pYTdXIOXfiJ7bUFC7a0HpNGn7rbbv7uWW-kFupHCX-4.jpeg?width=960&auto=webp&s=bba24549862ae8d991b9c9c079c441cd29837991",
+                              "dimensions": {
+                                "width": 960,
+                                "height": 607
+                              }
+                            }
+                          }
+                        },
+                        "permalink": "/r/technology/comments/1urovx8/secret_claude_tracker_shocks_users_after/",
+                        "isSelfPost": false,
+                        "postHint": "LINK",
+                        "subreddit": {
+                          "id": "t5_2qh16",
+                          "name": "technology",
+                          "prefixedName": "r/technology",
+                          "isQuarantined": false,
+                          "title": "/r/Technology ",
+                          "type": "PUBLIC",
+                          "subscribersCount": 20404984,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://b.thumbs.redditmedia.com/J_fCwTYJkoM-way-eaOHv8AOHoF_jNXNqOvPrQ7bINY.png",
+                            "legacyIcon": {
+                              "url": "https://b.thumbs.redditmedia.com/J_fCwTYJkoM-way-eaOHv8AOHoF_jNXNqOvPrQ7bINY.png"
+                            },
+                            "legacyPrimaryColor": "#0DD3BB"
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://out.reddit.com/t3_1urovx8?app_name=android&token=AQAA7gZQanit-ai8L7-zrp6OwUAr5ZFuWkrSIkR2r58NrpXRcIDX&url=https%3A%2F%2Farstechnica.com%2Ftech-policy%2F2026%2F07%2Fanthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users",
+                          "expiresAt": "2026-07-09T20:39:10.400502+0000"
+                        },
+                        "upvoteRatio": 0.7849462365591398,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_2qh16",
+                          "name": "technology",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "community",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1urovx8",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_qjfqxo3z",
+                                "name": "Just-Grocery-2229"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1urovx8",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "post",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1urovx8",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_qjfqxo3z",
+                                "name": "Just-Grocery-2229"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_6vr2a3",
+                          "name": "u_Just-Grocery-2229",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "profile",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1urovx8",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_qjfqxo3z",
+                                "name": "Just-Grocery-2229"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1urovx8",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 5,
+                                "type": "thumbnail",
+                                "relativePosition": 5
+                              },
+                              "post": {
+                                "id": "t3_1urovx8",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+                                "type": "LINK"
+                              },
+                              "subreddit": {
+                                "id": "t5_2qh16",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "technology"
+                              },
+                              "profile": {
+                                "id": "t2_qjfqxo3z",
+                                "name": "Just-Grocery-2229"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 5,
+                            "relativePosition": 5
+                          },
+                          "post": {
+                            "id": "t3_1urovx8",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Secret Claude tracker shocks users after Anthropic’s anti-surveillance stance",
+                            "type": "LINK"
+                          },
+                          "subreddit": {
+                            "id": "t5_2qh16",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "technology"
+                          },
+                          "profile": {
+                            "id": "t2_qjfqxo3z",
+                            "name": "Just-Grocery-2229"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "post": {
+                        "id": "t3_1urhehm",
+                        "createdAt": "2026-07-09T05:49:59.742000+0000",
+                        "postTitle": "Anthropic is teaching us that vendor lock in is dangerous!",
+                        "url": "https://www.reddit.com/r/ClaudeCode/comments/1urhehm/anthropic_is_teaching_us_that_vendor_lock_in_is/",
+                        "content": {
+                          "markdown": "I would have just continued my work by purchasing credits because I fablemaxxed till July 7th as they said access will move to credits. And then they extend? I don’t know what they are thinking but as a 20x max user with 4 accounts, I feel cheated. I don’t think it’s good to get vendor locked in with any of these guys. I don’t care if your models solve world hunger bro, we need stability and transparency. I am done with Claude. ",
+                          "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"t\":\"I would have just continued my work by purchasing credits because I fablemaxxed till July 7th as they said access will move to credits. And then they extend? I don\\u2019t know what they are thinking but as a 20x max user with 4 accounts, I feel cheated. I don\\u2019t think it\\u2019s good to get vendor locked in with any of these guys. I don\\u2019t care if your models solve world hunger bro, we need stability and transparency. I am done with Claude.\"}],\"e\":\"par\"}]}",
+                          "html": "I would have just continued my work by purchasing credits because I fablemaxxed till July 7th as they said access will move to credits. And then they extend? I don’t know what they are thinking but as a 20x max user with 4 accounts, I feel cheated. I don’t think it’s good to get vendor locked in with any of these guys. I don’t care if your models solve world hunger bro, we need stability and transparency. I am done with Claude.",
+                          "preview": "I would have just continued my work by purchasing credits because I fablemaxxed till July 7th as they said access will move to credits. And then they extend? I don’t know what they are thinking but as a 20x max user with 4 accounts, I feel cheated. I don’t think it’s good to get vendor locked in wit"
+                        },
+                        "domain": "self.ClaudeCode",
+                        "isSpoiler": false,
+                        "isNsfw": false,
+                        "isCommercialCommunication": false,
+                        "isLocked": false,
+                        "isSaved": false,
+                        "isReactAllowed": false,
+                        "isHidden": false,
+                        "isGildable": true,
+                        "isCrosspostable": true,
+                        "isScoreHidden": false,
+                        "isArchived": false,
+                        "isStickied": false,
+                        "isPollIncluded": false,
+                        "isFollowed": false,
+                        "isContestMode": false,
+                        "voteState": "NONE",
+                        "score": 119,
+                        "commentCount": 66,
+                        "flair": {
+                          "type": "richtext",
+                          "text": "Discussion",
+                          "richtext": "[{\"e\":\"text\",\"t\":\"Discussion\"}]",
+                          "textColor": "LIGHT",
+                          "template": {
+                            "id": "594f63e4-990b-11f0-bb51-2e3f52d6bff1",
+                            "isEditable": false,
+                            "backgroundColor": "#718096"
+                          }
+                        },
+                        "authorInfo": {
+                          "id": "t2_1r1gfu3h",
+                          "name": "cranky619",
+                          "isBlocked": false,
+                          "isCakeDayNow": false,
+                          "newIcon": {
+                            "url": "https://styles.redditmedia.com/t5_lmj7p/styles/profileIcon_snoof6ad4dd6-05b0-4aef-9679-8ce58b9b9608-headshot.png?frame=1&auto=webp&crop=256%3A256%2Csmart&s=ab1f3809e478b7b32e5869923695330145391a6f",
+                            "dimensions": {
+                              "width": 256,
+                              "height": 256
+                            }
+                          },
+                          "iconSmall": {
+                            "url": "https://styles.redditmedia.com/t5_lmj7p/styles/profileIcon_snoof6ad4dd6-05b0-4aef-9679-8ce58b9b9608-headshot.png?width=50&height=50&frame=1&auto=webp&crop=50%3A50%2Csmart&s=ef2fc25cd097b4a14638ece6af7097f9f07ed202",
+                            "dimensions": {
+                              "width": 50,
+                              "height": 50
+                            }
+                          },
+                          "snoovatarIcon": {
+                            "url": "https://i.redd.it/snoovatar/avatars/f6ad4dd6-05b0-4aef-9679-8ce58b9b9608.png",
+                            "dimensions": {
+                              "width": 380,
+                              "height": 600
+                            }
+                          },
+                          "profile": {
+                            "isNsfw": true
+                          },
+                          "accountType": "USER"
+                        },
+                        "isThumbnailEnabled": false,
+                        "permalink": "/r/ClaudeCode/comments/1urhehm/anthropic_is_teaching_us_that_vendor_lock_in_is/",
+                        "isSelfPost": true,
+                        "subreddit": {
+                          "id": "t5_dp6k3k",
+                          "name": "ClaudeCode",
+                          "prefixedName": "r/ClaudeCode",
+                          "isQuarantined": false,
+                          "title": "ClaudeCode",
+                          "type": "PUBLIC",
+                          "subscribersCount": 346533,
+                          "isNsfw": false,
+                          "isSubscribed": false,
+                          "isThumbnailsEnabled": true,
+                          "styles": {
+                            "icon": "https://styles.redditmedia.com/t5_dp6k3k/styles/communityIcon_g3ehwz8f4sbf1.jpg?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=f2d1a7b5dfb0a41df9b2a117d5ddc539188db307",
+                            "primaryColor": "#CD7E5C",
+                            "bannerBackgroundImage": "https://styles.redditmedia.com/t5_dp6k3k/styles/bannerBackgroundImage_b4p0taca3sbf1.png?frame=1&auto=webp&s=8aa4d70595128639035d7599454875897db09c4a",
+                            "legacyPrimaryColor": "#FF4500"
+                          },
+                          "communityStatus": {
+                            "description": {
+                              "markdown": "**weekly limit reached.**",
+                              "richtext": "{\"document\":[{\"c\":[{\"e\":\"text\",\"f\":[[1,0,21]],\"t\":\"weekly limit reached.\"}],\"e\":\"par\"}]}"
+                            },
+                            "emoji": {
+                              "name": "claude",
+                              "url": "https://emoji.redditmedia.com/d9f9cte1i8sf1_t5_dp6k3k/claude"
+                            }
+                          },
+                          "isTitleSafe": true,
+                          "isUserBanned": false,
+                          "whitelistStatus": "ALL_ADS"
+                        },
+                        "outboundLink": {
+                          "url": "https://www.reddit.com/r/ClaudeCode/comments/1urhehm/anthropic_is_teaching_us_that_vendor_lock_in_is/",
+                          "expiresAt": "2026-07-09T20:39:10.400460+0000"
+                        },
+                        "upvoteRatio": 0.8439306358381503,
+                        "crowdControlLevel": "OFF",
+                        "isCrowdControlFilterEnabled": false,
+                        "languageCode": "en",
+                        "isTranslatable": true,
+                        "isTranslated": false
+                      },
+                      "behaviors": {
+                        "community": {
+                          "id": "t5_dp6k3k",
+                          "name": "ClaudeCode",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "community",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1urhehm",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic is teaching us that vendor lock in is dangerous!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1r1gfu3h",
+                                "name": "cranky619"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "default": {
+                          "id": "t3_1urhehm",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "post",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1urhehm",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic is teaching us that vendor lock in is dangerous!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1r1gfu3h",
+                                "name": "cranky619"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "profile": {
+                          "id": "t5_lmj7p",
+                          "name": "u_cranky619",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "profile",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1urhehm",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic is teaching us that vendor lock in is dangerous!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1r1gfu3h",
+                                "name": "cranky619"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        },
+                        "thumbnail": {
+                          "id": "t3_1urhehm",
+                          "telemetry": {
+                            "trackingContext": {
+                              "search": {
+                                "isNsfw": false,
+                                "range": "month",
+                                "safeSearch": "UNAVAILABLE",
+                                "scope": {
+                                  "path": "/",
+                                  "type": "GLOBAL"
+                                },
+                                "sort": "HOT",
+                                "query": "Anthropic",
+                                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                              },
+                              "actionInfo": {
+                                "paneName": "posts",
+                                "position": 6,
+                                "type": "thumbnail",
+                                "relativePosition": 6
+                              },
+                              "post": {
+                                "id": "t3_1urhehm",
+                                "isNsfw": false,
+                                "isSpoiler": false,
+                                "title": "Anthropic is teaching us that vendor lock in is dangerous!",
+                                "type": "TEXT"
+                              },
+                              "subreddit": {
+                                "id": "t5_dp6k3k",
+                                "isNsfw": false,
+                                "isQuarantined": false,
+                                "name": "ClaudeCode"
+                              },
+                              "profile": {
+                                "id": "t2_1r1gfu3h",
+                                "name": "cranky619"
+                              }
+                            },
+                            "events": [
+                              {
+                                "source": "search",
+                                "action": "click",
+                                "noun": "post",
+                                "trigger": "CLICK"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "telemetry": {
+                        "trackingContext": {
+                          "search": {
+                            "isNsfw": false,
+                            "range": "month",
+                            "safeSearch": "UNAVAILABLE",
+                            "scope": {
+                              "path": "/",
+                              "type": "GLOBAL"
+                            },
+                            "sort": "HOT",
+                            "query": "Anthropic",
+                            "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                          },
+                          "actionInfo": {
+                            "paneName": "posts",
+                            "position": 6,
+                            "relativePosition": 6
+                          },
+                          "post": {
+                            "id": "t3_1urhehm",
+                            "isNsfw": false,
+                            "isSpoiler": false,
+                            "title": "Anthropic is teaching us that vendor lock in is dangerous!",
+                            "type": "TEXT"
+                          },
+                          "subreddit": {
+                            "id": "t5_dp6k3k",
+                            "isNsfw": false,
+                            "isQuarantined": false,
+                            "name": "ClaudeCode"
+                          },
+                          "profile": {
+                            "id": "t2_1r1gfu3h",
+                            "name": "cranky619"
+                          }
+                        },
+                        "events": [
+                          {
+                            "source": "search",
+                            "action": "view",
+                            "noun": "post",
+                            "trigger": "VIEW"
+                          },
+                          {
+                            "source": "post",
+                            "action": "consume",
+                            "noun": "post",
+                            "trigger": "CONSUME"
+                          },
+                          {
+                            "source": "post",
+                            "action": "leave",
+                            "noun": "post",
+                            "trigger": "LEAVE"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "hasPreviousPage": false,
+              "endCursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiMlwiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIyXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaFwiOlwiN1wifSIsImV4cGVyaWVuY2Vfc2VsZWN0aW9uIjoicG9zdCIsImV4cGVyaWVuY2VfdmVyc2lvbiI6ImRlZmF1bHQiLCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaCI6IjcifQ=="
+            }
+          },
+          "top": {
+            "filterBar": [
+              {
+                "presentation": {
+                  "id": "post_sort",
+                  "title": "排序方式",
+                  "buttonText": "热门",
+                  "options": [
+                    {
+                      "text": "相关性",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "热门",
+                      "isSelected": true
+                    },
+                    {
+                      "text": "最受欢迎",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "新",
+                      "isSelected": false
+                    },
+                    {
+                      "text": "评论计数",
+                      "isSelected": false
+                    }
+                  ]
+                },
+                "behaviors": [
+                  {
+                    "id": "relevance",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "RELEVANCE"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "Anthropic",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "relevance",
+                          "query": "Anthropic",
+                          "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "hot",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "HOT"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "Anthropic",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "hot",
+                          "query": "Anthropic",
+                          "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "top",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "TOP"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "Anthropic",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "top",
+                          "query": "Anthropic",
+                          "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "new",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "NEW"
+                      },
+                      {
+                        "key": "time_range"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "Anthropic",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "new",
+                          "query": "Anthropic",
+                          "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "comments",
+                    "filters": [
+                      {
+                        "key": "sort",
+                        "value": "COMMENTS"
+                      }
+                    ],
+                    "pane": "posts",
+                    "isAppliedFiltersRemoved": false,
+                    "isAppliedOptionsRemoved": false,
+                    "query": "Anthropic",
+                    "telemetry": {
+                      "trackingContext": {
+                        "search": {
+                          "isNsfw": false,
+                          "range": "month",
+                          "safeSearch": "UNAVAILABLE",
+                          "scope": {
+                            "path": "/",
+                            "type": "GLOBAL"
+                          },
+                          "sort": "comments",
+                          "query": "Anthropic",
+                          "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                        },
+                        "actionInfo": {
+                          "paneName": "posts",
+                          "type": "bottom_sheet"
+                        }
+                      },
+                      "events": [
+                        {
+                          "source": "search",
+                          "action": "click",
+                          "noun": "sort",
+                          "trigger": "CLICK"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "navigation": {
+              "listPresentation": {
+                "items": [
+                  {
+                    "id": "all",
+                    "text": "全部",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "posts",
+                    "text": "帖子",
+                    "isSelected": true
+                  },
+                  {
+                    "id": "communities",
+                    "text": "社区",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "comments",
+                    "text": "评论",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "media",
+                    "text": "媒体",
+                    "isSelected": false
+                  },
+                  {
+                    "id": "people",
+                    "text": "个人资料",
+                    "isSelected": false
+                  }
+                ]
+              },
+              "behaviors": [
+                {
+                  "id": "all",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "all",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "Anthropic",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "Anthropic",
+                        "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "all"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "isNoOpBehavior": true
+                },
+                {
+                  "id": "communities",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "communities",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "Anthropic",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "Anthropic",
+                        "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "communities"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "comments",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "comments",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "Anthropic",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "Anthropic",
+                        "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "comments"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "media",
+                  "filters": [
+                    {
+                      "key": "post_types",
+                      "value": "image,gif,video,gallery"
+                    },
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "media",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "Anthropic",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "Anthropic",
+                        "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "media"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "people",
+                  "filters": [
+                    {
+                      "key": "safe_search",
+                      "value": "unset"
+                    }
+                  ],
+                  "pane": "people",
+                  "isAppliedFiltersRemoved": true,
+                  "isAppliedOptionsRemoved": false,
+                  "query": "Anthropic",
+                  "telemetry": {
+                    "trackingContext": {
+                      "search": {
+                        "isNsfw": false,
+                        "range": "month",
+                        "safeSearch": "UNAVAILABLE",
+                        "scope": {
+                          "path": "/",
+                          "type": "GLOBAL"
+                        },
+                        "sort": "hot",
+                        "query": "Anthropic",
+                        "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+                      },
+                      "actionInfo": {
+                        "paneName": "posts",
+                        "type": "people"
+                      }
+                    },
+                    "events": [
+                      {
+                        "source": "search",
+                        "action": "click",
+                        "noun": "tab",
+                        "trigger": "CLICK"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "telemetry": {
+            "trackingContext": {
+              "search": {
+                "isNsfw": false,
+                "range": "month",
+                "safeSearch": "UNAVAILABLE",
+                "scope": {
+                  "path": "/",
+                  "type": "GLOBAL"
+                },
+                "sort": "HOT",
+                "query": "Anthropic",
+                "queryID": "d084fdb5-fa59-4946-9908-2de202c09590"
+              },
+              "actionInfo": {
+                "paneName": "posts"
+              }
+            },
+            "events": [
+              {
+                "source": "search",
+                "action": "load",
+                "noun": "feed",
+                "trigger": "LOAD"
+              },
+              {
+                "source": "search",
+                "action": "view",
+                "noun": "dwell",
+                "trigger": "DWELL",
+                "triggerConfiguration": {
+                  "timerDurations": [
+                    3000,
+                    5000,
+                    10000,
+                    15000,
+                    30000
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

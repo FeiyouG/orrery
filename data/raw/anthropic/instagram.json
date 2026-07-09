@@ -1,0 +1,53 @@
+{
+  "runId": "01KX3RGQ4BQZR8YTC0S4RJTQV7",
+  "caller": "USER#user_3Ajr4uJ6mHTTpRQK1ePk55K18EW",
+  "provider": "tikhub",
+  "providerName": "TikHub",
+  "endpoint": "/api/v1/instagram/v2/fetch_user_posts",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "username": "anthropic"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 400,
+    "error": {
+      "detail": {
+        "code": 400,
+        "request_id": "fc9cc8bb-d72d-49c9-938a-7ee8b9af3cf9",
+        "message": "Request failed. Please retry. Check the docs below to verify your parameters, test with the default demo parameters, and send the response JSON to support. You won't be charged for this request.",
+        "message_zh": "请求失败，请重试。请查看下方文档核对参数，使用默认演示参数测试，并将响应 JSON 提交给支持团队。本次请求不会被扣费。",
+        "docs": "https://api.tikhub.io/#/Instagram-V2-API/fetch_user_posts_api_v1_instagram_v2_fetch_user_posts_get",
+        "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+        "time": "2026-07-09 08:39:39",
+        "time_stamp": 1783611579,
+        "time_zone": "America/Los_Angeles",
+        "router": "/api/v1/instagram/v2/fetch_user_posts",
+        "params": {
+          "username": "anthropic"
+        },
+        "headers": {}
+      }
+    }
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.003,
+    "currency": "USD"
+  },
+  "cost": {
+    "value": 0,
+    "currency": "USD"
+  },
+  "resultCount": 0,
+  "createdAt": "2026-07-09T15:39:08.091Z",
+  "startedAt": "2026-07-09T15:39:09.097Z",
+  "completedAt": "2026-07-09T15:39:40.154Z",
+  "output": null,
+  "hints": {
+    "inspect the endpoint": "curl -X POST http://api.dev.monid.ai/v1/inspect -H 'Authorization: Bearer <API_KEY>' -H 'Content-Type: application/json' -d '{\"provider\":\"tikhub\",\"endpoint\":\"/api/v1/instagram/v2/fetch_user_posts\"}'",
+    "find other endpoints": "curl -X POST http://api.dev.monid.ai/v1/discover -H 'Authorization: Bearer <API_KEY>' -H 'Content-Type: application/json' -d '{\"query\":\"<QUERY>\"}'",
+    "run again": "curl -X POST http://api.dev.monid.ai/v1/run -H 'Authorization: Bearer <API_KEY>' -H 'Content-Type: application/json' -d '{\"provider\":\"tikhub\",\"endpoint\":\"/api/v1/instagram/v2/fetch_user_posts\",\"input\":{\"body\":<BODY>,\"queryParams\":<QUERY_PARAMS>,\"pathParams\":<PATH_PARAMS>}}'"
+  }
+}

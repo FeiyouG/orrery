@@ -1,0 +1,258 @@
+{
+  "runId": "01KX3RGPYS1NTC47ZXMYFBR7B2",
+  "provider": "blockrun.ai",
+  "endpoint": "/api/v1/surf/search/news",
+  "status": "COMPLETED",
+  "output": {
+    "$schema": "https://api.asksurf.ai/schemas/DataResponseNewsArticleItem.json",
+    "data": [
+      {
+        "id": "9aa17832-bc69-47c4-b1e2-2f1942ac50b7",
+        "title": "Anthropic futures shrug off Coinbase debut and hit fresh lows",
+        "summary": "Anthropic pre-IPO futures fell up to 9% after Coinbase debut, hitting new lows on Coinbase and Binance amid SpaceX IPO concerns.",
+        "source": "CRYPTODOTNEWS",
+        "url": "https://crypto.news/anthropic-futures-shrug-off-coinbase-debut-and-hit-fresh-lows/",
+        "published_at": 1782227553,
+        "project_name": "Anthropic",
+        "project_id": "7f709064-dcde-4a72-821f-3c7509d3c32b",
+        "highlights": {
+          "content": [
+            "As reported by crypto.news, Coinbase [added](https://crypto.news/coinbase-pre-ipo-perps-spacex-openai-<em>anthropic</em>/) <em>Anthropic</em> and OpenAI pre-IPO perpetual",
+            "[<em>Anthropic</em> (<em>ANTHROPIC</em>/USDT) 4-hour chart showing a sharp selloff to a record low near $1,545 before a partial rebound toward $1,640.]"
+          ],
+          "summary": [
+            "<em>Anthropic</em> pre-IPO futures fell up to 9% after Coinbase debut, hitting new lows on Coinbase and Binance amid SpaceX IPO concerns."
+          ],
+          "title": [
+            "<em>Anthropic</em> futures shrug off Coinbase debut and hit fresh lows"
+          ]
+        }
+      },
+      {
+        "id": "24f00280-9852-4fef-bdc5-d962d2bd6255",
+        "title": "U.S. Government Abruptly Halts Anthropic’s Most Advanced Model; “Pre-…",
+        "summary": "U.S. government ordered Anthropic to shut down Fable 5 and Mythos 5 models June 12 over alleged jailbreak vulnerability; Anthropic called it a misunderstanding and plans to restore access.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/article/detail_32027.html",
+        "published_at": 1781488508,
+        "project_name": "Anthropic",
+        "project_id": "7f709064-dcde-4a72-821f-3c7509d3c32b",
+        "highlights": {
+          "content": [
+            "<em>Anthropic</em> disclosed it received the directive at 5:21 p.m.",
+            "That’s a bitter pill to swallow—and <em>Anthropic</em> made its dissatisfaction public."
+          ],
+          "summary": [
+            "U.S. government ordered <em>Anthropic</em> to shut down Fable 5 and Mythos 5 models June 12 over alleged jailbreak vulnerability; <em>Anthropic</em> called it a misunderstanding and plans to restore access."
+          ]
+        }
+      },
+      {
+        "id": "1fc0a8a9-cb73-4536-b625-049256d719a7",
+        "title": "Bitget has launched the Anthropic pre-market perpetual contract, supporting up to 20x leverage.",
+        "summary": "Bitget launches IPO pre-listing perpetual contract for ANTHROPIC/USDT with up to 20x leverage",
+        "source": "BLOCKBEATS",
+        "url": "https://en.theblockbeats.news/flash/349010",
+        "published_at": 1780419727,
+        "project_name": "Anthropic",
+        "project_id": "7f709064-dcde-4a72-821f-3c7509d3c32b",
+        "highlights": {
+          "content": [
+            "BlockBeats News, June 2nd, according to an official announcement, Bitget has launched the IPO pre-listing perpetual contract for <em>ANTHROPIC</em>/USDT, supporting"
+          ],
+          "summary": [
+            "Bitget launches IPO pre-listing perpetual contract for <em>ANTHROPIC</em>/USDT with up to 20x leverage"
+          ],
+          "title": [
+            "Bitget has launched the <em>Anthropic</em> pre-market perpetual contract, supporting up to 20x leverage."
+          ]
+        }
+      },
+      {
+        "id": "9643511b-000e-4611-8301-da282b0b72b3",
+        "title": "Bitget has launched the Anthropic pre-market perpetual contract, supporting up to 20x leverage",
+        "summary": "Bitget launches ANTHROPIC/USDT IPO pre-market perpetual contract with max 20x leverage",
+        "source": "CHAINCATCHER",
+        "url": "https://www.chaincatcher.com/en/article/2268722",
+        "published_at": 1780392416,
+        "project_name": "Anthropic",
+        "project_id": "7f709064-dcde-4a72-821f-3c7509d3c32b",
+        "highlights": {
+          "content": [
+            "According to the official announcement, Bitget has launched the IPO pre-market perpetual contract <em>ANTHROPIC</em>/USDT, with a maximum leverage of 20 times."
+          ],
+          "summary": [
+            "Bitget launches <em>ANTHROPIC</em>/USDT IPO pre-market perpetual contract with max 20x leverage"
+          ],
+          "title": [
+            "Bitget has launched the <em>Anthropic</em> pre-market perpetual contract, supporting up to 20x leverage"
+          ]
+        }
+      },
+      {
+        "id": "b24664ae-d76e-4f63-83b3-353084249a51",
+        "title": "Is zero-marginal-cost tech no more?",
+        "summary": "OpenAI undercuts Anthropic with cheaper GPT-5; Anthropic holds 32% enterprise share, raises $13B; Aug MEV: Solana $68M, Ethereum $32.5M",
+        "source": "BLOCKWORKS",
+        "url": "https://blockworks.co/news/zero-marginal-cost-tech",
+        "published_at": 1756920000,
+        "project_name": "Solana",
+        "project_id": "dd954981-fafe-46ca-95c9-793e88138c90",
+        "highlights": {
+          "content": [
+            "Your “software” rides on someone else’s model (OpenAI, <em>Anthropic</em>, Google, etc).",
+            "In enterprise usage share, <em>Anthropic</em> has overtaken OpenAI — 32% vs. OpenAI’s 25% by usage.\n\n!"
+          ],
+          "summary": [
+            "OpenAI undercuts <em>Anthropic</em> with cheaper GPT-5; <em>Anthropic</em> holds 32% enterprise share, raises $13B; Aug MEV: Solana $68M, Ethereum $32.5M"
+          ]
+        }
+      },
+      {
+        "id": "f6523584-1e42-4773-9d93-604592a68b70",
+        "title": "AI Cybersecurity: OpenAI and Anthropic Race",
+        "summary": "OpenAI finalizes AI cybersecurity product for limited partners; Anthropic's Project Glasswing proactively hunts software vulnerabilities amid 72% rise in AI cyberattacks.",
+        "source": "CRYPTODOTNEWS",
+        "url": "https://crypto.news/ai-cybersecurity-openai-and-anthropic-race/",
+        "published_at": 1775869200,
+        "project_name": "Ethereum",
+        "project_id": "8c0a87f1-0257-4710-a227-3fcfbd3c59ed",
+        "highlights": {
+          "content": [
+            "https://crypto.news/app/uploads/2024/10/crypto-news-AI-layers-option02.webp)\n\n---\n\nAI cybersecurity is now a formal competitive front between OpenAI and <em>Anthropic</em>",
+            ", with OpenAI finalizing an advanced security product for a limited partner release and <em>Anthropic</em> running a tightly controlled effort called Project Glasswing"
+          ],
+          "title": [
+            "AI Cybersecurity: OpenAI and <em>Anthropic</em> Race"
+          ]
+        }
+      },
+      {
+        "id": "eb9ca3fd-968a-4b66-8768-b4d2d19b9f96",
+        "title": "Musk Believes Anthropic Has SBF Vibes",
+        "summary": "Elon Musk endorses theory that Anthropic has \"FTX energy\" like SBF, agreeing with commentator's thread on shared effective altruism roots and branding. SBF invested $500M stolen funds in 2022. Musk's xAI rivals it; Perry supports via Claude Pro sub.",
+        "source": "TRADINGVIEW",
+        "url": "https://www.tradingview.com/news/u_today:7014ef2b1094b:0-musk-believes-anthropic-has-sbf-vibes/",
+        "published_at": 1772391901,
+        "project_name": "FTX",
+        "project_id": "249a1976-1177-4d03-9941-a8e5a56c18aa",
+        "highlights": {
+          "content": [
+            "\"I’ve been trying to understand why <em>Anthropic</em> puts me off (even though I love their models), and I think it’s this: <em>Anthropic</em> has FTX energy,\" Lukas wrote",
+            "[Read original article on U.Today](https://u.today/musk-believes-<em>anthropic</em>-has-sbf-vibes)"
+          ],
+          "summary": [
+            "Elon Musk endorses theory that <em>Anthropic</em> has \"FTX energy\" like SBF, agreeing with commentator's thread on shared effective altruism roots and branding. SBF invested $500M stolen funds in 2022."
+          ],
+          "title": [
+            "Musk Believes <em>Anthropic</em> Has SBF Vibes"
+          ]
+        }
+      },
+      {
+        "id": "d8a6ca5e-d6c9-4371-94df-e34a1ba9f872",
+        "title": "Anthropic rejects PreStocks tokens as shares void",
+        "summary": "Anthropic and OpenAI declared Solana PreStocks tokens backed by their shares worthless, triggering drops of up to 39% as unauthorized SPV transfers lack legal validity.",
+        "source": "CRYPTODOTNEWS",
+        "url": "https://crypto.news/anthropic-rejects-prestocks-tokens-as-shares-void/",
+        "published_at": 1778697000,
+        "project_name": "PreStocks",
+        "project_id": "7a72a32e-c00b-43df-8cd3-0ce99abbf32f",
+        "highlights": {
+          "content": [
+            "“We do not permit special purpose vehicles to acquire <em>Anthropic</em> stock and any transfer of shares to an SPV are void under our transfer restrictions,” <em>Anthropic</em>",
+            "PreStocks holds just over $333,000 in stablecoins and $18,000 in SOL to back <em>Anthropic</em>-linked tokens."
+          ],
+          "summary": [
+            "<em>Anthropic</em> and OpenAI declared Solana PreStocks tokens backed by their shares worthless, triggering drops of up to 39% as unauthorized SPV transfers lack legal validity."
+          ],
+          "title": [
+            "<em>Anthropic</em> rejects PreStocks tokens as shares void"
+          ]
+        }
+      },
+      {
+        "id": "f15b2eed-d52d-43d5-83fd-99235117119c",
+        "title": "TechFlow Intelligence Brief: Karpathy Announces Joining Anthropic; Cl…",
+        "summary": "Karpathy joins Anthropic; Google releases Gemini 3.5 Flash; OpenAI adopts SynthID; Mistral acquires Emmi AI; US advances Bitcoin reserve and CLARITY Act.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/article/detail_31667.html",
+        "published_at": 1779276257,
+        "project_name": "Bitcoin",
+        "project_id": "25c6612a-395c-4974-94eb-3b5f9f4b2ed7",
+        "highlights": {
+          "content": [
+            "he is joining <em>Anthropic</em>—a major talent shift in the AI field following Ilya Sutskever’s departure from OpenAI.",
+            "Hot Take: Hacker News community debates whether <em>Anthropic</em> is becoming the “OpenAI Founding Team Exile Hub.”"
+          ],
+          "summary": [
+            "Karpathy joins <em>Anthropic</em>; Google releases Gemini 3.5 Flash; OpenAI adopts SynthID; Mistral acquires Emmi AI; US advances Bitcoin reserve and CLARITY Act."
+          ],
+          "title": [
+            "TechFlow Intelligence Brief: Karpathy Announces Joining <em>Anthropic</em>; Cl…"
+          ]
+        }
+      },
+      {
+        "id": "8ffb273d-14ee-4a22-af47-361ab17da98e",
+        "title": "TechFlow Intelligence Report: Anthropic Accuses Alibaba of Distilling…",
+        "summary": "Anthropic accuses Alibaba of record AI model distillation; Apple/Xbox hike prices on memory costs; IBM debuts sub-1nm chip tech.",
+        "source": "TECHFLOW",
+        "url": "https://www.techflowpost.com/en-US/article/detail_32243.html",
+        "published_at": 1782470744,
+        "project_name": "ArbiDex",
+        "project_id": "057e60a0-d009-4174-90cf-6bc7745b2fff",
+        "highlights": {
+          "content": [
+            ".\n\n## **AI / Large Models**\n\n### **<em>Anthropic</em> Accuses Alibaba of Launching the Largest-Scale AI Model Distillation Attack in History Against the U.S.",
+            "[BlockNow](https://blocknow.com/<em>anthropic</em>-alibaba-ai-model-extraction-us-china-ai-race/) | [Reddit Discussion](https://www.reddit.com/r/artificial/comments"
+          ],
+          "summary": [
+            "<em>Anthropic</em> accuses Alibaba of record AI model distillation; Apple/Xbox hike prices on memory costs; IBM debuts sub-1nm chip tech."
+          ],
+          "title": [
+            "TechFlow Intelligence Report: <em>Anthropic</em> Accuses Alibaba of Distilling…"
+          ]
+        }
+      }
+    ],
+    "meta": {
+      "total": 1757,
+      "limit": 10,
+      "offset": 0,
+      "credits_used": 1,
+      "cached": false
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": 0.00825,
+    "currency": "USD"
+  },
+  "billing": {
+    "calculatedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    },
+    "actualCost": {
+      "unit": "MICRO_DOLLAR",
+      "currency": "USD",
+      "value": 7500
+    },
+    "reportedCost": {
+      "currency": "USD",
+      "value": 8250,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "createdAt": "2026-07-09T15:39:07.722Z",
+  "completedAt": "2026-07-09T15:39:11.098Z",
+  "hints": {
+    "retrieve the response later": "curl http://api.dev.monid.ai/v1/runs/01KX3RGPYS1NTC47ZXMYFBR7B2 -H 'Authorization: Bearer <API_KEY>'"
+  }
+}
