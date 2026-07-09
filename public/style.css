@@ -40,7 +40,8 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
   background: linear-gradient(90deg, #fff, #9be8ff 60%, #6ea8ff);
   -webkit-background-clip: text; background-clip: text; color: transparent;
   text-shadow: 0 0 30px rgba(120, 220, 255, 0.25);
-  pointer-events: auto; cursor: pointer; display: inline-flex; align-items: baseline; gap: 10px;
+  pointer-events: auto; cursor: pointer; display: flex; width: fit-content;
+  align-items: baseline; gap: 10px;
   border-bottom: 1px dashed rgba(127, 247, 255, 0.35); padding-bottom: 2px;
   transition: border-color 0.2s; }
 #company-name:hover { border-bottom-color: var(--cyan); }
@@ -86,6 +87,57 @@ html, body { height: 100%; overflow: hidden; background: #01020a; color: #dbeafe
   margin-top: 14px; font-size: 11px; color: var(--cyan); letter-spacing: 0.12em;
   animation: blink 1.4s step-end infinite; white-space: pre-wrap; }
 #subject-status.error { color: #ff8f8f; animation: none; font-size: 10px; }
+#subject-status .scan-line { display: block; animation: none; color: var(--dim); }
+#subject-status .scan-line.ok { color: #9fe8b8; }
+#subject-status .scan-line.err { color: #ff9f9f; }
+
+/* ---------- access key step ---------- */
+#key-step {
+  margin: 2px 0 14px; padding: 14px; border: 1px solid rgba(255, 210, 94, 0.35);
+  border-radius: 5px; background: rgba(40, 30, 8, 0.35); }
+.key-title { font-size: 11px; letter-spacing: 0.22em; color: #ffd25e; margin-bottom: 8px; }
+.key-note { font-size: 10.5px; line-height: 1.6; color: var(--dim); margin-bottom: 10px; }
+.key-note b { color: #dbeafe; }
+.key-steps { margin: 0 0 12px 16px; font-size: 11px; line-height: 1.9; color: #dbeafe; }
+.key-steps a { color: var(--cyan); text-decoration: none; border-bottom: 1px dotted rgba(127,247,255,.5); }
+.key-steps a:hover { border-bottom-style: solid; }
+#oauth-connect {
+  display: block; width: 100%; padding: 12px; margin: 4px 0 8px;
+  background: linear-gradient(180deg, rgba(255, 210, 94, 0.18), rgba(255, 210, 94, 0.08));
+  border: 1px solid rgba(255, 210, 94, 0.55); border-radius: 5px;
+  color: #ffe9ad; font: inherit; font-size: 13px; letter-spacing: 0.16em;
+  cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+#oauth-connect:hover { background: rgba(255, 210, 94, 0.28); border-color: #ffd25e; }
+#key-alt-toggle {
+  background: none; border: none; color: var(--dim); font: inherit; font-size: 10px;
+  letter-spacing: 0.08em; cursor: pointer; padding: 2px 0; text-decoration: underline dotted; }
+#key-alt-toggle:hover { color: var(--cyan); }
+#key-manual { margin-top: 10px; }
+#key-input {
+  width: 100%; background: rgba(6, 12, 28, 0.85); border: 1px solid rgba(255, 210, 94, 0.4);
+  border-radius: 4px; color: #ffe9ad; font: inherit; font-size: 12px;
+  padding: 9px 12px; letter-spacing: 0.08em; }
+#key-input:focus { outline: none; border-color: #ffd25e; }
+#panel-items li a { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(127, 247, 255, 0.35); }
+#panel-items li a:hover { color: var(--cyan); border-bottom-style: solid; }
+#subject-status a { color: #ffd25e; }
+#key-error { margin-top: 8px; font-size: 10px; color: #ff8f8f; letter-spacing: 0.06em; }
+#key-footer {
+  display: flex; align-items: center; gap: 10px; margin-top: 12px;
+  padding-top: 10px; border-top: 1px solid rgba(127, 247, 255, 0.1);
+  font-size: 10px; color: var(--dim); letter-spacing: 0.08em; }
+#key-footer[hidden] { display: none; }
+#key-footer button {
+  background: none; border: none; color: var(--cyan); font: inherit; font-size: 10px;
+  cursor: pointer; letter-spacing: 0.08em; padding: 0; opacity: 0.8; }
+#key-footer button:hover { opacity: 1; text-decoration: underline; }
+#key-badge { color: #9fe8b8; }
+.s-yours { color: #9fe8b8 !important; border-color: rgba(159, 232, 184, 0.4) !important; }
+#low-power-btn {
+  margin-top: 12px; width: 100%; background: rgba(10, 18, 40, 0.6);
+  border: 1px solid var(--line); border-radius: 4px; color: var(--dim);
+  font: inherit; font-size: 10px; letter-spacing: 0.1em; padding: 7px 10px; cursor: pointer; }
+#low-power-btn:hover { color: var(--cyan); border-color: var(--cyan); }
 #company-desc { max-width: 480px; font-size: 11px; line-height: 1.6; color: var(--dim); margin-top: 6px;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 

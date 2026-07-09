@@ -22,6 +22,14 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { CSS2DRenderer, CSS2DObject } from "three/addons/renderers/CSS2DRenderer.js";
+import { buildUniverse, slugify, whoami, DEFAULT_API_BASE } from "./pipeline.js";
+import { beginConnect, completeConnect, connected, disconnect, accessToken, userInfo } from "./oauth.js";
+
+const API_BASE = DEFAULT_API_BASE; // production only
+const WALLET_URL = "https://app.monid.ai/wallet";
+
+// low-power mode: half pixel ratio + 30fps cap (persisted)
+const LOW_POWER = localStorage.getItem("lowPower") === "1";
 
 // --------------------------------------------------------------- utilities
 const fmt = (n) => {
@@ -326,7 +334,9 @@ function moonSkin(seed) {
 // ------------------------------------------------------------------- scene
 const canvas = document.getElementById("scene");
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+// clamp: full retina (2x) quadruples the pixels pushed through bloom — the
+// main GPU/fan cost. 1.5 is visually indistinguishable at these contrasts.
+renderer.setPixelRatio(LOW_POWER ? 1 : Math.min(devicePixelRatio, 1.5));
 renderer.setSize(innerWidth, innerHeight);
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.15;
@@ -350,7 +360,8 @@ controls.maxDistance = 1400;
 
 const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
-const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.7, 0.62, 0.32);
+// bloom at half resolution: the blur pyramid doesn't need full-res input
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth / 2, innerHeight / 2), 0.7, 0.62, 0.32);
 composer.addPass(bloom);
 composer.addPass(new OutputPass());
 
@@ -429,6 +440,26 @@ let sun, sunLight, sunHalo = [], sunBaseScale = 1, solarFlare = 0;
 let focused = null, hovered = null, DATA = null;
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2(-2, -2);
+
+// ?stats — live perf/memory overlay for tuning
+if (new URLSearchParams(location.search).has("stats")) {
+  const el = document.createElement("div");
+  el.style.cssText = "position:fixed;left:12px;top:40%;z-index:90;font:10px/1.7 monospace;color:#8fff9f;background:rgba(0,0,0,.6);padding:8px 10px;border:1px solid #2a4;border-radius:4px;pointer-events:none;white-space:pre";
+  document.body.appendChild(el);
+  setInterval(() => {
+    const heap = performance.memory ? `${(performance.memory.usedJSHeapSize / 1048576).toFixed(0)}MB / ${(performance.memory.jsHeapSizeLimit / 1048576).toFixed(0)}MB` : "n/a";
+    const i = renderer.info;
+    el.textContent =
+      `fps        ${statsFrames}\n` +
+      `draw calls ${i.render.calls}\n` +
+      `triangles  ${i.render.triangles.toLocaleString()}\n` +
+      `geometries ${i.memory.geometries}\n` +
+      `textures   ${i.memory.textures}\n` +
+      `js heap    ${heap}\n` +
+      `pixelRatio ${renderer.getPixelRatio()}`;
+    statsFrames = 0;
+  }, 1000);
+}
 const tmpV = new THREE.Vector3();
 
 let tween = null;
@@ -895,6 +926,11 @@ function buildHud(data) {
   const codex = document.getElementById("codex");
   codexBtn.onclick = () => codex.classList.toggle("open");
 
+  // low-power mode toggle
+  const lp = document.getElementById("low-power-btn");
+  lp.textContent = LOW_POWER ? "⚡ LOW POWER ON · tap for full quality" : "⚡ LOW POWER OFF · tap to save battery";
+  lp.onclick = () => { localStorage.setItem("lowPower", LOW_POWER ? "0" : "1"); location.reload(); };
+
   // tour stop checkboxes
   const stopsEl = document.getElementById("tour-stops");
   stopsEl.innerHTML = "";
@@ -943,7 +979,20 @@ function openPanel(p) {
   items.innerHTML = "";
   (s.items || []).forEach((it) => {
     const li = document.createElement("li");
-    li.innerHTML = `${it.title}${it.engagement ? ` <b>· ${fmt(it.engagement)} ⚡</b>` : ""}`;
+    const text = document.createElement(it.url ? "a" : "span");
+    text.textContent = it.title;
+    if (it.url) {
+      text.href = it.url;
+      text.target = "_blank";
+      text.rel = "noreferrer";
+      text.title = "open source ↗";
+    }
+    li.appendChild(text);
+    if (it.engagement) {
+      const b = document.createElement("b");
+      b.textContent = ` · ${fmt(it.engagement)} ⚡`;
+      li.appendChild(b);
+    }
     items.appendChild(li);
   });
   document.getElementById("panel-items-wrap").style.display = s.items?.length ? "" : "none";
@@ -1182,71 +1231,243 @@ async function runTour() {
   btn.classList.remove("running");
 }
 
+// ------------------------------------------------ IndexedDB (client cache)
+function idbOpen() {
+  return new Promise((res, rej) => {
+    const req = indexedDB.open("signal-solar", 1);
+    req.onupgradeneeded = () => {
+      req.result.createObjectStore("runs");       // `${slug}:${label}` -> raw run
+      req.result.createObjectStore("universes");  // slug -> {snapshot, meta}
+    };
+    req.onsuccess = () => res(req.result);
+    req.onerror = () => rej(req.error);
+  });
+}
+async function idbGet(store, key) {
+  const db = await idbOpen();
+  return new Promise((res, rej) => {
+    const r = db.transaction(store).objectStore(store).get(key);
+    r.onsuccess = () => res(r.result ?? null);
+    r.onerror = () => rej(r.error);
+  });
+}
+async function idbSet(store, key, val) {
+  const db = await idbOpen();
+  return new Promise((res, rej) => {
+    const tx = db.transaction(store, "readwrite");
+    tx.objectStore(store).put(val, key);
+    tx.oncomplete = () => res();
+    tx.onerror = () => rej(tx.error);
+  });
+}
+async function idbAll(store) {
+  const db = await idbOpen();
+  return new Promise((res, rej) => {
+    const tx = db.transaction(store);
+    const os = tx.objectStore(store);
+    const keys = os.getAllKeys(), vals = os.getAll();
+    tx.oncomplete = () => res(keys.result.map((k, i) => [k, vals.result[i]]));
+    tx.onerror = () => rej(tx.error);
+  });
+}
+
 // ------------------------------------------------------- subject switcher
 const subjModal = document.getElementById("subject-modal");
 const subjList = document.getElementById("subject-list");
 const subjInput = document.getElementById("subject-input");
 const subjStatus = document.getElementById("subject-status");
+const keyStep = document.getElementById("key-step");
+const keyInput = document.getElementById("key-input");
+const keyError = document.getElementById("key-error");
 let switching = false;
+let pendingSubject = null;
+let SHIPPED = []; // manifest of committed demo universes (set in init)
 
-function openSubjectModal() {
+const getKey = () => localStorage.getItem("monidKey") || null;
+
+// resolve credentials: OAuth first (token acts like a scoped API key),
+// manual API key as fallback. Returns null when neither is available.
+async function resolveAuth() {
+  const token = await accessToken();
+  if (token) {
+    let workspaceId = localStorage.getItem("monidWorkspace");
+    if (!workspaceId) {
+      const res = await fetch(`${API_BASE}/v1/auth/workspaces`, { headers: { Authorization: `Bearer ${token}` } });
+      const body = await res.json().catch(() => null);
+      if (!res.ok) throw new Error(body?.error?.message || `could not list workspaces (HTTP ${res.status})`);
+      const ws = body?.workspaces ?? body ?? [];
+      workspaceId = ws[0]?.workspaceId || ws[0]?.id;
+      if (!workspaceId) throw new Error("no Monid workspace on this account");
+      localStorage.setItem("monidWorkspace", workspaceId);
+    }
+    return { apiKey: token, workspaceId };
+  }
+  const key = getKey();
+  return key ? { apiKey: key, workspaceId: null } : null;
+}
+
+async function updateKeyFooter() {
+  const footer = document.getElementById("key-footer");
+  const badge = document.getElementById("key-badge");
+  const key = getKey();
+  if (connected()) {
+    footer.hidden = false;
+    badge.textContent = "◈ MONID CONNECTED";
+    userInfo().then((u) => { if (u?.email) badge.textContent = `◈ CONNECTED · ${u.email}`; }).catch(() => {});
+  } else if (key) {
+    footer.hidden = false;
+    badge.textContent = `◈ ACCESS KEY •••• ${key.slice(-4)}`;
+  } else {
+    footer.hidden = true;
+  }
+}
+
+async function listUniverses() {
+  const local = await idbAll("universes").catch(() => []);
+  const bySlug = new Map();
+  for (const s of SHIPPED) bySlug.set(s.slug, { ...s, name: s.subject, tier: "demo" });
+  for (const [slug, rec] of local) bySlug.set(slug, { slug, ...rec.meta, name: rec.meta.subject, tier: "yours" });
+  return [...bySlug.values()].sort((a, b) => String(b.updatedAt).localeCompare(String(a.updatedAt)));
+}
+
+async function openSubjectModal() {
   subjModal.hidden = false;
   subjStatus.hidden = true;
   subjStatus.classList.remove("error");
+  subjStatus.innerHTML = "";
+  keyStep.hidden = true;
+  keyError.hidden = true;
+  document.getElementById("key-manual").hidden = true;
   subjInput.value = "";
   subjInput.disabled = false;
   subjInput.focus();
-  subjList.innerHTML = `<div class="subject-hint">loading cached universes…</div>`;
-  fetch("/api/subjects")
-    .then((r) => r.json())
-    .then(({ subjects, current }) => {
-      subjList.innerHTML = "";
-      subjects.forEach((s) => {
-        const b = document.createElement("button");
-        b.className = "subject-item" + (s.name === current ? " current" : "");
-        b.innerHTML =
-          `<span>${s.name}</span>` +
-          (s.subjectType ? `<span class="s-type">${s.subjectType.toUpperCase()}</span>` : "") +
-          (s.sources ? `<span class="s-worlds">${s.sources} worlds</span>` : "");
-        b.onclick = () => switchSubject(s.name);
-        subjList.appendChild(b);
-      });
-      if (!subjects.length) subjList.innerHTML = `<div class="subject-hint">no cached universes yet — type one above</div>`;
-    })
-    .catch(() => { subjList.innerHTML = `<div class="subject-hint">could not list cached universes</div>`; });
+  updateKeyFooter();
+  const universes = await listUniverses();
+  const activeSlug = localStorage.getItem("activeUniverse") || SHIPPED[0]?.slug;
+  subjList.innerHTML = "";
+  universes.forEach((s) => {
+    const b = document.createElement("button");
+    b.className = "subject-item" + (s.slug === activeSlug ? " current" : "");
+    b.innerHTML =
+      `<span>${s.name}</span>` +
+      (s.subjectType ? `<span class="s-type">${s.subjectType.toUpperCase()}</span>` : "") +
+      (s.tier === "yours" ? `<span class="s-type s-yours">YOURS</span>` : "") +
+      (s.sources ? `<span class="s-worlds">${s.sources} worlds</span>` : "");
+    b.onclick = () => activateUniverse(s.slug);
+    subjList.appendChild(b);
+  });
+  if (!universes.length) subjList.innerHTML = `<div class="subject-hint">no universes yet — type one above</div>`;
 }
 
 function closeSubjectModal() { if (!switching) subjModal.hidden = true; }
 
-async function switchSubject(subject) {
+function activateUniverse(slug) {
+  localStorage.setItem("activeUniverse", slug);
+  location.reload();
+}
+
+function scanLine(text, cls = "") {
+  const el = document.createElement("span");
+  el.className = `scan-line ${cls}`;
+  el.textContent = text;
+  subjStatus.appendChild(el);
+  subjStatus.scrollTop = subjStatus.scrollHeight;
+  return el;
+}
+
+async function scanSubject(subject) {
   if (switching) return;
+  let auth;
+  try {
+    auth = await resolveAuth();
+  } catch (err) {
+    subjStatus.hidden = false;
+    subjStatus.classList.add("error");
+    scanLine(`✕ ${err.message}`, "err");
+    return;
+  }
+  if (!auth) {
+    // reveal the connect step; the scan resumes after auth
+    pendingSubject = subject;
+    keyStep.hidden = false;
+    return;
+  }
   switching = true;
   subjInput.disabled = true;
+  keyStep.hidden = true;
   subjStatus.hidden = false;
   subjStatus.classList.remove("error");
-  const t0 = Date.now();
-  subjStatus.textContent = `◈ SCANNING "${subject.toUpperCase()}" UNIVERSE…`;
-  const tick = setInterval(() => {
-    subjStatus.textContent = `◈ SCANNING "${subject.toUpperCase()}" UNIVERSE · ${Math.round((Date.now() - t0) / 1000)}s`;
-  }, 1000);
+  subjStatus.innerHTML = "";
+  const header = scanLine(`◈ SCANNING "${subject.toUpperCase()}" UNIVERSE…`);
+  header.classList.add("ok");
+
+  const slug = slugify(subject);
+  const cache = {
+    get: (label) => idbGet("runs", `${slug}:${label}`),
+    set: (label, run) => idbSet("runs", `${slug}:${label}`, run),
+  };
+  let spent = 0;
+  const onProgress = (ev) => {
+    if (ev.phase === "cached") scanLine(`  ${ev.label} · cached · free`, ev.ok ? "ok" : "err");
+    else if (ev.phase === "done") {
+      if (ev.cost) spent += Number(ev.cost) || 0;
+      scanLine(`  ${ev.label} · ${(ev.ms / 1000).toFixed(1)}s${ev.cost ? ` · $${ev.cost}` : ""}`, ev.ok ? "ok" : "err");
+    } else if (ev.phase === "error") scanLine(`  ${ev.label} · ${ev.error}`, "err");
+    else if (ev.phase === "normalized") scanLine(`◈ ${ev.sources} WORLDS DETECTED · ${ev.subjectType.toUpperCase()} MODE`, "ok");
+  };
+
   try {
-    const r = await fetch("/api/subject", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ subject }),
+    const { snapshot, subjectType, balance } = await buildUniverse({
+      subject, apiKey: auth.apiKey, workspaceId: auth.workspaceId, apiBase: API_BASE, cache, onProgress,
     });
-    const out = await r.json();
-    if (!out.ok) {
-      throw new Error(out.error || String(out.log || "scan failed").split("\n").filter(Boolean).slice(-3).join(" · "));
-    }
-    subjStatus.textContent = `◈ UNIVERSE READY — ENTERING…`;
-    location.reload();
+    if (!snapshot.sources.length) throw new Error("no data found for this subject");
+    await idbSet("universes", slug, {
+      snapshot,
+      meta: {
+        subject: snapshot.company.name,
+        subjectType,
+        sources: snapshot.sources.length,
+        updatedAt: new Date().toISOString(),
+      },
+    });
+    if (spent) scanLine(`◈ SCAN COST $${spent.toFixed(4)}${balance != null ? ` · WALLET $${balance}` : ""}`, "ok");
+    scanLine(`◈ UNIVERSE READY — ENTERING…`, "ok");
+    localStorage.setItem("activeUniverse", slug);
+    setTimeout(() => location.reload(), 600);
   } catch (err) {
-    clearInterval(tick);
     switching = false;
     subjInput.disabled = false;
     subjStatus.classList.add("error");
-    subjStatus.textContent = `SCAN FAILED — ${err.message}`;
+    if (err.payment) {
+      // 402: wallet is empty — send them to top up
+      const line = scanLine("", "err");
+      line.innerHTML = `✕ MONID BALANCE EMPTY — <a href="${WALLET_URL}" target="_blank" rel="noreferrer">top up your wallet ↗</a> then scan again (cached endpoints stay free)`;
+    } else {
+      scanLine(`SCAN FAILED — ${err.message}`, "err");
+      if (/key|401|unauthorized|whoami/i.test(String(err.message))) {
+        keyStep.hidden = false;
+      }
+    }
+  }
+}
+
+async function linkKey(raw) {
+  const key = raw.trim();
+  if (!key) return;
+  keyError.hidden = true;
+  keyInput.disabled = true;
+  try {
+    await whoami({ apiKey: key, apiBase: API_BASE }); // validates + resolves workspace
+    localStorage.setItem("monidKey", key);
+    keyInput.value = "";
+    keyInput.disabled = false;
+    keyStep.hidden = true;
+    updateKeyFooter();
+    if (pendingSubject) { const s = pendingSubject; pendingSubject = null; scanSubject(s); }
+  } catch (err) {
+    keyInput.disabled = false;
+    keyError.hidden = false;
+    keyError.textContent = `✕ ${err.message} — check the key and try again`;
   }
 }
 
@@ -1255,8 +1476,50 @@ document.getElementById("subject-close").onclick = closeSubjectModal;
 subjModal.addEventListener("pointerdown", (e) => { if (e.target === subjModal) closeSubjectModal(); });
 subjInput.addEventListener("keydown", (e) => {
   e.stopPropagation();
-  if (e.key === "Enter" && subjInput.value.trim()) switchSubject(subjInput.value.trim());
+  if (e.key === "Enter" && subjInput.value.trim()) scanSubject(subjInput.value.trim());
 });
+keyInput.addEventListener("keydown", (e) => {
+  e.stopPropagation();
+  if (e.key === "Enter") linkKey(keyInput.value);
+});
+document.getElementById("oauth-connect").onclick = () => {
+  // subject survives the login round-trip via sessionStorage
+  beginConnect({ pendingSubject: pendingSubject || subjInput.value.trim() || null });
+};
+document.getElementById("key-alt-toggle").onclick = () => {
+  const m = document.getElementById("key-manual");
+  m.hidden = !m.hidden;
+  if (!m.hidden) keyInput.focus();
+};
+document.getElementById("key-change").onclick = () => {
+  keyStep.hidden = false;
+  document.getElementById("key-manual").hidden = false;
+  keyInput.focus();
+};
+document.getElementById("key-remove").onclick = () => {
+  disconnect();
+  localStorage.removeItem("monidKey");
+  updateKeyFooter();
+};
+
+// returning from the Monid login redirect: finish the exchange and, if a
+// scan was pending, resume it automatically
+async function handleOAuthCallback() {
+  let result = null;
+  try {
+    result = await completeConnect();
+  } catch (err) {
+    openSubjectModal();
+    subjStatus.hidden = false;
+    subjStatus.classList.add("error");
+    scanLine(`✕ CONNECT FAILED — ${err.message}`, "err");
+    return;
+  }
+  if (!result) return; // not an OAuth callback
+  await openSubjectModal();
+  const carry = result.carry || {};
+  if (carry.pendingSubject) scanSubject(carry.pendingSubject);
+}
 
 document.getElementById("tour-play").onclick = runTour;
 document.getElementById("tour-cfg-btn").onclick = () => {
@@ -1277,13 +1540,34 @@ addEventListener("resize", () => {
 
 // ------------------------------------------------------------------ main
 async function init() {
-  let data;
+  let data = null;
   try {
-    const res = await fetch("/api/data");
-    data = await res.json();
-    if (!res.ok) throw new Error(data.error || "no data");
+    SHIPPED = await fetch("./data/index.json").then((r) => (r.ok ? r.json() : [])).catch(() => []);
+    const active = localStorage.getItem("activeUniverse");
+
+    // 1. the user's own scanned universe (IndexedDB)
+    if (active) {
+      const rec = await idbGet("universes", active).catch(() => null);
+      if (rec) data = rec.snapshot;
+      // 2. a shipped demo universe
+      if (!data) {
+        const m = SHIPPED.find((s) => s.slug === active);
+        if (m) data = await fetch(`./data/${m.file}`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+      }
+    }
+    // 3. default: first shipped demo, else any local universe
+    if (!data && SHIPPED.length) {
+      data = await fetch(`./data/${SHIPPED[0].file}`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    }
+    if (!data) {
+      const all = await idbAll("universes").catch(() => []);
+      if (all.length) data = all[0][1].snapshot;
+    }
+    if (!data) throw new Error("no universes available — click the title to scan one");
   } catch (err) {
     document.querySelector(".loader-text").textContent = String(err.message || err).toUpperCase();
+    document.getElementById("loader").classList.add("done");
+    openSubjectModal();
     return;
   }
   DATA = data;
@@ -1313,8 +1597,12 @@ async function init() {
 }
 
 const clk = new THREE.Clock();
-function animate() {
+let lastFrameAt = 0, statsFrames = 0;
+function animate(now = 0) {
   requestAnimationFrame(animate);
+  if (LOW_POWER && now - lastFrameAt < 31) return; // ~30fps cap
+  lastFrameAt = now;
+  statsFrames++;
   const dt = Math.min(clk.getDelta(), 0.05);
   const t = clk.elapsedTime;
 
@@ -1424,5 +1712,5 @@ function animate() {
   labelRenderer.render(scene, camera);
 }
 
-init();
+init().then(handleOAuthCallback);
 animate();

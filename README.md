@@ -6,6 +6,37 @@ The **sun** is the subject (its size = popularity, its color = public sentiment)
 
 ![sci-fi solar system with planets labeled by platform](docs/screenshot.png)
 
+## Just use it — no install
+
+The app is a **pure static site**: open the hosted page, explore the shipped demo universes free, and click the subject name to scan any company or topic yourself. Scanning uses *your own* [Monid](https://monid.ai) account:
+
+- **▸ CONNECT MONID** — one-click OAuth sign-in (recommended). Tokens stay in your browser.
+- or paste an API key from [app.monid.ai/access/api-keys](https://app.monid.ai/access/api-keys)
+
+You pay Monid directly for what you scan (a few cents to ~$1 per new subject); everything already scanned in your browser is cached in IndexedDB and free to revisit. Out of balance? The scan stops with a link to [top up your wallet](https://app.monid.ai/wallet).
+
+## Self-host / develop
+
+**Prerequisites:** Node.js 18+ (only for the dev server & CLI — the site itself is static files in `public/`).
+
+```bash
+npm install             # dotenv only
+npm start               # static server -> http://localhost:3000
+```
+
+Deploys to GitHub Pages automatically on push to `main` (`.github/workflows/pages.yml`) — or host `public/` on any static host.
+
+### Pre-baking demo universes (CLI, optional)
+
+Maintainers can fetch universes from the terminal and ship them as free demos:
+
+```bash
+cp .env.example .env    # set SUBJECT and MONID_API_KEY (monid_live_...)
+npm run fetch           # cache-first: only uncached endpoints are paid
+npm run bake            # same + publishes to public/data/ for the static site
+npm run fetch:fresh     # ignore cache, re-pay for everything
+```
+
 ## Setup with an AI agent
 
 Paste this into your coding agent (Claude Code, Cursor, Codex, etc.):
@@ -13,42 +44,14 @@ Paste this into your coding agent (Claude Code, Cursor, Codex, etc.):
 ```text
 Set up this project for me:
 
-1. Follow the instructions at https://monid.ai/skill.md to install and set up
-   the Monid CLI and the Monid skill (npm install -g @monid-ai/cli, monid setup,
-   then add my API key via `monid keys add`). Ask me for my API key if I have
-   one, or point me to https://app.monid.ai/access/api-keys to create it.
-2. Read AGENT.md in this repo to understand the structure.
-3. cp .env.example .env and fill it in — ask me which subject (company or
-   topic) I want to visualize, and reuse the Monid API key from step 1.
-4. npm install
-5. npm run fetch        # pulls brand data (paid Monid API calls — confirm with
-                        # me first and report the cost after)
-6. npm start, then open http://localhost:4321 and verify the system renders.
+1. Read AGENT.md in this repo to understand the structure.
+2. npm install && npm start, then open http://localhost:3000 and verify the
+   shipped demo universes render.
+3. If I want to pre-bake a new demo universe: follow https://monid.ai/skill.md
+   to set up the Monid CLI, cp .env.example .env with my SUBJECT and
+   MONID_API_KEY, then npm run bake (paid Monid calls — confirm with me first
+   and report the cost after).
 ```
-
-## Setup by hand
-
-**Prerequisites:** Node.js 18+, a [Monid](https://app.monid.ai) account and API key.
-
-```bash
-# 1. Install the Monid CLI and register your API key
-npm install -g @monid-ai/cli
-monid setup
-monid keys add -k <your-api-key> -l main   # create one at https://app.monid.ai/access/api-keys
-
-# 2. Configure the project
-cp .env.example .env    # then edit: set SUBJECT and MONID_API_KEY
-
-# 3. Install and fetch data
-npm install
-npm run fetch           # cache-first: only uncached endpoints are paid
-                        # (a brand-new subject costs a few cents to ~$1)
-
-# 4. Run
-npm start               # http://localhost:4321
-```
-
-To stop the server: `kill $(lsof -ti :4321)`.
 
 ## Using it
 
@@ -56,7 +59,7 @@ To stop the server: `kill $(lsof -ti :4321)`.
 |---|---|
 | Switch universe | click the subject name (top left) — pick a cached subject or type a new one and hit ⏎ |
 | Look around | drag to rotate · scroll to zoom · right-drag to pan |
-| Scan a planet | click it (or use the legend, left side) — opens the planetary scan panel with metrics, keywords, and top posts |
+| Scan a planet | click it (or use the legend, left side) — opens the planetary scan panel with metrics, keywords, and top posts (each links to the original tweet/video/article) |
 | Scan the company core | click the sun — valuation, revenue, users, market position (PDL + Akta intel) |
 | Back to overview | `Esc` or ✕ on the panel |
 | Understand the visuals | **◈ VISUAL CODEX** button (bottom left) explains every visual mapping |
@@ -79,20 +82,12 @@ Everything is data-driven — nothing is decorative:
 - **Satellites** — high posting activity
 - **Ship traffic** — inbound activity/engagement rate
 
-## Refreshing data
+## Caching (browser and CLI)
 
-One command for everything — `npm run fetch` is **cache-first**:
+Everything is **cache-first** — an endpoint already fetched is never paid for twice:
 
-- endpoint already cached → read from disk, **free**
-- endpoint not cached → fetched live, **paid** (each miss is announced:
-  `twitter_search cache miss (...) — fetching live, this will be charged`)
-
-```bash
-npm run fetch          # rebuild current subject; pays only for what's missing
-npm run fetch:fresh    # ignore cache, re-pay for everything (get today's data)
-```
-
-Raw API responses are cached per subject in `data/raw/<subject-slug>/`, so parser or scoring changes never require re-paying, and switching subjects never clobbers previous data.
+- **In the browser**: raw responses + universes persist per subject in IndexedDB. Re-scanning a subject only pays for missing endpoints; the scan log shows each endpoint's status and cost live.
+- **In the CLI**: same logic, backed by `data/raw/<subject-slug>/*.json` (committed, so demo universes rebuild free forever).
 
 ## Companies vs topics
 
