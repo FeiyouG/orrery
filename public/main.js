@@ -944,7 +944,11 @@ function buildHud(data) {
   // low-power mode toggle
   const lp = document.getElementById("low-power-btn");
   lp.textContent = LOW_POWER ? "⚡ LOW POWER ON · tap for full quality" : "⚡ LOW POWER OFF · tap to save battery";
-  lp.onclick = () => { localStorage.setItem("lowPower", LOW_POWER ? "0" : "1"); location.reload(); };
+  lp.onclick = () => {
+    posthog.capture("low_power_mode_toggled", { enabled: !LOW_POWER });
+    localStorage.setItem("lowPower", LOW_POWER ? "0" : "1");
+    location.reload();
+  };
 
   // tour stop checkboxes
   const stopsEl = document.getElementById("tour-stops");
@@ -1013,7 +1017,11 @@ function openPanel(p) {
   document.getElementById("panel-items-wrap").style.display = s.items?.length ? "" : "none";
 
   const link = document.getElementById("panel-link");
-  if (s.url) { link.href = s.url; link.style.display = ""; } else link.style.display = "none";
+  if (s.url) {
+    link.href = s.url;
+    link.style.display = "";
+    link.onclick = () => posthog.capture("panel_link_opened", { platform_name: s.name, url: s.url });
+  } else link.style.display = "none";
 
   document.getElementById("panel").classList.add("open");
 }
@@ -1095,6 +1103,10 @@ function focusSun() {
   planets.forEach((q) => q.moons.forEach((m) => (m.label.visible = false)));
   const r = sunBaseScale;
   flyTo(new THREE.Vector3(r * 4.2, r * 1.6, r * 4.2), new THREE.Vector3(-r * 0.8, 0, 0), 1.7);
+  posthog.capture("sun_focused", {
+    subject_name: DATA?.company?.name,
+    subject_type: DATA?.company?.subjectType,
+  });
   openCompanyPanel();
 }
 
@@ -1137,6 +1149,12 @@ function focusPlanet(p) {
     target.addScaledVector(screenRight, halfTan * camDist * camera.aspect * (panelW / innerWidth));
   }
   flyTo(camPos, target, 1.7);
+  posthog.capture("planet_focused", {
+    platform_name: p.source.name,
+    planet_type: p.k.type,
+    orbit_index: planets.indexOf(p),
+    subject_name: DATA?.company?.name,
+  });
   openPanel(p);
 }
 
@@ -1223,12 +1241,21 @@ function tourWait(ms) {
 
 async function runTour() {
   const btn = document.getElementById("tour-play");
-  if (tourState.running) { tourState.abort = true; return; }
+  if (tourState.running) {
+    posthog.capture("cinematic_tour_stopped", { subject_name: DATA?.company?.name });
+    tourState.abort = true;
+    return;
+  }
 
   const speed = Number(document.getElementById("tour-speed").value) || 1;
   const stops = [...document.querySelectorAll("#tour-stops input:checked")].map((el) => el.dataset.stop);
   if (!stops.length) return;
 
+  posthog.capture("cinematic_tour_started", {
+    subject_name: DATA?.company?.name,
+    stop_count: stops.length,
+    speed,
+  });
   tourState.running = true;
   tourState.abort = false;
   btn.textContent = "■ STOP TOUR";
@@ -1452,11 +1479,13 @@ async function openSubjectModal() {
 function closeSubjectModal() { if (!switching) subjModal.hidden = true; }
 
 function activateUniverse(slug) {
+  posthog.capture("universe_activated", { universe_slug: slug });
   localStorage.setItem("activeUniverse", slug);
   location.reload();
 }
 
 async function deleteUniverse(slug) {
+  posthog.capture("universe_deleted", { universe_slug: slug });
   // remove the universe AND its raw endpoint cache from this browser
   const db = await idbOpen();
   await new Promise((res, rej) => {
@@ -1480,6 +1509,7 @@ function scanLine(text, cls = "") {
 
 async function scanSubject(subject, { fresh = false } = {}) {
   if (switching) return;
+  posthog.capture(fresh ? "universe_rescanned" : "universe_scanned", { subject });
   let auth;
   try {
     auth = await resolveAuth();
@@ -1536,12 +1566,25 @@ async function scanSubject(subject, { fresh = false } = {}) {
     });
     if (spent) scanLine(`◈ SCAN COST $${spent.toFixed(4)}${balance != null ? ` · WALLET $${balance}` : ""}`, "ok");
     scanLine(`◈ UNIVERSE READY — ENTERING…`, "ok");
+    posthog.capture("universe_scan_completed", {
+      subject,
+      fresh,
+      source_count: snapshot.sources.length,
+      subject_type: subjectType,
+      cost_usd: spent || 0,
+    });
     localStorage.setItem("activeUniverse", slug);
     setTimeout(() => location.reload(), 600);
   } catch (err) {
     switching = false;
     subjInput.disabled = false;
     subjStatus.classList.add("error");
+    posthog.capture("universe_scan_failed", {
+      subject,
+      fresh,
+      error_message: err.message,
+      payment_required: !!err.payment,
+    });
     if (err.payment) {
       // 402: wallet is empty — send them to top up
       const line = scanLine("", "err");
@@ -1561,8 +1604,13 @@ async function linkKey(raw) {
   keyError.hidden = true;
   keyInput.disabled = true;
   try {
-    await whoami({ apiKey: key, apiBase: API_BASE }); // validates + resolves workspace
+    const { workspaceId, workspaceName } = await whoami({ apiKey: key, apiBase: API_BASE }); // validates + resolves workspace
     localStorage.setItem("monidKey", key);
+    // workspace-level attribution: whoami exposes no user id, so mirror the
+    // Monid workspace as a PostHog group + stamp events with its id/name
+    posthog.group("workspace", workspaceId, { name: workspaceName });
+    posthog.register({ workspace_id: workspaceId, workspace_name: workspaceName });
+    posthog.capture("api_key_linked", { workspace_id: workspaceId, workspace_name: workspaceName });
     keyInput.value = "";
     keyInput.disabled = false;
     keyStep.hidden = true;
@@ -1587,6 +1635,9 @@ keyInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") linkKey(keyInput.value);
 });
 document.getElementById("oauth-connect").onclick = () => {
+  posthog.capture("oauth_connect_initiated", {
+    pending_subject: pendingSubject || subjInput.value.trim() || null,
+  });
   // subject survives the login round-trip via sessionStorage
   beginConnect({ pendingSubject: pendingSubject || subjInput.value.trim() || null });
 };
@@ -1601,6 +1652,7 @@ document.getElementById("key-change").onclick = () => {
   keyInput.focus();
 };
 document.getElementById("key-remove").onclick = () => {
+  posthog.reset();
   disconnect();
   localStorage.removeItem("monidKey");
   updateKeyFooter();
@@ -1613,11 +1665,17 @@ async function handleOAuthCallback() {
   try {
     result = await completeConnect();
   } catch (err) {
+    posthog.captureException(err);
     openSubjectModal();
     subjStatus.hidden = false;
     subjStatus.classList.add("error");
     scanLine(`✕ CONNECT FAILED — ${err.message}`, "err");
     return;
+  }
+  if (connected()) {
+    userInfo().then((info) => {
+      if (info?.sub) posthog.identify(info.sub, { email: info.email, name: info.name });
+    }).catch(() => {});
   }
   if (!result) return; // not an OAuth callback
   await openSubjectModal();
